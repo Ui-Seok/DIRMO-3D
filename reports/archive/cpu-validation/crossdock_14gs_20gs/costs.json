@@ -1,0 +1,31 @@
+{
+  "events": [
+    {
+      "reason": "evaluate_initial",
+      "reserved_cost": {
+        "evaluation_calls": 1
+      },
+      "wall_seconds": 3.8448022678494453e-05
+    }
+  ],
+  "limits": {
+    "candidate_cap": 2,
+    "evaluation_calls": 8,
+    "fm_draws": 4,
+    "fm_nfe": 512,
+    "llm_calls": 3,
+    "llm_tokens": 24000,
+    "max_rounds": 2,
+    "plateau_rounds": 2,
+    "seeds_per_graph": 2,
+    "wall_seconds": 1800.0
+  },
+  "used": {
+    "evaluation_calls": 1,
+    "fm_draws": 0,
+    "fm_nfe": 0,
+    "llm_calls": 0,
+    "llm_tokens": 0
+  },
+  "wall_seconds": 3.2239783440018073
+}

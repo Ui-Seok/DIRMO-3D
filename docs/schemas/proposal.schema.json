@@ -1,0 +1,238 @@
+{
+  "$defs": {
+    "EditCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "atom_correspondence": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Atom Correspondence",
+          "type": "object"
+        },
+        "candidate_id": {
+          "pattern": "^[A-Za-z0-9_.-]+$",
+          "title": "Candidate Id",
+          "type": "string"
+        },
+        "changed_atom_maps": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Changed Atom Maps",
+          "type": "array"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "mapped_product_smiles": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mapped Product Smiles"
+        },
+        "operation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EditOperation"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "parent_graph_id": {
+          "title": "Parent Graph Id",
+          "type": "string"
+        },
+        "protection_explanation": {
+          "title": "Protection Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "parent_graph_id",
+        "changed_atom_maps",
+        "protection_explanation"
+      ],
+      "title": "EditCandidate",
+      "type": "object"
+    },
+    "EditOperation": {
+      "additionalProperties": false,
+      "properties": {
+        "atom_map": {
+          "exclusiveMinimum": 0,
+          "title": "Atom Map",
+          "type": "integer"
+        },
+        "bond_order": {
+          "default": 1,
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "title": "Bond Order",
+          "type": "integer"
+        },
+        "element": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Element"
+        },
+        "formal_charge": {
+          "default": 0,
+          "maximum": 2,
+          "minimum": -2,
+          "title": "Formal Charge",
+          "type": "integer"
+        },
+        "kind": {
+          "enum": [
+            "replace_atom",
+            "add_terminal_atom",
+            "remove_terminal_atom",
+            "change_bond"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "other_map": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Other Map"
+        }
+      },
+      "required": [
+        "kind",
+        "atom_map"
+      ],
+      "title": "EditOperation",
+      "type": "object"
+    },
+    "Hypothesis": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "hypothesis_id": {
+          "title": "Hypothesis Id",
+          "type": "string"
+        },
+        "statement": {
+          "title": "Statement",
+          "type": "string"
+        },
+        "status": {
+          "default": "untested",
+          "enum": [
+            "untested",
+            "supported",
+            "contradicted",
+            "uncertain"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "test": {
+          "title": "Test",
+          "type": "string"
+        }
+      },
+      "required": [
+        "hypothesis_id",
+        "statement",
+        "evidence_ids",
+        "test"
+      ],
+      "title": "Hypothesis",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "edit_candidates": {
+      "items": {
+        "$ref": "#/$defs/EditCandidate"
+      },
+      "title": "Edit Candidates",
+      "type": "array"
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "expected_tradeoffs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Expected Tradeoffs",
+      "type": "array"
+    },
+    "hypotheses": {
+      "items": {
+        "$ref": "#/$defs/Hypothesis"
+      },
+      "title": "Hypotheses",
+      "type": "array"
+    },
+    "preferred_action": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Preferred Action"
+    }
+  },
+  "required": [
+    "hypotheses",
+    "evidence_ids",
+    "edit_candidates",
+    "expected_tradeoffs"
+  ],
+  "title": "Proposal",
+  "type": "object"
+}

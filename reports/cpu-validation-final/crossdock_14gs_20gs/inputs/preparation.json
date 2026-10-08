@@ -1,0 +1,21 @@
+{
+  "already_pocket": true,
+  "atom_map_convention": "Existing complete maps, otherwise 1-based initial heavy-atom order",
+  "box_center": [
+    24.261727272727274,
+    6.685454545454546,
+    27.79195454545455
+  ],
+  "box_size": [
+    24.0,
+    24.0,
+    24.0
+  ],
+  "coordinate_frame": "unchanged protein frame",
+  "cutoff_angstrom": 6.0,
+  "fixed_pocket": "/home/uslee/code/DIRMO-3D/reports/cpu-validation-final/crossdock_14gs_20gs/inputs/fixed_pocket.pdb",
+  "notes": "Existing CrossDocked pocket10 and receptor PDBQT from local processed dataset. No new protonation. Original ligand is in this pocket's coordinate frame. Receptor preparation provenance is not provided.",
+  "preparation": "first model; protein residues; alternate A/blank; no protonation/repair",
+  "residues": 32,
+  "source": "/LocalData1/uslee/datasets/processed_crossdock_noH_full_temp/test/14gs-A-rec-20gs-cbd-lig-tt-min-0-pocket10.pdb"
+}

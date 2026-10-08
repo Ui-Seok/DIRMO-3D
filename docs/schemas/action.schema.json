@@ -1,0 +1,231 @@
+{
+  "$defs": {
+    "ActionKind": {
+      "enum": [
+        "CHEMICAL_EDIT",
+        "POSE_RESAMPLE",
+        "CHANGE_GENERATION_CONDITION",
+        "STOP",
+        "EXTRA_VALIDATION"
+      ],
+      "title": "ActionKind",
+      "type": "string"
+    },
+    "EditCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "atom_correspondence": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Atom Correspondence",
+          "type": "object"
+        },
+        "candidate_id": {
+          "pattern": "^[A-Za-z0-9_.-]+$",
+          "title": "Candidate Id",
+          "type": "string"
+        },
+        "changed_atom_maps": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Changed Atom Maps",
+          "type": "array"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Ids",
+          "type": "array"
+        },
+        "mapped_product_smiles": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mapped Product Smiles"
+        },
+        "operation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/EditOperation"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "parent_graph_id": {
+          "title": "Parent Graph Id",
+          "type": "string"
+        },
+        "protection_explanation": {
+          "title": "Protection Explanation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "parent_graph_id",
+        "changed_atom_maps",
+        "protection_explanation"
+      ],
+      "title": "EditCandidate",
+      "type": "object"
+    },
+    "EditOperation": {
+      "additionalProperties": false,
+      "properties": {
+        "atom_map": {
+          "exclusiveMinimum": 0,
+          "title": "Atom Map",
+          "type": "integer"
+        },
+        "bond_order": {
+          "default": 1,
+          "enum": [
+            1,
+            2,
+            3
+          ],
+          "title": "Bond Order",
+          "type": "integer"
+        },
+        "element": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Element"
+        },
+        "formal_charge": {
+          "default": 0,
+          "maximum": 2,
+          "minimum": -2,
+          "title": "Formal Charge",
+          "type": "integer"
+        },
+        "kind": {
+          "enum": [
+            "replace_atom",
+            "add_terminal_atom",
+            "remove_terminal_atom",
+            "change_bond"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "other_map": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Other Map"
+        }
+      },
+      "required": [
+        "kind",
+        "atom_map"
+      ],
+      "title": "EditOperation",
+      "type": "object"
+    },
+    "GenerationParameters": {
+      "additionalProperties": false,
+      "properties": {
+        "integration_steps": {
+          "default": 64,
+          "maximum": 256,
+          "minimum": 1,
+          "title": "Integration Steps",
+          "type": "integer"
+        },
+        "prior": {
+          "const": "random",
+          "default": "random",
+          "title": "Prior",
+          "type": "string"
+        },
+        "solver": {
+          "const": "euler",
+          "default": "euler",
+          "title": "Solver",
+          "type": "string"
+        }
+      },
+      "title": "GenerationParameters",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "action_id": {
+      "title": "Action Id",
+      "type": "string"
+    },
+    "candidate": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/EditCandidate"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "evidence_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Evidence Ids",
+      "type": "array"
+    },
+    "generation": {
+      "$ref": "#/$defs/GenerationParameters"
+    },
+    "kind": {
+      "$ref": "#/$defs/ActionKind"
+    },
+    "reason": {
+      "default": "",
+      "title": "Reason",
+      "type": "string"
+    },
+    "seeds": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 16,
+      "minItems": 1,
+      "title": "Seeds",
+      "type": "array"
+    }
+  },
+  "required": [
+    "action_id",
+    "kind"
+  ],
+  "title": "Action",
+  "type": "object"
+}

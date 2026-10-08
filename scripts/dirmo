@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+task_project="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+export PYTHONPATH="$task_project/src"
+export CUDA_VISIBLE_DEVICES=""
+exec "${DIRMO_CPU_PYTHON:-/home/uslee/miniconda3/envs/flowr/bin/python}" -m dirmo "$@"

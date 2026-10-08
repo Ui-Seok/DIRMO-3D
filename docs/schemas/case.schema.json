@@ -1,0 +1,411 @@
+{
+  "$defs": {
+    "BudgetLimits": {
+      "additionalProperties": false,
+      "properties": {
+        "candidate_cap": {
+          "default": 2,
+          "maximum": 16,
+          "minimum": 1,
+          "title": "Candidate Cap",
+          "type": "integer"
+        },
+        "evaluation_calls": {
+          "default": 8,
+          "minimum": 1,
+          "title": "Evaluation Calls",
+          "type": "integer"
+        },
+        "fm_draws": {
+          "default": 4,
+          "minimum": 0,
+          "title": "Fm Draws",
+          "type": "integer"
+        },
+        "fm_nfe": {
+          "default": 512,
+          "minimum": 0,
+          "title": "Fm Nfe",
+          "type": "integer"
+        },
+        "llm_calls": {
+          "default": 3,
+          "minimum": 0,
+          "title": "Llm Calls",
+          "type": "integer"
+        },
+        "llm_tokens": {
+          "default": 12000,
+          "minimum": 0,
+          "title": "Llm Tokens",
+          "type": "integer"
+        },
+        "max_rounds": {
+          "default": 2,
+          "minimum": 0,
+          "title": "Max Rounds",
+          "type": "integer"
+        },
+        "plateau_rounds": {
+          "default": 2,
+          "minimum": 1,
+          "title": "Plateau Rounds",
+          "type": "integer"
+        },
+        "seeds_per_graph": {
+          "default": 2,
+          "maximum": 16,
+          "minimum": 1,
+          "title": "Seeds Per Graph",
+          "type": "integer"
+        },
+        "wall_seconds": {
+          "default": 1800,
+          "exclusiveMinimum": 0,
+          "title": "Wall Seconds",
+          "type": "number"
+        }
+      },
+      "title": "BudgetLimits",
+      "type": "object"
+    },
+    "MetricGoal": {
+      "additionalProperties": false,
+      "properties": {
+        "direction": {
+          "enum": [
+            "maximize",
+            "minimize"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "max_loss": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Loss"
+        },
+        "target": {
+          "title": "Target",
+          "type": "number"
+        },
+        "weight": {
+          "default": 1.0,
+          "minimum": 0,
+          "title": "Weight",
+          "type": "number"
+        }
+      },
+      "required": [
+        "direction",
+        "target"
+      ],
+      "title": "MetricGoal",
+      "type": "object"
+    },
+    "Objective": {
+      "additionalProperties": false,
+      "properties": {
+        "metrics": {
+          "additionalProperties": {
+            "$ref": "#/$defs/MetricGoal"
+          },
+          "title": "Metrics",
+          "type": "object"
+        },
+        "minimum_improvement": {
+          "default": 0.01,
+          "exclusiveMinimum": 0,
+          "title": "Minimum Improvement",
+          "type": "number"
+        },
+        "required_evaluations": {
+          "items": {
+            "enum": [
+              "properties",
+              "geometry",
+              "posebusters",
+              "vina",
+              "interactions"
+            ],
+            "type": "string"
+          },
+          "title": "Required Evaluations",
+          "type": "array"
+        }
+      },
+      "title": "Objective",
+      "type": "object"
+    },
+    "ProtectedFeature": {
+      "additionalProperties": false,
+      "properties": {
+        "atom_maps": {
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "title": "Atom Maps",
+          "type": "array"
+        },
+        "family": {
+          "title": "Family",
+          "type": "string"
+        },
+        "hard": {
+          "default": true,
+          "title": "Hard",
+          "type": "boolean"
+        },
+        "max_distance": {
+          "default": 1.5,
+          "exclusiveMinimum": 0,
+          "title": "Max Distance",
+          "type": "number"
+        },
+        "reference_position": {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Reference Position",
+          "type": "array"
+        }
+      },
+      "required": [
+        "family",
+        "atom_maps",
+        "reference_position"
+      ],
+      "title": "ProtectedFeature",
+      "type": "object"
+    },
+    "ProtectedInteraction": {
+      "additionalProperties": false,
+      "properties": {
+        "hard": {
+          "default": true,
+          "title": "Hard",
+          "type": "boolean"
+        },
+        "residue_id": {
+          "title": "Residue Id",
+          "type": "string"
+        },
+        "role": {
+          "title": "Role",
+          "type": "string"
+        }
+      },
+      "required": [
+        "residue_id",
+        "role"
+      ],
+      "title": "ProtectedInteraction",
+      "type": "object"
+    },
+    "Protection": {
+      "additionalProperties": false,
+      "properties": {
+        "atom_maps": {
+          "items": {
+            "type": "integer"
+          },
+          "title": "Atom Maps",
+          "type": "array"
+        },
+        "features": {
+          "items": {
+            "$ref": "#/$defs/ProtectedFeature"
+          },
+          "title": "Features",
+          "type": "array"
+        },
+        "interactions": {
+          "items": {
+            "$ref": "#/$defs/ProtectedInteraction"
+          },
+          "title": "Interactions",
+          "type": "array"
+        },
+        "max_atom_displacement": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Atom Displacement"
+        },
+        "smarts": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Smarts",
+          "type": "array"
+        }
+      },
+      "title": "Protection",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "box_center": {
+      "anyOf": [
+        {
+          "maxItems": 3,
+          "minItems": 3,
+          "prefixItems": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "type": "array"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Box Center"
+    },
+    "box_size": {
+      "default": [
+        24.0,
+        24.0,
+        24.0
+      ],
+      "maxItems": 3,
+      "minItems": 3,
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "title": "Box Size",
+      "type": "array"
+    },
+    "budgets": {
+      "$ref": "#/$defs/BudgetLimits"
+    },
+    "case_id": {
+      "pattern": "^[A-Za-z0-9_.-]+$",
+      "title": "Case Id",
+      "type": "string"
+    },
+    "coordinate_units": {
+      "const": "angstrom",
+      "default": "angstrom",
+      "title": "Coordinate Units",
+      "type": "string"
+    },
+    "initial_ligand_path": {
+      "title": "Initial Ligand Path",
+      "type": "string"
+    },
+    "objective": {
+      "$ref": "#/$defs/Objective"
+    },
+    "pocket_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Pocket Path"
+    },
+    "preparation_notes": {
+      "default": "As supplied; no protonation or receptor repair performed.",
+      "title": "Preparation Notes",
+      "type": "string"
+    },
+    "protected": {
+      "$ref": "#/$defs/Protection"
+    },
+    "protein_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Protein Path"
+    },
+    "receptor_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Receptor Path"
+    },
+    "series_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Series Id"
+    },
+    "target_id": {
+      "title": "Target Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "case_id",
+    "target_id",
+    "initial_ligand_path"
+  ],
+  "title": "Case",
+  "type": "object"
+}

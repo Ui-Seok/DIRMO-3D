@@ -1,0 +1,13 @@
+{
+  "instructions": "Replace the llm fields in local.json with exactly one of these profiles. Do not load all models.",
+  "qwen4b": {
+    "backend": "qwen3.5", "model_path": "/LocalData1/uslee/checkpoints/Qwen3.5-4B",
+    "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a", "dtype": "bfloat16",
+    "thinking": false, "temperature": 0.7, "top_p": 0.8, "top_k": 20
+  },
+  "chemdfm": {
+    "backend": "chemdfm-v2", "model_path": "/LocalData1/uslee/checkpoints/ChemDFM-v2.0-14B",
+    "revision": "b3b1d2143bb3e307e6b6dae794f6e9b0a83a45ef", "dtype": "float16",
+    "thinking": false, "temperature": 0.9, "top_p": 0.9, "top_k": 20
+  }
+}

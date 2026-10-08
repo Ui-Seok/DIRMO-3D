@@ -1,0 +1,10 @@
+{
+  "model_path": "/LocalData1/uslee/checkpoints/Qwen3.5-9B",
+  "model_loaded": false,
+  "non_thinking_template_applied": true,
+  "prompt_tokens": 5595,
+  "context_cap": 8192,
+  "output_cap": 1024,
+  "fits": true,
+  "generation_tested": false
+}

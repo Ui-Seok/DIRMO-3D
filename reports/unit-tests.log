@@ -1,0 +1,49 @@
+test_failed_attempt_stays_charged (test_core.BudgetAndGPUTests.test_failed_attempt_stays_charged) ... ok
+test_physical_to_logical_gpu_mapping (test_core.BudgetAndGPUTests.test_physical_to_logical_gpu_mapping) ... ok
+test_wall_budget_and_refund (test_core.BudgetAndGPUTests.test_wall_budget_and_refund) ... ok
+test_wilson_small_sample_uncertainty (test_core.BudgetAndGPUTests.test_wilson_small_sample_uncertainty) ... ok
+test_ambiguous_maps_are_rejected (test_core.ChemistryTests.test_ambiguous_maps_are_rejected) ... ok
+test_charge_stereo_and_connectivity_mismatches (test_core.ChemistryTests.test_charge_stereo_and_connectivity_mismatches) ... ok
+test_invalid_edit_and_protection (test_core.ChemistryTests.test_invalid_edit_and_protection) ... ok
+test_permuted_atom_order_and_aromatic_normalization (test_core.ChemistryTests.test_permuted_atom_order_and_aromatic_normalization) ... ok
+test_real_edit_and_mapping (test_core.ChemistryTests.test_real_edit_and_mapping) ... ok
+test_schema_rejects_code_and_unsupported_guidance (test_core.ChemistryTests.test_schema_rejects_code_and_unsupported_guidance) ... ok
+test_missing_required_metric_cannot_be_success (test_core.EvaluationTests.test_missing_required_metric_cannot_be_success) ... ok
+test_protected_coordinates_are_not_aligned (test_core.EvaluationTests.test_protected_coordinates_are_not_aligned) ... ok
+test_claimed_hypothesis_confirmation_rejected (test_core.ProposalTests.test_claimed_hypothesis_confirmation_rejected) ... ok
+test_evidence_is_validated (test_core.ProposalTests.test_evidence_is_validated) ... ok
+test_best_from_history_not_last_and_must_meet_targets (test_core.StateAndRouterTests.test_best_from_history_not_last_and_must_meet_targets) ... ok
+test_failed_edited_graph_remains_recoverable (test_core.StateAndRouterTests.test_failed_edited_graph_remains_recoverable) ... ok
+test_feasibility_mask_nfe_and_extra_validation (test_core.StateAndRouterTests.test_feasibility_mask_nfe_and_extra_validation) ... ok
+test_features_do_not_include_action_outcome (test_core.StateAndRouterTests.test_features_do_not_include_action_outcome) ... ok
+test_no_improvement_returns_original (test_core.StateAndRouterTests.test_no_improvement_returns_original) ... ok
+test_pending_action_never_automatically_replayed (test_core.StateAndRouterTests.test_pending_action_never_automatically_replayed) ... ok
+test_resume_and_tampering (test_core.StateAndRouterTests.test_resume_and_tampering) ... ok
+test_mlp_artifact_roundtrip_and_kernel_separation (test_core.TrainingTests.test_mlp_artifact_roundtrip_and_kernel_separation) ... ok
+test_single_target_has_no_generalization_claim (test_core.TrainingTests.test_single_target_has_no_generalization_claim) ... ok
+test_standardization_uses_only_train_rows (test_core.TrainingTests.test_standardization_uses_only_train_rows) ... ok
+test_target_and_state_branches_never_cross_folds (test_core.TrainingTests.test_target_and_state_branches_never_cross_folds) ... ok
+test_failed_edited_graph_is_recovered_with_next_draw (test_executor.ExecutorTests.test_failed_edited_graph_is_recovered_with_next_draw) ... ok
+test_llm_parse_retries_are_bounded_and_charged (test_executor.ExecutorTests.test_llm_parse_retries_are_bounded_and_charged) ... ok
+test_posebusters_renamed_columns_are_used (test_executor.ExecutorTests.test_posebusters_renamed_columns_are_used) ... /home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/__init__.py:20: DeprecationWarning: The module rdkit.Chem.MolStandardize.standardize is deprecated and will be removed in the next release.
+  from .standardize import (Standardizer, canonicalize_tautomer_smiles,
+/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/standardize.py:23: DeprecationWarning: The module rdkit.Chem.MolStandardize.charge is deprecated and will be removed in the next release.
+  from .charge import ACID_BASE_PAIRS, CHARGE_CORRECTIONS, Reionizer, Uncharger
+/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/standardize.py:24: DeprecationWarning: The module rdkit.Chem.MolStandardize.fragment is deprecated and will be removed in the next release.
+  from .fragment import PREFER_ORGANIC, FragmentRemover, LargestFragmentChooser
+/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/standardize.py:25: DeprecationWarning: The module rdkit.Chem.MolStandardize.metal is deprecated and will be removed in the next release.
+  from .metal import MetalDisconnector
+/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/standardize.py:26: DeprecationWarning: The module rdkit.Chem.MolStandardize.normalize is deprecated and will be removed in the next release.
+  from .normalize import MAX_RESTARTS, NORMALIZATIONS, Normalizer
+/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/standardize.py:27: DeprecationWarning: The module rdkit.Chem.MolStandardize.tautomer is deprecated and will be removed in the next release.
+  from .tautomer import (MAX_TAUTOMERS, TAUTOMER_SCORES, TAUTOMER_TRANSFORMS, TautomerCanonicalizer,
+/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/__init__.py:22: DeprecationWarning: The module rdkit.Chem.MolStandardize.validate is deprecated and will be removed in the next release.
+  from .validate import Validator, validate_smiles
+/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/validate.py:24: DeprecationWarning: The module rdkit.Chem.MolStandardize.validations is deprecated and will be removed in the next release.
+  from .validations import VALIDATIONS
+ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 5.490s
+
+OK

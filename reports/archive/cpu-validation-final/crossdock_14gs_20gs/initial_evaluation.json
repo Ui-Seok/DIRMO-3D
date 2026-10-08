@@ -1,0 +1,444 @@
+{
+  "evaluations": {
+    "geometry": {
+      "latency_seconds": 0.004706987994723022,
+      "reason": null,
+      "status": "ok",
+      "values": {
+        "bad_bonds": [],
+        "clash_severity_angstrom": 0.0,
+        "definition": "DIRMO covalent-radius bond screen and scaled VDW distance screen; not PoseBusters",
+        "internal_clash_count": 0,
+        "ligand_bond_geometry_pass": true,
+        "minimum_contact_distance_angstrom": 3.0037554894494445,
+        "minimum_contact_margin_angstrom": 0.6412554894494442,
+        "passes": true,
+        "protein_overlap_count": 0
+      },
+      "version": null
+    },
+    "interactions": {
+      "latency_seconds": 0.0,
+      "reason": "Explicit config disable",
+      "status": "disabled",
+      "values": {},
+      "version": null
+    },
+    "posebusters": {
+      "latency_seconds": 0.6054929309757426,
+      "reason": null,
+      "status": "ok",
+      "values": {
+        "checks": {
+          "all_atoms_connected": true,
+          "aromatic_ring_flatness": true,
+          "bond_angles": true,
+          "bond_lengths": true,
+          "double_bond_flatness": true,
+          "inchi_convertible": true,
+          "internal_energy": true,
+          "internal_steric_clash": true,
+          "minimum_distance_to_inorganic_cofactors": true,
+          "minimum_distance_to_organic_cofactors": true,
+          "minimum_distance_to_protein": true,
+          "minimum_distance_to_waters": true,
+          "mol_cond_loaded": true,
+          "mol_pred_loaded": true,
+          "protein-ligand_maximum_distance": true,
+          "sanitization": true,
+          "volume_overlap_with_inorganic_cofactors": true,
+          "volume_overlap_with_organic_cofactors": true,
+          "volume_overlap_with_protein": true,
+          "volume_overlap_with_waters": true
+        },
+        "continuous": {
+          "aromatic_ring_maximum_distance_from_plane": 0.0025986398813693085,
+          "double_bond_maximum_distance_from_plane": null,
+          "energy_ratio": 20.668492843310155,
+          "ensemble_avg_energy": 42.86374250849824,
+          "longest_bond_relative_length": 1.0744534790739415,
+          "mol_pred_energy": 885.9289552743852,
+          "most_extreme_distance_protein": 3.003755482724916,
+          "most_extreme_ligand_vdw_protein": 1.55,
+          "most_extreme_protein_vdw_protein": 1.6,
+          "most_extreme_relative_angle": 1.0700617541631114,
+          "most_extreme_relative_distance_protein": 0.9535731691190208,
+          "most_extreme_sum_radii_protein": 3.1500000000000004,
+          "most_extreme_sum_radii_scaled_protein": 3.1500000000000004,
+          "shortest_bond_relative_length": 1.0046852254410212,
+          "shortest_noncovalent_relative_distance": 0.9640320848234266,
+          "smallest_distance_inorganic_cofactors": null,
+          "smallest_distance_organic_cofactors": null,
+          "smallest_distance_protein": 3.003755482724916,
+          "smallest_distance_waters": null,
+          "volume_overlap_inorganic_cofactors": null,
+          "volume_overlap_organic_cofactors": null,
+          "volume_overlap_protein": 0.005046583850931677,
+          "volume_overlap_waters": null
+        },
+        "missing_reasons": {},
+        "omitted_checks": {
+          "identity": "edited ligand is not a reference identity task",
+          "rmsd": "generated pose is evaluated in the fixed protein frame"
+        },
+        "passes": true,
+        "preset": "dock",
+        "reference_ligand": null,
+        "reference_protein": "/home/uslee/code/DIRMO-3D/reports/cpu-validation-final/crossdock_14gs_20gs/inputs/fixed_pocket.pdb"
+      },
+      "version": "0.3.1"
+    },
+    "preservation": {
+      "latency_seconds": 0.01691474998369813,
+      "reason": null,
+      "status": "ok",
+      "values": {
+        "checks": [],
+        "features": [
+          {
+            "atom_maps": [
+              3
+            ],
+            "family": "Donor",
+            "position": [
+              21.944,
+              5.696,
+              26.213
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "SingleAtomDonor"
+          },
+          {
+            "atom_maps": [
+              18
+            ],
+            "family": "Donor",
+            "position": [
+              27.591,
+              5.423,
+              27.843
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "SingleAtomDonor"
+          },
+          {
+            "atom_maps": [
+              20
+            ],
+            "family": "Donor",
+            "position": [
+              22.821,
+              4.246,
+              23.979
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "SingleAtomDonor"
+          },
+          {
+            "atom_maps": [
+              21
+            ],
+            "family": "Donor",
+            "position": [
+              22.708,
+              2.793,
+              26.038
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "SingleAtomDonor"
+          },
+          {
+            "atom_maps": [
+              22
+            ],
+            "family": "Donor",
+            "position": [
+              24.858,
+              2.927,
+              24.458
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "SingleAtomDonor"
+          },
+          {
+            "atom_maps": [
+              6
+            ],
+            "family": "Acceptor",
+            "position": [
+              21.849,
+              7.715,
+              27.816
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "SingleAtomAcceptor"
+          },
+          {
+            "atom_maps": [
+              14
+            ],
+            "family": "Acceptor",
+            "position": [
+              26.918,
+              7.577,
+              29.405
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "SingleAtomAcceptor"
+          },
+          {
+            "atom_maps": [
+              20
+            ],
+            "family": "Acceptor",
+            "position": [
+              22.821,
+              4.246,
+              23.979
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "SingleAtomAcceptor"
+          },
+          {
+            "atom_maps": [
+              21
+            ],
+            "family": "Acceptor",
+            "position": [
+              22.708,
+              2.793,
+              26.038
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "SingleAtomAcceptor"
+          },
+          {
+            "atom_maps": [
+              22
+            ],
+            "family": "Acceptor",
+            "position": [
+              24.858,
+              2.927,
+              24.458
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "SingleAtomAcceptor"
+          },
+          {
+            "atom_maps": [
+              1,
+              2,
+              4,
+              15,
+              16,
+              17
+            ],
+            "family": "Aromatic",
+            "position": [
+              24.78333333333333,
+              5.6388333333333325,
+              27.09833333333333
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "Arom6"
+          },
+          {
+            "atom_maps": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "family": "Aromatic",
+            "position": [
+              23.998166666666663,
+              9.665833333333332,
+              30.126499999999997
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "Arom6"
+          },
+          {
+            "atom_maps": [
+              1
+            ],
+            "family": "Hydrophobe",
+            "position": [
+              24.268,
+              4.727,
+              26.2
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "ThreeWayAttach"
+          },
+          {
+            "atom_maps": [
+              4
+            ],
+            "family": "Hydrophobe",
+            "position": [
+              23.907,
+              6.651,
+              27.624
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "ThreeWayAttach"
+          },
+          {
+            "atom_maps": [
+              7
+            ],
+            "family": "Hydrophobe",
+            "position": [
+              23.496,
+              8.716,
+              29.179
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "ThreeWayAttach"
+          },
+          {
+            "atom_maps": [
+              12
+            ],
+            "family": "Hydrophobe",
+            "position": [
+              24.878,
+              8.668,
+              29.605
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "ThreeWayAttach"
+          },
+          {
+            "atom_maps": [
+              15
+            ],
+            "family": "Hydrophobe",
+            "position": [
+              25.308,
+              6.583,
+              28.035
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "ThreeWayAttach"
+          },
+          {
+            "atom_maps": [
+              1,
+              2,
+              4,
+              15,
+              16,
+              17
+            ],
+            "family": "LumpedHydrophobe",
+            "position": [
+              24.78333333333333,
+              5.6388333333333325,
+              27.09833333333333
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "RH6_6"
+          },
+          {
+            "atom_maps": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "family": "LumpedHydrophobe",
+            "position": [
+              23.998166666666663,
+              9.665833333333332,
+              30.126499999999997
+            ],
+            "source": "RDKit BaseFeatures.fdef",
+            "type": "RH6_6"
+          }
+        ],
+        "frame": "fixed protein; no ligand alignment",
+        "hard_pass": true
+      },
+      "version": null
+    },
+    "properties": {
+      "latency_seconds": 0.4523840449983254,
+      "reason": null,
+      "status": "ok",
+      "values": {
+        "hba": 7.0,
+        "hbd": 5.0,
+        "logp": 2.2089,
+        "mw": 320.326,
+        "qed": 0.4316851347607166,
+        "ro5_violations": 0.0,
+        "rotatable_bonds": 1.0,
+        "sa": 2.617427920420134,
+        "sa_convention": "RDKit contrib SA_Score; lower is better",
+        "tpsa": 146.87
+      },
+      "version": "2023.9.5"
+    },
+    "vina": {
+      "latency_seconds": 1.9991387610789388,
+      "reason": null,
+      "status": "ok",
+      "values": {
+        "box_center": [
+          24.261727272727274,
+          6.685454545454546,
+          27.79195454545455
+        ],
+        "box_size": [
+          24.0,
+          24.0,
+          24.0
+        ],
+        "components": [
+          -5.942,
+          -7.158,
+          0.0,
+          0.0,
+          0.0,
+          -0.543,
+          1.216,
+          -0.543
+        ],
+        "ligand_preparation": "RDKit added H coordinates; Meeko Gasteiger; no docking/minimization",
+        "mode": "score_only",
+        "receptor": "/LocalData1/uslee/datasets/processed_crossdock_noH_full_temp/test/14gs-A-rec-20gs-cbd-lig-tt-min-0-pocket10.pdbqt",
+        "vina": -5.942
+      },
+      "version": "1.2.6"
+    }
+  },
+  "failures": [],
+  "feasible": true,
+  "graph_id": "ffc0c69a96c19c941577e7aeac76ceaa0d73cedd7c6872348c983fc424f0be79",
+  "graph_matches": true,
+  "graph_valid": true,
+  "hard_constraints_pass": true,
+  "incomplete_evaluation": false,
+  "metrics": {
+    "hba": 7.0,
+    "hbd": 5.0,
+    "logp": 2.2089,
+    "mw": 320.326,
+    "qed": 0.4316851347607166,
+    "ro5_violations": 0.0,
+    "rotatable_bonds": 1.0,
+    "sa": 2.617427920420134,
+    "tpsa": 146.87,
+    "vina": -5.942
+  },
+  "observation_id": "38e5169403fde9089adc5510a50339030ccd84d2e2a74b47ec4889ccb248bd05",
+  "target_met": false,
+  "utility": 0.7641423427187033
+}

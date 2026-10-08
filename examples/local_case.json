@@ -1,0 +1,25 @@
+{
+  "case_id": "crossdock_14gs_20gs",
+  "target_id": "14gs_A",
+  "series_id": "20gs_CBD",
+  "pocket_path": "/LocalData1/uslee/datasets/processed_crossdock_noH_full_temp/test/14gs-A-rec-20gs-cbd-lig-tt-min-0-pocket10.pdb",
+  "initial_ligand_path": "/LocalData1/uslee/datasets/processed_crossdock_noH_full_temp/test/14gs-A-rec-20gs-cbd-lig-tt-min-0-pocket10_14gs-A-rec-20gs-cbd-lig-tt-min-0.sdf",
+  "receptor_path": "/LocalData1/uslee/datasets/processed_crossdock_noH_full_temp/test/14gs-A-rec-20gs-cbd-lig-tt-min-0-pocket10.pdbqt",
+  "coordinate_units": "angstrom",
+  "preparation_notes": "Existing CrossDocked pocket10 and receptor PDBQT from local processed dataset. No new protonation. Original ligand is in this pocket's coordinate frame. Receptor preparation provenance is not provided.",
+  "objective": {
+    "metrics": {
+      "qed": {"direction": "maximize", "target": 0.6, "weight": 1.0},
+      "sa": {"direction": "minimize", "target": 4.0, "weight": 0.1, "max_loss": 0.5},
+      "vina": {"direction": "minimize", "target": -6.0, "weight": 0.1, "max_loss": 0.5}
+    },
+    "minimum_improvement": 0.01,
+    "required_evaluations": ["properties", "geometry", "posebusters", "vina"]
+  },
+  "protected": {"atom_maps": [], "smarts": [], "features": [], "interactions": []},
+  "budgets": {
+    "fm_draws": 4, "fm_nfe": 512, "llm_calls": 3, "llm_tokens": 24000,
+    "evaluation_calls": 8, "wall_seconds": 1800, "max_rounds": 2,
+    "candidate_cap": 2, "seeds_per_graph": 2, "plateau_rounds": 2
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "evaluation": {
+    "clash_tolerance": 0.75,
+    "interactions": false,
+    "pocket_cutoff": 6.0,
+    "posebusters": true,
+    "vina": true
+  },
+  "fm": {
+    "checkpoint_path": null,
+    "checkpoint_sha256": null,
+    "gpu": "1",
+    "max_atoms": 64,
+    "max_pocket_atoms": 1000,
+    "minimum_free_mib": 40000,
+    "parameters": {
+      "integration_steps": 64,
+      "prior": "random",
+      "solver": "euler"
+    },
+    "port": 8766,
+    "python": null,
+    "repo_path": "/home/uslee/code/flowr_root",
+    "repo_revision": "739a33c2aab74d074dd24605b9a2e34dc809ae9c"
+  },
+  "llm": {
+    "backend": "qwen3.5",
+    "context_cap": 8192,
+    "dtype": "bfloat16",
+    "gpu": "0",
+    "minimum_free_mib": 24000,
+    "model_path": "/LocalData1/uslee/checkpoints/Qwen3.5-9B",
+    "output_cap": 1024,
+    "parsing_retries": 1,
+    "port": 8765,
+    "python": "/home/uslee/miniconda3/envs/ai_scientist/bin/python",
+    "quantization": "none",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "temperature": 0.7,
+    "thinking": false,
+    "top_k": 20,
+    "top_p": 0.8
+  },
+  "run_root": "runs",
+  "runtime_dir": "worker-runtime",
+  "seed": 42
+}

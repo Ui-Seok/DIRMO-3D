@@ -1,0 +1,68 @@
+{
+  "environment": {
+    "cuda_visible_devices": "",
+    "packages": {
+      "biopython": "1.81",
+      "meeko": "0.8.0",
+      "numpy": "1.26.2",
+      "posebusters": "0.3.1",
+      "prolif": "2.0.3",
+      "pydantic": "2.11.10",
+      "rdkit": "2023.9.5",
+      "torch": "2.5.1",
+      "transformers": null,
+      "vina": "1.2.6"
+    },
+    "platform": "Linux-5.15.0-118-generic-x86_64-with-glibc2.35",
+    "python": "3.11.16"
+  },
+  "fm": {
+    "capabilities": {
+      "blockers": [
+        "Missing FLOWR.root checkpoint; older FLOWR and LiFT checkpoints are incompatible",
+        "Missing separate Python 3.12 FLOWR.root environment"
+      ],
+      "checkpoint_compatibility": "unverified until real checkpoint load and probes",
+      "condition_changes": [
+        "integration_steps"
+      ],
+      "fixed_graph": false,
+      "fixed_graph_status": "blocked",
+      "local_fragment": false,
+      "native_scalar_guidance": false,
+      "priors": [
+        "random"
+      ],
+      "semantic_joint_generation": false,
+      "solvers": [
+        "euler"
+      ]
+    },
+    "environment": {
+      "python": null,
+      "status": "missing"
+    }
+  },
+  "gpu_status": {
+    "reason": "Command '['nvidia-smi', '--query-gpu=index,uuid,name,memory.total,memory.used', '--format=csv,noheader,nounits']' returned non-zero exit status 9.",
+    "status": "unavailable"
+  },
+  "llm": {
+    "environment": {
+      "details": {
+        "packages": {
+          "accelerate": null,
+          "torch": "2.5.1",
+          "transformers": "5.15.0"
+        },
+        "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]"
+      },
+      "interpreter": "/home/uslee/miniconda3/envs/ai_scientist/bin/python",
+      "status": "ok"
+    },
+    "exists": true,
+    "path": "/LocalData1/uslee/checkpoints/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+  },
+  "ready_for_two_worker_inference": false
+}

@@ -1,0 +1,144 @@
+{
+  "case": {
+    "box_center": [
+      24.261727272727274,
+      6.685454545454546,
+      27.79195454545455
+    ],
+    "box_size": [
+      24.0,
+      24.0,
+      24.0
+    ],
+    "budgets": {
+      "candidate_cap": 2,
+      "evaluation_calls": 8,
+      "fm_draws": 4,
+      "fm_nfe": 512,
+      "llm_calls": 3,
+      "llm_tokens": 24000,
+      "max_rounds": 2,
+      "plateau_rounds": 2,
+      "seeds_per_graph": 2,
+      "wall_seconds": 1800.0
+    },
+    "case_id": "crossdock_14gs_20gs",
+    "coordinate_units": "angstrom",
+    "initial_ligand_path": "/LocalData1/uslee/datasets/processed_crossdock_noH_full_temp/test/14gs-A-rec-20gs-cbd-lig-tt-min-0-pocket10_14gs-A-rec-20gs-cbd-lig-tt-min-0.sdf",
+    "objective": {
+      "metrics": {
+        "qed": {
+          "direction": "maximize",
+          "max_loss": null,
+          "target": 0.6,
+          "weight": 1.0
+        },
+        "sa": {
+          "direction": "minimize",
+          "max_loss": 0.5,
+          "target": 4.0,
+          "weight": 0.1
+        },
+        "vina": {
+          "direction": "minimize",
+          "max_loss": 0.5,
+          "target": -6.0,
+          "weight": 0.1
+        }
+      },
+      "minimum_improvement": 0.01,
+      "required_evaluations": [
+        "properties",
+        "geometry",
+        "posebusters",
+        "vina"
+      ]
+    },
+    "pocket_path": "/LocalData1/uslee/datasets/processed_crossdock_noH_full_temp/test/14gs-A-rec-20gs-cbd-lig-tt-min-0-pocket10.pdb",
+    "preparation_notes": "Existing CrossDocked pocket10 and receptor PDBQT from local processed dataset. No new protonation. Original ligand is in this pocket's coordinate frame. Receptor preparation provenance is not provided.",
+    "protected": {
+      "atom_maps": [],
+      "features": [],
+      "interactions": [],
+      "max_atom_displacement": null,
+      "smarts": []
+    },
+    "protein_path": null,
+    "receptor_path": "/LocalData1/uslee/datasets/processed_crossdock_noH_full_temp/test/14gs-A-rec-20gs-cbd-lig-tt-min-0-pocket10.pdbqt",
+    "series_id": "20gs_CBD",
+    "target_id": "14gs_A"
+  },
+  "checkpoint_sha256": null,
+  "config": {
+    "evaluation": {
+      "clash_tolerance": 0.75,
+      "interactions": false,
+      "pocket_cutoff": 6.0,
+      "posebusters": true,
+      "vina": true
+    },
+    "fm": {
+      "checkpoint_path": null,
+      "checkpoint_sha256": null,
+      "gpu": "1",
+      "max_atoms": 64,
+      "max_pocket_atoms": 1000,
+      "minimum_free_mib": 40000,
+      "parameters": {
+        "integration_steps": 64,
+        "prior": "random",
+        "solver": "euler"
+      },
+      "port": 8766,
+      "python": null,
+      "repo_path": "/home/uslee/code/flowr_root",
+      "repo_revision": "739a33c2aab74d074dd24605b9a2e34dc809ae9c"
+    },
+    "llm": {
+      "backend": "qwen3.5",
+      "context_cap": 8192,
+      "dtype": "bfloat16",
+      "gpu": "0",
+      "minimum_free_mib": 24000,
+      "model_path": "/LocalData1/uslee/checkpoints/Qwen3.5-9B",
+      "output_cap": 1024,
+      "parsing_retries": 1,
+      "port": 8765,
+      "python": "/home/uslee/miniconda3/envs/ai_scientist/bin/python",
+      "quantization": "none",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "temperature": 0.7,
+      "thinking": false,
+      "top_k": 20,
+      "top_p": 0.8
+    },
+    "run_root": "runs",
+    "runtime_dir": "worker-runtime",
+    "seed": 42
+  },
+  "environment": {
+    "cuda_visible_devices": "",
+    "packages": {
+      "biopython": "1.81",
+      "meeko": "0.8.0",
+      "numpy": "1.26.2",
+      "posebusters": "0.3.1",
+      "prolif": "2.0.3",
+      "pydantic": "2.11.10",
+      "rdkit": "2023.9.5",
+      "torch": "2.5.1",
+      "transformers": null,
+      "vina": "1.2.6"
+    },
+    "platform": "Linux-5.15.0-118-generic-x86_64-with-glibc2.35",
+    "python": "3.11.16"
+  },
+  "flowr_revision": "739a33c2aab74d074dd24605b9a2e34dc809ae9c",
+  "identity_hash": "876eaa3a0ca9f34e117d3130629c177cb93a3cf602175305f09df892014c2339",
+  "input_sha256": {
+    "initial_ligand_path": "98295e582b9011000dacd0e2c9fae9128fbd6b2b2f66284eb2b032e031a06b48",
+    "pocket_path": "9606d66d77139767f3efc2e606164eefa602a2f477982e7d14bb505b77c2e92b",
+    "receptor_path": "a816d57a96201ed492d67682699c74750943453411cffbe3e86fdba9d38dd619"
+  },
+  "llm_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a"
+}
