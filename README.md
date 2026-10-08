@@ -2,7 +2,9 @@
 
 **DIRMO: Diagnosis-Guided Intervention Routing for 3D Structure-Based Molecular Optimization**
 
-측정값 → 진단 근거 → 동결 LLM의 편집 후보 → router → 동결 FLOWR.root의 3D 생성 → 실제 평가를 연결하는 연구용 구현입니다. CPU orchestrator와 LLM/FM worker는 별도 프로세스·Python 환경을 사용합니다. Learned gate 추론은 CPU에서 수행합니다.
+측정값 → 진단 근거 → 동결 LLM의 편집 후보 → router → 동결 FLOWR.root의 3D 생성 → 실제 평가를 연결하는 연구용 구현입니다. CPU orchestrator와 LLM/FM worker는 별도 프로세스를 사용합니다. Conda 환경은 LLM 서버와 training/inference의 두 개로 구성할 수 있습니다. Learned gate 추론은 CPU에서 수행합니다.
+
+필요한 라이브러리와 Conda 설치 방법은 [설치 안내](docs/installation.md)에 정리했습니다. Python 3.11의 `dirmo-llm` 환경에는 LLM 서버용 `requirements-llm.txt`를 설치합니다. Python 3.12의 `dirmo` 환경에는 통합 `requirements.txt`로 CPU 실행·평가, router 학습, FLOWR.root 추론을 함께 설치합니다. FLOWR.root의 Python 3.12 요구사항을 유지하며 upstream 소스를 변경하지 않습니다.
 
 2026-10-08 초기 구현에서는 **코드 작성·검토와 CPU 검증만 수행했습니다. 모델 다운로드 및 LLM/FM GPU 추론은 수행하지 않았습니다.** 이후 사용자가 제공한 `/LocalData1/uslee/checkpoints/FLOWR_root/flowr_root_base_spindr.ckpt`를 기본 설정에 연결했습니다. 이 연결 변경에서는 테스트나 모델 로드·추론을 실행하지 않았습니다. 별도 Python 3.12 환경을 지정하기 전에는 FM capability가 `blocked`이며, 실제 checkpoint의 graph/stereo 호환성과 생성 품질은 검증되지 않았습니다.
 
@@ -15,15 +17,17 @@ bash scripts/dirmo evaluate-initial --manifest examples/local_case.json --output
 CUDA_VISIBLE_DEVICES= /home/uslee/miniconda3/envs/flowr/bin/python scripts/verify.py
 ```
 
-`scripts/dirmo`는 기존 `/home/uslee/miniconda3/envs/flowr/bin/python`을 CPU 환경으로 사용합니다. 다른 환경은 `DIRMO_CPU_PYTHON`으로 지정할 수 있습니다. 기존 환경·upstream 소스·데이터를 수정하지 않았습니다. 별도 설치 시 `python -m pip install -e '.[evaluation,training,dev]'`를 CPU 환경에서 실행합니다. LLM 환경에 CPU 평가 의존성을 합칠 필요는 없습니다.
+`scripts/dirmo`는 `DIRMO_CPU_PYTHON`을 지정하면 해당 환경을 사용하며, 기본값은 기존 `/home/uslee/miniconda3/envs/flowr/bin/python`입니다. 두 Conda 환경 구성에서는 CPU Python과 FM Python에 동일한 `dirmo` Python을 지정합니다. 기존 환경·upstream 소스·데이터를 수정하지 않았습니다. 통합 환경은 FLOWR.root의 PoseBusters fork를 사용하므로 PyPI PoseBusters를 추가하는 `.[evaluation]` extra를 설치하지 않습니다.
 
 LLM은 실제 확인한 `/LocalData1/uslee/checkpoints/Qwen3.5-9B`가 기본입니다. `configs/llm-alternatives.json`의 해당 필드를 `configs/local.json`의 `llm`에 넣으면 Qwen 4B 또는 ChemDFM-v2로 교체할 수 있습니다. 실행할 때 하나만 로드합니다. Qwen은 `Qwen3_5ForConditionalGeneration`, ChemDFM-v2는 Qwen2.5 기반 `AutoModelForCausalLM`을 사용합니다. 기본은 비양자화 BF16(Qwen)/FP16(ChemDFM) 및 SDPA이며, `int4`는 별도 bitsandbytes 설치가 필요한 미검증 옵션입니다. 로컬 tokenizer의 non-thinking template 적용은 CPU에서 확인했습니다.
 
 FLOWR.root checkpoint 경로는 이미 `configs/local.json`에 지정되어 있습니다. 실행 환경 준비 후 최소 설정은 다음과 같습니다.
 
 ```bash
-# 이 환경은 upstream Python 3.12와 해당 uv.lock에 맞춰 별도로 설치해야 합니다.
-export DIRMO_FM_PYTHON=/absolute/path/to/flowr_root/.venv/bin/python
+# docs/installation.md의 두 Conda 환경을 설치한 뒤 지정합니다.
+export DIRMO_LLM_PYTHON=/home/uslee/miniconda3/envs/dirmo-llm/bin/python
+export DIRMO_CPU_PYTHON=/home/uslee/miniconda3/envs/dirmo/bin/python
+export DIRMO_FM_PYTHON=/home/uslee/miniconda3/envs/dirmo/bin/python
 # 다른 checkpoint를 사용할 때만 DIRMO_FM_CHECKPOINT로 경로를 덮어씁니다.
 # 사용 가능한 두 장을 확인한 뒤 각각 다른 실제 UUID를 지정합니다.
 export DIRMO_LLM_GPU=GPU-<LLM_UUID>
@@ -35,9 +39,9 @@ bash scripts/dirmo optimize --manifest examples/local_case.json --output runs/ru
 bash scripts/dirmo stop-workers
 ```
 
-`GPU-<…>`와 `/absolute/path/…`는 설명용 자리표시자입니다. `fm.python`은 확인된 FLOWR.root용 환경이 없어 `null`로 두었습니다. 호환 환경의 Python 경로를 이 필드 또는 `DIRMO_FM_PYTHON`으로 지정하세요. `fm.checkpoint_path`는 제공된 파일의 실제 경로이며, `checkpoint_sha256`이 `null`이면 worker가 로드 시 실제 파일의 SHA256을 계산해 kernel identity에 기록합니다. 설정의 physical GPU 기본값 0/1도 이번 세션에서 사용 승인을 받은 장치가 아니며, 실제 실행 전에 지정해야 합니다. Worker는 UUID로 CUDA mask를 전달받고 내부에서 `cuda:0`만 사용합니다. 같은 physical GPU로 해석되는 두 selector는 거부합니다. `minimum_free_mib` 검사로 현재 다른 작업의 VRAM 사용을 고려합니다.
+`GPU-<…>`는 설명용 자리표시자입니다. 위 Python 경로는 이 서버의 Conda 기본 env 위치 기준이며, 다른 위치를 사용하면 실제 환경 경로로 바꾸세요. `fm.python`은 기본 config에서 `null`입니다. 호환 환경의 Python 경로를 이 필드 또는 `DIRMO_FM_PYTHON`으로 지정하세요. `fm.checkpoint_path`는 제공된 파일의 실제 경로이며, `checkpoint_sha256`이 `null`이면 worker가 로드 시 실제 파일의 SHA256을 계산해 kernel identity에 기록합니다. 설정의 physical GPU 기본값 0/1도 이번 세션에서 사용 승인을 받은 장치가 아니며, 실제 실행 전에 지정해야 합니다. Worker는 UUID로 CUDA mask를 전달받고 내부에서 `cuda:0`만 사용합니다. 같은 physical GPU로 해석되는 두 selector는 거부합니다. `minimum_free_mib` 검사로 현재 다른 작업의 VRAM 사용을 고려합니다.
 
-Upstream 설치는 `/home/uslee/code/flowr_root`의 지정 revision에서 공식 `uv sync --extra gpu` 절차를 확인한 후 진행하세요. 해당 revision의 lock은 Python 3.12/Torch 2.11 CUDA 13 계열을 사용합니다. 이 서버의 기존 FLOWR Python 3.11 환경을 FLOWR.root 환경으로 재사용하지 않습니다. CUDA 드라이버·wheel 호환성도 설치 시 확인해야 합니다. DIRMO worker는 소스를 `PYTHONPATH`와 별도로 정확한 upstream 경로에서 로드하고, 다른 `flowr` package로의 shadowing을 검사합니다.
+서버의 NVIDIA 드라이버는 550.144.03입니다. LLM requirements는 Torch 2.6.0+cu124를 지정하고, training/inference requirements는 upstream의 Torch 2.11 / tensordict 0.12.4 / biotite 1.7.1 조합을 유지하며 Torch GPU wheel을 2.11.0+cu126으로 지정합니다. 후자는 CUDA 12.x minor-version compatibility에 의존하며 모델 실행은 미검증입니다. 전체 uv lock의 정확한 재현은 아니며, 나머지는 upstream의 dependency 범위로 pip가 해결합니다. DIRMO worker는 소스를 `PYTHONPATH`와 별도로 정확한 upstream 경로에서 로드하고, 다른 `flowr` package로의 shadowing을 검사합니다.
 
 구현된 CLI는 다음과 같습니다.
 

@@ -1,10 +1,10 @@
-"""One resident model, one GPU and one serialized localhost HTTP server."""
+"""One resident model and GPU; threaded HTTP handling, serialized model calls."""
 
 import argparse
 import json
 import os
 import threading
-from http.server import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 from .config import load_config
 from .gpu import assert_worker_mask
@@ -26,8 +26,15 @@ def serve(config, role: str, instance: str):
         actual = "GPU-" + actual
     if actual != os.environ["DIRMO_GPU_UUID"]:
         raise RuntimeError(f"Actual torch UUID {actual} differs from the worker CUDA mask")
+    model_lock = threading.Lock()
 
     class Handler(BaseHTTPRequestHandler):
+        def setup(self):
+            super().setup()
+            # Browser preconnections and incomplete requests must not occupy a
+            # handler indefinitely. This bounds socket I/O, not model execution.
+            self.connection.settimeout(30)
+
         def reply(self, status, payload):
             body = json.dumps(payload, allow_nan=False).encode()
             self.send_response(status)
@@ -48,7 +55,8 @@ def serve(config, role: str, instance: str):
             self.reply(200, {**backend.health(), "pid": os.getpid(), "role": role, "instance": instance,
                        "visible_cuda_devices": os.environ["CUDA_VISIBLE_DEVICES"], "actual_gpu_uuid": actual,
                        "physical_gpu_index": os.environ["DIRMO_PHYSICAL_GPU"], "logical_device": "cuda:0",
-                       "request_concurrency": 1, "tensor_parallel_size": 1})
+                       "request_concurrency": 1, "model_request_concurrency": 1,
+                       "http_request_handling": "threaded", "tensor_parallel_size": 1})
 
         def do_POST(self):
             if not self.authorized():
@@ -59,24 +67,28 @@ def serve(config, role: str, instance: str):
             try:
                 payload = json.loads(self.rfile.read(length))
                 if self.path == "/shutdown":
-                    self.reply(200, {"stopping": True})
-                    threading.Thread(target=self.server.shutdown, daemon=True).start()
+                    with model_lock:
+                        self.reply(200, {"stopping": True})
+                        threading.Thread(target=self.server.shutdown, daemon=True).start()
                 elif self.path == "/propose" and role == "llm":
-                    self.reply(200, backend.propose(payload["messages"]))
+                    with model_lock:
+                        result = backend.propose(payload["messages"])
+                    self.reply(200, result)
                 elif self.path == "/generate" and role == "fm":
                     from .generation.flowr import CapabilityError
                     from .schemas import GenerationResult
-                    try:
-                        result = backend.generate_fixed_graph(GenerationRequest.model_validate(payload))
-                    except CapabilityError as exc:
-                        result = GenerationResult(status="capability_error", reason=str(exc), raw_draws=0, nfe=0)
+                    with model_lock:
+                        try:
+                            result = backend.generate_fixed_graph(GenerationRequest.model_validate(payload))
+                        except CapabilityError as exc:
+                            result = GenerationResult(status="capability_error", reason=str(exc), raw_draws=0, nfe=0)
                     self.reply(200, result.model_dump(mode="json"))
                 else:
                     self.reply(404, {"error": "Unsupported endpoint for this worker"})
             except Exception as exc:
                 self.reply(400, {"error": f"{type(exc).__name__}: {exc}"})
 
-    server = HTTPServer(("127.0.0.1", getattr(config, role).port), Handler)
+    server = ThreadingHTTPServer(("127.0.0.1", getattr(config, role).port), Handler)
     try:
         server.serve_forever()
     finally:

@@ -1,0 +1,40 @@
+# Combined DIRMO orchestration, evaluation, router training and FLOWR.root inference.
+# Requires Python 3.12; CUDA 12.6 uses CUDA 12.x minor-version compatibility
+# on this server's 550.144.03 driver. Runtime conformance remains untested.
+# Conda environment: dirmo (python=3.12, pip).
+# Run from /home/uslee/code/DIRMO-3D:
+#   python -m pip install -r requirements.txt
+# Qwen / ChemDFM server uses requirements-llm.txt in a separate environment.
+# This is a Conda + pip specification, not a full export of upstream uv.lock.
+
+# Keep upstream's Torch/TensorDict ABI pair and select the official CUDA 12.6
+# build. This differs from upstream uv.lock's CUDA 13 wheel selection.
+# New driver APIs or PTX JIT can still require a newer driver; see installation.md.
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.11.0+cu126
+tensordict==0.12.4
+biotite==1.7.1
+
+# Common runtime, evaluation and router training.
+pydantic>=2.10,<3
+numpy>=1.26
+scipy>=1.11
+pandas>=2.0
+scikit-learn>=1.3
+rdkit>=2024.3
+biopython>=1.83
+
+# Vina Python score-only API and ligand PDBQT preparation.
+vina>=1.2.6
+meeko>=0.8
+gemmi
+
+# Interaction evaluation (enabled with evaluation.interactions=true).
+prolif>=2
+MDAnalysis>=2.7
+
+# The pinned local FLOWR.root project installs its full native dependency stack
+# and its vendored PoseBusters package. Do not also install PyPI posebusters
+# or DIRMO's [evaluation] extra in this combined environment.
+-e ../flowr_root
+-e .

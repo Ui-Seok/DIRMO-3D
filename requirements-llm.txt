@@ -1,0 +1,23 @@
+# Qwen3.5 / ChemDFM-v2 resident server, Python >= 3.11.
+# Use the existing Conda environment: dirmo-llm (python=3.11).
+# Run from /home/uslee/code/DIRMO-3D:
+#   python -m pip install -r requirements-llm.txt
+
+# DIRMO common runtime.
+pydantic>=2.10,<3
+numpy>=1.24
+rdkit>=2023.9
+biopython>=1.81
+
+# Server driver: 550.144.03 (CUDA driver API 12.4).
+# Pin a matching CUDA 12.4 wheel instead of allowing pip to select CUDA 13.
+--extra-index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0+cu124
+# Pin the locally audited Qwen3.5 API; include its optional chat-template dependency.
+transformers[chat-template]==5.15.0
+accelerate>=1.1,<2
+
+# Transformers installs tokenizers, safetensors and huggingface-hub transitively.
+# Only when using llm.quantization=int4, also install bitsandbytes.
+# Default BF16/FP16 inference uses SDPA; no flash-attn package is required.
+-e .
