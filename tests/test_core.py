@@ -13,7 +13,7 @@ from rdkit import Chem
 from rdkit.Chem import AllChem
 
 from dirmo.chemistry.graphs import (ChemicalError, execute_edit, graph_check, graph_id, mapped,
-                                   smiles, write_sdf)
+                                   read_sdf, smiles, write_sdf)
 from dirmo.config import Config
 from dirmo.diagnosis import wilson
 from dirmo.evaluation.metrics import Evaluator
@@ -51,6 +51,20 @@ def observation(gid, value=1, feasible=True, target=True, failures=None):
 
 
 class ChemistryTests(unittest.TestCase):
+    def test_mapped_sdf_round_trip_preserves_physical_stereochemistry(self):
+        with tempfile.TemporaryDirectory() as temp:
+            for index, smi in enumerate(("CS(O)(O)O", "CC(O)(C)C", "C[C@H](O)F")):
+                with self.subTest(smiles=smi):
+                    original = molecule(smi)
+                    path = Path(temp) / f"mapped_{index}.sdf"
+                    write_sdf(path, original)
+                    restored = read_sdf(path)
+                    self.assertEqual(graph_id(restored), graph_id(original))
+                    self.assertEqual(smiles(restored, True), smiles(original, True))
+                    self.assertEqual([a.GetAtomMapNum() for a in restored.GetAtoms()],
+                                     [a.GetAtomMapNum() for a in original.GetAtoms()])
+                    self.assertEqual(smiles(restored), Chem.MolToSmiles(Chem.MolFromSmiles(smi)))
+
     def test_permuted_atom_order_and_aromatic_normalization(self):
         mol = molecule("c1ccccc1O")
         reversed_mol = Chem.RenumberAtoms(mol, list(reversed(range(mol.GetNumAtoms()))))

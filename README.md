@@ -15,6 +15,7 @@ DIRMO-3D는 단백질 pocket 안의 분자를 평가하고, 측정 결과를 근
 - [보고서와 실행 산출물](#보고서와-실행-산출물)
 - [자동 생성 파일과 Git 관리 파일](#자동-생성-파일과-git-관리-파일)
 - [설치와 실행](#설치와-실행)
+- [목적별 Bash 스크립트](#목적별-bash-스크립트)
 - [구현 범위와 해석상 제한](#구현-범위와-해석상-제한)
 
 ## 전체 실행 흐름
@@ -42,6 +43,7 @@ DIRMO-3D/
 ├── .git/
 │   └── ... (Git 내부 구조는 아래 관리 파일 설명 참고)
 ├── configs/
+│   ├── gpu.json
 │   ├── llm-alternatives.json
 │   └── local.json
 ├── docs/
@@ -54,6 +56,7 @@ DIRMO-3D/
 │   ├── installation.md
 │   └── review.md
 ├── examples/
+│   ├── gpu_case.json
 │   └── local_case.json
 ├── reports/
 │   ├── archive/
@@ -117,8 +120,25 @@ DIRMO-3D/
 ├── scripts/
 │   ├── __pycache__/
 │   │   └── *.pyc
+│   ├── README.md
+│   ├── _common.sh
 │   ├── check_llm.py
+│   ├── check_llm.sh
+│   ├── collect.sh
+│   ├── compare.sh
 │   ├── dirmo
+│   ├── doctor.sh
+│   ├── evaluate_initial.sh
+│   ├── health.sh
+│   ├── optimize_learned.sh
+│   ├── optimize_rule.sh
+│   ├── prepare_router_data.py
+│   ├── run_pipeline.sh
+│   ├── settings.sh
+│   ├── start_llm.sh
+│   ├── start_workers.sh
+│   ├── stop_workers.sh
+│   ├── train_router.sh
 │   └── verify.py
 ├── src/
 │   ├── dirmo/
@@ -230,7 +250,7 @@ DIRMO-3D/
 | `src/dirmo/routing/` | 실행 가능 행동 생성, rule·고정·LLM 정책과 학습된 router의 CPU 추론을 담당합니다. |
 | `src/dirmo/data/` | 동일 상태에서 실제 branch를 실행해 router 학습 데이터를 수집합니다. |
 | `src/dirmo/training/` | router MLP 학습, 데이터 그룹 분할, 검증 통계와 GPU 학습 프로세스를 담당합니다. |
-| `scripts/` | CLI 실행 wrapper, 기존 LLM 서버 확인, CPU 단위 테스트 실행 도구를 보관합니다. |
+| `scripts/` | 목적별 Bash 실행 스크립트, 공통 실행 설정, 학습 데이터 선별, 기존 LLM 서버 확인, CPU 단위 테스트 실행 도구를 보관합니다. |
 | `tests/` | 화학 검증, 예산, 상태, routing, 학습과 mock executor의 단위 테스트를 보관합니다. |
 | `reports/` | 과거 CPU 평가·단위 테스트·환경 조사·prompt 검사 결과를 보관합니다. |
 | `reports/cpu-validation-final/` | 저장된 CPU 초기 평가의 최종 기록입니다. 하위 case 폴더 하나가 한 입력 사례를 나타냅니다. |
@@ -247,7 +267,7 @@ DIRMO-3D/
 
 ## 코드 파일별 역할
 
-Python 코드 39개와 Bash 실행 wrapper 1개를 아래에 모두 설명합니다. 같은 파일명이라도 위치에 따라 역할이 다릅니다. 특히 `src/dirmo/worker.py`는 모델 서버이고, `src/dirmo/training/worker.py`는 router 학습 프로세스입니다.
+Python 코드 40개와 Bash 파일 16개를 아래에 모두 설명합니다. 같은 파일명이라도 위치에 따라 역할이 다릅니다. 특히 `src/dirmo/worker.py`는 모델 서버이고, `src/dirmo/training/worker.py`는 router 학습 프로세스입니다.
 
 ### 공통 진입점과 실행 관리: `src/dirmo/`
 
@@ -326,7 +346,7 @@ Python 코드 39개와 Bash 실행 wrapper 1개를 아래에 모두 설명합니
 | 파일 | 주요 클래스·함수 | 역할 |
 | --- | --- | --- |
 | [__init__.py](src/dirmo/data/__init__.py) | 패키지 선언 | 실제 행동 결과 수집 패키지의 책임을 설명합니다. |
-| [collect.py](src/dirmo/data/collect.py) | `collect` | 같은 state snapshot을 복사해 공통 seed 조건에서 가능한 branch를 실제 실행합니다. 실행 전 feature, 실행 후 평가, utility 변화·비용·kernel identity를 JSONL로 기록합니다. branch snapshot과 coverage도 저장하며 미실행·측정 실패 branch에 보상을 만들어 넣지 않습니다. 전체 수집에는 공통 유한 예산을 적용합니다. |
+| [collect.py](src/dirmo/data/collect.py) | `collect` | 같은 state snapshot을 복사해 공통 seed 조건에서 가능한 branch를 실제 실행합니다. `--seed-offset`으로 추가 수집의 seed를 바꾸고 기존 dataset의 graph/kernel/seed 중복 요청을 차단합니다. 실행 전 feature, 실행 후 평가, utility 변화·비용·kernel identity를 JSONL로 기록합니다. branch snapshot과 coverage도 저장하며 미실행·측정 실패 branch에 보상을 만들어 넣지 않습니다. 전체 수집에는 공통 유한 예산을 적용합니다. |
 
 ### Router 학습: `src/dirmo/training/`
 
@@ -343,6 +363,27 @@ Python 코드 39개와 Bash 실행 wrapper 1개를 아래에 모두 설명합니
 | [dirmo](scripts/dirmo) | Bash wrapper | 프로젝트의 `src`를 `PYTHONPATH`에 넣고 CPU CUDA mask를 비운 뒤 `python -m dirmo`를 실행합니다. `DIRMO_CPU_PYTHON`이 없으면 기존 `flowr` 환경의 Python을 사용합니다. 활성 Conda 환경을 자동 선택하는 wrapper는 아닙니다. |
 | [check_llm.py](scripts/check_llm.py) | `positive_timeout`, `main` | Python 표준 라이브러리만으로 기존 worker manifest의 인증 정보를 읽어 `/health`와 선택적 `/propose`를 호출합니다. 기본 요청은 `{"ok": true}`이며 raw 응답·token·시간·메모리와 JSON 형식 일치 여부를 출력합니다. 모델을 새로 로드하지 않습니다. |
 | [verify.py](scripts/verify.py) | 스크립트 진입부 | CUDA를 비운 하위 프로세스에서 `unittest discover`를 실행하고 `reports/unit-tests.log`와 `reports/unit-tests.json`에 결과를 저장합니다. 실제 LLM/FLOWR 모델 테스트는 포함하지 않습니다. |
+| [prepare_router_data.py](scripts/prepare_router_data.py) | `prepare`, `main` | Config의 생성 step과 하나의 kernel에 해당하는 실제 측정 결과를 선별합니다. 최소 2개 관측, 유한한 utility와 원본/출력 경로 분리를 확인하고 atomic JSONL로 저장합니다. 여러 kernel이 있으면 임의 선택하지 않고 ID 선택을 요구합니다. |
+
+목적별 Bash 파일의 책임은 다음과 같습니다. 실행 방법과 옵션은 [scripts/README.md](scripts/README.md)에 정리했습니다.
+
+| 파일 | 역할 |
+| --- | --- |
+| [settings.sh](scripts/settings.sh) | CPU Python, Config, 입력, 공통 출력 경로, 학습 epochs·kernel과 시작 timeout을 설정합니다. |
+| [_common.sh](scripts/_common.sh) | 프로젝트 루트 이동, CPU CUDA mask, 소스 경로, CLI 호출과 단계 로그를 공유합니다. |
+| [doctor.sh](scripts/doctor.sh) | 환경·모델·GPU 조사 명령을 실행합니다. |
+| [start_workers.sh](scripts/start_workers.sh) | LLM/FM worker를 시작합니다. |
+| [start_llm.sh](scripts/start_llm.sh) | LLM worker만 시작합니다. |
+| [stop_workers.sh](scripts/stop_workers.sh) | 관리 대상 worker를 종료합니다. |
+| [health.sh](scripts/health.sh) | 실제 worker health를 요청합니다. |
+| [check_llm.sh](scripts/check_llm.sh) | Config의 runtime 위치를 읽어 기존 LLM 확인 스크립트를 호출합니다. |
+| [evaluate_initial.sh](scripts/evaluate_initial.sh) | 초기 CPU 평가를 실행하고 로그를 저장합니다. |
+| [collect.sh](scripts/collect.sh) | 실제 branch 데이터 수집과 로그 저장을 실행합니다. |
+| [train_router.sh](scripts/train_router.sh) | 학습 데이터를 선별한 뒤 FM GPU에서 router를 학습합니다. 데이터 준비가 실패하면 학습 CLI를 호출하지 않습니다. |
+| [optimize_rule.sh](scripts/optimize_rule.sh) | rule 정책으로 최적화합니다. |
+| [optimize_learned.sh](scripts/optimize_learned.sh) | JSON 모델 artifact의 learned 정책으로 최적화합니다. |
+| [compare.sh](scripts/compare.sh) | 기본으로 rule/learned 정책을 비교합니다. 다른 정책은 CLI 옵션으로 지정합니다. |
+| [run_pipeline.sh](scripts/run_pipeline.sh) | 수집·GPU 학습·learned 최적화를 연결하고 학습 후 worker를 재시작합니다. 기존 출력은 거부하고 종료 시 worker를 정리합니다. |
 
 ### 단위 테스트: `tests/`
 
@@ -362,9 +403,12 @@ Python 코드 39개와 Bash 실행 wrapper 1개를 아래에 모두 설명합니
 | [requirements-llm.txt](requirements-llm.txt) | `dirmo-llm` 환경용입니다. Torch `2.6.0+cu124`, Transformers `5.15.0`, Accelerate, 공통 런타임과 editable DIRMO 설치를 지정합니다. 기본 SDPA 추론에 flash-attn은 필요하지 않습니다. |
 | [requirements.txt](requirements.txt) | Python 3.12의 `dirmo` 환경용입니다. CPU 실행·평가, router 학습, FLOWR inference를 함께 설치합니다. Torch `2.11.0+cu126`, TensorDict `0.12.4`, Biotite `1.7.1`과 평가 라이브러리, `../flowr_root` 및 DIRMO의 editable 설치를 지정합니다. |
 | [.gitignore](.gitignore) | Python 캐시·설치 메타데이터, runs, worker-runtime과 모델 weight 등을 버전 관리에서 제외합니다. 로컬에 생성된 파일이 새 checkout에는 없을 수 있습니다. |
-| [configs/local.json](configs/local.json) | LLM/FM의 Python·GPU·port·VRAM 최소 여유, 모델·소스·revision, 생성 조건, 평가 활성화, runtime 위치와 seed의 기본 설정입니다. 현재 `llm.python`은 기존 `ai_scientist` 경로이고 `fm.python`은 `null`이므로 두 환경의 실제 Python 경로를 설정하거나 환경 변수로 덮어써야 합니다. |
+| [configs/local.json](configs/local.json) | LLM/FM의 Python·GPU·port·VRAM 최소 여유, 모델·소스·revision, 생성 조건, 평가 활성화, runtime 위치와 seed의 설정입니다. 현재 사용자 설정은 `dirmo-llm`/`dirmo` Python과 physical GPU 3/4를 지정합니다. |
+| [configs/gpu.json](configs/gpu.json) | 사용자가 만든 GPU 실행용 Config 복사본입니다. Bash 스크립트에서 사용하려면 `DIRMO_CONFIG`로 선택합니다. 로컬 파일이며 새 checkout에는 없을 수 있습니다. |
 | [configs/llm-alternatives.json](configs/llm-alternatives.json) | Qwen3.5-4B와 ChemDFM-v2.0-14B의 대체 프로필입니다. 원하는 프로필의 필드를 `local.json`의 `llm`에 병합합니다. 이 파일 자체는 CLI용 Config 형식이 아니며 자동으로 선택되지 않습니다. |
 | [examples/local_case.json](examples/local_case.json) | 로컬 CrossDocked의 protein pocket, ligand SDF, receptor PDBQT를 참조하는 입력입니다. 고정 목표·보호 조건·예산을 포함합니다. 예제 입력 파일과 데이터셋은 프로젝트 내부에 복사되어 있지 않습니다. |
+| [examples/gpu_case.json](examples/gpu_case.json) | 사용자가 GPU 실행용으로 만든 예제입니다. FM NFE 예산은 4,096, wall-time 상한은 3,600초이며 draw 상한은 4입니다. 현재 Bash 스크립트가 이 파일을 발견하면 기본 manifest로 사용합니다. |
+| [scripts/README.md](scripts/README.md) | 목적별 `.sh` 파일, 공유 설정, 단계별 실행과 전체 파이프라인 사용법을 설명합니다. |
 
 기본 모델·소스 경로는 다음과 같습니다.
 
@@ -376,7 +420,7 @@ Python 코드 39개와 Bash 실행 wrapper 1개를 아래에 모두 설명합니
 | FLOWR.root checkpoint | `/LocalData1/uslee/checkpoints/FLOWR_root/flowr_root_base_spindr.ckpt` |
 | 데이터셋 위치 | `/LocalData1/uslee/datasets/` 아래 예제에 지정된 파일 |
 | LLM / FM port | `8765` / `8766` |
-| LLM / FM physical GPU selector | `"0"` / `"1"`; 실행 장치에 맞게 변경 |
+| LLM / FM physical GPU selector | 현재 사용자 설정 `"3"` / `"4"`; 실행 장치에 맞게 변경 |
 | FLOWR 생성 조건 | `random` prior, `euler` solver, `64` integration steps |
 | 평가 | PoseBusters·Vina 활성, ProLIF interactions 비활성 |
 
@@ -451,7 +495,7 @@ Python 코드 39개와 Bash 실행 wrapper 1개를 아래에 모두 설명합니
 | --- | --- |
 | `runs/<실험>/<case_id>/` | `--output` 아래 case별 실행 폴더입니다. 입력·설정·checkpoint·평가 기록을 저장합니다. |
 | `llm_model.json`, `fm_health.json` | 실제 worker의 모델/kernel identity, 환경과 GPU 정보를 저장합니다. |
-| `llm.jsonl` | 제안 요청, raw 응답, parsing 실패, token 비용과 cache 사용 기록입니다. |
+| `llm.jsonl` | 제안 요청, raw 응답, JSON/schema 검증 오류(`parsing_error`), 편집 검증 오류(`chemical_error`, `rejected`), token 비용과 cache 사용 기록입니다. HTTP 응답이 200이어도 편집 후보는 검증에서 거부될 수 있습니다. |
 | `actions.jsonl`, `hypothesis_outcomes.jsonl` | 선택·실행한 행동과 측정 후 가설 관련 관측 기록입니다. |
 | `preparations/` | 화학 편집으로 만든 graph의 입력 준비용 SDF를 저장합니다. |
 | `generation/<요청 식별자>/` | 개별 FLOWR 요청의 산출물을 보관합니다. |
@@ -461,6 +505,7 @@ Python 코드 39개와 Bash 실행 wrapper 1개를 아래에 모두 설명합니
 | `result.json`, `final.sdf` | 최종 선택 결과와 3D 분자입니다. 조건을 만족하는 개선 후보가 없으면 원본을 반환합니다. |
 | `cache/llm/<해시>.json` | 모델 identity, 생성 설정과 prompt가 같은 유효 Proposal의 캐시입니다. |
 | `branch_snapshot.json`, `branch_coverage.json` | 수집 시작 상태와 실제 실행 또는 미실행 branch의 범위를 기록합니다. |
+| `collection_settings.json` | 추가 수집에 적용한 `seed_offset`, 기본 seed와 dataset 경로를 기록합니다. |
 | `--dataset`으로 지정한 JSONL | 행동 실행 전 feature와 실제 실행 후 label·비용을 담은 router 학습 데이터입니다. |
 | `router.json`, `router.json.report.json` | 예시 학습 출력명입니다. MLP 가중치·정규화·지원 조건과 grouped CV/통계 보고서를 저장합니다. report 파일명은 지정한 모델 출력 경로에 `.report.json`을 덧붙입니다. |
 | `comparison.json` | `compare`가 같은 case에서 정책별 실행 결과를 모아 저장하는 파일입니다. |
@@ -726,7 +771,17 @@ python -m dirmo --config configs/local.json optimize \
   --manifest examples/local_case.json --output runs/rule --router rule --resume
 ```
 
-`train-router`는 `--device cpu`를 선택해도 현재 코드에서 FM worker를 먼저 종료합니다. 여러 kernel의 데이터가 있으면 `--kernel-id`로 하나를 선택합니다. 단일 target 또는 부족한 그룹만으로 학습했다면 held-out 일반화 평가가 충분하지 않을 수 있습니다.
+학습에는 같은 kernel에서 실제 utility가 측정된 관측이 최소 2개 필요합니다. 기본 `collect`는 행동마다 한 seed로 한 번씩 실행하며 `seeds_per_graph`는 최대 시도 수입니다. 64-step과 128-step 결과는 서로 다른 kernel이라 별도로 학습합니다. LLM 편집 후보가 모두 거부되면 각 step의 관측은 하나씩만 생길 수 있습니다. 추가 수집은 새 output 폴더와 다른 seed를 사용해 같은 dataset에 누적합니다. 기본 seed가 42이면 아래 명령은 seed 43을 사용하며 기존 worker를 재사용합니다.
+
+```bash
+python -m dirmo --config configs/local.json collect \
+  --manifest examples/local_case.json --output runs/branches_seed43 \
+  --dataset runs/branches.jsonl --seed-offset 1
+```
+
+같은 graph/kernel/seed가 이미 dataset에 있으면 추가 요청을 차단하고 `branch_coverage.json`에 이유를 남깁니다. 생성 오류는 `actions.jsonl`의 `generation_result.reason`, 평가 실패는 `observations.jsonl`의 `failures` 및 `evaluations`, 편집 후보 거부는 `llm.jsonl`에서 확인합니다. 원격 서버 로그는 `worker-runtime/fm.log`, `worker-runtime/llm.log`에 있습니다.
+
+`train-router`는 `--device cpu`를 선택해도 현재 코드에서 FM worker를 먼저 종료합니다. 여러 kernel의 데이터가 있으면 `--kernel-id`로 하나를 선택합니다. 단일 target 또는 부족한 그룹만으로 학습했다면 held-out 일반화 평가가 충분하지 않을 수 있습니다. pose-resample 관측만으로 학습한 router는 화학 편집 행동을 지원하지 않습니다.
 
 재개는 입력·코드·설정·환경 및 저장된 artifact의 hash가 맞는 action 경계에서 수행합니다. 원격 요청의 결과를 모르는 `pending_action`이 남아 있으면 자동으로 다시 실행하지 않고 중단합니다.
 
@@ -739,6 +794,34 @@ python scripts/verify.py
 ```
 
 이 명령은 기존 `reports/unit-tests.log`와 `reports/unit-tests.json`을 갱신합니다. 실제 모델 검증이나 처리량 benchmark는 수행하지 않습니다. README 작성 시에는 실행하지 않았습니다.
+
+## 목적별 Bash 스크립트
+
+명령마다 `python -m dirmo`와 여러 경로를 입력하는 대신 목적별 스크립트를 사용할 수 있습니다. 공통 설정은 [scripts/settings.sh](scripts/settings.sh), 전체 사용법은 [scripts/README.md](scripts/README.md)에 있습니다. 현재 설정된 Conda Python 절대 경로를 사용하므로 별도 `conda activate`나 사용자 `export`가 필요하지 않습니다. Bash를 사용하세요.
+
+```bash
+cd /home/uslee/code/DIRMO-3D
+
+# 전체 실행: 새 실험 폴더를 지정합니다.
+bash scripts/run_pipeline.sh runs/gpu_02
+
+# 또는 목적별로 실행합니다.
+bash scripts/doctor.sh
+bash scripts/start_workers.sh
+bash scripts/health.sh
+bash scripts/collect.sh
+bash scripts/train_router.sh
+bash scripts/stop_workers.sh
+bash scripts/start_workers.sh
+bash scripts/optimize_learned.sh
+bash scripts/stop_workers.sh
+```
+
+전체 실행은 기존 관리 대상 worker를 먼저 종료하고, 수집 → 데이터 선별·GPU 학습 → worker 재시작 → learned 최적화를 수행합니다. 정상 종료 또는 중간 실패 시 worker도 종료합니다. 개별 스크립트는 해당 목적만 실행하며, `train_router.sh`의 실제 학습은 FM worker를 종료합니다. 이미 worker가 실행 중이면 두 서버를 시작하기 전에 `stop_workers.sh`를 실행합니다.
+
+수집 결과에서 설정된 integration step과 같은 kernel의 측정값을 골라 최소 2개 관측을 확인합니다. 여러 kernel이 있으면 `DIRMO_KERNEL_ID`나 `train_router.sh --kernel-id`로 하나를 지정합니다. 현재 kernel은 pocket 해시를 포함하므로 학습된 router는 같은 pocket·생성 조건에 적용합니다. 여러 target에 적용할 공용 router에는 별도 코드 변경이 필요합니다.
+
+각 단계 로그는 `<RUN_DIR>/logs/`에 저장됩니다. 기존 실행 폴더를 덮어쓰지 않도록 전체 파이프라인은 새 출력 경로를 요구합니다. 이번 추가에서는 모델 로드·서버 요청·GPU 실행을 하지 않았습니다.
 
 ## 구현 범위와 해석상 제한
 

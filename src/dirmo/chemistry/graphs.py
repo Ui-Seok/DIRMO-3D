@@ -18,11 +18,20 @@ def normalize(mol: Chem.Mol) -> Chem.Mol:
     if mol is None:
         raise ChemicalError("invalid_graph")
     mol = Chem.RemoveHs(Chem.Mol(mol))
+    # Atom maps identify correspondence, not chemically distinct substituents.
+    # Reading mapped 3D SDF can otherwise introduce a false stereocentre when
+    # equivalent neighbours have different map IDs (e.g. S(O)(O)O).
+    atom_maps = [atom.GetAtomMapNum() for atom in mol.GetAtoms()]
+    for atom in mol.GetAtoms():
+        atom.SetAtomMapNum(0)
     try:
         Chem.SanitizeMol(mol)
         Chem.AssignStereochemistry(mol, cleanIt=True, force=True)
     except Exception as exc:
         raise ChemicalError(f"invalid_graph: {exc}") from exc
+    finally:
+        for atom, atom_map in zip(mol.GetAtoms(), atom_maps):
+            atom.SetAtomMapNum(atom_map)
     if len(Chem.GetMolFrags(mol)) != 1 or mol.GetNumAtoms() == 0:
         raise ChemicalError("Disconnected or empty graphs are unsupported")
     if any(a.GetAtomicNum() == 0 for a in mol.GetAtoms()):

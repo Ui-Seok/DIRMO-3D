@@ -63,6 +63,8 @@ def main(argv=None):
             sub.add_argument("--router-model")
         if command == "collect":
             sub.add_argument("--dataset", required=True)
+            sub.add_argument("--seed-offset", type=int, default=0,
+                             help="Nonnegative offset from config.seed for a new collection; workers stay loaded")
         if command == "compare":
             sub.add_argument("--policies", nargs="+", choices=["rule", "learned", "llm", "sequence", "edit", "pose"],
                              default=["rule", "edit", "pose", "sequence"])
@@ -75,6 +77,8 @@ def main(argv=None):
     train.add_argument("--epochs", type=int, default=100)
     train.add_argument("--device", choices=["fm", "cpu"], default="fm")
     args = parser.parse_args(argv)
+    if args.command == "collect" and args.seed_offset < 0:
+        parser.error("--seed-offset must be nonnegative")
     from .config import load_config
     from .io import write_json
     config = load_config(args.config)
@@ -145,7 +149,7 @@ def main(argv=None):
                         write_json(output / "initial_evaluation.json", result)
                     elif args.command == "collect":
                         from .data.collect import collect
-                        result = collect(run, active["fm"], active["llm"], args.dataset)
+                        result = collect(run, active["fm"], active["llm"], args.dataset, args.seed_offset)
                     else:
                         result = optimize(run, active["fm"], active["llm"], policy(args.router, args.router_model))
                 results.append({"case_id": case.case_id, "output": str(output.resolve()), "result": result})

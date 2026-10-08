@@ -39,6 +39,9 @@ def messages(state: State, case, cap: int) -> list[dict]:
         "parent_graph_id": state.work_item.graph_id,
         "canonical_smiles": smiles(mol),
         "mapped_smiles": state.work_item.mapped_smiles,
+        "atom_table": [{"atom_map": atom.GetAtomMapNum(), "element": atom.GetSymbol(),
+                        "neighbor_maps": [neighbor.GetAtomMapNum() for neighbor in atom.GetNeighbors()]}
+                       for atom in mol.GetAtoms()],
         "measured_evidence": [e.model_dump(mode="json") for e in state.evidence
                               if e.source not in ("preservation.features", "posebusters.continuous")][:48],
         "observation": {"metrics": state.work_item.observation.metrics,
@@ -50,8 +53,19 @@ def messages(state: State, case, cap: int) -> list[dict]:
         "remaining_budget": state.remaining_budget,
         "maximum_candidates": cap,
         "rules": ["Use only the provided evidence IDs. Hypotheses are untested, not causal proofs.",
+                  "Return compact JSON without markdown or indentation; use only fields in the schema.",
+                  "Use at most two hypotheses and two tradeoffs. Keep each explanation or test under 30 words.",
                   "Do not calculate numerical properties or claim efficacy/toxicity/success probabilities.",
                   "Use complete unique atom maps; retain parent map IDs on retained atoms.",
+                  "Prefer operation edits and set mapped_product_smiles to null. Do not supply both.",
+                  "changed_atom_maps belongs to the candidate, never inside operation.",
+                  "For replace_atom specify atom_map and element. For change_bond specify both atom_map and other_map.",
+                  "One operation performs one local change. replace_atom changes only that atom's element; bonds and neighbors remain.",
+                  "For replace_atom, changed_atom_maps contains only the replaced atom, and the new element must differ.",
+                  "An atom replacement cannot remove an entire group or convert an aromatic ring to a saturated ring.",
+                  "remove_terminal_atom requires exactly one neighbor; changed_atom_maps includes it and that neighbor.",
+                  "If using mapped_product_smiles, every atom must use [element:map] notation, never unmapped SMILES.",
+                  "The product must actually differ from the parent graph. Returning the parent mapped_smiles is invalid.",
                   "New atoms use IDs greater than the largest parent map ID.",
                   "changed_atom_maps must include every added/removed/changed atom AND affected bond endpoints.",
                   "Use mapped_product_smiles OR one allowlisted operation, never executable code.",
@@ -122,11 +136,16 @@ class Planner:
                         rejects.append({"candidate_id": candidate.candidate_id, "reason": str(exc)})
                 event.update(parsing_valid=True, chemical_valid_count=len(valid), rejected=rejects)
                 proposal.edit_candidates = valid
+                if rejects and not valid:
+                    raise ChemicalError("All proposed edits were rejected: " + json.dumps(rejects))
                 write_json(cache, {"raw": proposal.model_dump_json(), "model": health["model_identity"]})
                 append_jsonl(self.run_dir / "llm.jsonl", event)
                 return proposal
             except (ValueError, KeyError) as exc:
-                event.update(parsing_valid=False, parsing_error=str(exc))
+                if isinstance(exc, ChemicalError):
+                    event.update(chemical_valid=False, chemical_error=str(exc))
+                else:
+                    event.update(parsing_valid=False, parsing_error=str(exc))
                 append_jsonl(self.run_dir / "llm.jsonl", event)
                 prompt = [*prompt, {"role": "assistant", "content": response.get("raw", "")},
                           {"role": "user", "content": f"Return valid JSON only. Validation error: {exc}"}]

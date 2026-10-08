@@ -15,6 +15,34 @@ class CapabilityError(RuntimeError):
     pass
 
 
+def prepare_random_graph_prior(interpolant):
+    """Fix the optional-feature random prior on this interpolant instance only."""
+    sampler = interpolant.prior_sampler
+    if sampler.n_hybridization_types is not None:
+        return interpolant
+    original = sampler.inpaint_graph
+
+    def inpaint_graph(to_mol, from_mol, mask, mode="random"):
+        if mode != "random" or mask is None or not mask.any():
+            return original(to_mol, from_mol, mask, mode=mode)
+        import torch
+        from flowr.util.molrepr import GeometricMol
+        # Match upstream's random branch, including its RNG draw and centering.
+        # The base checkpoint has no hybridization vocabulary; upstream omitted
+        # the None initialization in this branch. No model features are added.
+        result = GeometricMol(
+            sampler.coord_dist.sample((to_mol.seq_length, 3)),
+            to_mol.atomics.clone(), charges=to_mol.charges.clone(), hybridization=None,
+            bond_indices=to_mol.bond_indices.clone(), bond_types=to_mol.bond_types.clone(),
+            fragment_mask=torch.ones(to_mol.seq_length, dtype=torch.bool, device=to_mol.coords.device),
+            fragment_mode="graph",
+        )
+        return result.zero_com() if sampler.zero_com else result
+
+    sampler.inpaint_graph = inpaint_graph
+    return interpolant
+
+
 def audit_paths(config) -> dict:
     blockers = []
     if not config.repo_path or not Path(config.repo_path).is_dir():
@@ -89,6 +117,7 @@ class FlowrBackend:
                             "valence_repair": False, "relaxation": False, "filtering": False, "batch": 1,
                             "cat_noise_euler_guard": self.args.cat_noise_euler_guard,
                             "categorical_strategy": self.args.categorical_strategy,
+                            "adapter_compatibility": ["random_graph_prior_optional_hybridization_v1"],
                             "sc_recycle_steps": getattr(self.model, "sc_recycle_steps", 1),
                             "hyperparameters_hash": digest(dict(self.hparams)), "environment": environment()}
         self.checkpoint_identity = {"path": config.checkpoint_path, "sha256": checkpoint_hash,
@@ -127,26 +156,34 @@ class FlowrBackend:
         kernel_id = digest(kernel)
         write_json(output_dir / "kernel.json", kernel)
         write_json(output_dir / "request.json", request)
-        transform, interpolant = util.load_util(args, self.hparams, *self.vocabs[:4])
-        system = util.load_data_from_pdb(args, remove_hs=self.hparams["remove_hs"],
-                                         remove_aromaticity=self.hparams["remove_aromaticity"])
-        pocket_tensor_hash = digest(system.holo.mol.coords.tolist())
-        pocket_key = kernel["pocket_sha256"]
-        previous = self.pocket_tensor_hashes.setdefault(pocket_key, pocket_tensor_hash)
-        if previous != pocket_tensor_hash:
-            raise CapabilityError("Fixed-pocket tensor coordinates changed between work items")
-        write_json(output_dir / "pocket_frame.json", {"pocket_file_sha256": pocket_key,
-                   "upstream_absolute_pocket_coords_sha256": pocket_tensor_hash,
-                   "preprocessing_cut_pocket": False, "random_rotation": False,
-                   "upstream_output_transform": "undo_zero_com_batch adds the fixed pocket COM"})
-        dataset = GeometricDataset(PocketComplexBatch([system]), data_cls=PocketComplexBatch, transform=transform)
-        batch = next(iter(util.get_dataloader(args, dataset, interpolant)))
-        prior, posterior, _, _ = batch
-        # Tensor round-trip must preserve the input graph before a single draw is attempted.
-        references = self.model._generate_ligs(posterior, lig_mask=posterior["lig_mask"].bool(), scale=1.0)
-        if len(references) != 1 or references[0] is None or not graph_check(
-                expected, references[0], derive_stereo=True)["matches"]:
-            raise CapabilityError("Upstream graph tensorization cannot preserve this element/charge/stereo graph")
+        try:
+            transform, interpolant = util.load_util(args, self.hparams, *self.vocabs[:4])
+            interpolant = prepare_random_graph_prior(interpolant)
+            system = util.load_data_from_pdb(args, remove_hs=self.hparams["remove_hs"],
+                                             remove_aromaticity=self.hparams["remove_aromaticity"])
+            pocket_tensor_hash = digest(system.holo.mol.coords.tolist())
+            pocket_key = kernel["pocket_sha256"]
+            previous = self.pocket_tensor_hashes.setdefault(pocket_key, pocket_tensor_hash)
+            if previous != pocket_tensor_hash:
+                raise CapabilityError("Fixed-pocket tensor coordinates changed between work items")
+            write_json(output_dir / "pocket_frame.json", {"pocket_file_sha256": pocket_key,
+                       "upstream_absolute_pocket_coords_sha256": pocket_tensor_hash,
+                       "preprocessing_cut_pocket": False, "random_rotation": False,
+                       "upstream_output_transform": "undo_zero_com_batch adds the fixed pocket COM"})
+            dataset = GeometricDataset(PocketComplexBatch([system]), data_cls=PocketComplexBatch, transform=transform)
+            prior, posterior, _, _ = next(iter(util.get_dataloader(args, dataset, interpolant)))
+            # Decode reference tensors only; no model forward or draw has started.
+            references = self.model._generate_ligs(posterior, lig_mask=posterior["lig_mask"].bool(), scale=1.0)
+            if len(references) != 1 or references[0] is None or not graph_check(
+                    expected, references[0], derive_stereo=True)["matches"]:
+                raise CapabilityError("Upstream graph tensorization cannot preserve this element/charge/stereo graph")
+        except CapabilityError:
+            raise
+        except Exception as exc:
+            return GenerationResult(status="failed", raw_draws=0, nfe=0, kernel_id=kernel_id,
+                reason=f"preprocessing: {type(exc).__name__}: {exc}",
+                latency_seconds=time.monotonic() - start,
+                peak_memory_bytes=torch.cuda.max_memory_allocated())
         nfe = 0
 
         def count_forward(_module, _args):
@@ -156,7 +193,8 @@ class FlowrBackend:
         handle = self.model.register_forward_pre_hook(count_forward)
         torch.cuda.reset_peak_memory_stats()
         try:
-            generated = generate_ligands_per_target(args, self.model, prior, posterior, device="cuda:0")
+            with torch.inference_mode():
+                generated = generate_ligands_per_target(args, self.model, prior, posterior, device="cuda:0")
             if len(generated) != 1:
                 raise RuntimeError("Adapter expects exactly one raw result slot")
             if generated[0] is None:

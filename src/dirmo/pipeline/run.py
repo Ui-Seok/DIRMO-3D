@@ -165,8 +165,9 @@ class Run:
 
 
 class Executor:
-    def __init__(self, run: Run, fm_client):
+    def __init__(self, run: Run, fm_client, seed_base: int | None = None):
         self.run, self.client = run, fm_client
+        self.seed_base = run.config.seed if seed_base is None else seed_base
         health = fm_client.health()
         self.capabilities = health.get("capabilities", {})
         self.nfe_factor = health.get("nfe_per_step_upper_bound", 1)
@@ -186,7 +187,7 @@ class Executor:
             raise ValueError("EXTRA_VALIDATION is disabled in the first executor")
         run.refresh()
         allowed = available_actions(state, run.case, run.config.fm.parameters,
-                                    self.capabilities, self.nfe_factor, run.config.seed)
+                                    self.capabilities, self.nfe_factor, self.seed_base)
         valid = next((a for a in allowed if a.action_id == action.action_id), None)
         if valid is None or action != valid:
             raise ValueError("Action is not in the current validated feasible action set")
