@@ -94,7 +94,9 @@ def main() -> int:
             parsed = json.loads(raw)
             result["json_valid"] = True
             if args.prompt == DEFAULT_PROMPT:
-                result["json_matches_expected"] = parsed == {"ok": True}
+                result["json_matches_expected"] = (
+                    isinstance(parsed, dict) and set(parsed) == {"ok"} and parsed["ok"] is True
+                )
         except (ValueError, TypeError):
             result["json_valid"] = False
         print(json.dumps(result, indent=2, ensure_ascii=False))

@@ -95,6 +95,24 @@ cd /home/uslee/code/DIRMO-3D
 python -m dirmo --config worker-runtime/config.json health
 ```
 
+현재 shell에 `DIRMO_*` 환경변수가 남아 있으면 저장된 설정에도 해당 값이 우선 적용되므로, 시작 시와 같은 값을 사용해야 한다.
+
+개인 PC에서 서버의 localhost에 접근하려면 개인 PC의 터미널에서 SSH tunnel을 유지한다. `서버주소`는 실제 SSH 접속 주소로 바꾼다. 이 tunnel은 네트워크 연결만 전달하며 API 인증을 대신하지 않는다.
+
+```bash
+ssh -N -L 8765:127.0.0.1:8765 uslee@서버주소
+```
+
+2026-10-08 접속 진단에서 포트가 LISTEN 상태인 동안 루트와 인증된 `/health` 요청이 모두 timeout인 것을 관찰했다. 기존 단일 `HTTPServer`는 브라우저가 미리 열어 둔 소켓 때문에 다른 요청도 대기할 수 있다. 실제 당시 대기 중이던 소켓의 원인은 확정하지 않았으며, 이 알려진 대기 문제를 막기 위해 `ThreadingHTTPServer`와 socket I/O timeout을 적용했다([Python 공식 문서](https://docs.python.org/3.11/library/http.server.html#http.server.ThreadingHTTPServer)). 모델 호출과 shutdown은 lock으로 직렬화하며, health 요청은 모델 요청 lock을 기다리지 않는다.
+
+이미 실행된 worker에는 코드 변경이 반영되지 않는다. 저장된 설정과 GPU 선택을 유지하여 다음과 같이 재시작한다. 아래 명령은 이번 수정에서 실행하지 않았으며 새 worker의 실제 로드·응답은 미검증이다.
+
+```bash
+python -m dirmo --config worker-runtime/config.json stop-workers --only llm
+python -m dirmo --config worker-runtime/config.json start-workers --only llm --timeout 600
+python -m dirmo --config worker-runtime/config.json health
+```
+
 ## 실행 중인 LLM의 응답 확인
 
 아래 점검 스크립트는 Python 표준 라이브러리만 사용한다. 활성화된 Conda 환경에서 서버 컴퓨터의 프로젝트 디렉터리로 이동해 실행한다. `worker-runtime/workers.json`의 port와 인증 token을 자동으로 읽으며 token을 출력하지 않는다. 저장된 manifest의 worker instance도 확인한다. 다른 runtime 디렉터리를 사용했다면 `--runtime-dir /절대/경로`를 지정한다.
@@ -116,21 +134,3 @@ python scripts/check_llm.py --prompt 'Explain the difference between SMILES CCO 
 `--health-only`는 모델이 로드되어 있고 HTTP 상태 응답이 오는지 확인한다. 기본 실행은 system/user 메시지로 `{"ok": true}` 출력을 요청하고 `raw`, 토큰 수, 지연 시간, 메모리 사용량을 출력한다. `generation_ok: true`는 정상 status와 비어 있지 않은 생성 응답을 뜻하며, `json_valid`와 `json_matches_expected`는 별도로 JSON 형식과 요청 준수를 확인한다. 종료 코드 0은 상태 확인 또는 텍스트 생성 성공을 의미하며 JSON 형식 준수까지 보장하지 않는다. 샘플 한 번으로 DIRMO proposal schema나 화학적 정확성이 검증되는 것은 아니다.
 
 이 스크립트는 모델을 새로 로드하거나 서버를 재시작하지 않는다. 실제 생성 요청은 사용자가 기본 실행 또는 `--prompt` 명령을 실행할 때 발생한다. 요청은 CLI의 실험 budget ledger 밖에서 실행되지만 서버 GPU를 사용하며 다른 추론과 같은 lock을 기다린다. 추론 timeout은 기본 600초이고 `--timeout 120` 등으로 바꿀 수 있다. 클라이언트 timeout만으로 이미 시작한 서버 추론이 취소되지는 않는다. HTTP 401은 token 불일치, connection refused는 서버 미실행/주소 문제, timeout은 응답 대기, `status: oom`은 GPU 메모리 부족을 나타낸다. 서버 오류의 상세 원인은 `worker-runtime/llm.log`도 확인한다.
-
-현재 shell에 `DIRMO_*` 환경변수가 남아 있으면 저장된 설정에도 해당 값이 우선 적용되므로, 시작 시와 같은 값을 사용해야 한다.
-
-개인 PC에서 서버의 localhost에 접근하려면 개인 PC의 터미널에서 SSH tunnel을 유지한다. `서버주소`는 실제 SSH 접속 주소로 바꾼다. 이 tunnel은 네트워크 연결만 전달하며 API 인증을 대신하지 않는다.
-
-```bash
-ssh -N -L 8765:127.0.0.1:8765 uslee@서버주소
-```
-
-2026-10-08 접속 진단에서 포트가 LISTEN 상태인 동안 루트와 인증된 `/health` 요청이 모두 timeout인 것을 관찰했다. 기존 단일 `HTTPServer`는 브라우저가 미리 열어 둔 소켓 때문에 다른 요청도 대기할 수 있다. 실제 당시 대기 중이던 소켓의 원인은 확정하지 않았으며, 이 알려진 대기 문제를 막기 위해 `ThreadingHTTPServer`와 socket I/O timeout을 적용했다([Python 공식 문서](https://docs.python.org/3.11/library/http.server.html#http.server.ThreadingHTTPServer)). 모델 호출과 shutdown은 lock으로 직렬화하며, health 요청은 모델 요청 lock을 기다리지 않는다.
-
-이미 실행된 worker에는 코드 변경이 반영되지 않는다. 저장된 설정과 GPU 선택을 유지하여 다음과 같이 재시작한다. 아래 명령은 이번 수정에서 실행하지 않았으며 새 worker의 실제 로드·응답은 미검증이다.
-
-```bash
-python -m dirmo --config worker-runtime/config.json stop-workers --only llm
-python -m dirmo --config worker-runtime/config.json start-workers --only llm --timeout 600
-python -m dirmo --config worker-runtime/config.json health
-```
