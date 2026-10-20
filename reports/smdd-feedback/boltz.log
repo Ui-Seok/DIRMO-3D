@@ -1,0 +1,131 @@
+{"event": "boltz_deferred", "job_id": "ea9b9f39668a6eb90811", "product_smiles": "COc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12", "selections": [{"mode": "independent", "round": 1, "task_id": "smdd_004_BRD4_11"}, {"mode": "feedback", "round": 1, "task_id": "smdd_004_BRD4_11"}], "source": "/LocalData1/uslee/datasets/smdd-bench/tasks/smdd_004_BRD4_11", "task_id": "smdd_004_BRD4_11", "protein_residues": 109, "config": {"pocket_contacts": [["A", 26], ["A", 27], ["A", 28], ["A", 29], ["A", 30], ["A", 31], ["A", 32], ["A", 33], ["A", 34], ["A", 36], ["A", 37], ["A", 39], ["A", 42], ["A", 50], ["A", 77], ["A", 80], ["A", 81], ["A", 84], ["A", 85], ["A", 89], ["A", 90], ["A", 91], ["A", 92], ["A", 94]], "co_ligands": null, "baseline_affinity": -1.6923664212226868, "affinity_objective": null, "affinity_hold_constant": {"tolerance": 0.3}, "diffusion_samples": 10}, "full_benchmark_success": null, "status": "unmeasured", "memory_fraction": 0.24, "reason": "insufficient_free_gpu_memory", "free_mib": 13448, "required_mib": 13500}
+{"event": "boltz_deferred", "job_id": "f3f12828dd323e5881cb", "product_smiles": "Cn1cc(-c2cc(S(=O)(=O)C)ccc2OCC2CC2)c2cc[nH]c2c1=O", "selections": [{"mode": "independent", "round": 1, "task_id": "smdd_004_BRD4_14"}, {"mode": "feedback", "round": 1, "task_id": "smdd_004_BRD4_14"}], "source": "/LocalData1/uslee/datasets/smdd-bench/tasks/smdd_004_BRD4_14", "task_id": "smdd_004_BRD4_14", "protein_residues": 109, "config": {"pocket_contacts": [["A", 26], ["A", 27], ["A", 28], ["A", 29], ["A", 30], ["A", 31], ["A", 32], ["A", 33], ["A", 34], ["A", 36], ["A", 37], ["A", 39], ["A", 42], ["A", 50], ["A", 77], ["A", 80], ["A", 81], ["A", 84], ["A", 85], ["A", 89], ["A", 90], ["A", 91], ["A", 92], ["A", 94]], "co_ligands": null, "baseline_affinity": -2.5456056594848633, "affinity_objective": null, "affinity_hold_constant": null, "diffusion_samples": 10}, "full_benchmark_success": null, "status": "unmeasured", "memory_fraction": 0.24, "reason": "insufficient_free_gpu_memory", "free_mib": 13448, "required_mib": 13500}
+{"event": "boltz_deferred", "job_id": "83137e15bfb9febb993b", "product_smiles": "C[C@@H]1C(=O)N(C)c2ccc(C(=O)N3CCc4ccccc43)nc2N1C1CC1F", "selections": [{"mode": "independent", "round": 1, "task_id": "smdd_004_BRD4_6"}, {"mode": "feedback", "round": 1, "task_id": "smdd_004_BRD4_6"}], "source": "/LocalData1/uslee/datasets/smdd-bench/tasks/smdd_004_BRD4_6", "task_id": "smdd_004_BRD4_6", "protein_residues": 109, "config": {"pocket_contacts": [["A", 26], ["A", 27], ["A", 28], ["A", 29], ["A", 30], ["A", 31], ["A", 32], ["A", 33], ["A", 34], ["A", 36], ["A", 37], ["A", 39], ["A", 42], ["A", 50], ["A", 77], ["A", 80], ["A", 81], ["A", 84], ["A", 85], ["A", 89], ["A", 90], ["A", 91], ["A", 92], ["A", 94]], "co_ligands": null, "baseline_affinity": -1.4523311853408813, "affinity_objective": null, "affinity_hold_constant": {"tolerance": 0.3}, "diffusion_samples": 10}, "full_benchmark_success": null, "status": "unmeasured", "memory_fraction": 0.24, "reason": "insufficient_free_gpu_memory", "free_mib": 13448, "required_mib": 13500}
+{"event": "boltz_deferred", "job_id": "26225a04d0aed372b459", "reason": "conservative_long_protein_memory_limit"}
+{"event": "boltz_deferred", "job_id": "655f80fb13d159329003", "reason": "conservative_long_protein_memory_limit"}
+{"event": "boltz_deferred", "job_id": "453f0e7f485ac2b06faf", "reason": "conservative_long_protein_memory_limit"}
+{"event": "boltz_deferred", "job_id": "1906557d730db4324d59", "reason": "conservative_long_protein_memory_limit"}
+{"event": "boltz_deferred", "job_id": "536bd2465d6fc3adc4b4", "reason": "conservative_long_protein_memory_limit"}
+{
+  "actual_llm_requests": 170,
+  "cases": 34,
+  "comparison": {
+    "feedback": {
+      "admet_evaluated_attempts": 41,
+      "any_changed_local_pass": 22,
+      "any_valid_graph": 31,
+      "budgeted_proposals": 102,
+      "cases": 34,
+      "changed_local_pass_attempts": 41,
+      "first_proposal_pre_boltz_pass": 7,
+      "full_failure_confirmed": 27,
+      "full_success_confirmed": 0,
+      "plan_valid_attempts": 102,
+      "selected_pre_boltz_pass": 7,
+      "unmeasured_binding": 7,
+      "valid_graph_attempts": 92
+    },
+    "independent": {
+      "admet_evaluated_attempts": 43,
+      "any_changed_local_pass": 18,
+      "any_valid_graph": 31,
+      "budgeted_proposals": 102,
+      "cases": 34,
+      "changed_local_pass_attempts": 43,
+      "first_proposal_pre_boltz_pass": 7,
+      "full_failure_confirmed": 26,
+      "full_success_confirmed": 0,
+      "plan_valid_attempts": 102,
+      "selected_pre_boltz_pass": 8,
+      "unmeasured_binding": 8,
+      "valid_graph_attempts": 91
+    }
+  },
+  "generation_seconds": 1832.8175531686284,
+  "invocation_seconds": 1854.61119633005,
+  "limitations": [
+    "No weight updates, adapters, encoder, or witness-derived prompt information.",
+    "Each arm has the same proposal budget; round 1 is shared, not two model requests.",
+    "Independent proposals change only proposal_number to vary deterministic-seed prompts.",
+    "Feedback arm changes both current substrate and actual tool feedback; this is a bundled intervention.",
+    "Edit hypotheses and declared atom locations are not independently verified causal explanations.",
+    "RDKit/ADMET pass is only a pre-Boltz gate, not full optimization success.",
+    "ADMET and Boltz are predictions, not experimental measurements."
+  ],
+  "split": "validation",
+  "status": "binding_partial",
+  "tokens": {
+    "input_tokens": 453978,
+    "output_tokens": 17186,
+    "total_tokens": 471164
+  },
+  "unique_boltz_jobs": 8,
+  "boltz_seconds": 0.1997414289508015
+}
+{"event": "boltz_started", "task_id": "smdd_004_BRD4_11", "job_id": "ea9b9f39668a6eb90811"}
+{"event": "boltz_finished", "job_id": "ea9b9f39668a6eb90811", "status": "measured", "full_success": true}
+{"event": "boltz_started", "task_id": "smdd_004_BRD4_14", "job_id": "f3f12828dd323e5881cb"}
+{"event": "boltz_finished", "job_id": "f3f12828dd323e5881cb", "status": "measured", "full_success": true}
+{"event": "boltz_started", "task_id": "smdd_004_BRD4_6", "job_id": "83137e15bfb9febb993b"}
+{"event": "boltz_finished", "job_id": "83137e15bfb9febb993b", "status": "measured", "full_success": true}
+{"event": "boltz_deferred", "job_id": "26225a04d0aed372b459", "reason": "conservative_long_protein_memory_limit"}
+{"event": "boltz_deferred", "job_id": "655f80fb13d159329003", "reason": "conservative_long_protein_memory_limit"}
+{"event": "boltz_deferred", "job_id": "453f0e7f485ac2b06faf", "reason": "conservative_long_protein_memory_limit"}
+{"event": "boltz_deferred", "job_id": "1906557d730db4324d59", "reason": "conservative_long_protein_memory_limit"}
+{"event": "boltz_deferred", "job_id": "536bd2465d6fc3adc4b4", "reason": "conservative_long_protein_memory_limit"}
+{
+  "actual_llm_requests": 170,
+  "cases": 34,
+  "comparison": {
+    "feedback": {
+      "admet_evaluated_attempts": 41,
+      "any_changed_local_pass": 22,
+      "any_valid_graph": 31,
+      "budgeted_proposals": 102,
+      "cases": 34,
+      "changed_local_pass_attempts": 41,
+      "first_proposal_pre_boltz_pass": 7,
+      "full_failure_confirmed": 27,
+      "full_success_confirmed": 3,
+      "plan_valid_attempts": 102,
+      "selected_pre_boltz_pass": 7,
+      "unmeasured_binding": 4,
+      "valid_graph_attempts": 92
+    },
+    "independent": {
+      "admet_evaluated_attempts": 43,
+      "any_changed_local_pass": 18,
+      "any_valid_graph": 31,
+      "budgeted_proposals": 102,
+      "cases": 34,
+      "changed_local_pass_attempts": 43,
+      "first_proposal_pre_boltz_pass": 7,
+      "full_failure_confirmed": 26,
+      "full_success_confirmed": 3,
+      "plan_valid_attempts": 102,
+      "selected_pre_boltz_pass": 8,
+      "unmeasured_binding": 5,
+      "valid_graph_attempts": 91
+    }
+  },
+  "generation_seconds": 1832.8175531686284,
+  "invocation_seconds": 1854.61119633005,
+  "limitations": [
+    "No weight updates, adapters, encoder, or witness-derived prompt information.",
+    "Each arm has the same proposal budget; round 1 is shared, not two model requests.",
+    "Independent proposals change only proposal_number to vary deterministic-seed prompts.",
+    "Feedback arm changes both current substrate and actual tool feedback; this is a bundled intervention.",
+    "Edit hypotheses and declared atom locations are not independently verified causal explanations.",
+    "RDKit/ADMET pass is only a pre-Boltz gate, not full optimization success.",
+    "ADMET and Boltz are predictions, not experimental measurements."
+  ],
+  "split": "validation",
+  "status": "binding_partial",
+  "tokens": {
+    "input_tokens": 453978,
+    "output_tokens": 17186,
+    "total_tokens": 471164
+  },
+  "unique_boltz_jobs": 8,
+  "boltz_seconds": 1214.4860498670023
+}

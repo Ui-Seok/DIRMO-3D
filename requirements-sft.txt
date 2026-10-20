@@ -1,0 +1,6 @@
+# For a new Python 3.11 environment. The pilot used a separate .venv-sft with
+# dirmo-llm system packages; only PEFT was added there, without changing serving.
+-r requirements-llm.txt
+peft==0.21.2
+rdkit==2026.3.6
+PyYAML>=6,<7

@@ -1,0 +1,344 @@
+[
+  {
+    "model": "last_adapter",
+    "split": "validation",
+    "task_id": "smdd_004_BRD4_7",
+    "generation": {
+      "task_id": "smdd_004_BRD4_7",
+      "protein_key": "315ad5ad48a10fe3d9569f4741a3358298facb2a6577185724ff8dbab0fc4666",
+      "raw": "{\"product_smiles\":\"CNS(=O)(=O)c1cc(-c2c(C)noc2C)ccc1C\"}",
+      "assessment": {
+        "json_valid": true,
+        "smiles_valid": true,
+        "local_hard_constraints_passed": true,
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "boltz_binding_probability": null,
+        "product_smiles": "CNS(=O)(=O)c1cc(-c2c(C)noc2C)ccc1C",
+        "metrics": {
+          "qed": 0.9349283570085248,
+          "sa": 2.2559756403570965,
+          "mw": 280.349,
+          "logp": 2.1749599999999996,
+          "tpsa": 72.2,
+          "hbd": 1,
+          "hba": 4,
+          "rotatable_bonds": 3,
+          "formal_charge": 0
+        },
+        "checks": {
+          "single_component": true,
+          "no_radicals": true,
+          "no_atom_maps": true,
+          "mw": true,
+          "logp": true,
+          "tpsa": true,
+          "hbd": true,
+          "hba": true,
+          "rotatable_bonds": true,
+          "formal_charge": true,
+          "sa": true,
+          "tanimoto": true,
+          "pains": true,
+          "brenk": true
+        },
+        "tanimoto": 0.7441860465116279,
+        "changed": true,
+        "witness_exact_match": false
+      },
+      "fence_removed_diagnostic": {
+        "json_valid": true,
+        "smiles_valid": true,
+        "local_hard_constraints_passed": true,
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "boltz_binding_probability": null,
+        "product_smiles": "CNS(=O)(=O)c1cc(-c2c(C)noc2C)ccc1C",
+        "metrics": {
+          "qed": 0.9349283570085248,
+          "sa": 2.2559756403570965,
+          "mw": 280.349,
+          "logp": 2.1749599999999996,
+          "tpsa": 72.2,
+          "hbd": 1,
+          "hba": 4,
+          "rotatable_bonds": 3,
+          "formal_charge": 0
+        },
+        "checks": {
+          "single_component": true,
+          "no_radicals": true,
+          "no_atom_maps": true,
+          "mw": true,
+          "logp": true,
+          "tpsa": true,
+          "hbd": true,
+          "hba": true,
+          "rotatable_bonds": true,
+          "formal_charge": true,
+          "sa": true,
+          "tanimoto": true,
+          "pains": true,
+          "brenk": true
+        },
+        "tanimoto": 0.7441860465116279,
+        "changed": true,
+        "witness_exact_match": false
+      },
+      "graph_metric_deltas": {
+        "qed": -0.005388510286264414,
+        "sa": -0.009491437085623389,
+        "mw": -14.027000000000044,
+        "logp": -0.3901000000000012,
+        "tpsa": 0.0,
+        "hbd": 0,
+        "hba": 0,
+        "rotatable_bonds": -1,
+        "formal_charge": 0
+      },
+      "output_tokens": 31,
+      "batch_seconds": 4.796844002092257,
+      "hit_token_cap": false,
+      "completion_loss": 0.7169297933578491,
+      "completion_tokens": 36
+    },
+    "admet": {
+      "task_id": "smdd_004_BRD4_7",
+      "smiles_valid": true,
+      "local_hard_constraints_passed": true,
+      "changed": true,
+      "properties": {
+        "herg": 0.05147408824414015,
+        "bbb": 0.852375328540802,
+        "solubility": -3.3002755901518155,
+        "cyp3a4": 0.3009060680866241,
+        "clearance": 19.762530096281676,
+        "caco2": -4.481393263043409,
+        "ppb": 95.71912840113103,
+        "ames": 0.1206924956291914
+      },
+      "conditions": {
+        "goals": [
+          {
+            "property": "clearance",
+            "direction": "minimize",
+            "threshold": 5.0,
+            "baseline": 38.0567,
+            "value": 19.762530096281676,
+            "passed": true,
+            "improvement": 18.294169903718323
+          },
+          {
+            "property": "binding_affinity",
+            "direction": "minimize",
+            "threshold": 0.3,
+            "baseline": -0.7708,
+            "value": null,
+            "passed": null
+          }
+        ],
+        "holds": [
+          {
+            "property": "herg",
+            "tolerance": 0.1,
+            "direction": "increase",
+            "baseline": 0.1029,
+            "value": 0.05147408824414015,
+            "passed": true,
+            "delta": -0.05142591175585986
+          },
+          {
+            "property": "bbb",
+            "tolerance": 0.1,
+            "direction": "change",
+            "baseline": 0.8903,
+            "value": 0.852375328540802,
+            "passed": true,
+            "delta": -0.03792467145919798
+          },
+          {
+            "property": "solubility",
+            "tolerance": 0.5,
+            "direction": "decrease",
+            "baseline": -3.6902,
+            "value": -3.3002755901518155,
+            "passed": true,
+            "delta": 0.38992440984818444
+          },
+          {
+            "property": "caco2",
+            "tolerance": 0.3,
+            "direction": "decrease",
+            "baseline": -4.4964,
+            "value": -4.481393263043409,
+            "passed": true,
+            "delta": 0.015006736956591382
+          }
+        ],
+        "admet_goal_count": 1,
+        "all_admet_goals_passed": true,
+        "all_admet_holds_passed": true,
+        "binding_affinity_measured": false,
+        "boltz_binding_probability": null
+      },
+      "full_benchmark_success": null,
+      "product_smiles": "CNS(=O)(=O)c1cc(-c2c(C)noc2C)ccc1C",
+      "graph_canonical_smiles": "CNS(=O)(=O)c1cc(-c2c(C)noc2C)ccc1C"
+    },
+    "boltz": {
+      "affinity_json": "runs/smdd_full_01/boltz_heldout/last_adapter_smdd_004_BRD4_7/boltz_results_last_adapter_smdd_004_BRD4_7/predictions/last_adapter_smdd_004_BRD4_7/affinity_last_adapter_smdd_004_BRD4_7.json",
+      "binding_conditions": {
+        "affinity_goal_passed": true,
+        "affinity_hold_passed": true,
+        "affinity_improvement": 0.42455267906188965,
+        "affinity_pred_value": -1.195334553718567,
+        "all_passed": true,
+        "baseline_affinity": -0.7707818746566772,
+        "binding_passed": true,
+        "binding_probability": 0.982663482427597
+      },
+      "changed": true,
+      "command": [
+        "/home/uslee/code/DIRMO-3D/.venv-boltz/bin/python",
+        "-c",
+        "import torch; torch.cuda.set_per_process_memory_fraction(0.6, 0); from boltz.main import cli; cli()",
+        "predict",
+        "/home/uslee/code/DIRMO-3D/runs/smdd_full_01/boltz_heldout/last_adapter_smdd_004_BRD4_7/last_adapter_smdd_004_BRD4_7.yaml",
+        "--out_dir",
+        "/home/uslee/code/DIRMO-3D/runs/smdd_full_01/boltz_heldout/last_adapter_smdd_004_BRD4_7",
+        "--cache",
+        "/home/uslee/.cache/dirmo-boltz2",
+        "--use_msa_server",
+        "--use_potentials",
+        "--no_kernels",
+        "--seed",
+        "42",
+        "--diffusion_samples",
+        "10",
+        "--diffusion_samples_affinity",
+        "10",
+        "--sampling_steps",
+        "200",
+        "--max_parallel_samples",
+        "2",
+        "--num_workers",
+        "0"
+      ],
+      "config": {
+        "affinity_hold_constant": null,
+        "affinity_objective": {
+          "direction": "minimize",
+          "threshold": 0.3
+        },
+        "baseline_affinity": -0.7707818746566772,
+        "co_ligands": null,
+        "diffusion_samples": 10,
+        "pocket_contacts": [
+          [
+            "A",
+            26
+          ],
+          [
+            "A",
+            27
+          ],
+          [
+            "A",
+            28
+          ],
+          [
+            "A",
+            29
+          ],
+          [
+            "A",
+            30
+          ],
+          [
+            "A",
+            31
+          ],
+          [
+            "A",
+            32
+          ],
+          [
+            "A",
+            33
+          ],
+          [
+            "A",
+            34
+          ],
+          [
+            "A",
+            36
+          ],
+          [
+            "A",
+            37
+          ],
+          [
+            "A",
+            39
+          ],
+          [
+            "A",
+            42
+          ],
+          [
+            "A",
+            50
+          ],
+          [
+            "A",
+            77
+          ],
+          [
+            "A",
+            80
+          ],
+          [
+            "A",
+            81
+          ],
+          [
+            "A",
+            84
+          ],
+          [
+            "A",
+            85
+          ],
+          [
+            "A",
+            89
+          ],
+          [
+            "A",
+            90
+          ],
+          [
+            "A",
+            91
+          ],
+          [
+            "A",
+            92
+          ],
+          [
+            "A",
+            94
+          ]
+        ]
+      },
+      "full_benchmark_success": true,
+      "model": "last_adapter",
+      "product_smiles": "CNS(=O)(=O)c1cc(-c2c(C)noc2C)ccc1C",
+      "source": "/LocalData1/uslee/datasets/smdd-bench/tasks/smdd_004_BRD4_7",
+      "split": "validation",
+      "status": "measured",
+      "task_id": "smdd_004_BRD4_7"
+    }
+  }
+]

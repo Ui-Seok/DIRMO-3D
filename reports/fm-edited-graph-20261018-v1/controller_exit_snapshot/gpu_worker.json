@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "pid": 2327877,
+  "physical_gpu": "3",
+  "gpu_uuid": "GPU-6a84febf-73e4-c9fb-13e8-881825006657",
+  "case_id": "5edl",
+  "variant": "C_to_F",
+  "arm": "core",
+  "batch_size": 8,
+  "remaining_cases": 57,
+  "reason": "RuntimeError: Eight consecutive FM batch errors; stopped to avoid consuming the cohort on a broken input path"
+}

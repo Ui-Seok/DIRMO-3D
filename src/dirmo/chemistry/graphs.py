@@ -7,7 +7,7 @@ from rdkit import Chem
 from rdkit.Chem import AllChem
 
 from ..io import digest
-from ..schemas import EditCandidate, Protection
+from ..schemas import EditCandidate, EditOperation, Protection
 
 
 class ChemicalError(ValueError):
@@ -92,12 +92,32 @@ def atom_signature(atom):
             atom.GetIsAromatic(), atom.GetProp("_CIPCode") if atom.HasProp("_CIPCode") else None)
 
 
+def stereo_from_coordinates(mol: Chem.Mol) -> Chem.Mol:
+    """Infer stereo from unchanged XYZ, ignoring stale MDL E/Z annotations.
+
+    Atom maps are correspondence labels and must not create stereocentres.
+    No expected graph or reference coordinates are used to assign the result.
+    """
+    actual = Chem.Mol(mol)
+    if not actual.GetNumConformers():
+        raise ChemicalError("3D coordinates required for stereochemistry")
+    maps = [atom.GetAtomMapNum() for atom in actual.GetAtoms()]
+    for atom in actual.GetAtoms():
+        atom.SetAtomMapNum(0)
+    for bond in actual.GetBonds():
+        bond.SetStereo(Chem.BondStereo.STEREONONE)
+        bond.SetBondDir(Chem.BondDir.NONE)
+    Chem.AssignStereochemistryFrom3D(actual, replaceExistingTags=True)
+    Chem.AssignStereochemistry(actual, cleanIt=True, force=True)
+    for atom, atom_map in zip(actual.GetAtoms(), maps):
+        atom.SetAtomMapNum(atom_map)
+    return actual
+
+
 def graph_check(expected: Chem.Mol, actual: Chem.Mol, derive_stereo: bool = False) -> dict:
     expected, actual = normalize(expected), normalize(actual)
     if derive_stereo:
-        Chem.AssignAtomChiralTagsFromStructure(actual, replaceExistingTags=True)
-        Chem.DetectBondStereochemistry(actual)
-        Chem.AssignStereochemistry(actual, cleanIt=True, force=True)
+        actual = stereo_from_coordinates(actual)
     exact = smiles(expected) == smiles(actual)
     # Keep the complete stereograph identity stable. Additional stereospecification
     # is also rejected rather than assigning another graph the requested graph ID.
@@ -211,8 +231,220 @@ def execute_edit(parent: Chem.Mol, candidate: EditCandidate, original: Chem.Mol,
                      "mapping_ambiguous": False}
 
 
+EDIT_ELEMENTS = ("C", "N", "O", "F", "P", "S", "Cl", "Br", "I")
+_CHANGED = __import__("re").compile(r"measured=\[([0-9,\s]*)\]")
+
+
+def _attempt(parent, original, protection, operation, guess):
+    """Run the real validator on one operation; adopt its measured changed set and retry once.
+
+    Returns ``(product, changed_atom_maps)`` when ``execute_edit`` accepts the operation,
+    otherwise None. The changed set comes back so a caller can build a candidate the
+    executor will accept without restating a quantity the validator already measures.
+    """
+    for _ in range(2):
+        try:
+            product, _ = execute_edit(parent, EditCandidate(
+                candidate_id="probe", parent_graph_id=graph_id(parent),
+                changed_atom_maps=sorted(guess), operation=operation,
+                protection_explanation="executability probe"), original, protection)
+            return product, sorted(guess)
+        except ChemicalError as exc:
+            found = _CHANGED.search(str(exc))
+            if not found:
+                return None
+            guess = [int(v) for v in found.group(1).split(",") if v.strip()]
+            if not guess:
+                return None
+        except Exception:
+            return None
+    return None
+
+
+def _single_edit_trials(parent, maps, fresh):
+    """Every single operation in the executor's vocabulary, as (operation, guessed change)."""
+    for atom_map, index in maps.items():
+        atom = parent.GetAtomWithIdx(index)
+        for element in EDIT_ELEMENTS:
+            if element != atom.GetSymbol():
+                yield EditOperation(kind="replace_atom", atom_map=atom_map, element=element), [atom_map]
+            for order in (1, 2, 3):
+                yield (EditOperation(kind="add_terminal_atom", atom_map=atom_map, element=element,
+                                     bond_order=order), [atom_map, fresh])
+        yield EditOperation(kind="remove_terminal_atom", atom_map=atom_map), [atom_map]
+        for other, other_index in maps.items():
+            if other <= atom_map or parent.GetBondBetweenAtoms(index, other_index) is None:
+                continue
+            for order in (1, 2, 3):
+                yield (EditOperation(kind="change_bond", atom_map=atom_map, other_map=other,
+                                     bond_order=order), [atom_map, other])
+
+
+def ranked_edits(parent: Chem.Mol, original: Chem.Mol, protection: Protection, limit: int = 3,
+                 max_sa_loss: float | None = None, exclude=()) -> list[EditCandidate]:
+    """Executable single edits that raise measured QED, best first, as ready candidates.
+
+    This is an oracle arm for data collection, not a policy. It uses measured graph
+    properties to pick edits a planner may miss, so that "is edit value predictable" can
+    be separated from "does the planner find good edits". Nothing here participates in a
+    routing decision, and the rank and measured gain are recorded on each candidate.
+    """
+    from .properties import graph_properties
+    base = graph_properties(smiles(parent))
+    maps = map_indices(parent)
+    seen, scored = set(exclude), []
+    for operation, guess in _single_edit_trials(parent, maps, max(maps) + 1):
+        attempt = _attempt(parent, original, protection, operation, guess)
+        if attempt is None:
+            continue
+        product, changed = attempt
+        identity = graph_id(product)
+        if identity in seen:
+            continue
+        seen.add(identity)
+        properties = graph_properties(smiles(product))
+        if properties["qed"] <= base["qed"]:
+            continue
+        if max_sa_loss is not None and properties["sa"] - base["sa"] > max_sa_loss:
+            continue
+        scored.append((properties["qed"] - base["qed"], operation, changed))
+    scored.sort(key=lambda row: -row[0])
+    return [EditCandidate(
+        candidate_id=f"oracle-{rank}-{operation.kind}-{operation.atom_map}",
+        parent_graph_id=graph_id(parent), changed_atom_maps=changed, operation=operation,
+        protection_explanation=(f"oracle arm, rank {rank} of {len(scored)} executable QED-improving "
+                                f"single edits; measured delta_qed={gain:+.4f}; protection unchanged"))
+        for rank, (gain, operation, changed) in enumerate(scored[:limit], 1)]
+
+
+def executable_edits(parent: Chem.Mol, original: Chem.Mol, protection: Protection) -> dict:
+    """Every single operation the executor would currently accept on this work item.
+
+    This is the action space, not a ranking: no property is computed and no edit is
+    recommended. It exists so a planner proposes operations that can actually run
+    instead of guessing at the allowlist, and it is produced by the same
+    ``execute_edit`` that will later execute the chosen candidate.
+    """
+    maps = map_indices(parent)
+    fresh = max(maps) + 1
+    replace, add, remove, bonds = {}, {}, [], {}
+    for atom_map, index in maps.items():
+        atom = parent.GetAtomWithIdx(index)
+        allowed = [e for e in EDIT_ELEMENTS if e != atom.GetSymbol() and _attempt(
+            parent, original, protection,
+            EditOperation(kind="replace_atom", atom_map=atom_map, element=e), [atom_map])]
+        if allowed:
+            replace[str(atom_map)] = allowed
+        attach = sorted({f"{e}{order}" for e in EDIT_ELEMENTS for order in (1, 2, 3)
+                         if _attempt(parent, original, protection,
+                                        EditOperation(kind="add_terminal_atom", atom_map=atom_map,
+                                                      element=e, bond_order=order),
+                                        [atom_map, fresh])})
+        if attach:
+            add[str(atom_map)] = attach
+        if _attempt(parent, original, protection,
+                       EditOperation(kind="remove_terminal_atom", atom_map=atom_map), [atom_map]):
+            remove.append(atom_map)
+        for other, other_index in maps.items():
+            if other <= atom_map or parent.GetBondBetweenAtoms(index, other_index) is None:
+                continue
+            orders = [order for order in (1, 2, 3) if _attempt(
+                parent, original, protection,
+                EditOperation(kind="change_bond", atom_map=atom_map, other_map=other,
+                              bond_order=order), [atom_map, other])]
+            if orders:
+                bonds[f"{atom_map}-{other}"] = orders
+    return {"replace_atom": replace, "add_terminal_atom": add, "remove_terminal_atom": sorted(remove),
+            "change_bond": bonds, "new_atom_map_ids_start_at": fresh,
+            "note": "Executable operations only. No property was computed and nothing is recommended."}
+
+
+def redesigned(parent: Chem.Mol, raw: Chem.Mol, region: list[int]) -> tuple[Chem.Mol, dict]:
+    """Accept a fragment-prior output: enforce what the mode promises, measure what it does not.
+
+    The generator chose the freed atoms' elements and bonds, so there is no product graph to
+    compare against. What is enforced is the one guarantee the mode offers -- the atoms
+    outside the region keep their element -- plus the atom count, since the tensor width is
+    fixed. Coordinate drift of the held atoms is reported rather than enforced, because the
+    mode does not actually pin it. Freed atoms get fresh map IDs: they are new chemistry.
+    """
+    parent, raw = mapped(parent), normalize(raw)
+    if raw.GetNumAtoms() != parent.GetNumAtoms():
+        raise ChemicalError(f"redesign_atom_count_changed: {parent.GetNumAtoms()} to {raw.GetNumAtoms()}")
+    index = map_indices(parent)
+    missing = [m for m in region if m not in index]
+    if missing or not region:
+        raise ChemicalError(f"redesign_region_not_on_parent: {missing}")
+    free = {index[m] for m in region}
+    parent_positions = parent.GetConformer().GetPositions()
+    raw_positions = raw.GetConformer().GetPositions()
+    fresh, drift = max(index) + 1, []
+    for i, atom in enumerate(raw.GetAtoms()):
+        if i in free:
+            atom.SetAtomMapNum(fresh)
+            fresh += 1
+            continue
+        held = parent.GetAtomWithIdx(i)
+        if atom.GetAtomicNum() != held.GetAtomicNum():
+            raise ChemicalError(f"redesign_changed_a_held_atom: index {i} "
+                                f"{held.GetSymbol()} to {atom.GetSymbol()}")
+        atom.SetAtomMapNum(held.GetAtomMapNum())
+        drift.append(float(np.linalg.norm(raw_positions[i] - parent_positions[i])))
+    if graph_id(raw) == graph_id(parent):
+        raise ChemicalError("redesign_returned_the_parent_graph")
+    report = {"region": sorted(region), "held_atoms": len(drift),
+              "held_rmsd_angstrom": float(np.sqrt(np.mean(np.square(drift)))) if drift else None,
+              "held_max_drift_angstrom": max(drift) if drift else None,
+              "parent_graph_id": graph_id(parent), "product_graph_id": graph_id(raw),
+              "contract": "held atoms keep their element; their coordinate drift is measured, "
+                          "not guaranteed, because the mode does not pin it"}
+    return raw, report
+
+
+def candidate_regions(parent: Chem.Mol, protection: Protection, limit: int = 4,
+                      max_fraction: float = 0.4) -> list[list[int]]:
+    """Regions a redesign action may free, as atom-map lists, whole substituents first.
+
+    A region is a chemically meaningful tip: all the terminal atoms hanging off one heavy
+    atom (a substituent), or a single terminal atom. Whole substituents come first because
+    one atom is usually returned unchanged, so a small limit should spend itself on the
+    regions that can actually differ. ``max_fraction`` keeps the held part in the majority,
+    otherwise the action stops being a redesign and becomes de novo generation. Protected
+    atoms are never offered. Nothing here predicts which region is worth freeing.
+    """
+    maps = map_indices(parent)
+    protected = set(protection.atom_maps)
+    protected.update(v for feature in protection.features if feature.hard for v in feature.atom_maps)
+    cap = max(1, int(parent.GetNumAtoms() * max_fraction))
+    groups, singles, seen = [], [], set()
+    for atom_map, index in sorted(maps.items()):
+        tips = sorted({a.GetAtomMapNum() for a in parent.GetAtomWithIdx(index).GetNeighbors()
+                       if a.GetDegree() == 1} - protected)
+        if 1 < len(tips) <= cap:
+            key = frozenset(tips)
+            if key not in seen:
+                seen.add(key)
+                groups.append(tips)
+    for atom_map, index in sorted(maps.items()):
+        if atom_map in protected or parent.GetAtomWithIdx(index).GetDegree() != 1:
+            continue
+        key = frozenset({atom_map})
+        if key not in seen:
+            seen.add(key)
+            singles.append([atom_map])
+    groups.sort(key=lambda region: (-len(region), region))
+    return (groups + singles)[:limit]
+
+
 def input_conformer(product: Chem.Mol, reference: Chem.Mol, seed: int) -> Chem.Mol:
-    """Preparation only. This conformer must NEVER be accepted as an FM result."""
+    """Preparation only. This conformer must NEVER be accepted as an FM result.
+
+    The atoms the edit retained are rigidly aligned onto the parent's measured pose, so
+    the edited graph enters generation in the binding mode that was actually evaluated.
+    A centroid shift alone leaves the orientation arbitrary, which makes the generator
+    rotate the whole ligand and strains the result. Only a rigid transform is applied:
+    no coordinate is invented for a retained atom and no force field is run.
+    """
     mol = Chem.AddHs(product)
     mol.RemoveAllConformers()
     params = AllChem.ETKDGv3()
@@ -220,9 +452,11 @@ def input_conformer(product: Chem.Mol, reference: Chem.Mol, seed: int) -> Chem.M
     if AllChem.EmbedMolecule(mol, params) != 0:
         raise ChemicalError("Input conformer embedding failed")
     mol = Chem.RemoveHs(mol)
-    conf = mol.GetConformer()
-    shift = reference.GetConformer().GetPositions().mean(0) - conf.GetPositions().mean(0)
-    for i, xyz in enumerate(conf.GetPositions() + shift):
-        conf.SetAtomPosition(i, xyz)
+    product_index, parent_index = map_indices(mol), map_indices(reference)
+    retained = [(product_index[m], parent_index[m]) for m in sorted(product_index) if m in parent_index]
+    if len(retained) < 3:
+        raise ChemicalError("Too few retained atoms to place the edited graph in the pocket frame")
+    AllChem.AlignMol(mol, reference, atomMap=retained)
     mol.SetProp("DIRMO_source", "input_conformer_only")
+    mol.SetProp("DIRMO_retained_alignment_atoms", str(len(retained)))
     return mol

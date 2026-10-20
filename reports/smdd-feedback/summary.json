@@ -1,0 +1,150 @@
+{
+  "comparison": {
+    "feedback": {
+      "admet_evaluated_attempts": 41,
+      "any_changed_local_pass": 22,
+      "any_valid_graph": 31,
+      "budgeted_proposals": 102,
+      "cases": 34,
+      "changed_local_pass_attempts": 41,
+      "first_proposal_pre_boltz_pass": 7,
+      "full_failure_confirmed": 27,
+      "full_success_confirmed": 3,
+      "plan_valid_attempts": 102,
+      "selected_pre_boltz_pass": 7,
+      "unmeasured_binding": 4,
+      "valid_graph_attempts": 92
+    },
+    "independent": {
+      "admet_evaluated_attempts": 43,
+      "any_changed_local_pass": 18,
+      "any_valid_graph": 31,
+      "budgeted_proposals": 102,
+      "cases": 34,
+      "changed_local_pass_attempts": 43,
+      "first_proposal_pre_boltz_pass": 7,
+      "full_failure_confirmed": 26,
+      "full_success_confirmed": 3,
+      "plan_valid_attempts": 102,
+      "selected_pre_boltz_pass": 8,
+      "unmeasured_binding": 5,
+      "valid_graph_attempts": 91
+    }
+  },
+  "diagnostics": {
+    "feedback": {
+      "copy_original_attempts": 20,
+      "failed_conditions": {
+        "admet:ames": 2,
+        "admet:bbb": 16,
+        "admet:caco2": 2,
+        "admet:clearance": 14,
+        "admet:cyp3a4": 6,
+        "admet:herg": 4,
+        "admet:ppb": 2,
+        "admet:solubility": 5,
+        "edit:Must change the original ligand": 20,
+        "rdkit:brenk": 16,
+        "rdkit:logp": 6,
+        "rdkit:tanimoto": 12,
+        "rdkit_parse:Invalid molecular graph or SMILES": 10
+      },
+      "mean_unique_valid_graphs_per_case": 2.088235294117647,
+      "token_cost_including_shared_first": 294637
+    },
+    "independent": {
+      "copy_original_attempts": 8,
+      "failed_conditions": {
+        "admet:bbb": 17,
+        "admet:caco2": 1,
+        "admet:clearance": 10,
+        "admet:cyp3a4": 3,
+        "admet:herg": 2,
+        "admet:ppb": 1,
+        "admet:solubility": 6,
+        "edit:Must change the original ligand": 8,
+        "rdkit:brenk": 16,
+        "rdkit:logp": 8,
+        "rdkit:tanimoto": 16,
+        "rdkit_parse:Invalid molecular graph or SMILES": 11
+      },
+      "mean_unique_valid_graphs_per_case": 1.3235294117647058,
+      "token_cost_including_shared_first": 264814
+    }
+  },
+  "per_target": {
+    "BChE": {
+      "feedback": {
+        "binding_unmeasured": 0,
+        "cases": 1,
+        "full_success": 0,
+        "pre_boltz_pass": 0
+      },
+      "independent": {
+        "binding_unmeasured": 0,
+        "cases": 1,
+        "full_success": 0,
+        "pre_boltz_pass": 0
+      }
+    },
+    "BRAF": {
+      "feedback": {
+        "binding_unmeasured": 2,
+        "cases": 8,
+        "full_success": 0,
+        "pre_boltz_pass": 2
+      },
+      "independent": {
+        "binding_unmeasured": 3,
+        "cases": 8,
+        "full_success": 0,
+        "pre_boltz_pass": 3
+      }
+    },
+    "BRD4": {
+      "feedback": {
+        "binding_unmeasured": 0,
+        "cases": 17,
+        "full_success": 3,
+        "pre_boltz_pass": 3
+      },
+      "independent": {
+        "binding_unmeasured": 0,
+        "cases": 17,
+        "full_success": 3,
+        "pre_boltz_pass": 3
+      }
+    },
+    "CYP19A1": {
+      "feedback": {
+        "binding_unmeasured": 2,
+        "cases": 8,
+        "full_success": 0,
+        "pre_boltz_pass": 2
+      },
+      "independent": {
+        "binding_unmeasured": 2,
+        "cases": 8,
+        "full_success": 0,
+        "pre_boltz_pass": 2
+      }
+    }
+  },
+  "pre_boltz_objective_types": {
+    "feedback": {
+      "pre_boltz_pass_with_admet_goal": 6,
+      "pre_boltz_pass_with_binding_only_goal": 1
+    },
+    "independent": {
+      "pre_boltz_pass_with_admet_goal": 7,
+      "pre_boltz_pass_with_binding_only_goal": 1
+    }
+  },
+  "rescues": [],
+  "run_report": "/home/uslee/code/DIRMO-3D/runs/smdd_feedback_01/report_with_boltz.json",
+  "tokens": {
+    "input_tokens": 453978,
+    "output_tokens": 17186,
+    "total_tokens": 471164
+  }
+}

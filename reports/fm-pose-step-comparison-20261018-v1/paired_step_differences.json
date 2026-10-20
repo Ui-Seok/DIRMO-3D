@@ -1,0 +1,362 @@
+[
+  {
+    "method": "base",
+    "difficulty": "small",
+    "metric": "pocket_valid",
+    "comparison": "64-minus-128",
+    "difference_pp": 4.115625,
+    "protein_cluster_95ci_pp": [
+      3.4241548566089643,
+      4.944284152238481
+    ],
+    "scaffold_cluster_95ci_pp": [
+      3.3297847728061045,
+      4.917145596191511
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "small",
+    "metric": "pocket_valid",
+    "comparison": "64-minus-256",
+    "difference_pp": 7.953125,
+    "protein_cluster_95ci_pp": [
+      6.906177501686608,
+      9.097664507785185
+    ],
+    "scaffold_cluster_95ci_pp": [
+      6.746605722003929,
+      9.094590377055567
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "small",
+    "metric": "full_valid",
+    "comparison": "64-minus-128",
+    "difference_pp": 3.9125,
+    "protein_cluster_95ci_pp": [
+      3.1977883411502317,
+      4.767207071992162
+    ],
+    "scaffold_cluster_95ci_pp": [
+      3.0378494141657852,
+      4.834927257304792
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "small",
+    "metric": "full_valid",
+    "comparison": "64-minus-256",
+    "difference_pp": 8.34375,
+    "protein_cluster_95ci_pp": [
+      7.186510772932266,
+      9.585268925153786
+    ],
+    "scaffold_cluster_95ci_pp": [
+      7.005086480451165,
+      9.645527088229239
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "small",
+    "metric": "primary_success",
+    "comparison": "64-minus-128",
+    "difference_pp": 6.896875,
+    "protein_cluster_95ci_pp": [
+      6.129286980634603,
+      7.732030407839961
+    ],
+    "scaffold_cluster_95ci_pp": [
+      6.145024322553862,
+      7.6491380064546215
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "small",
+    "metric": "primary_success",
+    "comparison": "64-minus-256",
+    "difference_pp": 12.568750000000001,
+    "protein_cluster_95ci_pp": [
+      11.30225457212078,
+      13.880724848288367
+    ],
+    "scaffold_cluster_95ci_pp": [
+      11.390380360188258,
+      13.869317473872671
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "large",
+    "metric": "pocket_valid",
+    "comparison": "64-minus-128",
+    "difference_pp": 3.015625,
+    "protein_cluster_95ci_pp": [
+      2.3292025399786067,
+      3.723304986383534
+    ],
+    "scaffold_cluster_95ci_pp": [
+      2.281908359879569,
+      3.7054924891722947
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "large",
+    "metric": "pocket_valid",
+    "comparison": "64-minus-256",
+    "difference_pp": 5.53125,
+    "protein_cluster_95ci_pp": [
+      4.518977266604825,
+      6.538017417098689
+    ],
+    "scaffold_cluster_95ci_pp": [
+      4.560438186675811,
+      6.599604064044757
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "large",
+    "metric": "full_valid",
+    "comparison": "64-minus-128",
+    "difference_pp": 2.1437500000000003,
+    "protein_cluster_95ci_pp": [
+      1.4371578703727126,
+      2.9044334063557735
+    ],
+    "scaffold_cluster_95ci_pp": [
+      1.4217257480688894,
+      2.8442516409828573
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "large",
+    "metric": "full_valid",
+    "comparison": "64-minus-256",
+    "difference_pp": 4.68125,
+    "protein_cluster_95ci_pp": [
+      3.592544256270326,
+      5.721336459293313
+    ],
+    "scaffold_cluster_95ci_pp": [
+      3.6503443184406628,
+      5.716611820957891
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "large",
+    "metric": "primary_success",
+    "comparison": "64-minus-128",
+    "difference_pp": 2.9812499999999997,
+    "protein_cluster_95ci_pp": [
+      2.221873074800858,
+      3.7526101795555435
+    ],
+    "scaffold_cluster_95ci_pp": [
+      2.2423594207243402,
+      3.680705623656036
+    ]
+  },
+  {
+    "method": "base",
+    "difficulty": "large",
+    "metric": "primary_success",
+    "comparison": "64-minus-256",
+    "difference_pp": 6.009375,
+    "protein_cluster_95ci_pp": [
+      4.906749683920868,
+      7.107704161731684
+    ],
+    "scaffold_cluster_95ci_pp": [
+      4.9322302639335085,
+      7.120633100697906
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "small",
+    "metric": "pocket_valid",
+    "comparison": "64-minus-128",
+    "difference_pp": 3.003125,
+    "protein_cluster_95ci_pp": [
+      2.1187874324967977,
+      3.9661084607807684
+    ],
+    "scaffold_cluster_95ci_pp": [
+      2.1518486599457565,
+      3.8868641947843687
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "small",
+    "metric": "pocket_valid",
+    "comparison": "64-minus-256",
+    "difference_pp": 13.334375000000001,
+    "protein_cluster_95ci_pp": [
+      11.827446222431467,
+      14.911403199708031
+    ],
+    "scaffold_cluster_95ci_pp": [
+      11.476419197700157,
+      15.340550778548302
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "small",
+    "metric": "full_valid",
+    "comparison": "64-minus-128",
+    "difference_pp": 3.2125,
+    "protein_cluster_95ci_pp": [
+      2.292820948384579,
+      4.182601502739758
+    ],
+    "scaffold_cluster_95ci_pp": [
+      2.362446789659374,
+      4.131415866554156
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "small",
+    "metric": "full_valid",
+    "comparison": "64-minus-256",
+    "difference_pp": 12.681249999999999,
+    "protein_cluster_95ci_pp": [
+      11.110373435441371,
+      14.204627089864161
+    ],
+    "scaffold_cluster_95ci_pp": [
+      10.981600100921497,
+      14.688782235203124
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "small",
+    "metric": "primary_success",
+    "comparison": "64-minus-128",
+    "difference_pp": 5.40625,
+    "protein_cluster_95ci_pp": [
+      4.51484265070725,
+      6.342525339544848
+    ],
+    "scaffold_cluster_95ci_pp": [
+      4.403709171271485,
+      6.50648543885478
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "small",
+    "metric": "primary_success",
+    "comparison": "64-minus-256",
+    "difference_pp": 15.759375,
+    "protein_cluster_95ci_pp": [
+      14.293898417716616,
+      17.34588180349267
+    ],
+    "scaffold_cluster_95ci_pp": [
+      13.77318311002005,
+      17.908455030721544
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "large",
+    "metric": "pocket_valid",
+    "comparison": "64-minus-128",
+    "difference_pp": 1.328125,
+    "protein_cluster_95ci_pp": [
+      0.5406417484073213,
+      2.122487573414643
+    ],
+    "scaffold_cluster_95ci_pp": [
+      0.5308796642932376,
+      2.146590248761725
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "large",
+    "metric": "pocket_valid",
+    "comparison": "64-minus-256",
+    "difference_pp": 7.121874999999999,
+    "protein_cluster_95ci_pp": [
+      5.792489985568964,
+      8.451428221683098
+    ],
+    "scaffold_cluster_95ci_pp": [
+      5.773165601019191,
+      8.56476354573883
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "large",
+    "metric": "full_valid",
+    "comparison": "64-minus-128",
+    "difference_pp": 1.525,
+    "protein_cluster_95ci_pp": [
+      0.7589611785891938,
+      2.275321277174784
+    ],
+    "scaffold_cluster_95ci_pp": [
+      0.7748251324670697,
+      2.2741237762507582
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "large",
+    "metric": "full_valid",
+    "comparison": "64-minus-256",
+    "difference_pp": 6.390625,
+    "protein_cluster_95ci_pp": [
+      5.171075639794091,
+      7.543322704442831
+    ],
+    "scaffold_cluster_95ci_pp": [
+      5.108815278784585,
+      7.704015880895673
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "large",
+    "metric": "primary_success",
+    "comparison": "64-minus-128",
+    "difference_pp": 1.740625,
+    "protein_cluster_95ci_pp": [
+      0.9861159004127151,
+      2.5437378996012625
+    ],
+    "scaffold_cluster_95ci_pp": [
+      1.0262743692437157,
+      2.599425112962659
+    ]
+  },
+  {
+    "method": "v2",
+    "difficulty": "large",
+    "metric": "primary_success",
+    "comparison": "64-minus-256",
+    "difference_pp": 6.937500000000001,
+    "protein_cluster_95ci_pp": [
+      5.643932130044078,
+      8.372141498334576
+    ],
+    "scaffold_cluster_95ci_pp": [
+      5.608586264364137,
+      8.421283985586015
+    ]
+  }
+]

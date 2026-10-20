@@ -3,6 +3,7 @@ from pathlib import Path
 
 import numpy as np
 
+from ..io import digest
 from ..schemas import ActionKind
 from .features import FEATURE_NAMES, features
 
@@ -11,6 +12,15 @@ class LearnedRouter:
     name = "learned"
 
     def __init__(self, path: str, cost_weight: float = 0.01):
+        """``cost_weight`` is utility per wall-clock second, and it is a research choice,
+        not a tuned constant. The predicted cost label is in seconds while utility is in
+        the objective's own units, so the exchange rate has to be stated deliberately:
+        at 0.01 a five-second draw costs 0.05 utility, which already exceeds a typical
+        case's ``minimum_improvement``, and the router will prefer STOP to every action.
+        Set it against the objective actually in use, and record what was used.
+        """
+        if cost_weight < 0:
+            raise ValueError("cost_weight must be nonnegative")
         self.artifact = json.loads(Path(path).read_text())
         if self.artifact["feature_names"] != FEATURE_NAMES:
             raise ValueError("Learned router feature schema mismatch")
@@ -30,6 +40,9 @@ class LearnedRouter:
             raise ValueError("Learned router requires the fixed objective/case for pre-action features")
         if kernel_id != self.artifact["kernel_id"]:
             raise ValueError("Learned router was trained on a different generation kernel")
+        if digest(case.objective) != self.artifact.get("objective_sha256"):
+            raise ValueError("Learned router was trained against a different objective; its "
+                             "utility predictions do not transfer")
         best, best_value = next(a for a in actions if a.kind == ActionKind.STOP), 0.0
         for action in actions:
             if action.kind == ActionKind.STOP:

@@ -1,0 +1,9 @@
+{
+  "input_tokens": 2395,
+  "latency_seconds": 9.320841911016032,
+  "output_tokens": 87,
+  "peak_memory_bytes": 19502124544,
+  "raw": "{\n  \"focus_atom_maps\": [2],\n  \"edit_hypothesis\": \"Replace the thiophenyl sulfur atom with an oxygen to reduce lipophilicity and improve solubility while maintaining molecular weight constraints.\",\n  \"product_smiles\": \"COc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12\"\n}\n",
+  "status": "ok",
+  "total_tokens": 2482
+}

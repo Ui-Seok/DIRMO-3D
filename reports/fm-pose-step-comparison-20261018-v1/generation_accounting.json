@@ -1,0 +1,106 @@
+[
+  {
+    "steps": 64,
+    "method": "base",
+    "scheduled": 64000,
+    "raw_sdf": 62656,
+    "statuses": {
+      "ok": 61653,
+      "contract_failed": 1003,
+      "failed": 1344
+    },
+    "inference_hours": 15.698527226435836,
+    "oom_retries": 0,
+    "max_held_tensor_drift": 0.0,
+    "contract_failures": {
+      "stereo_only": 1003
+    }
+  },
+  {
+    "steps": 64,
+    "method": "v2",
+    "scheduled": 64000,
+    "raw_sdf": 62656,
+    "statuses": {
+      "ok": 62380,
+      "contract_failed": 276,
+      "failed": 1344
+    },
+    "inference_hours": 15.082765045808564,
+    "oom_retries": 0,
+    "max_held_tensor_drift": 0.0,
+    "contract_failures": {
+      "stereo_only": 276
+    }
+  },
+  {
+    "steps": 128,
+    "method": "base",
+    "scheduled": 64000,
+    "raw_sdf": 62656,
+    "statuses": {
+      "ok": 61462,
+      "contract_failed": 1194,
+      "failed": 1344
+    },
+    "inference_hours": 34.63947275864387,
+    "oom_retries": 0,
+    "max_held_tensor_drift": 0.0,
+    "contract_failures": {
+      "stereo_only": 1194
+    }
+  },
+  {
+    "steps": 128,
+    "method": "v2",
+    "scheduled": 64000,
+    "raw_sdf": 62656,
+    "statuses": {
+      "ok": 61749,
+      "contract_failed": 907,
+      "failed": 1344
+    },
+    "inference_hours": 33.10022638450836,
+    "oom_retries": 0,
+    "max_held_tensor_drift": 0.0,
+    "contract_failures": {
+      "stereo_only": 907
+    }
+  },
+  {
+    "steps": 256,
+    "method": "base",
+    "scheduled": 64000,
+    "raw_sdf": 62560,
+    "statuses": {
+      "ok": 61175,
+      "contract_failed": 1385,
+      "failed": 1344,
+      "oom": 96
+    },
+    "inference_hours": 67.89778054177081,
+    "oom_retries": 431,
+    "max_held_tensor_drift": 0.0,
+    "contract_failures": {
+      "stereo_only": 1385
+    }
+  },
+  {
+    "steps": 256,
+    "method": "v2",
+    "scheduled": 64000,
+    "raw_sdf": 62631,
+    "statuses": {
+      "ok": 59946,
+      "contract_failed": 2685,
+      "failed": 1344,
+      "oom": 25
+    },
+    "inference_hours": 65.81610424633067,
+    "oom_retries": 220,
+    "max_held_tensor_drift": 0.0,
+    "contract_failures": {
+      "stereo_only": 2685
+    }
+  }
+]

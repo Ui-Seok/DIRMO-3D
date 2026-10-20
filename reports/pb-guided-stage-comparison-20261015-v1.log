@@ -1,0 +1,153 @@
+{
+  "created_utc": "2026-10-15T08:39:13.081087+00:00",
+  "run": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1",
+  "protocol": {
+    "pb": "dock; all 20 binary checks; identical fixed protein-only pocket",
+    "initial_generation": "Pocket-conditioned de novo, graph/coordinates generated; reference atom count retained",
+    "repair": "Pose-only; original generated graph/stereo and held XYZ preserved; free initial coordinate noise sigma=0.3 A",
+    "initial_draws": 16,
+    "repair_draws": 8,
+    "steps": 64,
+    "missing_retained_in_scheduled_denominator": true
+  },
+  "native": {
+    "scheduled": 100,
+    "measured": 100,
+    "pb_valid": 89,
+    "pb_failed_measured": 11,
+    "missing": 0,
+    "partially_available_but_definitely_failed": 0,
+    "pb_valid_pct_scheduled": 89.0,
+    "pb_valid_pct_measured": 89.0
+  },
+  "first_generated": {
+    "scheduled": 1600,
+    "measured": 1538,
+    "pb_valid": 1459,
+    "pb_failed_measured": 79,
+    "missing": 62,
+    "partially_available_but_definitely_failed": 1,
+    "pb_valid_pct_scheduled": 91.1875,
+    "pb_valid_pct_measured": 94.86345903771131
+  },
+  "repair_inputs": {
+    "scheduled": 41,
+    "measured": 41,
+    "pb_valid": 0,
+    "pb_failed_measured": 41,
+    "missing": 0,
+    "partially_available_but_definitely_failed": 0,
+    "pb_valid_pct_scheduled": 0.0,
+    "pb_valid_pct_measured": 0.0
+  },
+  "native_provenance": {
+    "existing_same_native_and_pocket": 88,
+    "additional_cpu_measurement": 12
+  },
+  "arms": {
+    "targeted": {
+      "all_candidates": {
+        "scheduled": 328,
+        "measured": 328,
+        "pb_valid": 52,
+        "pb_failed_measured": 276,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_valid_pct_scheduled": 15.853658536585366,
+        "pb_valid_pct_measured": 15.853658536585366
+      },
+      "selected_outputs": {
+        "scheduled": 41,
+        "measured": 41,
+        "pb_valid": 9,
+        "pb_failed_measured": 32,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_valid_pct_scheduled": 21.951219512195124,
+        "pb_valid_pct_measured": 21.951219512195124
+      },
+      "final_pb_valid": 1468,
+      "final_scheduled": 1600,
+      "final_pb_valid_pct": 91.75,
+      "improvement_pp": 0.5625
+    },
+    "random": {
+      "all_candidates": {
+        "scheduled": 328,
+        "measured": 328,
+        "pb_valid": 44,
+        "pb_failed_measured": 284,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_valid_pct_scheduled": 13.414634146341463,
+        "pb_valid_pct_measured": 13.414634146341463
+      },
+      "selected_outputs": {
+        "scheduled": 41,
+        "measured": 41,
+        "pb_valid": 8,
+        "pb_failed_measured": 33,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_valid_pct_scheduled": 19.51219512195122,
+        "pb_valid_pct_measured": 19.51219512195122
+      },
+      "final_pb_valid": 1467,
+      "final_scheduled": 1600,
+      "final_pb_valid_pct": 91.6875,
+      "improvement_pp": 0.5
+    },
+    "whole": {
+      "all_candidates": {
+        "scheduled": 328,
+        "measured": 328,
+        "pb_valid": 72,
+        "pb_failed_measured": 256,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_valid_pct_scheduled": 21.951219512195124,
+        "pb_valid_pct_measured": 21.951219512195124
+      },
+      "selected_outputs": {
+        "scheduled": 41,
+        "measured": 41,
+        "pb_valid": 15,
+        "pb_failed_measured": 26,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_valid_pct_scheduled": 36.58536585365854,
+        "pb_valid_pct_measured": 36.58536585365854
+      },
+      "final_pb_valid": 1474,
+      "final_scheduled": 1600,
+      "final_pb_valid_pct": 92.125,
+      "improvement_pp": 0.9375
+    },
+    "UFF_targeted": {
+      "all_candidates": {
+        "scheduled": 41,
+        "measured": 41,
+        "pb_valid": 9,
+        "pb_failed_measured": 32,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_valid_pct_scheduled": 21.951219512195124,
+        "pb_valid_pct_measured": 21.951219512195124
+      },
+      "selected_outputs": {
+        "scheduled": 41,
+        "measured": 41,
+        "pb_valid": 9,
+        "pb_failed_measured": 32,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_valid_pct_scheduled": 21.951219512195124,
+        "pb_valid_pct_measured": 21.951219512195124
+      },
+      "final_pb_valid": 1468,
+      "final_scheduled": 1600,
+      "final_pb_valid_pct": 91.75,
+      "improvement_pp": 0.5625
+    }
+  }
+}

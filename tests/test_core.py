@@ -309,6 +309,7 @@ class TrainingTests(unittest.TestCase):
         rows = [{"kernel_id": "unit-only", "pre_state_id": f"s{i}", "target_id": f"T{i // 2}",
                  "utility_change": 0.1 * i, "feasible": bool(i % 2),
                  "action": {"kind": "POSE_RESAMPLE"}, "integration_steps": 64,
+                 "objective_sha256": "unit-objective",
                  "feature_names": FEATURE_NAMES, "pre_action_features": [float(i)] * len(FEATURE_NAMES),
                  "compute_cost": {"wall_seconds": i + 1}} for i in range(4)]
         with tempfile.TemporaryDirectory() as temp:
@@ -322,6 +323,21 @@ class TrainingTests(unittest.TestCase):
             self.assertTrue(np.isfinite(prediction).all())
             self.assertEqual(report["split"]["groups"], 2)
             self.assertEqual(gate.artifact["supported_action_kinds"], ["POSE_RESAMPLE"])
+            self.assertEqual(gate.artifact["objective_sha256"], "unit-objective")
+
+            # A reward label only means something under the objective it was measured
+            # under, so rows spanning two objectives must not train one artifact.
+            mixed = [dict(row) for row in rows]
+            mixed[0]["objective_sha256"] = "a-different-objective"
+            dataset.write_text("".join(json.dumps(row) + "\n" for row in mixed))
+            with self.assertRaisesRegex(ValueError, "objectives"):
+                train_router(str(dataset), str(root / "must-not-exist.json"), epochs=2)
+
+            missing = [{k: v for k, v in row.items() if k != "objective_sha256"} for row in rows]
+            dataset.write_text("".join(json.dumps(row) + "\n" for row in missing))
+            with self.assertRaisesRegex(ValueError, "lack objective_sha256"):
+                train_router(str(dataset), str(root / "must-not-exist.json"), epochs=2)
+
             rows[0]["kernel_id"] = "another-unit-kernel"
             dataset.write_text("".join(json.dumps(row) + "\n" for row in rows))
             with self.assertRaisesRegex(ValueError, "multiple or zero kernels"):

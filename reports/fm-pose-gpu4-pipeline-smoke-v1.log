@@ -1,0 +1,7 @@
+{"status": "progress", "gpu_workers": {"base": null, "v2": null}, "cpu_cases_submitted": 0, "cpu_cases_done": 0, "total_cases": 2}
+{"status": "progress", "gpu_workers": {"base": null, "v2": null}, "cpu_cases_submitted": 1, "cpu_cases_done": 0, "total_cases": 2}
+{"status": "progress", "gpu_workers": {"base": 0, "v2": 0}, "cpu_cases_submitted": 2, "cpu_cases_done": 0, "total_cases": 2}
+{"status": "progress", "gpu_workers": {"base": 0, "v2": 0}, "cpu_cases_submitted": 2, "cpu_cases_done": 0, "total_cases": 2}
+{"status": "progress", "gpu_workers": {"base": 0, "v2": 0}, "cpu_cases_submitted": 2, "cpu_cases_done": 1, "total_cases": 2}
+{"status": "progress", "gpu_workers": {"base": 0, "v2": 0}, "cpu_cases_submitted": 2, "cpu_cases_done": 2, "total_cases": 2}
+{"status": "complete", "report": "/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_pipeline_smoke_v1/REPORT.md"}

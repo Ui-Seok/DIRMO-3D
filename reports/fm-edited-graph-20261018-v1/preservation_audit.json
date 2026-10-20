@@ -1,0 +1,55 @@
+{
+  "saved_sdf_count": 2574,
+  "by_arm": {
+    "core": {
+      "saved_sdf_count": 1287,
+      "index_graph_preserved": 1287,
+      "strict_stereo_preserved": 1186,
+      "core_preserved": 1287,
+      "max_core_drift": 0.0
+    },
+    "whole": {
+      "saved_sdf_count": 1287,
+      "index_graph_preserved": 1287,
+      "strict_stereo_preserved": 1116,
+      "core_preserved": 0,
+      "max_core_drift": 4.483438962448354
+    }
+  },
+  "condition_count": 2574,
+  "coordinate_masks_correct": 2574,
+  "graph_masks_correct": 2574,
+  "input_hashes_correct": 2574,
+  "whole_core_input_pairs": 1287,
+  "same_input_pairs": 1287,
+  "all_prepared_input_status": {
+    "ready": 2945,
+    "initialization_failed": 255
+  },
+  "radical_graphs": [
+    {
+      "case_id": "5edl",
+      "variant": "original",
+      "radical_electrons": 1,
+      "smiles": "CC1=C(CCO)S[CH]N1Cc1cnc(C)nc1N"
+    },
+    {
+      "case_id": "5edl",
+      "variant": "C_to_N",
+      "radical_electrons": 1,
+      "smiles": "CC1=C(CCO)S[CH]N1Cc1cnc(N)nc1N"
+    },
+    {
+      "case_id": "5edl",
+      "variant": "C_to_O",
+      "radical_electrons": 1,
+      "smiles": "CC1=C(CCO)S[CH]N1Cc1cnc(O)nc1N"
+    },
+    {
+      "case_id": "5edl",
+      "variant": "C_to_F",
+      "radical_electrons": 1,
+      "smiles": "CC1=C(CCO)S[CH]N1Cc1cnc(F)nc1N"
+    }
+  ]
+}

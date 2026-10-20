@@ -1,0 +1,907 @@
+[
+  {
+    "assessment": {
+      "admet_conditions": {
+        "admet_goal_count": 2,
+        "all_admet_goals_passed": true,
+        "all_admet_holds_passed": true,
+        "binding_affinity_measured": false,
+        "boltz_binding_probability": null,
+        "goals": [
+          {
+            "baseline": -3.9819,
+            "direction": "maximize",
+            "improvement": 0.6338122924816303,
+            "passed": true,
+            "property": "solubility",
+            "threshold": 0.5,
+            "value": -3.3480877075183697
+          },
+          {
+            "baseline": 0.715,
+            "direction": "minimize",
+            "improvement": 0.1992900693416595,
+            "passed": true,
+            "property": "cyp3a4",
+            "threshold": 0.1,
+            "value": 0.5157099306583405
+          }
+        ],
+        "holds": [
+          {
+            "baseline": -1.6924,
+            "direction": "increase",
+            "passed": null,
+            "property": "binding_affinity",
+            "tolerance": 0.3,
+            "value": null
+          },
+          {
+            "baseline": 0.9491,
+            "delta": -0.03027084503173838,
+            "direction": "change",
+            "passed": true,
+            "property": "bbb",
+            "tolerance": 0.1,
+            "value": 0.9188291549682617
+          },
+          {
+            "baseline": 42.8219,
+            "delta": -10.16420793559275,
+            "direction": "increase",
+            "passed": true,
+            "property": "clearance",
+            "tolerance": 5.0,
+            "value": 32.65769206440725
+          },
+          {
+            "baseline": -5.1787,
+            "delta": 0.24077285800794979,
+            "direction": "decrease",
+            "passed": true,
+            "property": "caco2",
+            "tolerance": 0.3,
+            "value": -4.93792714199205
+          }
+        ]
+      },
+      "admet_properties": {
+        "ames": 0.3275856673717499,
+        "bbb": 0.9188291549682617,
+        "caco2": -4.93792714199205,
+        "clearance": 32.65769206440725,
+        "cyp3a4": 0.5157099306583405,
+        "herg": 0.28217838406562806,
+        "ppb": 91.0825750175029,
+        "solubility": -3.3480877075183697
+      },
+      "boltz_binding_probability": null,
+      "boltz_result": {
+        "affinity_json": "runs/smdd_feedback_01/boltz/candidate_ea9b9f39668a6eb90811/boltz_results_candidate_ea9b9f39668a6eb90811/predictions/candidate_ea9b9f39668a6eb90811/affinity_candidate_ea9b9f39668a6eb90811.json",
+        "binding_conditions": {
+          "affinity_goal_passed": true,
+          "affinity_hold_passed": true,
+          "affinity_improvement": -0.039995789527893066,
+          "affinity_pred_value": -1.6523706316947937,
+          "all_passed": true,
+          "baseline_affinity": -1.6923664212226868,
+          "binding_passed": true,
+          "binding_probability": 0.9888335466384888
+        },
+        "command": [
+          "/home/uslee/code/DIRMO-3D/.venv-boltz/bin/python",
+          "-c",
+          "import torch; torch.cuda.set_per_process_memory_fraction(0.24, 0); from boltz.main import cli; cli()",
+          "predict",
+          "/home/uslee/code/DIRMO-3D/runs/smdd_feedback_01/boltz/candidate_ea9b9f39668a6eb90811/candidate_ea9b9f39668a6eb90811.yaml",
+          "--out_dir",
+          "/home/uslee/code/DIRMO-3D/runs/smdd_feedback_01/boltz/candidate_ea9b9f39668a6eb90811",
+          "--cache",
+          "/home/uslee/.cache/dirmo-boltz2",
+          "--use_msa_server",
+          "--use_potentials",
+          "--no_kernels",
+          "--seed",
+          "42",
+          "--diffusion_samples",
+          "10",
+          "--diffusion_samples_affinity",
+          "10",
+          "--sampling_steps",
+          "200",
+          "--max_parallel_samples",
+          "1",
+          "--num_workers",
+          "0"
+        ],
+        "config": {
+          "affinity_hold_constant": {
+            "tolerance": 0.3
+          },
+          "affinity_objective": null,
+          "baseline_affinity": -1.6923664212226868,
+          "co_ligands": null,
+          "diffusion_samples": 10,
+          "pocket_contacts": [
+            [
+              "A",
+              26
+            ],
+            [
+              "A",
+              27
+            ],
+            [
+              "A",
+              28
+            ],
+            [
+              "A",
+              29
+            ],
+            [
+              "A",
+              30
+            ],
+            [
+              "A",
+              31
+            ],
+            [
+              "A",
+              32
+            ],
+            [
+              "A",
+              33
+            ],
+            [
+              "A",
+              34
+            ],
+            [
+              "A",
+              36
+            ],
+            [
+              "A",
+              37
+            ],
+            [
+              "A",
+              39
+            ],
+            [
+              "A",
+              42
+            ],
+            [
+              "A",
+              50
+            ],
+            [
+              "A",
+              77
+            ],
+            [
+              "A",
+              80
+            ],
+            [
+              "A",
+              81
+            ],
+            [
+              "A",
+              84
+            ],
+            [
+              "A",
+              85
+            ],
+            [
+              "A",
+              89
+            ],
+            [
+              "A",
+              90
+            ],
+            [
+              "A",
+              91
+            ],
+            [
+              "A",
+              92
+            ],
+            [
+              "A",
+              94
+            ]
+          ]
+        },
+        "full_benchmark_success": true,
+        "job_id": "ea9b9f39668a6eb90811",
+        "log": "runs/smdd_feedback_01/boltz/candidate_ea9b9f39668a6eb90811/boltz.log",
+        "memory_fraction": 0.24,
+        "product_smiles": "COc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12",
+        "protein_residues": 109,
+        "returncode": 0,
+        "reused": false,
+        "selections": [
+          {
+            "mode": "independent",
+            "round": 1,
+            "task_id": "smdd_004_BRD4_11"
+          },
+          {
+            "mode": "feedback",
+            "round": 1,
+            "task_id": "smdd_004_BRD4_11"
+          }
+        ],
+        "source": "/LocalData1/uslee/datasets/smdd-bench/tasks/smdd_004_BRD4_11",
+        "status": "measured",
+        "task_id": "smdd_004_BRD4_11"
+      },
+      "changed": true,
+      "checks": {
+        "brenk": true,
+        "formal_charge": true,
+        "hba": true,
+        "hbd": true,
+        "logp": true,
+        "mw": true,
+        "no_atom_maps": true,
+        "no_radicals": true,
+        "pains": true,
+        "rotatable_bonds": true,
+        "sa": true,
+        "single_component": true,
+        "tanimoto": true,
+        "tpsa": true
+      },
+      "edit_location_tool_verified": false,
+      "full_benchmark_success": true,
+      "json_valid": true,
+      "local_hard_constraints_passed": true,
+      "metrics": {
+        "formal_charge": 0,
+        "hba": 7,
+        "hbd": 0,
+        "logp": 2.43262,
+        "mw": 334.3830000000001,
+        "qed": 0.5731580003396501,
+        "rotatable_bonds": 4,
+        "sa": 2.6930089284843337,
+        "tpsa": 70.13
+      },
+      "oracle_goal_success": null,
+      "oracle_hold_success": null,
+      "oracle_smiles": "COc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12",
+      "plan": {
+        "edit_hypothesis": "Replace the thiophenyl sulfur atom with an oxygen to reduce lipophilicity and improve solubility while maintaining molecular weight constraints.",
+        "focus_atom_maps": [
+          2
+        ],
+        "product_smiles": "COc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12"
+      },
+      "plan_valid": true,
+      "pre_boltz_passed": true,
+      "product_smiles": "COc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12",
+      "smiles_valid": true,
+      "tanimoto": 0.7090909090909091
+    },
+    "modes": [
+      "independent",
+      "feedback"
+    ],
+    "product_smiles": "COc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12",
+    "round_by_mode": {
+      "feedback": 1,
+      "independent": 1
+    },
+    "task_id": "smdd_004_BRD4_11"
+  },
+  {
+    "assessment": {
+      "admet_conditions": {
+        "admet_goal_count": 3,
+        "all_admet_goals_passed": true,
+        "all_admet_holds_passed": true,
+        "binding_affinity_measured": false,
+        "boltz_binding_probability": null,
+        "goals": [
+          {
+            "baseline": -5.6957,
+            "direction": "maximize",
+            "improvement": 1.2480104979511726,
+            "passed": true,
+            "property": "solubility",
+            "threshold": 0.5,
+            "value": -4.447689502048828
+          },
+          {
+            "baseline": 0.4024,
+            "direction": "minimize",
+            "improvement": 0.27846263943016525,
+            "passed": true,
+            "property": "ames",
+            "threshold": 0.1,
+            "value": 0.1239373605698347
+          },
+          {
+            "baseline": 0.8518,
+            "direction": "minimize",
+            "improvement": 0.35408342413902283,
+            "passed": true,
+            "property": "herg",
+            "threshold": 0.1,
+            "value": 0.4977165758609772
+          }
+        ],
+        "holds": [
+          {
+            "baseline": 0.9004,
+            "delta": -0.009357374095916748,
+            "direction": "change",
+            "passed": true,
+            "property": "bbb",
+            "tolerance": 0.1,
+            "value": 0.8910426259040832
+          },
+          {
+            "baseline": 0.8418,
+            "delta": -0.014939977455139197,
+            "direction": "increase",
+            "passed": true,
+            "property": "cyp3a4",
+            "tolerance": 0.1,
+            "value": 0.8268600225448608
+          },
+          {
+            "baseline": 102.1739,
+            "delta": -2.477522825663243,
+            "direction": "increase",
+            "passed": true,
+            "property": "ppb",
+            "tolerance": 5.0,
+            "value": 99.69637717433676
+          }
+        ]
+      },
+      "admet_properties": {
+        "ames": 0.1239373605698347,
+        "bbb": 0.8910426259040832,
+        "caco2": -4.672191802196334,
+        "clearance": 28.185226946524335,
+        "cyp3a4": 0.8268600225448608,
+        "herg": 0.4977165758609772,
+        "ppb": 99.69637717433676,
+        "solubility": -4.447689502048828
+      },
+      "boltz_binding_probability": null,
+      "boltz_result": {
+        "affinity_json": "runs/smdd_feedback_01/boltz/candidate_f3f12828dd323e5881cb/boltz_results_candidate_f3f12828dd323e5881cb/predictions/candidate_f3f12828dd323e5881cb/affinity_candidate_f3f12828dd323e5881cb.json",
+        "binding_conditions": {
+          "affinity_goal_passed": true,
+          "affinity_hold_passed": true,
+          "affinity_improvement": 0.03391218185424805,
+          "affinity_pred_value": -2.5795178413391113,
+          "all_passed": true,
+          "baseline_affinity": -2.5456056594848633,
+          "binding_passed": true,
+          "binding_probability": 0.9993669092655182
+        },
+        "command": [
+          "/home/uslee/code/DIRMO-3D/.venv-boltz/bin/python",
+          "-c",
+          "import torch; torch.cuda.set_per_process_memory_fraction(0.24, 0); from boltz.main import cli; cli()",
+          "predict",
+          "/home/uslee/code/DIRMO-3D/runs/smdd_feedback_01/boltz/candidate_f3f12828dd323e5881cb/candidate_f3f12828dd323e5881cb.yaml",
+          "--out_dir",
+          "/home/uslee/code/DIRMO-3D/runs/smdd_feedback_01/boltz/candidate_f3f12828dd323e5881cb",
+          "--cache",
+          "/home/uslee/.cache/dirmo-boltz2",
+          "--use_msa_server",
+          "--use_potentials",
+          "--no_kernels",
+          "--seed",
+          "42",
+          "--diffusion_samples",
+          "10",
+          "--diffusion_samples_affinity",
+          "10",
+          "--sampling_steps",
+          "200",
+          "--max_parallel_samples",
+          "1",
+          "--num_workers",
+          "0"
+        ],
+        "config": {
+          "affinity_hold_constant": null,
+          "affinity_objective": null,
+          "baseline_affinity": -2.5456056594848633,
+          "co_ligands": null,
+          "diffusion_samples": 10,
+          "pocket_contacts": [
+            [
+              "A",
+              26
+            ],
+            [
+              "A",
+              27
+            ],
+            [
+              "A",
+              28
+            ],
+            [
+              "A",
+              29
+            ],
+            [
+              "A",
+              30
+            ],
+            [
+              "A",
+              31
+            ],
+            [
+              "A",
+              32
+            ],
+            [
+              "A",
+              33
+            ],
+            [
+              "A",
+              34
+            ],
+            [
+              "A",
+              36
+            ],
+            [
+              "A",
+              37
+            ],
+            [
+              "A",
+              39
+            ],
+            [
+              "A",
+              42
+            ],
+            [
+              "A",
+              50
+            ],
+            [
+              "A",
+              77
+            ],
+            [
+              "A",
+              80
+            ],
+            [
+              "A",
+              81
+            ],
+            [
+              "A",
+              84
+            ],
+            [
+              "A",
+              85
+            ],
+            [
+              "A",
+              89
+            ],
+            [
+              "A",
+              90
+            ],
+            [
+              "A",
+              91
+            ],
+            [
+              "A",
+              92
+            ],
+            [
+              "A",
+              94
+            ]
+          ]
+        },
+        "full_benchmark_success": true,
+        "job_id": "f3f12828dd323e5881cb",
+        "log": "runs/smdd_feedback_01/boltz/candidate_f3f12828dd323e5881cb/boltz.log",
+        "memory_fraction": 0.24,
+        "product_smiles": "Cn1cc(-c2cc(S(=O)(=O)C)ccc2OCC2CC2)c2cc[nH]c2c1=O",
+        "protein_residues": 109,
+        "returncode": 0,
+        "reused": false,
+        "selections": [
+          {
+            "mode": "independent",
+            "round": 1,
+            "task_id": "smdd_004_BRD4_14"
+          },
+          {
+            "mode": "feedback",
+            "round": 1,
+            "task_id": "smdd_004_BRD4_14"
+          }
+        ],
+        "source": "/LocalData1/uslee/datasets/smdd-bench/tasks/smdd_004_BRD4_14",
+        "status": "measured",
+        "task_id": "smdd_004_BRD4_14"
+      },
+      "changed": true,
+      "checks": {
+        "brenk": true,
+        "formal_charge": true,
+        "hba": true,
+        "hbd": true,
+        "logp": true,
+        "mw": true,
+        "no_atom_maps": true,
+        "no_radicals": true,
+        "pains": true,
+        "rotatable_bonds": true,
+        "sa": true,
+        "single_component": true,
+        "tanimoto": true,
+        "tpsa": true
+      },
+      "edit_location_tool_verified": false,
+      "full_benchmark_success": true,
+      "json_valid": true,
+      "local_hard_constraints_passed": true,
+      "metrics": {
+        "formal_charge": 0,
+        "hba": 5,
+        "hbd": 1,
+        "logp": 2.725900000000001,
+        "mw": 372.44600000000014,
+        "qed": 0.7466267229546983,
+        "rotatable_bonds": 5,
+        "sa": 2.672087181771353,
+        "tpsa": 81.16
+      },
+      "oracle_goal_success": null,
+      "oracle_hold_success": null,
+      "oracle_smiles": "Cn1cc(-c2cc(S(=O)(=O)C)ccc2OCC2CC2)c2cc[nH]c2c1=O",
+      "plan": {
+        "edit_hypothesis": "Replace the trifluoromethyl group at atom 11 with a methyl group to reduce lipophilicity and improve solubility while maintaining molecular weight constraints.",
+        "focus_atom_maps": [
+          11
+        ],
+        "product_smiles": "Cn1cc(-c2cc(S(=O)(=O)C)ccc2OCC2CC2)c2cc[nH]c2c1=O"
+      },
+      "plan_valid": true,
+      "pre_boltz_passed": true,
+      "product_smiles": "Cn1cc(-c2cc(S(C)(=O)=O)ccc2OCC2CC2)c2cc[nH]c2c1=O",
+      "smiles_valid": true,
+      "tanimoto": 0.8
+    },
+    "modes": [
+      "independent",
+      "feedback"
+    ],
+    "product_smiles": "Cn1cc(-c2cc(S(=O)(=O)C)ccc2OCC2CC2)c2cc[nH]c2c1=O",
+    "round_by_mode": {
+      "feedback": 1,
+      "independent": 1
+    },
+    "task_id": "smdd_004_BRD4_14"
+  },
+  {
+    "assessment": {
+      "admet_conditions": {
+        "admet_goal_count": 1,
+        "all_admet_goals_passed": true,
+        "all_admet_holds_passed": true,
+        "binding_affinity_measured": false,
+        "boltz_binding_probability": null,
+        "goals": [
+          {
+            "baseline": 107.8367,
+            "direction": "minimize",
+            "improvement": 11.388717675326518,
+            "passed": true,
+            "property": "clearance",
+            "threshold": 5.0,
+            "value": 96.44798232467348
+          }
+        ],
+        "holds": [
+          {
+            "baseline": -1.4523,
+            "direction": "increase",
+            "passed": null,
+            "property": "binding_affinity",
+            "tolerance": 0.3,
+            "value": null
+          },
+          {
+            "baseline": 0.6141,
+            "delta": 0.025984230899810834,
+            "direction": "increase",
+            "passed": true,
+            "property": "herg",
+            "tolerance": 0.1,
+            "value": 0.6400842308998108
+          },
+          {
+            "baseline": 0.9881,
+            "delta": 0.0029763859748840327,
+            "direction": "change",
+            "passed": true,
+            "property": "bbb",
+            "tolerance": 0.1,
+            "value": 0.991076385974884
+          },
+          {
+            "baseline": -4.1579,
+            "delta": -0.23050539672678028,
+            "direction": "decrease",
+            "passed": true,
+            "property": "solubility",
+            "tolerance": 0.5,
+            "value": -4.38840539672678
+          }
+        ]
+      },
+      "admet_properties": {
+        "ames": 0.5642833232879638,
+        "bbb": 0.991076385974884,
+        "caco2": -4.346543111323835,
+        "clearance": 96.44798232467348,
+        "cyp3a4": 0.6448748350143433,
+        "herg": 0.6400842308998108,
+        "ppb": 75.2897313045994,
+        "solubility": -4.38840539672678
+      },
+      "boltz_binding_probability": null,
+      "boltz_result": {
+        "affinity_json": "runs/smdd_feedback_01/boltz/candidate_83137e15bfb9febb993b/boltz_results_candidate_83137e15bfb9febb993b/predictions/candidate_83137e15bfb9febb993b/affinity_candidate_83137e15bfb9febb993b.json",
+        "binding_conditions": {
+          "affinity_goal_passed": true,
+          "affinity_hold_passed": true,
+          "affinity_improvement": 0.24496859312057495,
+          "affinity_pred_value": -1.6972997784614563,
+          "all_passed": true,
+          "baseline_affinity": -1.4523311853408813,
+          "binding_passed": true,
+          "binding_probability": 0.9889864921569824
+        },
+        "command": [
+          "/home/uslee/code/DIRMO-3D/.venv-boltz/bin/python",
+          "-c",
+          "import torch; torch.cuda.set_per_process_memory_fraction(0.24, 0); from boltz.main import cli; cli()",
+          "predict",
+          "/home/uslee/code/DIRMO-3D/runs/smdd_feedback_01/boltz/candidate_83137e15bfb9febb993b/candidate_83137e15bfb9febb993b.yaml",
+          "--out_dir",
+          "/home/uslee/code/DIRMO-3D/runs/smdd_feedback_01/boltz/candidate_83137e15bfb9febb993b",
+          "--cache",
+          "/home/uslee/.cache/dirmo-boltz2",
+          "--use_msa_server",
+          "--use_potentials",
+          "--no_kernels",
+          "--seed",
+          "42",
+          "--diffusion_samples",
+          "10",
+          "--diffusion_samples_affinity",
+          "10",
+          "--sampling_steps",
+          "200",
+          "--max_parallel_samples",
+          "1",
+          "--num_workers",
+          "0"
+        ],
+        "config": {
+          "affinity_hold_constant": {
+            "tolerance": 0.3
+          },
+          "affinity_objective": null,
+          "baseline_affinity": -1.4523311853408813,
+          "co_ligands": null,
+          "diffusion_samples": 10,
+          "pocket_contacts": [
+            [
+              "A",
+              26
+            ],
+            [
+              "A",
+              27
+            ],
+            [
+              "A",
+              28
+            ],
+            [
+              "A",
+              29
+            ],
+            [
+              "A",
+              30
+            ],
+            [
+              "A",
+              31
+            ],
+            [
+              "A",
+              32
+            ],
+            [
+              "A",
+              33
+            ],
+            [
+              "A",
+              34
+            ],
+            [
+              "A",
+              36
+            ],
+            [
+              "A",
+              37
+            ],
+            [
+              "A",
+              39
+            ],
+            [
+              "A",
+              42
+            ],
+            [
+              "A",
+              50
+            ],
+            [
+              "A",
+              77
+            ],
+            [
+              "A",
+              80
+            ],
+            [
+              "A",
+              81
+            ],
+            [
+              "A",
+              84
+            ],
+            [
+              "A",
+              85
+            ],
+            [
+              "A",
+              89
+            ],
+            [
+              "A",
+              90
+            ],
+            [
+              "A",
+              91
+            ],
+            [
+              "A",
+              92
+            ],
+            [
+              "A",
+              94
+            ]
+          ]
+        },
+        "full_benchmark_success": true,
+        "job_id": "83137e15bfb9febb993b",
+        "log": "runs/smdd_feedback_01/boltz/candidate_83137e15bfb9febb993b/boltz.log",
+        "memory_fraction": 0.24,
+        "product_smiles": "C[C@@H]1C(=O)N(C)c2ccc(C(=O)N3CCc4ccccc43)nc2N1C1CC1F",
+        "protein_residues": 109,
+        "returncode": 0,
+        "reused": false,
+        "selections": [
+          {
+            "mode": "independent",
+            "round": 1,
+            "task_id": "smdd_004_BRD4_6"
+          },
+          {
+            "mode": "feedback",
+            "round": 1,
+            "task_id": "smdd_004_BRD4_6"
+          }
+        ],
+        "source": "/LocalData1/uslee/datasets/smdd-bench/tasks/smdd_004_BRD4_6",
+        "status": "measured",
+        "task_id": "smdd_004_BRD4_6"
+      },
+      "changed": true,
+      "checks": {
+        "brenk": true,
+        "formal_charge": true,
+        "hba": true,
+        "hbd": true,
+        "logp": true,
+        "mw": true,
+        "no_atom_maps": true,
+        "no_radicals": true,
+        "pains": true,
+        "rotatable_bonds": true,
+        "sa": true,
+        "single_component": true,
+        "tanimoto": true,
+        "tpsa": true
+      },
+      "edit_location_tool_verified": false,
+      "full_benchmark_success": true,
+      "json_valid": true,
+      "local_hard_constraints_passed": true,
+      "metrics": {
+        "formal_charge": 0,
+        "hba": 4,
+        "hbd": 0,
+        "logp": 2.566200000000001,
+        "mw": 380.42300000000006,
+        "qed": 0.8036296931595261,
+        "rotatable_bonds": 2,
+        "sa": 3.7028349882765283,
+        "tpsa": 56.75000000000001
+      },
+      "oracle_goal_success": null,
+      "oracle_hold_success": null,
+      "oracle_smiles": "C[C@@H]1C(=O)N(C)c2ccc(C(=O)N3CCc4ccccc43)nc2N1C1CC1F",
+      "plan": {
+        "edit_hypothesis": "Replace the terminal methyl group at atom 1 with a fluorine atom to reduce molecular weight and potentially lower clearance while maintaining hydrophobic character.",
+        "focus_atom_maps": [
+          1
+        ],
+        "product_smiles": "C[C@@H]1C(=O)N(C)c2ccc(C(=O)N3CCc4ccccc43)nc2N1C1CC1F"
+      },
+      "plan_valid": true,
+      "pre_boltz_passed": true,
+      "product_smiles": "C[C@@H]1C(=O)N(C)c2ccc(C(=O)N3CCc4ccccc43)nc2N1C1CC1F",
+      "smiles_valid": true,
+      "tanimoto": 0.7931034482758621
+    },
+    "modes": [
+      "independent",
+      "feedback"
+    ],
+    "product_smiles": "C[C@@H]1C(=O)N(C)c2ccc(C(=O)N3CCc4ccccc43)nc2N1C1CC1F",
+    "round_by_mode": {
+      "feedback": 1,
+      "independent": 1
+    },
+    "task_id": "smdd_004_BRD4_6"
+  }
+]

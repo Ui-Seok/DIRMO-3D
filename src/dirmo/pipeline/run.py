@@ -4,8 +4,8 @@ import json
 import shutil
 from pathlib import Path
 
-from ..chemistry.graphs import (execute_edit, graph_check, graph_id, input_conformer, mapped,
-                               read_sdf, smiles, write_sdf)
+from ..chemistry.graphs import (ChemicalError, execute_edit, graph_check, graph_id, input_conformer,
+                               mapped, protected_graph, read_sdf, redesigned, smiles, write_sdf)
 from ..chemistry.properties import graph_properties
 from ..diagnosis import assemble_evidence, wilson
 from ..evaluation.metrics import Evaluator
@@ -15,7 +15,7 @@ from ..llm.proposals import Planner
 from ..routing.learned import LearnedRouter
 from ..routing.policies import available_actions
 from ..schemas import (ActionKind, EvaluationRecord, GenerationRequest, GenerationResult, Observation,
-                       State, WorkItem)
+                       State, WorkItem, generation_kernel, kernel_identity)
 from .budget import Budget, BudgetExhausted
 
 
@@ -165,9 +165,14 @@ class Run:
 
 
 class Executor:
-    def __init__(self, run: Run, fm_client, seed_base: int | None = None):
+    def __init__(self, run: Run, fm_client, seed_base: int | None = None, extra_candidates=(),
+                 regions: int = 0):
         self.run, self.client = run, fm_client
         self.seed_base = run.config.seed if seed_base is None else seed_base
+        # execute() re-validates every action against available_actions, so the executor
+        # must see the same extra candidates the caller offered.
+        self.extra_candidates = tuple(extra_candidates)
+        self.regions = regions
         health = fm_client.health()
         self.capabilities = health.get("capabilities", {})
         self.nfe_factor = health.get("nfe_per_step_upper_bound", 1)
@@ -175,8 +180,12 @@ class Executor:
         write_json(run.directory / "fm_health.json", health)
 
     def kernel_id(self, parameters):
-        return digest({**self.kernel_base, "integration_steps": parameters.integration_steps,
-                       "pocket_sha256": sha256_file(self.run.fixed_pocket)})
+        return digest(kernel_identity(self.kernel_base, parameters,
+                                      sha256_file(self.run.fixed_pocket)))
+
+    def generation_kernel_id(self, parameters):
+        return digest(generation_kernel(kernel_identity(
+            self.kernel_base, parameters, sha256_file(self.run.fixed_pocket))))
 
     def execute(self, action, state=None) -> list[dict]:
         run = self.run
@@ -187,7 +196,8 @@ class Executor:
             raise ValueError("EXTRA_VALIDATION is disabled in the first executor")
         run.refresh()
         allowed = available_actions(state, run.case, run.config.fm.parameters,
-                                    self.capabilities, self.nfe_factor, self.seed_base)
+                                    self.capabilities, self.nfe_factor, self.seed_base,
+                                    self.extra_candidates, self.regions)
         valid = next((a for a in allowed if a.action_id == action.action_id), None)
         if valid is None or action != valid:
             raise ValueError("Action is not in the current validated feasible action set")
@@ -209,7 +219,10 @@ class Executor:
         graph = state.work_item.graph_id
         for seed in action.seeds:
             nfe_cap = (action.generation.integration_steps + 1) * self.nfe_factor
-            request_key = digest([graph, self.kernel_id(action.generation), seed])
+            # The kernel carries the generation condition; the region is what was ASKED for,
+            # so it belongs in the request key or two regions on one graph would collide.
+            request_key = digest([graph, self.kernel_id(action.generation), seed,
+                                  sorted(action.region)])
             if request_key in state.generation_attempts:
                 raise ValueError("Repeated graph/kernel/seed request would not be an independent draw")
             if state.graph_attempts.get(graph, 0) >= run.case.budgets.seeds_per_graph:
@@ -236,7 +249,30 @@ class Executor:
             run.budget.refund("fm_reported_actual", fm_draws=1 - response.raw_draws, fm_nfe=nfe_cap - response.nfe)
             if response.raw_draws == 0:
                 state.graph_attempts[graph] -= 1
-            if response.status == "ok":
+            if response.status == "ok" and action.kind == ActionKind.REDESIGN_REGION:
+                try:
+                    raw, report = redesigned(expected, read_sdf(response.sdf_path), action.region)
+                    protected_graph(read_sdf(state.original_ligand.sdf_path), raw, run.case.protected)
+                except ChemicalError as exc:
+                    response.status, response.reason = "failed", f"redesign_rejected: {exc}"
+                else:
+                    write_json(directory / "redesign.json", report)
+                    mapped_path = directory / "raw_mapped.sdf"
+                    write_sdf(mapped_path, raw)
+                    run.budget.charge("evaluate_fm_raw", evaluation_calls=1)
+                    run.save(pending={"stage": "evaluation", "raw_sdf": str(mapped_path),
+                                      "action": action.model_dump(mode="json")})
+                    obs = run.evaluator.evaluate(raw)
+                    product = graph_id(raw)
+                    item = WorkItem(item_id=request_key[:24], graph_id=product,
+                              mapped_smiles=smiles(raw, True), sdf_path=str(mapped_path),
+                              # Held atoms kept their parent map; freed atoms got fresh ones.
+                              # The product is its own reference from here on.
+                              atom_mapping={a.GetAtomMapNum(): a.GetAtomMapNum() for a in raw.GetAtoms()},
+                              observation=obs, seed=seed, kernel_id=response.kernel_id, source="fm_raw")
+                    state.candidate_history.append(product)
+                    run.incorporate(item)
+            elif response.status == "ok":
                 raw = read_sdf(response.sdf_path)
                 check = graph_check(expected, raw, derive_stereo=True)
                 if check["matches"]:

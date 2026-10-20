@@ -1,0 +1,36 @@
+{
+  "report": "/home/uslee/code/DIRMO-3D/reports/smdd-feedback/REPORT.md",
+  "comparison": {
+    "feedback": {
+      "admet_evaluated_attempts": 41,
+      "any_changed_local_pass": 22,
+      "any_valid_graph": 31,
+      "budgeted_proposals": 102,
+      "cases": 34,
+      "changed_local_pass_attempts": 41,
+      "first_proposal_pre_boltz_pass": 7,
+      "full_failure_confirmed": 27,
+      "full_success_confirmed": 3,
+      "plan_valid_attempts": 102,
+      "selected_pre_boltz_pass": 7,
+      "unmeasured_binding": 4,
+      "valid_graph_attempts": 92
+    },
+    "independent": {
+      "admet_evaluated_attempts": 43,
+      "any_changed_local_pass": 18,
+      "any_valid_graph": 31,
+      "budgeted_proposals": 102,
+      "cases": 34,
+      "changed_local_pass_attempts": 43,
+      "first_proposal_pre_boltz_pass": 7,
+      "full_failure_confirmed": 26,
+      "full_success_confirmed": 3,
+      "plan_valid_attempts": 102,
+      "selected_pre_boltz_pass": 8,
+      "unmeasured_binding": 5,
+      "valid_graph_attempts": 91
+    }
+  },
+  "rescues": 0
+}

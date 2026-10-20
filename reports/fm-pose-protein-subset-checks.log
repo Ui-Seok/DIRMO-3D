@@ -1,0 +1,13 @@
+1v0l native seconds 3.260604317067191 identical True
+1v0l input seconds 0.46943712909705937 identical True
+1v0l base seconds 0.461209847824648 identical True
+1v0l v2 seconds 0.45858390908688307 identical True
+3t0d native seconds 4.575147571973503 identical True
+3t0d input seconds 3.915881065884605 identical True
+3t0d base seconds 3.872031819075346 identical True
+3t0d v2 seconds 3.920344186015427 identical True
+3dyo native seconds 5.408973223995417 identical True
+3dyo input seconds 3.877700430806726 identical True
+3dyo base seconds 3.8543339390307665 identical True
+3dyo v2 seconds 3.8787143959198147 identical True
+All comparisons passed

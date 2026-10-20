@@ -1,0 +1,10 @@
+# Separate environment for the SMDD-Bench v2.2.1 binding oracle.
+# Reuse the CUDA 12.4 torch installation from dirmo-llm with --system-site-packages.
+torch==2.6.0
+boltz==2.2.1
+numpy==1.26.4
+rdkit==2025.9.4
+biotite==1.2.0
+# Boltz pins click 8.1.7; newer inherited Hub CLIs require click >=8.4.2.
+huggingface-hub==1.7.2
+# CUDA extension kernels are optional; this run uses --no_kernels.

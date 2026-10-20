@@ -1,0 +1,81 @@
+{
+  "budgets": {
+    "2": {
+      "comparisons": {
+        "breadth - depth_rank1": {
+          "excludes_zero": false,
+          "interval": [
+            -0.0030825230993876793,
+            0.013927008485732657
+          ],
+          "mean_difference": 0.004848838006330115,
+          "median_difference": 0.0
+        }
+      },
+      "mean": {
+        "breadth": 0.025024071889797734,
+        "depth_rank1": 0.02017523388346762
+      },
+      "median": {
+        "breadth": 0.0,
+        "depth_rank1": 0.0
+      },
+      "pockets_compared": 67
+    },
+    "3": {
+      "comparisons": {
+        "breadth - depth_rank1": {
+          "excludes_zero": false,
+          "interval": [
+            -0.002970101592537003,
+            0.019721417500541495
+          ],
+          "mean_difference": 0.008009163501436387,
+          "median_difference": 0.0
+        },
+        "breadth - probe2_commit": {
+          "excludes_zero": true,
+          "interval": [
+            0.0014082053635320066,
+            0.009880682623939192
+          ],
+          "mean_difference": 0.005414217598080374,
+          "median_difference": 0.0
+        },
+        "depth_rank1 - probe2_commit": {
+          "excludes_zero": false,
+          "interval": [
+            -0.01276779572181533,
+            0.00691766887617404
+          ],
+          "mean_difference": -0.002594945903356009,
+          "median_difference": 0.0
+        }
+      },
+      "mean": {
+        "breadth": 0.035617286979990524,
+        "depth_rank1": 0.027608123478554146,
+        "probe2_commit": 0.03020306938191015
+      },
+      "median": {
+        "breadth": 0.007327666751740078,
+        "depth_rank1": 0.0,
+        "probe2_commit": 0.000487221973648926
+      },
+      "pockets_compared": 46
+    }
+  },
+  "dataset": "/home/uslee/code/DIRMO-3D/runs/sweep/branches.jsonl",
+  "decision_rule": "higher median AND paired 95% bootstrap interval excludes zero",
+  "hypothesis": "probe-then-commit beats breadth at equal budget",
+  "pockets_dropped_broken_baseline": [
+    "1h0i_A",
+    "3pdh_A",
+    "4aua_A",
+    "4g3d_B",
+    "4z2g_A",
+    "5q0k_A"
+  ],
+  "pockets_seen": 80,
+  "prediction_before_computing": "H fails; breadth wins, because 95% of edit utility variance is between candidates"
+}

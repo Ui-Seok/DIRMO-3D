@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "pid": 2491373,
+  "run": "/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64",
+  "output": "/home/uslee/code/DIRMO-3D/reports/fm-pose-64-analysis-20261015-final",
+  "at_kst": "2026-10-15T21:20:14.812912+09:00",
+  "returncode": 0
+}

@@ -6,7 +6,8 @@ from ..schemas import ActionKind
 
 METRICS = ["qed", "sa", "mw", "logp", "hbd", "hba", "tpsa", "rotatable_bonds", "vina"]
 RESOURCES = ["fm_draws", "fm_nfe", "llm_calls", "llm_tokens", "evaluation_calls", "wall_seconds"]
-KINDS = [ActionKind.CHEMICAL_EDIT, ActionKind.POSE_RESAMPLE, ActionKind.CHANGE_GENERATION_CONDITION, ActionKind.STOP]
+KINDS = [ActionKind.CHEMICAL_EDIT, ActionKind.REDESIGN_REGION, ActionKind.POSE_RESAMPLE,
+         ActionKind.CHANGE_GENERATION_CONDITION, ActionKind.STOP]
 GOAL_FIELDS = ["target", "weight", "direction", "max_loss", "present"]
 FEATURE_NAMES = ([f"state_{k}" for k in METRICS] + [f"state_{k}_missing" for k in METRICS] +
                  ["round", "plateau", "attempts", "observed_feasible", "wilson_width", "prior_failures"] +
@@ -14,7 +15,8 @@ FEATURE_NAMES = ([f"state_{k}" for k in METRICS] + [f"state_{k}_missing" for k i
                  [f"objective_{metric}_{field}" for metric in METRICS for field in GOAL_FIELDS] +
                  ["protected_atom_count", "protected_feature_count", "protected_interaction_count"] +
                  [f"action_{k.value}" for k in KINDS] +
-                 ["action_steps", "action_seeds", "changed_atoms"] + [f"proposed_delta_{k}" for k in METRICS[:-1]])
+                 ["action_steps", "action_seeds", "changed_atoms", "region_size"] +
+                 [f"proposed_delta_{k}" for k in METRICS[:-1]])
 
 
 def features(state, action, case) -> list[float]:
@@ -36,7 +38,10 @@ def features(state, action, case) -> list[float]:
     values += [len(case.protected.atom_maps), len(case.protected.features), len(case.protected.interactions)]
     values += [float(action.kind == k) for k in KINDS]
     values += [action.generation.integration_steps, len(action.seeds),
-               len(action.candidate.changed_atom_maps) if action.candidate else 0]
+               len(action.candidate.changed_atom_maps) if action.candidate else 0,
+               # A redesign has no proposed graph, so its property deltas stay zero and the
+               # region size is the only thing describing what was asked for.
+               len(action.region)]
     delta = {k: 0 for k in METRICS[:-1]}
     if action.candidate:
         parent = read_sdf(state.work_item.sdf_path)

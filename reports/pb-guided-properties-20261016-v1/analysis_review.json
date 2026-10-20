@@ -1,0 +1,188 @@
+{
+  "chemical_summary": [
+    {
+      "descriptor": "qed",
+      "label": "QED",
+      "maximum_absolute_change": 0.0,
+      "mean_after": 0.40527334005343935,
+      "mean_before": 0.40527334005343935,
+      "median_after": 0.36350104535600825,
+      "median_before": 0.36350104535600825,
+      "paired_inputs": 41
+    },
+    {
+      "descriptor": "sa",
+      "label": "SA (RDKit, 1\u201310)",
+      "maximum_absolute_change": 0.0,
+      "mean_after": 4.5526474566183035,
+      "mean_before": 4.5526474566183035,
+      "median_after": 4.144234272636397,
+      "median_before": 4.144234272636397,
+      "paired_inputs": 41
+    },
+    {
+      "descriptor": "mw",
+      "label": "\ubd84\uc790\ub7c9 (Da)",
+      "maximum_absolute_change": 0.0,
+      "mean_after": 525.5957073170732,
+      "mean_before": 525.5957073170732,
+      "median_after": 531.5690000000003,
+      "median_before": 531.5690000000003,
+      "paired_inputs": 41
+    },
+    {
+      "descriptor": "logp",
+      "label": "LogP",
+      "maximum_absolute_change": 0.0,
+      "mean_after": 3.699941463414636,
+      "mean_before": 3.699941463414636,
+      "median_after": 3.608600000000002,
+      "median_before": 3.608600000000002,
+      "paired_inputs": 41
+    },
+    {
+      "descriptor": "hbd",
+      "label": "HBD",
+      "maximum_absolute_change": 0.0,
+      "mean_after": 2.292682926829268,
+      "mean_before": 2.292682926829268,
+      "median_after": 2.0,
+      "median_before": 2.0,
+      "paired_inputs": 41
+    },
+    {
+      "descriptor": "hba",
+      "label": "HBA",
+      "maximum_absolute_change": 0.0,
+      "mean_after": 6.146341463414634,
+      "mean_before": 6.146341463414634,
+      "median_after": 6.0,
+      "median_before": 6.0,
+      "paired_inputs": 41
+    },
+    {
+      "descriptor": "tpsa",
+      "label": "TPSA (\u00c5\u00b2)",
+      "maximum_absolute_change": 0.0,
+      "mean_after": 108.74463414634145,
+      "mean_before": 108.74463414634145,
+      "median_after": 102.42,
+      "median_before": 102.42,
+      "paired_inputs": 41
+    },
+    {
+      "descriptor": "rotatable_bonds",
+      "label": "\ud68c\uc804 \uac00\ub2a5 \uacb0\ud569 \uc218",
+      "maximum_absolute_change": 0.0,
+      "mean_after": 5.926829268292683,
+      "mean_before": 5.926829268292683,
+      "median_after": 5.0,
+      "median_before": 5.0,
+      "paired_inputs": 41
+    },
+    {
+      "descriptor": "ro5_violations",
+      "label": "Lipinski \uc704\ubc18 \uc218",
+      "maximum_absolute_change": 0.0,
+      "mean_after": 0.9512195121951219,
+      "mean_before": 0.9512195121951219,
+      "median_after": 1.0,
+      "median_before": 1.0,
+      "paired_inputs": 41
+    }
+  ],
+  "graph_exception_note": "Coordinate-derived stereochemistry is part of graph preservation. Descriptor equality alone does not prove stereochemistry preservation.",
+  "independently_recomputed_outputs": 1025,
+  "mask": {
+    "all_event_atoms_free": 5,
+    "all_events_touched": 39,
+    "inputs_with_fully_held_events": [
+      {
+        "case_id": "1vru",
+        "draw": 13,
+        "events_fully_free": 0,
+        "events_fully_held": 1,
+        "events_touched": 1,
+        "free_atoms": 2,
+        "total_atoms": 23,
+        "total_events": 2
+      },
+      {
+        "case_id": "6cvw",
+        "draw": 9,
+        "events_fully_free": 0,
+        "events_fully_held": 2,
+        "events_touched": 1,
+        "free_atoms": 2,
+        "total_atoms": 53,
+        "total_events": 3
+      }
+    ],
+    "sources": 41
+  },
+  "native_failed": 11,
+  "native_failed_checks": {
+    "internal_energy": 2,
+    "minimum_distance_to_protein": 10
+  },
+  "raw_sources_unchanged": 41,
+  "reviewed_utc": "2026-10-16T04:24:03.869931+00:00",
+  "source_hashes": {
+    "paired_selected_metrics.csv": "4bf74cb76a5982ceb16f5c90348736522e3d5a243a43ffc0c8200869c1a73324",
+    "preservation_all_candidates.csv": "d3c25dd50ca449d913886ee2a50c26db267da0d2441e4e95c23e16516b9a1bf8",
+    "summary.json": "bdc5f4a1b8bf0f954155276e41e6c5c33d0ef47399d8d61274c2430ee650949b"
+  },
+  "vina_missing_pairs_per_arm": 17,
+  "vina_missing_reason": "Meeko template matching failed for 13/31 receptors; no automatic deletion of unmatched standard amino-acid residues or coordinate reconstruction was performed.",
+  "vina_receptor_protocol": "Full source protein's standard amino acids only; no water/cofactors/nonstandard residues. Original heavy-atom coordinates; neutral HIE templates for HIS; Meeko Gasteiger. No docking or minimization. Fixed native-centered 40 A box; Vina score() total in kcal/mol.",
+  "vina_summary": [
+    {
+      "arm": "targeted",
+      "improved": 8,
+      "paired_delta_mean": 0.028916666666666552,
+      "paired_delta_median": 0.02300000000000013,
+      "pairs": 24,
+      "pockets": 18,
+      "score_after_median": -9.286,
+      "score_before_median": -9.4545,
+      "unchanged": 0,
+      "worsened": 16
+    },
+    {
+      "arm": "random",
+      "improved": 9,
+      "paired_delta_mean": 0.013249999999999984,
+      "paired_delta_median": 0.015500000000000291,
+      "pairs": 24,
+      "pockets": 18,
+      "score_after_median": -9.434999999999999,
+      "score_before_median": -9.4545,
+      "unchanged": 0,
+      "worsened": 15
+    },
+    {
+      "arm": "whole",
+      "improved": 3,
+      "paired_delta_mean": 0.30154166666666654,
+      "paired_delta_median": 0.25,
+      "pairs": 24,
+      "pockets": 18,
+      "score_after_median": -9.128,
+      "score_before_median": -9.4545,
+      "unchanged": 0,
+      "worsened": 21
+    },
+    {
+      "arm": "UFF_targeted",
+      "improved": 4,
+      "paired_delta_mean": 0.7912083333333332,
+      "paired_delta_median": 0.09149999999999947,
+      "pairs": 24,
+      "pockets": 18,
+      "score_after_median": -9.2745,
+      "score_before_median": -9.4545,
+      "unchanged": 0,
+      "worsened": 20
+    }
+  ]
+}

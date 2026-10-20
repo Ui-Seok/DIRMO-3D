@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+from ..chemistry.graphs import ranked_edits, read_sdf
 from ..io import append_jsonl, digest, read_jsonl, write_json
 from ..llm.proposals import Planner
 from ..pipeline.budget import BudgetExhausted
@@ -12,11 +13,23 @@ from ..routing.policies import available_actions
 from ..schemas import ActionKind
 
 
-def collect(run: Run, fm_client, llm_client, dataset: str, seed_offset: int = 0) -> dict:
+def collect(run: Run, fm_client, llm_client, dataset: str, seed_offset: int = 0,
+            oracle_edits: int = 0, regions: int = 0) -> dict:
     seed_base = run.config.seed + seed_offset
     if seed_offset < 0 or not 0 <= seed_base < 2**32:
         raise ValueError("Collection seed offset must be nonnegative and keep the seed within uint32")
-    executor = Executor(run, fm_client, seed_base=seed_base)
+    # The oracle arm is enumerated from measured graph properties, never from the planner,
+    # so edit value and planner quality can be told apart in the analysis.
+    oracle = ()
+    if oracle_edits:
+        goal = run.case.objective.metrics.get("sa")
+        oracle = tuple(ranked_edits(read_sdf(run.state.work_item.sdf_path),
+                                    read_sdf(run.state.original_ligand.sdf_path),
+                                    run.case.protected, limit=oracle_edits,
+                                    max_sa_loss=goal.max_loss if goal else None,
+                                    exclude=run.state.candidate_history))
+    oracle_ids = {candidate.candidate_id for candidate in oracle}
+    executor = Executor(run, fm_client, seed_base=seed_base, extra_candidates=oracle, regions=regions)
     # Appending another collection must not count the same graph/kernel/seed twice.
     if Path(dataset).exists():
         seen = set(run.state.generation_attempts)
@@ -25,7 +38,10 @@ def collect(run: Run, fm_client, llm_client, dataset: str, seed_offset: int = 0)
                 continue
             graph = row.get("resulting_work_item", {}).get("graph_id")
             if graph and row.get("kernel_id") and row.get("seed") is not None:
-                key = digest([graph, row["kernel_id"], row["seed"]])
+                # Must mirror Executor.execute's request key, region included, or appending
+                # another collection stops recognising what it already drew.
+                key = digest([graph, row["kernel_id"], row["seed"],
+                              sorted(row.get("action", {}).get("region", []))])
                 if key not in seen:
                     run.state.generation_attempts.append(key)
                     seen.add(key)
@@ -40,7 +56,8 @@ def collect(run: Run, fm_client, llm_client, dataset: str, seed_offset: int = 0)
     snapshot_path = run.directory / "branch_snapshot.json"
     write_json(snapshot_path, snapshot)
     actions = [a for a in available_actions(snapshot, run.case, run.config.fm.parameters,
-                            executor.capabilities, executor.nfe_factor, seed_base) if a.kind != ActionKind.STOP]
+                            executor.capabilities, executor.nfe_factor, seed_base, oracle, regions)
+               if a.kind != ActionKind.STOP]
     coverage = []
     for action in actions:
         # Each branch starts from the same actual pre-action measurements and proposal.
@@ -48,8 +65,11 @@ def collect(run: Run, fm_client, llm_client, dataset: str, seed_offset: int = 0)
         run.state = snapshot.model_copy(deep=True)
         run.refresh()
         feature_state = snapshot.model_copy(deep=True)
-        input_features = features(feature_state, action, run.case)
         try:
+            # features() re-runs execute_edit for CHEMICAL_EDIT, so a candidate the
+            # validator rejects raises here. Inside the guard it costs one branch, not
+            # the whole collection.
+            input_features = features(feature_state, action, run.case)
             # Feasible action seed IDs depend on graph history, which is identical in each branch.
             before_cost = run.budget.used.copy()
             before_wall = run.budget.elapsed
@@ -69,6 +89,12 @@ def collect(run: Run, fm_client, llm_client, dataset: str, seed_offset: int = 0)
             costs["wall_seconds"] = run.budget.elapsed - before_wall
             record = {**outcome, "pre_state_id": snapshot.state_id, "snapshot_hash": digest(snapshot),
                       "snapshot_path": str(snapshot_path), "group_id": run.case.target_id,
+                      "objective_sha256": digest(run.case.objective),
+                      "generation_kernel_sha256": executor.generation_kernel_id(action.generation),
+                      "candidate_source": (("oracle" if action.candidate.candidate_id in oracle_ids
+                                            else "llm") if action.candidate
+                                           else ("region" if action.region else None)),
+                      "region": sorted(action.region),
                       "feature_names": FEATURE_NAMES, "pre_action_features": input_features,
                       "utility_change": delta, "compute_cost": costs,
                       "model_identity": json.loads((run.directory / "fm_health.json").read_text())["model_identity"],
@@ -81,6 +107,8 @@ def collect(run: Run, fm_client, llm_client, dataset: str, seed_offset: int = 0)
     summary = {"pre_state_id": snapshot.state_id, "available_actions": len(actions),
                "executed_actions": sum(r["status"] == "executed" for r in coverage), "coverage": coverage,
                "seed_offset": seed_offset, "seed_base": seed_base,
+               "oracle_edits_offered": len(oracle), "regions_offered": regions,
+               "oracle_candidate_ids": sorted(oracle_ids),
                "dataset": str(Path(dataset).resolve()), "performance_claim": None}
     write_json(run.directory / "branch_coverage.json", summary)
     return summary

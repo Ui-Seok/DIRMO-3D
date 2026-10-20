@@ -1,0 +1,1098 @@
+case_id,key,sdf,status,reason,score,mode
+5eqq,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/5eqq/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,source/003,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5eqq/initial/003/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,UFF_targeted/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5eqq/003/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,source/006,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5eqq/initial/006/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,UFF_targeted/006/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5eqq/006/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/006/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/006/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/006/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/006/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/006/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/006/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/006/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/006/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/006/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/006/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/006/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/006/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/006/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/006/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/006/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/006/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/006/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/006/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/006/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/006/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/006/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/006/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/006/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/006/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,source/008,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5eqq/initial/008/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,UFF_targeted/008/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5eqq/008/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/008/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/008/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/008/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/008/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/008/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/008/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/008/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/008/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/008/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/008/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/008/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/008/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/008/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/008/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/008/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/008/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/008/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/008/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/008/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/008/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/008/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/008/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/008/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/008/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,source/012,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5eqq/initial/012/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,UFF_targeted/012/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5eqq/012/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/012/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/012/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/012/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/012/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/012/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/012/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/012/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,random/012/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/012/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/012/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/012/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/012/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/012/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/012/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/012/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,targeted/012/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/012/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/012/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/012/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/012/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/012/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/012/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/012/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5eqq,whole/012/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/2std/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,source/002,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/2std/initial/002/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,UFF_targeted/002/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/2std/002/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,random/002/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2std/002/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,random/002/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2std/002/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,random/002/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2std/002/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,random/002/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2std/002/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,random/002/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2std/002/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,random/002/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2std/002/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,random/002/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2std/002/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,random/002/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2std/002/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,targeted/002/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2std/002/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,targeted/002/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2std/002/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,targeted/002/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2std/002/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,targeted/002/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2std/002/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,targeted/002/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2std/002/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,targeted/002/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2std/002/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,targeted/002/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2std/002/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,targeted/002/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2std/002/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,whole/002/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2std/002/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,whole/002/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2std/002/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,whole/002/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2std/002/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,whole/002/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2std/002/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,whole/002/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2std/002/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,whole/002/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2std/002/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,whole/002/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2std/002/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+2std,whole/002/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2std/002/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/6bl1/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,source/000,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/6bl1/initial/000/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,UFF_targeted/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/6bl1/000/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,random/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6bl1/000/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,random/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6bl1/000/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,random/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6bl1/000/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,random/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6bl1/000/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,random/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6bl1/000/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,random/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6bl1/000/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,random/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6bl1/000/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,random/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6bl1/000/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,targeted/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6bl1/000/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,targeted/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6bl1/000/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,targeted/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6bl1/000/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,targeted/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6bl1/000/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,targeted/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6bl1/000/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,targeted/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6bl1/000/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,targeted/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6bl1/000/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,targeted/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6bl1/000/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,whole/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6bl1/000/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,whole/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6bl1/000/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,whole/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6bl1/000/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,whole/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6bl1/000/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,whole/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6bl1/000/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,whole/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6bl1/000/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,whole/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6bl1/000/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6bl1,whole/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6bl1/000/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4yw6,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/4yw6/native.sdf,ok,,-4.185,score_only
+4yw6,source/012,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/4yw6/initial/012/repair_input.sdf,ok,,-5.717,score_only
+4yw6,UFF_targeted/012/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/4yw6/012/00/raw.sdf,ok,,-5.629,score_only
+4yw6,random/012/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4yw6/012/00/raw.sdf,ok,,-5.669,score_only
+4yw6,random/012/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4yw6/012/01/raw.sdf,ok,,-5.671,score_only
+4yw6,random/012/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4yw6/012/02/raw.sdf,ok,,-5.669,score_only
+4yw6,random/012/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4yw6/012/03/raw.sdf,ok,,-5.67,score_only
+4yw6,random/012/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4yw6/012/04/raw.sdf,ok,,-5.663,score_only
+4yw6,random/012/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4yw6/012/05/raw.sdf,ok,,-5.668,score_only
+4yw6,random/012/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4yw6/012/06/raw.sdf,ok,,-5.686,score_only
+4yw6,random/012/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4yw6/012/07/raw.sdf,ok,,-5.671,score_only
+4yw6,targeted/012/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4yw6/012/00/raw.sdf,ok,,-5.669,score_only
+4yw6,targeted/012/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4yw6/012/01/raw.sdf,ok,,-5.671,score_only
+4yw6,targeted/012/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4yw6/012/02/raw.sdf,ok,,-5.669,score_only
+4yw6,targeted/012/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4yw6/012/03/raw.sdf,ok,,-5.67,score_only
+4yw6,targeted/012/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4yw6/012/04/raw.sdf,ok,,-5.663,score_only
+4yw6,targeted/012/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4yw6/012/05/raw.sdf,ok,,-5.668,score_only
+4yw6,targeted/012/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4yw6/012/06/raw.sdf,ok,,-5.686,score_only
+4yw6,targeted/012/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4yw6/012/07/raw.sdf,ok,,-5.671,score_only
+4yw6,whole/012/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4yw6/012/00/raw.sdf,ok,,-5.517,score_only
+4yw6,whole/012/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4yw6/012/01/raw.sdf,ok,,-5.521,score_only
+4yw6,whole/012/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4yw6/012/02/raw.sdf,ok,,-5.466,score_only
+4yw6,whole/012/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4yw6/012/03/raw.sdf,ok,,-5.56,score_only
+4yw6,whole/012/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4yw6/012/04/raw.sdf,ok,,-5.435,score_only
+4yw6,whole/012/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4yw6/012/05/raw.sdf,ok,,-5.462,score_only
+4yw6,whole/012/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4yw6/012/06/raw.sdf,ok,,-5.49,score_only
+4yw6,whole/012/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4yw6/012/07/raw.sdf,ok,,-5.463,score_only
+2i4v,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/2i4v/native.sdf,ok,,-8.616,score_only
+2i4v,source/009,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/2i4v/initial/009/repair_input.sdf,ok,,-11.207,score_only
+2i4v,UFF_targeted/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/2i4v/009/00/raw.sdf,ok,,-11.157,score_only
+2i4v,random/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/009/00/raw.sdf,ok,,-11.208,score_only
+2i4v,random/009/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/009/01/raw.sdf,ok,,-11.2,score_only
+2i4v,random/009/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/009/02/raw.sdf,ok,,-11.206,score_only
+2i4v,random/009/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/009/03/raw.sdf,ok,,-11.206,score_only
+2i4v,random/009/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/009/04/raw.sdf,ok,,-11.215,score_only
+2i4v,random/009/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/009/05/raw.sdf,ok,,-11.218,score_only
+2i4v,random/009/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/009/06/raw.sdf,ok,,-11.22,score_only
+2i4v,random/009/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/009/07/raw.sdf,ok,,-11.208,score_only
+2i4v,targeted/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/009/00/raw.sdf,ok,,-11.208,score_only
+2i4v,targeted/009/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/009/01/raw.sdf,ok,,-11.2,score_only
+2i4v,targeted/009/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/009/02/raw.sdf,ok,,-11.206,score_only
+2i4v,targeted/009/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/009/03/raw.sdf,ok,,-11.206,score_only
+2i4v,targeted/009/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/009/04/raw.sdf,ok,,-11.215,score_only
+2i4v,targeted/009/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/009/05/raw.sdf,ok,,-11.218,score_only
+2i4v,targeted/009/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/009/06/raw.sdf,ok,,-11.22,score_only
+2i4v,targeted/009/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/009/07/raw.sdf,ok,,-11.208,score_only
+2i4v,whole/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/009/00/raw.sdf,ok,,-11.026,score_only
+2i4v,whole/009/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/009/01/raw.sdf,ok,,-11.082,score_only
+2i4v,whole/009/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/009/02/raw.sdf,ok,,-10.854,score_only
+2i4v,whole/009/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/009/03/raw.sdf,ok,,-10.952,score_only
+2i4v,whole/009/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/009/04/raw.sdf,ok,,-10.974,score_only
+2i4v,whole/009/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/009/05/raw.sdf,ok,,-10.975,score_only
+2i4v,whole/009/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/009/06/raw.sdf,ok,,-11.013,score_only
+2i4v,whole/009/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/009/07/raw.sdf,ok,,-11.017,score_only
+2i4v,source/014,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/2i4v/initial/014/repair_input.sdf,ok,,-9.463,score_only
+2i4v,UFF_targeted/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/2i4v/014/00/raw.sdf,ok,,-8.384,score_only
+2i4v,random/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/014/00/raw.sdf,ok,,-9.536,score_only
+2i4v,random/014/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/014/01/raw.sdf,ok,,-9.471,score_only
+2i4v,random/014/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/014/02/raw.sdf,ok,,-9.517,score_only
+2i4v,random/014/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/014/03/raw.sdf,ok,,-9.512,score_only
+2i4v,random/014/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/014/04/raw.sdf,ok,,-9.522,score_only
+2i4v,random/014/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/014/05/raw.sdf,ok,,-9.522,score_only
+2i4v,random/014/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/014/06/raw.sdf,ok,,-9.524,score_only
+2i4v,random/014/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2i4v/014/07/raw.sdf,ok,,-9.499,score_only
+2i4v,targeted/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/014/00/raw.sdf,ok,,-9.536,score_only
+2i4v,targeted/014/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/014/01/raw.sdf,ok,,-9.471,score_only
+2i4v,targeted/014/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/014/02/raw.sdf,ok,,-9.517,score_only
+2i4v,targeted/014/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/014/03/raw.sdf,ok,,-9.512,score_only
+2i4v,targeted/014/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/014/04/raw.sdf,ok,,-9.522,score_only
+2i4v,targeted/014/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/014/05/raw.sdf,ok,,-9.522,score_only
+2i4v,targeted/014/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/014/06/raw.sdf,ok,,-9.524,score_only
+2i4v,targeted/014/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2i4v/014/07/raw.sdf,ok,,-9.499,score_only
+2i4v,whole/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/014/00/raw.sdf,ok,,-9.829,score_only
+2i4v,whole/014/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/014/01/raw.sdf,ok,,-9.743,score_only
+2i4v,whole/014/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/014/02/raw.sdf,ok,,-9.658,score_only
+2i4v,whole/014/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/014/03/raw.sdf,ok,,-9.244,score_only
+2i4v,whole/014/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/014/04/raw.sdf,ok,,-9.676,score_only
+2i4v,whole/014/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/014/05/raw.sdf,ok,,-9.588,score_only
+2i4v,whole/014/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/014/06/raw.sdf,ok,,-9.179,score_only
+2i4v,whole/014/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2i4v/014/07/raw.sdf,ok,,-9.76,score_only
+4rsp,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/4rsp/native.sdf,ok,,-3.666,score_only
+4rsp,source/000,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/4rsp/initial/000/repair_input.sdf,ok,,-9.446,score_only
+4rsp,UFF_targeted/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/4rsp/000/00/raw.sdf,ok,,-9.438,score_only
+4rsp,random/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4rsp/000/00/raw.sdf,ok,,-9.422,score_only
+4rsp,random/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4rsp/000/01/raw.sdf,ok,,-9.428,score_only
+4rsp,random/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4rsp/000/02/raw.sdf,ok,,-9.428,score_only
+4rsp,random/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4rsp/000/03/raw.sdf,ok,,-9.431,score_only
+4rsp,random/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4rsp/000/04/raw.sdf,ok,,-9.425,score_only
+4rsp,random/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4rsp/000/05/raw.sdf,ok,,-9.422,score_only
+4rsp,random/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4rsp/000/06/raw.sdf,ok,,-9.423,score_only
+4rsp,random/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4rsp/000/07/raw.sdf,ok,,-9.431,score_only
+4rsp,targeted/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4rsp/000/00/raw.sdf,ok,,-9.422,score_only
+4rsp,targeted/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4rsp/000/01/raw.sdf,ok,,-9.428,score_only
+4rsp,targeted/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4rsp/000/02/raw.sdf,ok,,-9.428,score_only
+4rsp,targeted/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4rsp/000/03/raw.sdf,ok,,-9.431,score_only
+4rsp,targeted/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4rsp/000/04/raw.sdf,ok,,-9.425,score_only
+4rsp,targeted/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4rsp/000/05/raw.sdf,ok,,-9.422,score_only
+4rsp,targeted/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4rsp/000/06/raw.sdf,ok,,-9.423,score_only
+4rsp,targeted/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4rsp/000/07/raw.sdf,ok,,-9.431,score_only
+4rsp,whole/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4rsp/000/00/raw.sdf,ok,,-9.383,score_only
+4rsp,whole/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4rsp/000/01/raw.sdf,ok,,-9.115,score_only
+4rsp,whole/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4rsp/000/02/raw.sdf,ok,,-9.324,score_only
+4rsp,whole/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4rsp/000/03/raw.sdf,ok,,-9.252,score_only
+4rsp,whole/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4rsp/000/04/raw.sdf,ok,,-9.139,score_only
+4rsp,whole/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4rsp/000/05/raw.sdf,ok,,-9.294,score_only
+4rsp,whole/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4rsp/000/06/raw.sdf,ok,,-9.248,score_only
+4rsp,whole/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4rsp/000/07/raw.sdf,ok,,-9.14,score_only
+5efh,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/5efh/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,source/001,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5efh/initial/001/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,UFF_targeted/001/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5efh/001/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,random/001/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5efh/001/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,random/001/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5efh/001/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,random/001/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5efh/001/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,random/001/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5efh/001/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,random/001/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5efh/001/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,random/001/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5efh/001/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,random/001/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5efh/001/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,random/001/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5efh/001/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,targeted/001/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5efh/001/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,targeted/001/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5efh/001/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,targeted/001/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5efh/001/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,targeted/001/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5efh/001/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,targeted/001/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5efh/001/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,targeted/001/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5efh/001/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,targeted/001/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5efh/001/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,targeted/001/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5efh/001/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,whole/001/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5efh/001/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,whole/001/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5efh/001/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,whole/001/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5efh/001/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,whole/001/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5efh/001/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,whole/001/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5efh/001/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,whole/001/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5efh/001/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,whole/001/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5efh/001/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5efh,whole/001/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5efh/001/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/6cvw/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,source/009,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/6cvw/initial/009/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,UFF_targeted/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/6cvw/009/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,random/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6cvw/009/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,random/009/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6cvw/009/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,random/009/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6cvw/009/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,random/009/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6cvw/009/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,random/009/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6cvw/009/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,random/009/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6cvw/009/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,random/009/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6cvw/009/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,random/009/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6cvw/009/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,targeted/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6cvw/009/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,targeted/009/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6cvw/009/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,targeted/009/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6cvw/009/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,targeted/009/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6cvw/009/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,targeted/009/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6cvw/009/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,targeted/009/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6cvw/009/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,targeted/009/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6cvw/009/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,targeted/009/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6cvw/009/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,whole/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6cvw/009/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,whole/009/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6cvw/009/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,whole/009/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6cvw/009/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,whole/009/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6cvw/009/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,whole/009/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6cvw/009/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,whole/009/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6cvw/009/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,whole/009/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6cvw/009/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6cvw,whole/009/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6cvw/009/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4q09,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/4q09/native.sdf,ok,,-6.428,score_only
+4q09,source/000,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/4q09/initial/000/repair_input.sdf,ok,,-8.954,score_only
+4q09,UFF_targeted/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/4q09/000/00/raw.sdf,ok,,-8.717,score_only
+4q09,random/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/000/00/raw.sdf,ok,,-8.845,score_only
+4q09,random/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/000/01/raw.sdf,ok,,-8.853,score_only
+4q09,random/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/000/02/raw.sdf,ok,,-8.849,score_only
+4q09,random/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/000/03/raw.sdf,ok,,-8.853,score_only
+4q09,random/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/000/04/raw.sdf,ok,,-8.85,score_only
+4q09,random/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/000/05/raw.sdf,ok,,-8.85,score_only
+4q09,random/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/000/06/raw.sdf,ok,,-8.848,score_only
+4q09,random/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/000/07/raw.sdf,ok,,-8.854,score_only
+4q09,targeted/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/000/00/raw.sdf,ok,,-8.845,score_only
+4q09,targeted/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/000/01/raw.sdf,ok,,-8.853,score_only
+4q09,targeted/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/000/02/raw.sdf,ok,,-8.849,score_only
+4q09,targeted/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/000/03/raw.sdf,ok,,-8.853,score_only
+4q09,targeted/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/000/04/raw.sdf,ok,,-8.85,score_only
+4q09,targeted/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/000/05/raw.sdf,ok,,-8.85,score_only
+4q09,targeted/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/000/06/raw.sdf,ok,,-8.848,score_only
+4q09,targeted/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/000/07/raw.sdf,ok,,-8.854,score_only
+4q09,whole/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/000/00/raw.sdf,ok,,-8.463,score_only
+4q09,whole/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/000/01/raw.sdf,ok,,-8.541,score_only
+4q09,whole/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/000/02/raw.sdf,ok,,-8.618,score_only
+4q09,whole/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/000/03/raw.sdf,ok,,-8.562,score_only
+4q09,whole/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/000/04/raw.sdf,ok,,-8.641,score_only
+4q09,whole/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/000/05/raw.sdf,ok,,-8.766,score_only
+4q09,whole/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/000/06/raw.sdf,ok,,-8.57,score_only
+4q09,whole/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/000/07/raw.sdf,ok,,-8.698,score_only
+4q09,source/003,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/4q09/initial/003/repair_input.sdf,ok,,-7.577,score_only
+4q09,UFF_targeted/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/4q09/003/00/raw.sdf,ok,,-7.512,score_only
+4q09,random/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/003/00/raw.sdf,ok,,-7.433,score_only
+4q09,random/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/003/01/raw.sdf,ok,,-7.435,score_only
+4q09,random/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/003/02/raw.sdf,ok,,-7.426,score_only
+4q09,random/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/003/03/raw.sdf,ok,,-7.423,score_only
+4q09,random/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/003/04/raw.sdf,ok,,-7.44,score_only
+4q09,random/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/003/05/raw.sdf,ok,,-7.443,score_only
+4q09,random/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/003/06/raw.sdf,ok,,-7.438,score_only
+4q09,random/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/003/07/raw.sdf,ok,,-7.438,score_only
+4q09,targeted/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/003/00/raw.sdf,ok,,-7.433,score_only
+4q09,targeted/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/003/01/raw.sdf,ok,,-7.435,score_only
+4q09,targeted/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/003/02/raw.sdf,ok,,-7.426,score_only
+4q09,targeted/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/003/03/raw.sdf,ok,,-7.423,score_only
+4q09,targeted/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/003/04/raw.sdf,ok,,-7.44,score_only
+4q09,targeted/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/003/05/raw.sdf,ok,,-7.443,score_only
+4q09,targeted/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/003/06/raw.sdf,ok,,-7.438,score_only
+4q09,targeted/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/003/07/raw.sdf,ok,,-7.438,score_only
+4q09,whole/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/003/00/raw.sdf,ok,,-6.938,score_only
+4q09,whole/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/003/01/raw.sdf,ok,,-6.932,score_only
+4q09,whole/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/003/02/raw.sdf,ok,,-6.967,score_only
+4q09,whole/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/003/03/raw.sdf,ok,,-6.996,score_only
+4q09,whole/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/003/04/raw.sdf,ok,,-6.867,score_only
+4q09,whole/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/003/05/raw.sdf,ok,,-6.836,score_only
+4q09,whole/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/003/06/raw.sdf,ok,,-6.895,score_only
+4q09,whole/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/003/07/raw.sdf,ok,,-7.037,score_only
+4q09,source/004,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/4q09/initial/004/repair_input.sdf,ok,,-9.71,score_only
+4q09,UFF_targeted/004/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/4q09/004/00/raw.sdf,ok,,-9.73,score_only
+4q09,random/004/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/004/00/raw.sdf,ok,,-8.852,score_only
+4q09,random/004/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/004/01/raw.sdf,ok,,-8.795,score_only
+4q09,random/004/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/004/02/raw.sdf,ok,,-8.715,score_only
+4q09,random/004/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/004/03/raw.sdf,ok,,-8.807,score_only
+4q09,random/004/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/004/04/raw.sdf,ok,,-8.793,score_only
+4q09,random/004/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/004/05/raw.sdf,ok,,-8.861,score_only
+4q09,random/004/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/004/06/raw.sdf,ok,,-8.797,score_only
+4q09,random/004/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4q09/004/07/raw.sdf,ok,,-8.713,score_only
+4q09,targeted/004/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/004/00/raw.sdf,ok,,-8.852,score_only
+4q09,targeted/004/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/004/01/raw.sdf,ok,,-8.795,score_only
+4q09,targeted/004/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/004/02/raw.sdf,ok,,-8.715,score_only
+4q09,targeted/004/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/004/03/raw.sdf,ok,,-8.807,score_only
+4q09,targeted/004/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/004/04/raw.sdf,ok,,-8.793,score_only
+4q09,targeted/004/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/004/05/raw.sdf,ok,,-8.861,score_only
+4q09,targeted/004/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/004/06/raw.sdf,ok,,-8.797,score_only
+4q09,targeted/004/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4q09/004/07/raw.sdf,ok,,-8.713,score_only
+4q09,whole/004/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/004/00/raw.sdf,ok,,-8.622,score_only
+4q09,whole/004/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/004/01/raw.sdf,ok,,-8.605,score_only
+4q09,whole/004/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/004/02/raw.sdf,ok,,-8.562,score_only
+4q09,whole/004/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/004/03/raw.sdf,ok,,-8.506,score_only
+4q09,whole/004/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/004/04/raw.sdf,ok,,-8.628,score_only
+4q09,whole/004/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/004/05/raw.sdf,ok,,-8.804,score_only
+4q09,whole/004/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/004/06/raw.sdf,ok,,-8.537,score_only
+4q09,whole/004/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4q09/004/07/raw.sdf,ok,,-8.771,score_only
+3gwv,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/3gwv/native.sdf,ok,,-6.264,score_only
+3gwv,source/010,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/3gwv/initial/010/repair_input.sdf,ok,,-8.551,score_only
+3gwv,UFF_targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/3gwv/010/00/raw.sdf,ok,,4.202,score_only
+3gwv,random/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3gwv/010/00/raw.sdf,ok,,-8.518,score_only
+3gwv,random/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3gwv/010/01/raw.sdf,ok,,-8.496,score_only
+3gwv,random/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3gwv/010/02/raw.sdf,ok,,-8.507,score_only
+3gwv,random/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3gwv/010/03/raw.sdf,ok,,-8.505,score_only
+3gwv,random/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3gwv/010/04/raw.sdf,ok,,-8.525,score_only
+3gwv,random/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3gwv/010/05/raw.sdf,ok,,-8.482,score_only
+3gwv,random/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3gwv/010/06/raw.sdf,ok,,-8.456,score_only
+3gwv,random/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3gwv/010/07/raw.sdf,ok,,-8.495,score_only
+3gwv,targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3gwv/010/00/raw.sdf,ok,,-8.518,score_only
+3gwv,targeted/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3gwv/010/01/raw.sdf,ok,,-8.496,score_only
+3gwv,targeted/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3gwv/010/02/raw.sdf,ok,,-8.507,score_only
+3gwv,targeted/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3gwv/010/03/raw.sdf,ok,,-8.505,score_only
+3gwv,targeted/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3gwv/010/04/raw.sdf,ok,,-8.525,score_only
+3gwv,targeted/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3gwv/010/05/raw.sdf,ok,,-8.482,score_only
+3gwv,targeted/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3gwv/010/06/raw.sdf,ok,,-8.456,score_only
+3gwv,targeted/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3gwv/010/07/raw.sdf,ok,,-8.495,score_only
+3gwv,whole/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3gwv/010/00/raw.sdf,ok,,-7.899,score_only
+3gwv,whole/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3gwv/010/01/raw.sdf,ok,,-7.846,score_only
+3gwv,whole/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3gwv/010/02/raw.sdf,ok,,-8.119,score_only
+3gwv,whole/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3gwv/010/03/raw.sdf,ok,,-8.069,score_only
+3gwv,whole/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3gwv/010/04/raw.sdf,ok,,-8.02,score_only
+3gwv,whole/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3gwv/010/05/raw.sdf,ok,,-8.089,score_only
+3gwv,whole/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3gwv/010/06/raw.sdf,ok,,-8.127,score_only
+3gwv,whole/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3gwv/010/07/raw.sdf,ok,,-7.835,score_only
+3mz3,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/3mz3/native.sdf,ok,,-4.043,score_only
+3mz3,source/003,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/3mz3/initial/003/repair_input.sdf,ok,,-8.838,score_only
+3mz3,UFF_targeted/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/3mz3/003/00/raw.sdf,ok,,-8.165,score_only
+3mz3,random/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3mz3/003/00/raw.sdf,ok,,-8.763,score_only
+3mz3,random/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3mz3/003/01/raw.sdf,ok,,-8.783,score_only
+3mz3,random/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3mz3/003/02/raw.sdf,ok,,-8.746,score_only
+3mz3,random/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3mz3/003/03/raw.sdf,ok,,-8.71,score_only
+3mz3,random/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3mz3/003/04/raw.sdf,ok,,-8.764,score_only
+3mz3,random/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3mz3/003/05/raw.sdf,ok,,-8.757,score_only
+3mz3,random/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3mz3/003/06/raw.sdf,ok,,-8.761,score_only
+3mz3,random/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3mz3/003/07/raw.sdf,ok,,-8.783,score_only
+3mz3,targeted/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3mz3/003/00/raw.sdf,ok,,-8.763,score_only
+3mz3,targeted/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3mz3/003/01/raw.sdf,ok,,-8.783,score_only
+3mz3,targeted/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3mz3/003/02/raw.sdf,ok,,-8.746,score_only
+3mz3,targeted/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3mz3/003/03/raw.sdf,ok,,-8.71,score_only
+3mz3,targeted/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3mz3/003/04/raw.sdf,ok,,-8.764,score_only
+3mz3,targeted/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3mz3/003/05/raw.sdf,ok,,-8.757,score_only
+3mz3,targeted/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3mz3/003/06/raw.sdf,ok,,-8.761,score_only
+3mz3,targeted/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3mz3/003/07/raw.sdf,ok,,-8.783,score_only
+3mz3,whole/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3mz3/003/00/raw.sdf,ok,,-8.715,score_only
+3mz3,whole/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3mz3/003/01/raw.sdf,ok,,-8.352,score_only
+3mz3,whole/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3mz3/003/02/raw.sdf,ok,,-8.549,score_only
+3mz3,whole/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3mz3/003/03/raw.sdf,ok,,-8.718,score_only
+3mz3,whole/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3mz3/003/04/raw.sdf,ok,,-8.75,score_only
+3mz3,whole/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3mz3/003/05/raw.sdf,ok,,-8.698,score_only
+3mz3,whole/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3mz3/003/06/raw.sdf,ok,,-8.624,score_only
+3mz3,whole/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3mz3/003/07/raw.sdf,ok,,-8.636,score_only
+2zu4,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/2zu4/native.sdf,ok,,-3.269,score_only
+2zu4,source/010,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/2zu4/initial/010/repair_input.sdf,ok,,-9.181,score_only
+2zu4,UFF_targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/2zu4/010/00/raw.sdf,ok,,-9.086,score_only
+2zu4,random/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2zu4/010/00/raw.sdf,ok,,-9.171,score_only
+2zu4,random/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2zu4/010/01/raw.sdf,ok,,-9.17,score_only
+2zu4,random/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2zu4/010/02/raw.sdf,ok,,-9.175,score_only
+2zu4,random/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2zu4/010/03/raw.sdf,ok,,-9.174,score_only
+2zu4,random/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2zu4/010/04/raw.sdf,ok,,-9.167,score_only
+2zu4,random/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2zu4/010/05/raw.sdf,ok,,-9.166,score_only
+2zu4,random/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2zu4/010/06/raw.sdf,ok,,-9.165,score_only
+2zu4,random/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2zu4/010/07/raw.sdf,ok,,-9.172,score_only
+2zu4,targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2zu4/010/00/raw.sdf,ok,,-9.148,score_only
+2zu4,targeted/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2zu4/010/01/raw.sdf,ok,,-9.141,score_only
+2zu4,targeted/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2zu4/010/02/raw.sdf,ok,,-9.148,score_only
+2zu4,targeted/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2zu4/010/03/raw.sdf,ok,,-9.149,score_only
+2zu4,targeted/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2zu4/010/04/raw.sdf,ok,,-9.143,score_only
+2zu4,targeted/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2zu4/010/05/raw.sdf,ok,,-9.136,score_only
+2zu4,targeted/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2zu4/010/06/raw.sdf,ok,,-9.141,score_only
+2zu4,targeted/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2zu4/010/07/raw.sdf,ok,,-9.141,score_only
+2zu4,whole/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2zu4/010/00/raw.sdf,ok,,-8.991,score_only
+2zu4,whole/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2zu4/010/01/raw.sdf,ok,,-8.927,score_only
+2zu4,whole/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2zu4/010/02/raw.sdf,ok,,-9.09,score_only
+2zu4,whole/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2zu4/010/03/raw.sdf,ok,,-8.944,score_only
+2zu4,whole/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2zu4/010/04/raw.sdf,ok,,-8.988,score_only
+2zu4,whole/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2zu4/010/05/raw.sdf,ok,,-8.898,score_only
+2zu4,whole/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2zu4/010/06/raw.sdf,ok,,-9.117,score_only
+2zu4,whole/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2zu4/010/07/raw.sdf,ok,,-8.728,score_only
+6dh3,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/6dh3/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,source/014,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/6dh3/initial/014/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,UFF_targeted/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/6dh3/014/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,random/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6dh3/014/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,random/014/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6dh3/014/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,random/014/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6dh3/014/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,random/014/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6dh3/014/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,random/014/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6dh3/014/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,random/014/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6dh3/014/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,random/014/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6dh3/014/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,random/014/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/6dh3/014/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,targeted/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6dh3/014/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,targeted/014/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6dh3/014/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,targeted/014/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6dh3/014/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,targeted/014/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6dh3/014/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,targeted/014/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6dh3/014/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,targeted/014/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6dh3/014/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,targeted/014/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6dh3/014/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,targeted/014/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/6dh3/014/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,whole/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6dh3/014/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,whole/014/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6dh3/014/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,whole/014/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6dh3/014/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,whole/014/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6dh3/014/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,whole/014/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6dh3/014/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,whole/014/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6dh3/014/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,whole/014/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6dh3/014/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+6dh3,whole/014/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/6dh3/014/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4iks,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/4iks/native.sdf,ok,,-6.011,score_only
+4iks,source/005,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/4iks/initial/005/repair_input.sdf,ok,,-7.85,score_only
+4iks,UFF_targeted/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/4iks/005/00/raw.sdf,ok,,-6.532,score_only
+4iks,random/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4iks/005/00/raw.sdf,ok,,-7.794,score_only
+4iks,random/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4iks/005/01/raw.sdf,ok,,-7.795,score_only
+4iks,random/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4iks/005/02/raw.sdf,ok,,-7.8,score_only
+4iks,random/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4iks/005/03/raw.sdf,ok,,-7.792,score_only
+4iks,random/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4iks/005/04/raw.sdf,ok,,-7.794,score_only
+4iks,random/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4iks/005/05/raw.sdf,ok,,-7.801,score_only
+4iks,random/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4iks/005/06/raw.sdf,ok,,-7.79,score_only
+4iks,random/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4iks/005/07/raw.sdf,ok,,-7.79,score_only
+4iks,targeted/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4iks/005/00/raw.sdf,ok,,-7.794,score_only
+4iks,targeted/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4iks/005/01/raw.sdf,ok,,-7.795,score_only
+4iks,targeted/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4iks/005/02/raw.sdf,ok,,-7.8,score_only
+4iks,targeted/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4iks/005/03/raw.sdf,ok,,-7.792,score_only
+4iks,targeted/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4iks/005/04/raw.sdf,ok,,-7.794,score_only
+4iks,targeted/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4iks/005/05/raw.sdf,ok,,-7.801,score_only
+4iks,targeted/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4iks/005/06/raw.sdf,ok,,-7.79,score_only
+4iks,targeted/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4iks/005/07/raw.sdf,ok,,-7.79,score_only
+4iks,whole/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4iks/005/00/raw.sdf,ok,,-8.036,score_only
+4iks,whole/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4iks/005/01/raw.sdf,ok,,-7.91,score_only
+4iks,whole/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4iks/005/02/raw.sdf,ok,,-7.895,score_only
+4iks,whole/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4iks/005/03/raw.sdf,ok,,-7.947,score_only
+4iks,whole/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4iks/005/04/raw.sdf,ok,,-7.964,score_only
+4iks,whole/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4iks/005/05/raw.sdf,ok,,-7.766,score_only
+4iks,whole/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4iks/005/06/raw.sdf,ok,,-7.999,score_only
+4iks,whole/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4iks/005/07/raw.sdf,ok,,-7.964,score_only
+1dif,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/1dif/native.sdf,ok,,-10.324,score_only
+1dif,source/010,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/1dif/initial/010/repair_input.sdf,ok,,-11.276,score_only
+1dif,UFF_targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/1dif/010/00/raw.sdf,ok,,-11.197,score_only
+1dif,random/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/010/00/raw.sdf,ok,,-11.19,score_only
+1dif,random/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/010/01/raw.sdf,ok,,-11.184,score_only
+1dif,random/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/010/02/raw.sdf,ok,,-11.13,score_only
+1dif,random/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/010/03/raw.sdf,ok,,-11.194,score_only
+1dif,random/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/010/04/raw.sdf,ok,,-11.198,score_only
+1dif,random/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/010/05/raw.sdf,ok,,-11.153,score_only
+1dif,random/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/010/06/raw.sdf,ok,,-11.179,score_only
+1dif,random/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/010/07/raw.sdf,ok,,-11.208,score_only
+1dif,targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/010/00/raw.sdf,ok,,-11.19,score_only
+1dif,targeted/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/010/01/raw.sdf,ok,,-11.184,score_only
+1dif,targeted/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/010/02/raw.sdf,ok,,-11.13,score_only
+1dif,targeted/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/010/03/raw.sdf,ok,,-11.194,score_only
+1dif,targeted/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/010/04/raw.sdf,ok,,-11.198,score_only
+1dif,targeted/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/010/05/raw.sdf,ok,,-11.153,score_only
+1dif,targeted/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/010/06/raw.sdf,ok,,-11.179,score_only
+1dif,targeted/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/010/07/raw.sdf,ok,,-11.208,score_only
+1dif,whole/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/010/00/raw.sdf,ok,,-11.04,score_only
+1dif,whole/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/010/01/raw.sdf,ok,,-10.926,score_only
+1dif,whole/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/010/02/raw.sdf,ok,,-10.9,score_only
+1dif,whole/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/010/03/raw.sdf,ok,,-10.925,score_only
+1dif,whole/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/010/04/raw.sdf,ok,,-11.058,score_only
+1dif,whole/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/010/05/raw.sdf,ok,,-11.052,score_only
+1dif,whole/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/010/06/raw.sdf,ok,,-10.992,score_only
+1dif,whole/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/010/07/raw.sdf,ok,,-11.036,score_only
+1dif,source/015,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/1dif/initial/015/repair_input.sdf,ok,,-10.129,score_only
+1dif,UFF_targeted/015/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/1dif/015/00/raw.sdf,ok,,-10.067,score_only
+1dif,random/015/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/015/00/raw.sdf,ok,,-10.066,score_only
+1dif,random/015/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/015/01/raw.sdf,ok,,-10.03,score_only
+1dif,random/015/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/015/02/raw.sdf,ok,,-10.044,score_only
+1dif,random/015/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/015/03/raw.sdf,ok,,-10.061,score_only
+1dif,random/015/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/015/04/raw.sdf,ok,,-10.045,score_only
+1dif,random/015/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/015/05/raw.sdf,ok,,-10.053,score_only
+1dif,random/015/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/015/06/raw.sdf,ok,,-10.07,score_only
+1dif,random/015/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1dif/015/07/raw.sdf,ok,,-10.039,score_only
+1dif,targeted/015/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/015/00/raw.sdf,ok,,-10.069,score_only
+1dif,targeted/015/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/015/01/raw.sdf,ok,,-10.119,score_only
+1dif,targeted/015/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/015/02/raw.sdf,ok,,-10.082,score_only
+1dif,targeted/015/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/015/03/raw.sdf,ok,,-10.13,score_only
+1dif,targeted/015/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/015/04/raw.sdf,ok,,-10.048,score_only
+1dif,targeted/015/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/015/05/raw.sdf,ok,,-10.111,score_only
+1dif,targeted/015/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/015/06/raw.sdf,ok,,-10.087,score_only
+1dif,targeted/015/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1dif/015/07/raw.sdf,ok,,-10.087,score_only
+1dif,whole/015/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/015/00/raw.sdf,ok,,-9.798,score_only
+1dif,whole/015/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/015/01/raw.sdf,ok,,-9.889,score_only
+1dif,whole/015/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/015/02/raw.sdf,ok,,-9.932,score_only
+1dif,whole/015/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/015/03/raw.sdf,ok,,-9.971,score_only
+1dif,whole/015/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/015/04/raw.sdf,ok,,-9.882,score_only
+1dif,whole/015/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/015/05/raw.sdf,ok,,-9.813,score_only
+1dif,whole/015/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/015/06/raw.sdf,ok,,-9.918,score_only
+1dif,whole/015/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1dif/015/07/raw.sdf,ok,,-9.89,score_only
+4mro,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/4mro/native.sdf,ok,,-11.194,score_only
+4mro,source/005,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/4mro/initial/005/repair_input.sdf,ok,,-10.924,score_only
+4mro,UFF_targeted/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/4mro/005/00/raw.sdf,ok,,-10.244,score_only
+4mro,random/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4mro/005/00/raw.sdf,ok,,-10.949,score_only
+4mro,random/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4mro/005/01/raw.sdf,ok,,-10.934,score_only
+4mro,random/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4mro/005/02/raw.sdf,ok,,-10.957,score_only
+4mro,random/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4mro/005/03/raw.sdf,ok,,-10.942,score_only
+4mro,random/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4mro/005/04/raw.sdf,ok,,-10.936,score_only
+4mro,random/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4mro/005/05/raw.sdf,ok,,-10.957,score_only
+4mro,random/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4mro/005/06/raw.sdf,ok,,-10.947,score_only
+4mro,random/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4mro/005/07/raw.sdf,ok,,-10.911,score_only
+4mro,targeted/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4mro/005/00/raw.sdf,ok,,-10.949,score_only
+4mro,targeted/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4mro/005/01/raw.sdf,ok,,-10.934,score_only
+4mro,targeted/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4mro/005/02/raw.sdf,ok,,-10.957,score_only
+4mro,targeted/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4mro/005/03/raw.sdf,ok,,-10.942,score_only
+4mro,targeted/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4mro/005/04/raw.sdf,ok,,-10.936,score_only
+4mro,targeted/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4mro/005/05/raw.sdf,ok,,-10.957,score_only
+4mro,targeted/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4mro/005/06/raw.sdf,ok,,-10.947,score_only
+4mro,targeted/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4mro/005/07/raw.sdf,ok,,-10.911,score_only
+4mro,whole/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4mro/005/00/raw.sdf,ok,,-10.853,score_only
+4mro,whole/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4mro/005/01/raw.sdf,ok,,-10.859,score_only
+4mro,whole/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4mro/005/02/raw.sdf,ok,,-10.928,score_only
+4mro,whole/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4mro/005/03/raw.sdf,ok,,-10.799,score_only
+4mro,whole/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4mro/005/04/raw.sdf,ok,,-10.856,score_only
+4mro,whole/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4mro/005/05/raw.sdf,ok,,-10.906,score_only
+4mro,whole/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4mro/005/06/raw.sdf,ok,,-11.003,score_only
+4mro,whole/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4mro/005/07/raw.sdf,ok,,-10.92,score_only
+3i25,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/3i25/native.sdf,ok,,-11.543,score_only
+3i25,source/013,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/3i25/initial/013/repair_input.sdf,ok,,-12.468,score_only
+3i25,UFF_targeted/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/3i25/013/00/raw.sdf,ok,,-12.286,score_only
+3i25,random/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/00/raw.sdf,ok,,-12.466,score_only
+3i25,random/013/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/01/raw.sdf,ok,,-12.406,score_only
+3i25,random/013/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/02/raw.sdf,ok,,-12.464,score_only
+3i25,random/013/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/03/raw.sdf,ok,,-12.402,score_only
+3i25,random/013/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/04/raw.sdf,ok,,-12.407,score_only
+3i25,random/013/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/05/raw.sdf,ok,,-12.423,score_only
+3i25,random/013/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/06/raw.sdf,ok,,-12.465,score_only
+3i25,random/013/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/07/raw.sdf,ok,,-12.431,score_only
+3i25,targeted/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/00/raw.sdf,ok,,-12.466,score_only
+3i25,targeted/013/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/01/raw.sdf,ok,,-12.406,score_only
+3i25,targeted/013/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/02/raw.sdf,ok,,-12.464,score_only
+3i25,targeted/013/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/03/raw.sdf,ok,,-12.402,score_only
+3i25,targeted/013/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/04/raw.sdf,ok,,-12.407,score_only
+3i25,targeted/013/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/05/raw.sdf,ok,,-12.423,score_only
+3i25,targeted/013/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/06/raw.sdf,ok,,-12.465,score_only
+3i25,targeted/013/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/07/raw.sdf,ok,,-12.431,score_only
+3i25,whole/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/00/raw.sdf,ok,,-12.171,score_only
+3i25,whole/013/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/01/raw.sdf,ok,,-12.097,score_only
+3i25,whole/013/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/02/raw.sdf,ok,,-12.098,score_only
+3i25,whole/013/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/03/raw.sdf,ok,,-12.186,score_only
+3i25,whole/013/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/04/raw.sdf,ok,,-12.159,score_only
+3i25,whole/013/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/05/raw.sdf,ok,,-12.09,score_only
+3i25,whole/013/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/06/raw.sdf,ok,,-12.088,score_only
+3i25,whole/013/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/07/raw.sdf,ok,,-12.142,score_only
+1nkm,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/1nkm/native.sdf,ok,,-0.969,score_only
+1nkm,source/004,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/1nkm/initial/004/repair_input.sdf,ok,,-8.684,score_only
+1nkm,UFF_targeted/004/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/1nkm/004/00/raw.sdf,ok,,-8.686,score_only
+1nkm,random/004/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1nkm/004/00/raw.sdf,ok,,-8.691,score_only
+1nkm,random/004/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1nkm/004/01/raw.sdf,ok,,-8.688,score_only
+1nkm,random/004/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1nkm/004/02/raw.sdf,ok,,-8.692,score_only
+1nkm,random/004/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1nkm/004/03/raw.sdf,ok,,-8.689,score_only
+1nkm,random/004/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1nkm/004/04/raw.sdf,ok,,-8.696,score_only
+1nkm,random/004/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1nkm/004/05/raw.sdf,ok,,-8.692,score_only
+1nkm,random/004/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1nkm/004/06/raw.sdf,ok,,-8.688,score_only
+1nkm,random/004/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1nkm/004/07/raw.sdf,ok,,-8.695,score_only
+1nkm,targeted/004/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1nkm/004/00/raw.sdf,ok,,-8.691,score_only
+1nkm,targeted/004/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1nkm/004/01/raw.sdf,ok,,-8.688,score_only
+1nkm,targeted/004/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1nkm/004/02/raw.sdf,ok,,-8.692,score_only
+1nkm,targeted/004/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1nkm/004/03/raw.sdf,ok,,-8.689,score_only
+1nkm,targeted/004/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1nkm/004/04/raw.sdf,ok,,-8.696,score_only
+1nkm,targeted/004/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1nkm/004/05/raw.sdf,ok,,-8.692,score_only
+1nkm,targeted/004/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1nkm/004/06/raw.sdf,ok,,-8.688,score_only
+1nkm,targeted/004/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1nkm/004/07/raw.sdf,ok,,-8.695,score_only
+1nkm,whole/004/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1nkm/004/00/raw.sdf,ok,,-7.821,score_only
+1nkm,whole/004/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1nkm/004/01/raw.sdf,ok,,-8.002,score_only
+1nkm,whole/004/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1nkm/004/02/raw.sdf,ok,,-7.686,score_only
+1nkm,whole/004/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1nkm/004/03/raw.sdf,ok,,-7.836,score_only
+1nkm,whole/004/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1nkm/004/04/raw.sdf,ok,,-7.795,score_only
+1nkm,whole/004/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1nkm/004/05/raw.sdf,ok,,-7.783,score_only
+1nkm,whole/004/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1nkm/004/06/raw.sdf,ok,,-7.785,score_only
+1nkm,whole/004/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1nkm/004/07/raw.sdf,ok,,-7.768,score_only
+5vi6,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/5vi6/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,source/010,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5vi6/initial/010/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,UFF_targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5vi6/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,random/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5vi6/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,random/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5vi6/010/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,random/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5vi6/010/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,random/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5vi6/010/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,random/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5vi6/010/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,random/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5vi6/010/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,random/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5vi6/010/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,random/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5vi6/010/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5vi6/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,targeted/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5vi6/010/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,targeted/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5vi6/010/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,targeted/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5vi6/010/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,targeted/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5vi6/010/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,targeted/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5vi6/010/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,targeted/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5vi6/010/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,targeted/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5vi6/010/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,whole/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5vi6/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,whole/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5vi6/010/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,whole/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5vi6/010/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,whole/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5vi6/010/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,whole/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5vi6/010/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,whole/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5vi6/010/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,whole/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5vi6/010/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5vi6,whole/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5vi6/010/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+3d1y,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/3d1y/native.sdf,ok,,-11.514,score_only
+3d1y,source/005,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/3d1y/initial/005/repair_input.sdf,ok,,-14.7,score_only
+3d1y,UFF_targeted/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/3d1y/005/00/raw.sdf,ok,,-14.383,score_only
+3d1y,random/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3d1y/005/00/raw.sdf,ok,,-15.722,score_only
+3d1y,random/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3d1y/005/01/raw.sdf,ok,,-15.751,score_only
+3d1y,random/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3d1y/005/02/raw.sdf,ok,,-15.675,score_only
+3d1y,random/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3d1y/005/03/raw.sdf,ok,,-15.617,score_only
+3d1y,random/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3d1y/005/04/raw.sdf,ok,,-15.672,score_only
+3d1y,random/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3d1y/005/05/raw.sdf,ok,,-15.669,score_only
+3d1y,random/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3d1y/005/06/raw.sdf,ok,,-14.643,score_only
+3d1y,random/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3d1y/005/07/raw.sdf,ok,,-15.674,score_only
+3d1y,targeted/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3d1y/005/00/raw.sdf,ok,,-15.722,score_only
+3d1y,targeted/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3d1y/005/01/raw.sdf,ok,,-15.751,score_only
+3d1y,targeted/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3d1y/005/02/raw.sdf,ok,,-15.675,score_only
+3d1y,targeted/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3d1y/005/03/raw.sdf,ok,,-15.617,score_only
+3d1y,targeted/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3d1y/005/04/raw.sdf,ok,,-15.672,score_only
+3d1y,targeted/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3d1y/005/05/raw.sdf,ok,,-15.669,score_only
+3d1y,targeted/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3d1y/005/06/raw.sdf,ok,,-14.643,score_only
+3d1y,targeted/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3d1y/005/07/raw.sdf,ok,,-15.674,score_only
+3d1y,whole/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3d1y/005/00/raw.sdf,ok,,-14.597,score_only
+3d1y,whole/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3d1y/005/01/raw.sdf,ok,,-14.618,score_only
+3d1y,whole/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3d1y/005/02/raw.sdf,ok,,-14.595,score_only
+3d1y,whole/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3d1y/005/03/raw.sdf,ok,,-14.517,score_only
+3d1y,whole/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3d1y/005/04/raw.sdf,ok,,-14.49,score_only
+3d1y,whole/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3d1y/005/05/raw.sdf,ok,,-14.568,score_only
+3d1y,whole/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3d1y/005/06/raw.sdf,ok,,-14.595,score_only
+3d1y,whole/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3d1y/005/07/raw.sdf,ok,,-14.642,score_only
+4nga,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/4nga/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,source/003,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/4nga/initial/003/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,UFF_targeted/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/4nga/003/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,random/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4nga/003/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,random/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4nga/003/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,random/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4nga/003/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,random/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4nga/003/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,random/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4nga/003/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,random/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4nga/003/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,random/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4nga/003/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,random/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4nga/003/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,targeted/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4nga/003/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,targeted/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4nga/003/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,targeted/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4nga/003/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,targeted/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4nga/003/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,targeted/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4nga/003/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,targeted/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4nga/003/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,targeted/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4nga/003/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,targeted/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4nga/003/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,whole/003/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4nga/003/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,whole/003/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4nga/003/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,whole/003/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4nga/003/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,whole/003/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4nga/003/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,whole/003/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4nga/003/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,whole/003/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4nga/003/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,whole/003/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4nga/003/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4nga,whole/003/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4nga/003/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/4zpe/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,source/010,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/4zpe/initial/010/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,UFF_targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/4zpe/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,random/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4zpe/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,random/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4zpe/010/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,random/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4zpe/010/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,random/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4zpe/010/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,random/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4zpe/010/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,random/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4zpe/010/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,random/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4zpe/010/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,random/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4zpe/010/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4zpe/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,targeted/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4zpe/010/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,targeted/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4zpe/010/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,targeted/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4zpe/010/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,targeted/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4zpe/010/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,targeted/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4zpe/010/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,targeted/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4zpe/010/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,targeted/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4zpe/010/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,whole/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4zpe/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,whole/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4zpe/010/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,whole/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4zpe/010/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,whole/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4zpe/010/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,whole/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4zpe/010/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,whole/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4zpe/010/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,whole/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4zpe/010/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4zpe,whole/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4zpe/010/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+3fty,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/3fty/native.sdf,ok,,-6.41,score_only
+3fty,source/000,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/3fty/initial/000/repair_input.sdf,ok,,-8.659,score_only
+3fty,UFF_targeted/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/3fty/000/00/raw.sdf,ok,,-8.438,score_only
+3fty,random/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/000/00/raw.sdf,ok,,-8.662,score_only
+3fty,random/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/000/01/raw.sdf,ok,,-8.663,score_only
+3fty,random/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/000/02/raw.sdf,ok,,-8.662,score_only
+3fty,random/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/000/03/raw.sdf,ok,,-8.661,score_only
+3fty,random/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/000/04/raw.sdf,ok,,-8.662,score_only
+3fty,random/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/000/05/raw.sdf,ok,,-8.664,score_only
+3fty,random/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/000/06/raw.sdf,ok,,-8.662,score_only
+3fty,random/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/000/07/raw.sdf,ok,,-8.662,score_only
+3fty,targeted/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/000/00/raw.sdf,ok,,-8.662,score_only
+3fty,targeted/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/000/01/raw.sdf,ok,,-8.663,score_only
+3fty,targeted/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/000/02/raw.sdf,ok,,-8.662,score_only
+3fty,targeted/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/000/03/raw.sdf,ok,,-8.661,score_only
+3fty,targeted/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/000/04/raw.sdf,ok,,-8.662,score_only
+3fty,targeted/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/000/05/raw.sdf,ok,,-8.664,score_only
+3fty,targeted/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/000/06/raw.sdf,ok,,-8.662,score_only
+3fty,targeted/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/000/07/raw.sdf,ok,,-8.662,score_only
+3fty,whole/000/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/000/00/raw.sdf,ok,,-8.496,score_only
+3fty,whole/000/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/000/01/raw.sdf,ok,,-8.452,score_only
+3fty,whole/000/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/000/02/raw.sdf,ok,,-8.392,score_only
+3fty,whole/000/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/000/03/raw.sdf,ok,,-8.439,score_only
+3fty,whole/000/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/000/04/raw.sdf,ok,,-8.462,score_only
+3fty,whole/000/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/000/05/raw.sdf,ok,,-8.437,score_only
+3fty,whole/000/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/000/06/raw.sdf,ok,,-8.444,score_only
+3fty,whole/000/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/000/07/raw.sdf,ok,,-8.435,score_only
+3fty,source/014,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/3fty/initial/014/repair_input.sdf,ok,,-7.525,score_only
+3fty,UFF_targeted/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/3fty/014/00/raw.sdf,ok,,-7.528,score_only
+3fty,random/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/014/00/raw.sdf,ok,,-7.52,score_only
+3fty,random/014/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/014/01/raw.sdf,ok,,-7.521,score_only
+3fty,random/014/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/014/02/raw.sdf,ok,,-7.519,score_only
+3fty,random/014/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/014/03/raw.sdf,ok,,-7.523,score_only
+3fty,random/014/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/014/04/raw.sdf,ok,,-7.525,score_only
+3fty,random/014/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/014/05/raw.sdf,ok,,-7.519,score_only
+3fty,random/014/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/014/06/raw.sdf,ok,,-7.519,score_only
+3fty,random/014/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3fty/014/07/raw.sdf,ok,,-7.522,score_only
+3fty,targeted/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/014/00/raw.sdf,ok,,-7.52,score_only
+3fty,targeted/014/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/014/01/raw.sdf,ok,,-7.521,score_only
+3fty,targeted/014/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/014/02/raw.sdf,ok,,-7.519,score_only
+3fty,targeted/014/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/014/03/raw.sdf,ok,,-7.523,score_only
+3fty,targeted/014/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/014/04/raw.sdf,ok,,-7.525,score_only
+3fty,targeted/014/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/014/05/raw.sdf,ok,,-7.519,score_only
+3fty,targeted/014/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/014/06/raw.sdf,ok,,-7.519,score_only
+3fty,targeted/014/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3fty/014/07/raw.sdf,ok,,-7.522,score_only
+3fty,whole/014/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/014/00/raw.sdf,ok,,-7.192,score_only
+3fty,whole/014/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/014/01/raw.sdf,ok,,-6.995,score_only
+3fty,whole/014/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/014/02/raw.sdf,ok,,-7.144,score_only
+3fty,whole/014/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/014/03/raw.sdf,ok,,-7.225,score_only
+3fty,whole/014/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/014/04/raw.sdf,ok,,-6.631,score_only
+3fty,whole/014/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/014/05/raw.sdf,ok,,-7.523,score_only
+3fty,whole/014/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/014/06/raw.sdf,ok,,-7.276,score_only
+3fty,whole/014/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3fty/014/07/raw.sdf,ok,,-7.293,score_only
+1m13,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/1m13/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,source/005,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/1m13/initial/005/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,UFF_targeted/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/1m13/005/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/005/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/005/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/005/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/005/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/005/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/005/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/005/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/005/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/005/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/005/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/005/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/005/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/005/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/005/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/005/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/005/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/005/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/005/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/005/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/005/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/005/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/005/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/005/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/005/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,source/015,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/1m13/initial/015/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,UFF_targeted/015/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/1m13/015/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/015/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/015/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/015/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/015/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/015/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/015/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/015/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/015/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/015/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/015/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/015/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/015/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/015/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/015/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,random/015/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1m13/015/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/015/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/015/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/015/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/015/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/015/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/015/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/015/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/015/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/015/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/015/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/015/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/015/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/015/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/015/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,targeted/015/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1m13/015/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/015/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/015/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/015/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/015/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/015/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/015/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/015/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/015/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/015/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/015/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/015/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/015/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/015/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/015/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1m13,whole/015/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1m13/015/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5jg1,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/5jg1/native.sdf,ok,,-10.102,score_only
+5jg1,source/005,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5jg1/initial/005/repair_input.sdf,ok,,-9.94,score_only
+5jg1,UFF_targeted/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5jg1/005/00/raw.sdf,ok,,-9.805,score_only
+5jg1,random/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/005/00/raw.sdf,ok,,-9.946,score_only
+5jg1,random/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/005/01/raw.sdf,ok,,-9.946,score_only
+5jg1,random/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/005/02/raw.sdf,ok,,-9.946,score_only
+5jg1,random/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/005/03/raw.sdf,ok,,-9.946,score_only
+5jg1,random/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/005/04/raw.sdf,ok,,-9.946,score_only
+5jg1,random/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/005/05/raw.sdf,ok,,-9.946,score_only
+5jg1,random/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/005/06/raw.sdf,ok,,-9.947,score_only
+5jg1,random/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/005/07/raw.sdf,ok,,-9.947,score_only
+5jg1,targeted/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/005/00/raw.sdf,ok,,-9.943,score_only
+5jg1,targeted/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/005/01/raw.sdf,ok,,-9.939,score_only
+5jg1,targeted/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/005/02/raw.sdf,ok,,-9.938,score_only
+5jg1,targeted/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/005/03/raw.sdf,ok,,-9.942,score_only
+5jg1,targeted/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/005/04/raw.sdf,ok,,-9.94,score_only
+5jg1,targeted/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/005/05/raw.sdf,ok,,-9.939,score_only
+5jg1,targeted/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/005/06/raw.sdf,ok,,-9.943,score_only
+5jg1,targeted/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/005/07/raw.sdf,ok,,-9.938,score_only
+5jg1,whole/005/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/005/00/raw.sdf,ok,,-9.597,score_only
+5jg1,whole/005/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/005/01/raw.sdf,ok,,-9.572,score_only
+5jg1,whole/005/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/005/02/raw.sdf,ok,,-9.565,score_only
+5jg1,whole/005/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/005/03/raw.sdf,ok,,-9.605,score_only
+5jg1,whole/005/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/005/04/raw.sdf,ok,,-9.597,score_only
+5jg1,whole/005/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/005/05/raw.sdf,ok,,-9.625,score_only
+5jg1,whole/005/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/005/06/raw.sdf,ok,,-9.592,score_only
+5jg1,whole/005/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/005/07/raw.sdf,ok,,-9.624,score_only
+5jg1,source/010,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5jg1/initial/010/repair_input.sdf,ok,,-12.856,score_only
+5jg1,UFF_targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5jg1/010/00/raw.sdf,ok,,-11.85,score_only
+5jg1,random/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/010/00/raw.sdf,ok,,-13.167,score_only
+5jg1,random/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/010/01/raw.sdf,ok,,-13.244,score_only
+5jg1,random/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/010/02/raw.sdf,ok,,-13.289,score_only
+5jg1,random/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/010/03/raw.sdf,ok,,-13.279,score_only
+5jg1,random/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/010/04/raw.sdf,ok,,-13.275,score_only
+5jg1,random/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/010/05/raw.sdf,ok,,-13.228,score_only
+5jg1,random/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/010/06/raw.sdf,ok,,-13.22,score_only
+5jg1,random/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5jg1/010/07/raw.sdf,ok,,-13.235,score_only
+5jg1,targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/010/00/raw.sdf,ok,,-13.167,score_only
+5jg1,targeted/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/010/01/raw.sdf,ok,,-13.244,score_only
+5jg1,targeted/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/010/02/raw.sdf,ok,,-13.289,score_only
+5jg1,targeted/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/010/03/raw.sdf,ok,,-13.279,score_only
+5jg1,targeted/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/010/04/raw.sdf,ok,,-13.275,score_only
+5jg1,targeted/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/010/05/raw.sdf,ok,,-13.228,score_only
+5jg1,targeted/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/010/06/raw.sdf,ok,,-13.22,score_only
+5jg1,targeted/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5jg1/010/07/raw.sdf,ok,,-13.235,score_only
+5jg1,whole/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/010/00/raw.sdf,ok,,-13.233,score_only
+5jg1,whole/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/010/01/raw.sdf,ok,,-13.043,score_only
+5jg1,whole/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/010/02/raw.sdf,ok,,-13.101,score_only
+5jg1,whole/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/010/03/raw.sdf,ok,,-13.189,score_only
+5jg1,whole/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/010/04/raw.sdf,ok,,-13.089,score_only
+5jg1,whole/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/010/05/raw.sdf,ok,,-13.151,score_only
+5jg1,whole/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/010/06/raw.sdf,ok,,-13.296,score_only
+5jg1,whole/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5jg1/010/07/raw.sdf,ok,,-13.188,score_only
+4im0,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/4im0/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,source/010,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/4im0/initial/010/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,UFF_targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/4im0/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,random/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4im0/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,random/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4im0/010/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,random/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4im0/010/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,random/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4im0/010/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,random/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4im0/010/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,random/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4im0/010/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,random/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4im0/010/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,random/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/4im0/010/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,targeted/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4im0/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,targeted/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4im0/010/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,targeted/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4im0/010/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,targeted/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4im0/010/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,targeted/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4im0/010/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,targeted/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4im0/010/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,targeted/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4im0/010/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,targeted/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/4im0/010/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,whole/010/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4im0/010/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,whole/010/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4im0/010/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,whole/010/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4im0/010/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,whole/010/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4im0/010/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,whole/010/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4im0/010/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,whole/010/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4im0/010/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,whole/010/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4im0/010/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+4im0,whole/010/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/4im0/010/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1mrw,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/1mrw/native.sdf,ok,,-9.968,score_only
+1mrw,source/007,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/1mrw/initial/007/repair_input.sdf,ok,,-10.896,score_only
+1mrw,UFF_targeted/007/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/1mrw/007/00/raw.sdf,ok,,-10.894,score_only
+1mrw,random/007/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1mrw/007/00/raw.sdf,ok,,-11.304,score_only
+1mrw,random/007/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1mrw/007/01/raw.sdf,ok,,-11.307,score_only
+1mrw,random/007/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1mrw/007/02/raw.sdf,ok,,-11.305,score_only
+1mrw,random/007/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1mrw/007/03/raw.sdf,ok,,-11.303,score_only
+1mrw,random/007/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1mrw/007/04/raw.sdf,ok,,-11.305,score_only
+1mrw,random/007/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1mrw/007/05/raw.sdf,ok,,-11.303,score_only
+1mrw,random/007/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1mrw/007/06/raw.sdf,ok,,-11.307,score_only
+1mrw,random/007/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1mrw/007/07/raw.sdf,ok,,-11.304,score_only
+1mrw,targeted/007/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1mrw/007/00/raw.sdf,ok,,-11.304,score_only
+1mrw,targeted/007/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1mrw/007/01/raw.sdf,ok,,-11.307,score_only
+1mrw,targeted/007/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1mrw/007/02/raw.sdf,ok,,-11.305,score_only
+1mrw,targeted/007/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1mrw/007/03/raw.sdf,ok,,-11.303,score_only
+1mrw,targeted/007/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1mrw/007/04/raw.sdf,ok,,-11.305,score_only
+1mrw,targeted/007/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1mrw/007/05/raw.sdf,ok,,-11.303,score_only
+1mrw,targeted/007/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1mrw/007/06/raw.sdf,ok,,-11.307,score_only
+1mrw,targeted/007/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1mrw/007/07/raw.sdf,ok,,-11.304,score_only
+1mrw,whole/007/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1mrw/007/00/raw.sdf,ok,,-10.159,score_only
+1mrw,whole/007/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1mrw/007/01/raw.sdf,ok,,-10.164,score_only
+1mrw,whole/007/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1mrw/007/02/raw.sdf,ok,,-10.15,score_only
+1mrw,whole/007/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1mrw/007/03/raw.sdf,ok,,-10.141,score_only
+1mrw,whole/007/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1mrw/007/04/raw.sdf,ok,,-10.111,score_only
+1mrw,whole/007/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1mrw/007/05/raw.sdf,ok,,-10.109,score_only
+1mrw,whole/007/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1mrw/007/06/raw.sdf,ok,,-10.121,score_only
+1mrw,whole/007/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1mrw/007/07/raw.sdf,ok,,-10.166,score_only
+2q7y,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/2q7y/native.sdf,ok,,-6.105,score_only
+2q7y,source/009,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/2q7y/initial/009/repair_input.sdf,ok,,-14.571,score_only
+2q7y,UFF_targeted/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/2q7y/009/00/raw.sdf,ok,,-14.561,score_only
+2q7y,random/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2q7y/009/00/raw.sdf,ok,,-14.606,score_only
+2q7y,random/009/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2q7y/009/01/raw.sdf,ok,,-14.574,score_only
+2q7y,random/009/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2q7y/009/02/raw.sdf,ok,,-14.571,score_only
+2q7y,random/009/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2q7y/009/03/raw.sdf,ok,,-14.574,score_only
+2q7y,random/009/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2q7y/009/04/raw.sdf,ok,,-14.564,score_only
+2q7y,random/009/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2q7y/009/05/raw.sdf,ok,,-14.572,score_only
+2q7y,random/009/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2q7y/009/06/raw.sdf,ok,,-14.57,score_only
+2q7y,random/009/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/2q7y/009/07/raw.sdf,ok,,-14.601,score_only
+2q7y,targeted/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2q7y/009/00/raw.sdf,ok,,-14.606,score_only
+2q7y,targeted/009/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2q7y/009/01/raw.sdf,ok,,-14.574,score_only
+2q7y,targeted/009/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2q7y/009/02/raw.sdf,ok,,-14.571,score_only
+2q7y,targeted/009/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2q7y/009/03/raw.sdf,ok,,-14.574,score_only
+2q7y,targeted/009/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2q7y/009/04/raw.sdf,ok,,-14.564,score_only
+2q7y,targeted/009/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2q7y/009/05/raw.sdf,ok,,-14.572,score_only
+2q7y,targeted/009/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2q7y/009/06/raw.sdf,ok,,-14.57,score_only
+2q7y,targeted/009/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/2q7y/009/07/raw.sdf,ok,,-14.601,score_only
+2q7y,whole/009/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2q7y/009/00/raw.sdf,ok,,-14.574,score_only
+2q7y,whole/009/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2q7y/009/01/raw.sdf,ok,,-14.571,score_only
+2q7y,whole/009/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2q7y/009/02/raw.sdf,ok,,-14.46,score_only
+2q7y,whole/009/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2q7y/009/03/raw.sdf,ok,,-14.493,score_only
+2q7y,whole/009/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2q7y/009/04/raw.sdf,ok,,-14.533,score_only
+2q7y,whole/009/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2q7y/009/05/raw.sdf,ok,,-14.581,score_only
+2q7y,whole/009/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2q7y/009/06/raw.sdf,ok,,-14.482,score_only
+2q7y,whole/009/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/2q7y/009/07/raw.sdf,ok,,-14.556,score_only
+1zfk,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/1zfk/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,source/011,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/1zfk/initial/011/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,UFF_targeted/011/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/1zfk/011/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,random/011/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1zfk/011/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,random/011/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1zfk/011/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,random/011/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1zfk/011/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,random/011/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1zfk/011/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,random/011/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1zfk/011/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,random/011/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1zfk/011/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,random/011/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1zfk/011/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,random/011/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1zfk/011/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,targeted/011/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1zfk/011/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,targeted/011/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1zfk/011/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,targeted/011/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1zfk/011/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,targeted/011/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1zfk/011/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,targeted/011/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1zfk/011/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,targeted/011/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1zfk/011/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,targeted/011/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1zfk/011/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,targeted/011/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1zfk/011/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,whole/011/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1zfk/011/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,whole/011/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1zfk/011/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,whole/011/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1zfk/011/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,whole/011/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1zfk/011/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,whole/011/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1zfk/011/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,whole/011/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1zfk/011/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,whole/011/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1zfk/011/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1zfk,whole/011/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1zfk/011/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/5yve/native.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,source/013,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5yve/initial/013/repair_input.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,UFF_targeted/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5yve/013/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,random/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5yve/013/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,random/013/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5yve/013/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,random/013/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5yve/013/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,random/013/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5yve/013/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,random/013/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5yve/013/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,random/013/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5yve/013/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,random/013/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5yve/013/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,random/013/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5yve/013/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,targeted/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5yve/013/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,targeted/013/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5yve/013/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,targeted/013/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5yve/013/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,targeted/013/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5yve/013/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,targeted/013/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5yve/013/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,targeted/013/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5yve/013/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,targeted/013/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5yve/013/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,targeted/013/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5yve/013/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,whole/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5yve/013/00/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,whole/013/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5yve/013/01/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,whole/013/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5yve/013/02/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,whole/013/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5yve/013/03/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,whole/013/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5yve/013/04/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,whole/013/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5yve/013/05/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,whole/013/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5yve/013/06/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+5yve,whole/013/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5yve/013/07/raw.sdf,missing,Receptor preparation failed; see receptor-preparation.log,,
+1vru,native,/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/1vru/native.sdf,ok,,-10.684,score_only
+1vru,source/013,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/1vru/initial/013/repair_input.sdf,ok,,-9.065,score_only
+1vru,UFF_targeted/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/1vru/013/00/raw.sdf,ok,,-9.111,score_only
+1vru,random/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1vru/013/00/raw.sdf,ok,,-9.416,score_only
+1vru,random/013/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1vru/013/01/raw.sdf,ok,,-9.461,score_only
+1vru,random/013/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1vru/013/02/raw.sdf,ok,,-9.413,score_only
+1vru,random/013/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1vru/013/03/raw.sdf,ok,,-9.411,score_only
+1vru,random/013/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1vru/013/04/raw.sdf,ok,,-9.448,score_only
+1vru,random/013/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1vru/013/05/raw.sdf,ok,,-9.439,score_only
+1vru,random/013/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1vru/013/06/raw.sdf,ok,,-9.41,score_only
+1vru,random/013/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/1vru/013/07/raw.sdf,ok,,-9.411,score_only
+1vru,targeted/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1vru/013/00/raw.sdf,ok,,-9.101,score_only
+1vru,targeted/013/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1vru/013/01/raw.sdf,ok,,-9.108,score_only
+1vru,targeted/013/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1vru/013/02/raw.sdf,ok,,-9.022,score_only
+1vru,targeted/013/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1vru/013/03/raw.sdf,ok,,-9.096,score_only
+1vru,targeted/013/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1vru/013/04/raw.sdf,ok,,-9.1,score_only
+1vru,targeted/013/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1vru/013/05/raw.sdf,ok,,-9.102,score_only
+1vru,targeted/013/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1vru/013/06/raw.sdf,ok,,-9.025,score_only
+1vru,targeted/013/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/1vru/013/07/raw.sdf,ok,,-9.039,score_only
+1vru,whole/013/00,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1vru/013/00/raw.sdf,ok,,-8.736,score_only
+1vru,whole/013/01,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1vru/013/01/raw.sdf,ok,,-7.819,score_only
+1vru,whole/013/02,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1vru/013/02/raw.sdf,ok,,-7.882,score_only
+1vru,whole/013/03,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1vru/013/03/raw.sdf,ok,,-8.539,score_only
+1vru,whole/013/04,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1vru/013/04/raw.sdf,ok,,-9.082,score_only
+1vru,whole/013/05,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1vru/013/05/raw.sdf,ok,,-8.571,score_only
+1vru,whole/013/06,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1vru/013/06/raw.sdf,ok,,-8.658,score_only
+1vru,whole/013/07,/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/1vru/013/07/raw.sdf,ok,,-8.4,score_only

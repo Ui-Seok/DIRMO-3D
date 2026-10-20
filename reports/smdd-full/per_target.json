@@ -1,0 +1,602 @@
+[
+  {
+    "split": "train",
+    "model": "base",
+    "target": "A2A_Adenosine",
+    "rows": 2,
+    "smiles_valid": 0,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "ACE",
+    "rows": 21,
+    "smiles_valid": 18,
+    "changed_and_local_passed": 2
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "ALK",
+    "rows": 8,
+    "smiles_valid": 4,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "Androgen_Receptor",
+    "rows": 10,
+    "smiles_valid": 8,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "BACE1",
+    "rows": 24,
+    "smiles_valid": 15,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "BAZ2B",
+    "rows": 19,
+    "smiles_valid": 8,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "BCL6",
+    "rows": 23,
+    "smiles_valid": 8,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "BRD2",
+    "rows": 24,
+    "smiles_valid": 6,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "CA2",
+    "rows": 11,
+    "smiles_valid": 5,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "CCR2",
+    "rows": 21,
+    "smiles_valid": 11,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "CDK2",
+    "rows": 21,
+    "smiles_valid": 7,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "CYP1B1",
+    "rows": 22,
+    "smiles_valid": 9,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "DHFR",
+    "rows": 23,
+    "smiles_valid": 2,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "DHODH",
+    "rows": 23,
+    "smiles_valid": 9,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "DOT1L",
+    "rows": 2,
+    "smiles_valid": 2,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "EGFR",
+    "rows": 5,
+    "smiles_valid": 3,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "EHMT2",
+    "rows": 7,
+    "smiles_valid": 3,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "base",
+    "target": "KAT8",
+    "rows": 6,
+    "smiles_valid": 4,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "A2A_Adenosine",
+    "rows": 2,
+    "smiles_valid": 1,
+    "changed_and_local_passed": 1
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "ACE",
+    "rows": 21,
+    "smiles_valid": 21,
+    "changed_and_local_passed": 9
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "ALK",
+    "rows": 8,
+    "smiles_valid": 2,
+    "changed_and_local_passed": 1
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "Androgen_Receptor",
+    "rows": 10,
+    "smiles_valid": 7,
+    "changed_and_local_passed": 1
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "BACE1",
+    "rows": 24,
+    "smiles_valid": 16,
+    "changed_and_local_passed": 4
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "BAZ2B",
+    "rows": 19,
+    "smiles_valid": 14,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "BCL6",
+    "rows": 23,
+    "smiles_valid": 14,
+    "changed_and_local_passed": 7
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "BRD2",
+    "rows": 24,
+    "smiles_valid": 20,
+    "changed_and_local_passed": 14
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "CA2",
+    "rows": 11,
+    "smiles_valid": 11,
+    "changed_and_local_passed": 2
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "CCR2",
+    "rows": 21,
+    "smiles_valid": 16,
+    "changed_and_local_passed": 4
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "CDK2",
+    "rows": 21,
+    "smiles_valid": 14,
+    "changed_and_local_passed": 7
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "CYP1B1",
+    "rows": 22,
+    "smiles_valid": 19,
+    "changed_and_local_passed": 6
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "DHFR",
+    "rows": 23,
+    "smiles_valid": 18,
+    "changed_and_local_passed": 3
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "DHODH",
+    "rows": 23,
+    "smiles_valid": 20,
+    "changed_and_local_passed": 10
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "DOT1L",
+    "rows": 2,
+    "smiles_valid": 2,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "EGFR",
+    "rows": 5,
+    "smiles_valid": 3,
+    "changed_and_local_passed": 1
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "EHMT2",
+    "rows": 7,
+    "smiles_valid": 6,
+    "changed_and_local_passed": 5
+  },
+  {
+    "split": "train",
+    "model": "adapter",
+    "target": "KAT8",
+    "rows": 6,
+    "smiles_valid": 2,
+    "changed_and_local_passed": 1
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "A2A_Adenosine",
+    "rows": 2,
+    "smiles_valid": 2,
+    "changed_and_local_passed": 1
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "ACE",
+    "rows": 21,
+    "smiles_valid": 21,
+    "changed_and_local_passed": 14
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "ALK",
+    "rows": 8,
+    "smiles_valid": 8,
+    "changed_and_local_passed": 4
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "Androgen_Receptor",
+    "rows": 10,
+    "smiles_valid": 6,
+    "changed_and_local_passed": 2
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "BACE1",
+    "rows": 24,
+    "smiles_valid": 23,
+    "changed_and_local_passed": 16
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "BAZ2B",
+    "rows": 19,
+    "smiles_valid": 18,
+    "changed_and_local_passed": 17
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "BCL6",
+    "rows": 23,
+    "smiles_valid": 20,
+    "changed_and_local_passed": 10
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "BRD2",
+    "rows": 24,
+    "smiles_valid": 16,
+    "changed_and_local_passed": 9
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "CA2",
+    "rows": 11,
+    "smiles_valid": 11,
+    "changed_and_local_passed": 7
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "CCR2",
+    "rows": 21,
+    "smiles_valid": 18,
+    "changed_and_local_passed": 8
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "CDK2",
+    "rows": 21,
+    "smiles_valid": 19,
+    "changed_and_local_passed": 9
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "CYP1B1",
+    "rows": 22,
+    "smiles_valid": 22,
+    "changed_and_local_passed": 10
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "DHFR",
+    "rows": 23,
+    "smiles_valid": 21,
+    "changed_and_local_passed": 13
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "DHODH",
+    "rows": 23,
+    "smiles_valid": 21,
+    "changed_and_local_passed": 12
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "DOT1L",
+    "rows": 2,
+    "smiles_valid": 2,
+    "changed_and_local_passed": 1
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "EGFR",
+    "rows": 5,
+    "smiles_valid": 5,
+    "changed_and_local_passed": 2
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "EHMT2",
+    "rows": 7,
+    "smiles_valid": 7,
+    "changed_and_local_passed": 7
+  },
+  {
+    "split": "train",
+    "model": "last_adapter",
+    "target": "KAT8",
+    "rows": 6,
+    "smiles_valid": 4,
+    "changed_and_local_passed": 2
+  },
+  {
+    "split": "validation",
+    "model": "base",
+    "target": "BChE",
+    "rows": 1,
+    "smiles_valid": 1,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "validation",
+    "model": "base",
+    "target": "BRAF",
+    "rows": 8,
+    "smiles_valid": 1,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "validation",
+    "model": "base",
+    "target": "BRD4",
+    "rows": 17,
+    "smiles_valid": 5,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "validation",
+    "model": "base",
+    "target": "CYP19A1",
+    "rows": 8,
+    "smiles_valid": 6,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "validation",
+    "model": "adapter",
+    "target": "BChE",
+    "rows": 1,
+    "smiles_valid": 1,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "validation",
+    "model": "adapter",
+    "target": "BRAF",
+    "rows": 8,
+    "smiles_valid": 6,
+    "changed_and_local_passed": 2
+  },
+  {
+    "split": "validation",
+    "model": "adapter",
+    "target": "BRD4",
+    "rows": 17,
+    "smiles_valid": 10,
+    "changed_and_local_passed": 1
+  },
+  {
+    "split": "validation",
+    "model": "adapter",
+    "target": "CYP19A1",
+    "rows": 8,
+    "smiles_valid": 7,
+    "changed_and_local_passed": 2
+  },
+  {
+    "split": "validation",
+    "model": "last_adapter",
+    "target": "BChE",
+    "rows": 1,
+    "smiles_valid": 0,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "validation",
+    "model": "last_adapter",
+    "target": "BRAF",
+    "rows": 8,
+    "smiles_valid": 8,
+    "changed_and_local_passed": 1
+  },
+  {
+    "split": "validation",
+    "model": "last_adapter",
+    "target": "BRD4",
+    "rows": 17,
+    "smiles_valid": 12,
+    "changed_and_local_passed": 1
+  },
+  {
+    "split": "validation",
+    "model": "last_adapter",
+    "target": "CYP19A1",
+    "rows": 8,
+    "smiles_valid": 8,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "test",
+    "model": "base",
+    "target": "ABL1",
+    "rows": 6,
+    "smiles_valid": 3,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "test",
+    "model": "base",
+    "target": "Aurora_A",
+    "rows": 4,
+    "smiles_valid": 2,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "test",
+    "model": "base",
+    "target": "Cathepsin_K",
+    "rows": 24,
+    "smiles_valid": 13,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "test",
+    "model": "adapter",
+    "target": "ABL1",
+    "rows": 6,
+    "smiles_valid": 3,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "test",
+    "model": "adapter",
+    "target": "Aurora_A",
+    "rows": 4,
+    "smiles_valid": 0,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "test",
+    "model": "adapter",
+    "target": "Cathepsin_K",
+    "rows": 24,
+    "smiles_valid": 14,
+    "changed_and_local_passed": 3
+  },
+  {
+    "split": "test",
+    "model": "last_adapter",
+    "target": "ABL1",
+    "rows": 6,
+    "smiles_valid": 3,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "test",
+    "model": "last_adapter",
+    "target": "Aurora_A",
+    "rows": 4,
+    "smiles_valid": 0,
+    "changed_and_local_passed": 0
+  },
+  {
+    "split": "test",
+    "model": "last_adapter",
+    "target": "Cathepsin_K",
+    "rows": 24,
+    "smiles_valid": 16,
+    "changed_and_local_passed": 5
+  }
+]

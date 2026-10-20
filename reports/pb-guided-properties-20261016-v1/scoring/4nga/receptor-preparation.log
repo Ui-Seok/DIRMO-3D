@@ -1,0 +1,91 @@
+No template matched for residue_key='H:20'
+tried 6 templates for residue_key='H:20'excess_H_ok=False
+LYS        heavy_miss=1 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NLYS       heavy_miss=1 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CLYS       heavy_miss=2 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+LYN        heavy_miss=1 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NLYN       heavy_miss=1 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CLYN       heavy_miss=2 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+
+matched with excess inter-residue bond(s): H:20
+No template matched for residue_key='H:60C'
+tried 6 templates for residue_key='H:60C'excess_H_ok=False
+LYS        heavy_miss=4 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NLYS       heavy_miss=4 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CLYS       heavy_miss=5 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+LYN        heavy_miss=4 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NLYN       heavy_miss=4 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CLYN       heavy_miss=5 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+
+matched with excess inter-residue bond(s): H:60C
+No template matched for residue_key='H:166'
+tried 3 templates for residue_key='H:166'excess_H_ok=False
+GLN        heavy_miss=4 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NGLN       heavy_miss=4 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CGLN       heavy_miss=5 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+
+matched with excess inter-residue bond(s): H:166
+No template matched for residue_key='H:170E'
+tried 3 templates for residue_key='H:170E'excess_H_ok=False
+VAL        heavy_miss=2 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NVAL       heavy_miss=2 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CVAL       heavy_miss=3 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+
+matched with excess inter-residue bond(s): H:170E
+No template matched for residue_key='H:170G'
+tried 6 templates for residue_key='H:170G'excess_H_ok=False
+ASP        heavy_miss=3 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NASP       heavy_miss=3 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CASP       heavy_miss=4 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+ASH        heavy_miss=3 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+CASH       heavy_miss=4 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+NASH       heavy_miss=3 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+
+matched with excess inter-residue bond(s): H:170G
+No template matched for residue_key='L:92'
+tried 3 templates for residue_key='L:92'excess_H_ok=False
+VAL        heavy_miss=2 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NVAL       heavy_miss=2 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CVAL       heavy_miss=3 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+
+matched with excess inter-residue bond(s): L:92
+No template matched for residue_key='L:93'
+tried 3 templates for residue_key='L:93'excess_H_ok=False
+ASN        heavy_miss=3 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NASN       heavy_miss=3 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CASN       heavy_miss=4 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+
+matched with excess inter-residue bond(s): L:93
+No template matched for residue_key='L:106'
+tried 3 templates for residue_key='L:106'excess_H_ok=False
+THR        heavy_miss=2 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NTHR       heavy_miss=2 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CTHR       heavy_miss=3 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+
+matched with excess inter-residue bond(s): L:106
+No template matched for residue_key='L:108'
+tried 3 templates for residue_key='L:108'excess_H_ok=False
+THR        heavy_miss=2 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess=set()
+NTHR       heavy_miss=2 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={4}
+CTHR       heavy_miss=3 heavy_excess=0 H_excess=[] bond_miss=set() bond_excess={1}
+
+matched with excess inter-residue bond(s): L:108
+Template padding will be used.
+[32m gasteiger charges will be read from template file 
+ [0m
+
+Error: Creation of data structure for receptor failed.
+
+Details:
+- Template matching failed for: ['H:20', 'H:60C', 'H:166', 'H:170E', 'H:170G', 'L:92', 'L:93', 'L:106', 'L:108']
+These residues can be ignored with option --delete_bad_res or --delete_bad_res_from_box_radius.
+
+Recommendations:
+1. (for batch processing) Use -a/--allow_bad_res to automatically remove residues
+that do not match templates, and --default_altloc to set
+a default altloc variant. Use these at your own risk.
+
+2. (processing individual structure) Inspecting and fixing the input structure is recommended.
+Use --wanted_altloc to set variants for specific residues.
+
+

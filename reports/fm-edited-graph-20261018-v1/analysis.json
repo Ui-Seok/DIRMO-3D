@@ -1,0 +1,188 @@
+{
+  "analysis_kst": "2026-10-18T16:08:34.964381+09:00",
+  "run": "/home/uslee/code/DIRMO-3D/runs/fm_edited_graph_gpu3_100_20261016_v1",
+  "status": "failed",
+  "selected_cases": 100,
+  "generation_complete_cases": 43,
+  "evaluated_complete_cases": 30,
+  "evaluated_case_ids": [
+    "3f33",
+    "5lne",
+    "1jlq",
+    "6beb",
+    "5ntw",
+    "4buq",
+    "5zh3",
+    "1lhv",
+    "4hwp",
+    "4ehg",
+    "7std",
+    "3g8o",
+    "2euk",
+    "6gmd",
+    "1q8t",
+    "5l97",
+    "5drq",
+    "5cw8",
+    "2aou",
+    "3f7h",
+    "2w0d",
+    "5umy",
+    "4umu",
+    "3nsn",
+    "3gm0",
+    "1njj",
+    "4fm7",
+    "4agn",
+    "3s2p",
+    "3ejt"
+  ],
+  "fm_counts": {
+    "fm_terminal_slots": 2816,
+    "fm_ok": 2302,
+    "fm_contract_failed": 272,
+    "fm_initialization_failed": 178,
+    "fm_failed": 64
+  },
+  "planned_fm_outputs": 6400,
+  "not_attempted_slots": 3584,
+  "pooled": [
+    {
+      "kind": "native",
+      "scheduled": 30,
+      "sdf_present": 30,
+      "pb_valid": 27,
+      "success": 27,
+      "graph_preserved": 30,
+      "success_rate": 0.9,
+      "success_ci": [
+        0.8,
+        1.0
+      ],
+      "vina_measured": 19
+    },
+    {
+      "kind": "prior",
+      "scheduled": 960,
+      "sdf_present": 900,
+      "pb_valid": 397,
+      "success": 397,
+      "graph_preserved": 900,
+      "success_rate": 0.41354166666666664,
+      "success_ci": [
+        0.28854166666666664,
+        0.538567708333333
+      ],
+      "vina_measured": 567
+    },
+    {
+      "kind": "uff_whole",
+      "scheduled": 960,
+      "sdf_present": 900,
+      "pb_valid": 252,
+      "success": 244,
+      "graph_preserved": 840,
+      "success_rate": 0.25416666666666665,
+      "success_ci": [
+        0.15520833333333334,
+        0.36041666666666666
+      ],
+      "vina_measured": 567
+    },
+    {
+      "kind": "uff_core",
+      "scheduled": 960,
+      "sdf_present": 900,
+      "pb_valid": 503,
+      "success": 489,
+      "graph_preserved": 874,
+      "success_rate": 0.509375,
+      "success_ci": [
+        0.3697916666666667,
+        0.6479166666666667
+      ],
+      "vina_measured": 567
+    },
+    {
+      "kind": "fm_whole",
+      "scheduled": 960,
+      "sdf_present": 900,
+      "pb_valid": 716,
+      "success": 652,
+      "graph_preserved": 794,
+      "success_rate": 0.6791666666666667,
+      "success_ci": [
+        0.5635416666666667,
+        0.790625
+      ],
+      "vina_measured": 567
+    },
+    {
+      "kind": "fm_core",
+      "scheduled": 960,
+      "sdf_present": 900,
+      "pb_valid": 600,
+      "success": 563,
+      "graph_preserved": 816,
+      "success_rate": 0.5864583333333333,
+      "success_ci": [
+        0.471875,
+        0.6947916666666667
+      ],
+      "vina_measured": 567
+    }
+  ],
+  "paired_binary": [
+    {
+      "comparison": "fm_whole_minus_prior",
+      "pairs": 960,
+      "mean_difference": 0.265625,
+      "ci": [
+        0.13020833333333334,
+        0.3885416666666667
+      ],
+      "whole_only_success": 305,
+      "other_only_success": 50
+    },
+    {
+      "comparison": "fm_whole_minus_uff_core",
+      "pairs": 960,
+      "mean_difference": 0.16979166666666667,
+      "ci": [
+        0.041666666666666664,
+        0.2916666666666667
+      ],
+      "whole_only_success": 219,
+      "other_only_success": 56
+    },
+    {
+      "comparison": "fm_whole_minus_fm_core",
+      "pairs": 960,
+      "mean_difference": 0.09270833333333334,
+      "ci": [
+        0.0010416666666666667,
+        0.19375
+      ],
+      "whole_only_success": 127,
+      "other_only_success": 38
+    }
+  ],
+  "vina_receptor_success_cases": 19,
+  "vina_receptor_failed_cases": 11,
+  "generation_only_case_ids": [
+    "5zwh",
+    "4yuz",
+    "3vru",
+    "2qfo",
+    "1bm6",
+    "5fnc",
+    "1k3t",
+    "4c70",
+    "1apw",
+    "4bdd",
+    "4wzv",
+    "3vrw",
+    "1sgu"
+  ],
+  "analysis_code_sha256": "ad49000cffbe82c1e520751c7c3c083e91b2cf7ce1ae6df7d52aca70623b8481"
+}

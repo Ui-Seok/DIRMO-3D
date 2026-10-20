@@ -1,0 +1,23 @@
+/home/uslee/miniconda3/envs/dirmo/lib/python3.12/site-packages/MDAnalysis/topology/tables.py:52: DeprecationWarning: Deprecated in version 2.8.0
+MDAnalysis.topology.tables has been moved to MDAnalysis.guesser.tables. This import point will be removed in MDAnalysis version 3.0.0
+  warnings.warn(wmsg, category=DeprecationWarning)
+/home/uslee/miniconda3/envs/dirmo/lib/python3.12/site-packages/Bio/pairwise2.py:278: BiopythonDeprecationWarning: Bio.pairwise2 has been deprecated, and we intend to remove it in a future release of Biopython. As an alternative, please consider using Bio.Align.PairwiseAligner as a replacement, and contact the Biopython developers if you still need the Bio.pairwise2 module.
+  warnings.warn(
+Seed set to 4242
+Seed set to 4242
+Seed set to 4242
+Building model vocabs...
+Vocabs complete.
+Loading pretrained checkpoint from /LocalData1/uslee/checkpoints/FLOWR_root/flowr_root_base_spindr.ckpt...
+Done.
+Traceback (most recent call last):
+  File "/home/uslee/code/DIRMO-3D/scripts/probe_fm_mixed_pose_batch.py", line 77, in <module>
+    main()
+  File "/home/uslee/code/DIRMO-3D/scripts/probe_fm_mixed_pose_batch.py", line 62, in main
+    raise RuntimeError(f'Single/mixed target mismatch: {difference}')
+RuntimeError: Single/mixed target mismatch: 0.11185888431412185
+Traceback (most recent call last):
+  File "<stdin>", line 7, in <module>
+  File "/home/uslee/miniconda3/envs/dirmo/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/uslee/miniconda3/envs/dirmo/bin/python', 'scripts/probe_fm_mixed_pose_batch.py', '--study', '/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_50_v1/study.json', '--output', '/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_mixed32_probe_v1/base', '--checkpoint', 'base']' returned non-zero exit status 1.

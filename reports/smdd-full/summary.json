@@ -1,0 +1,979 @@
+{
+  "selection": {
+    "selected_peak_learning_rate": 5e-05,
+    "best_total_epoch": 2,
+    "completed_total_epochs": 5,
+    "peak_memory_gib": 27.675254821777344,
+    "seconds": 4253.001450944226
+  },
+  "splits": [
+    {
+      "split": "train",
+      "model": "base",
+      "rows": 272,
+      "completion_loss": 0.9660945124067829,
+      "strict_json": 64,
+      "valid_smiles_after_fence_removal": 122,
+      "local_passed_after_fence_removal": 4,
+      "changed_and_local_passed": 2,
+      "witness_exact_match": 0,
+      "hit_token_cap": 10
+    },
+    {
+      "split": "train",
+      "model": "adapter",
+      "rows": 272,
+      "completion_loss": 0.32177643016332946,
+      "strict_json": 272,
+      "valid_smiles_after_fence_removal": 206,
+      "local_passed_after_fence_removal": 126,
+      "changed_and_local_passed": 76,
+      "witness_exact_match": 3,
+      "hit_token_cap": 0
+    },
+    {
+      "split": "train",
+      "model": "last_adapter",
+      "rows": 272,
+      "completion_loss": 0.13129908341108595,
+      "strict_json": 272,
+      "valid_smiles_after_fence_removal": 244,
+      "local_passed_after_fence_removal": 213,
+      "changed_and_local_passed": 144,
+      "witness_exact_match": 58,
+      "hit_token_cap": 0
+    },
+    {
+      "split": "validation",
+      "model": "base",
+      "rows": 34,
+      "completion_loss": 1.095541295842579,
+      "strict_json": 13,
+      "valid_smiles_after_fence_removal": 13,
+      "local_passed_after_fence_removal": 0,
+      "changed_and_local_passed": 0,
+      "witness_exact_match": 0,
+      "hit_token_cap": 4
+    },
+    {
+      "split": "validation",
+      "model": "adapter",
+      "rows": 34,
+      "completion_loss": 0.5431915212507333,
+      "strict_json": 34,
+      "valid_smiles_after_fence_removal": 24,
+      "local_passed_after_fence_removal": 7,
+      "changed_and_local_passed": 5,
+      "witness_exact_match": 0,
+      "hit_token_cap": 0
+    },
+    {
+      "split": "validation",
+      "model": "last_adapter",
+      "rows": 34,
+      "completion_loss": 0.6290751715145138,
+      "strict_json": 34,
+      "valid_smiles_after_fence_removal": 28,
+      "local_passed_after_fence_removal": 4,
+      "changed_and_local_passed": 2,
+      "witness_exact_match": 0,
+      "hit_token_cap": 0
+    },
+    {
+      "split": "test",
+      "model": "base",
+      "rows": 34,
+      "completion_loss": 0.9021153429157711,
+      "strict_json": 5,
+      "valid_smiles_after_fence_removal": 18,
+      "local_passed_after_fence_removal": 0,
+      "changed_and_local_passed": 0,
+      "witness_exact_match": 0,
+      "hit_token_cap": 5
+    },
+    {
+      "split": "test",
+      "model": "adapter",
+      "rows": 34,
+      "completion_loss": 0.469886352784896,
+      "strict_json": 34,
+      "valid_smiles_after_fence_removal": 17,
+      "local_passed_after_fence_removal": 3,
+      "changed_and_local_passed": 3,
+      "witness_exact_match": 0,
+      "hit_token_cap": 0
+    },
+    {
+      "split": "test",
+      "model": "last_adapter",
+      "rows": 34,
+      "completion_loss": 0.5465894139073254,
+      "strict_json": 34,
+      "valid_smiles_after_fence_removal": 19,
+      "local_passed_after_fence_removal": 9,
+      "changed_and_local_passed": 5,
+      "witness_exact_match": 0,
+      "hit_token_cap": 0
+    }
+  ],
+  "split_targets": {
+    "train": {
+      "A2A_Adenosine": 2,
+      "ACE": 21,
+      "ALK": 8,
+      "Androgen_Receptor": 10,
+      "BACE1": 24,
+      "BAZ2B": 19,
+      "BCL6": 23,
+      "BRD2": 24,
+      "CA2": 11,
+      "CCR2": 21,
+      "CDK2": 21,
+      "CYP1B1": 22,
+      "DHFR": 23,
+      "DHODH": 23,
+      "DOT1L": 2,
+      "EGFR": 5,
+      "EHMT2": 7,
+      "KAT8": 6
+    },
+    "validation": {
+      "BChE": 1,
+      "BRAF": 8,
+      "BRD4": 17,
+      "CYP19A1": 8
+    },
+    "test": {
+      "ABL1": 6,
+      "Aurora_A": 4,
+      "Cathepsin_K": 24
+    }
+  },
+  "admet": {
+    "baseline_reference_max_abs_delta": 6.531134533220651,
+    "limitations": [
+      "ADMET values are model predictions, not experimental measurements.",
+      "Binding affinity objectives/holds and binding probability require Boltz evaluation.",
+      "Published task baselines are used by the official improvement/hold definitions; reference re-predictions are audited separately."
+    ],
+    "pending_boltz_candidates": 92,
+    "seconds": 66.79035744606517,
+    "splits": {
+      "test": {
+        "adapter": {
+          "counts": {
+            "all_admet_goals_passed": 3,
+            "all_admet_holds_passed": 12,
+            "eligible_admet_goals": 16,
+            "valid_smiles": 17
+          },
+          "full_success_known_false": 34,
+          "full_success_pending_boltz": 0,
+          "per_admet_goal": {
+            "ames": {
+              "measured": 3,
+              "passed": 1
+            },
+            "bbb": {
+              "measured": 2,
+              "passed": 0
+            },
+            "caco2": {
+              "measured": 2,
+              "passed": 1
+            },
+            "clearance": {
+              "measured": 7,
+              "passed": 1
+            },
+            "cyp3a4": {
+              "measured": 5,
+              "passed": 2
+            },
+            "ppb": {
+              "measured": 7,
+              "passed": 0
+            },
+            "solubility": {
+              "measured": 1,
+              "passed": 0
+            }
+          },
+          "rows": 34
+        },
+        "base": {
+          "counts": {
+            "all_admet_goals_passed": 9,
+            "all_admet_holds_passed": 4,
+            "eligible_admet_goals": 18,
+            "valid_smiles": 18
+          },
+          "full_success_known_false": 34,
+          "full_success_pending_boltz": 0,
+          "per_admet_goal": {
+            "ames": {
+              "measured": 5,
+              "passed": 4
+            },
+            "bbb": {
+              "measured": 3,
+              "passed": 1
+            },
+            "clearance": {
+              "measured": 9,
+              "passed": 7
+            },
+            "cyp3a4": {
+              "measured": 2,
+              "passed": 2
+            },
+            "ppb": {
+              "measured": 11,
+              "passed": 6
+            },
+            "solubility": {
+              "measured": 2,
+              "passed": 2
+            }
+          },
+          "rows": 34
+        },
+        "last_adapter": {
+          "counts": {
+            "all_admet_goals_passed": 0,
+            "all_admet_holds_passed": 15,
+            "eligible_admet_goals": 19,
+            "valid_smiles": 19
+          },
+          "full_success_known_false": 34,
+          "full_success_pending_boltz": 0,
+          "per_admet_goal": {
+            "ames": {
+              "measured": 4,
+              "passed": 1
+            },
+            "bbb": {
+              "measured": 2,
+              "passed": 0
+            },
+            "caco2": {
+              "measured": 2,
+              "passed": 0
+            },
+            "clearance": {
+              "measured": 7,
+              "passed": 1
+            },
+            "cyp3a4": {
+              "measured": 5,
+              "passed": 1
+            },
+            "herg": {
+              "measured": 1,
+              "passed": 0
+            },
+            "ppb": {
+              "measured": 7,
+              "passed": 0
+            },
+            "solubility": {
+              "measured": 2,
+              "passed": 0
+            }
+          },
+          "rows": 34
+        }
+      },
+      "train": {
+        "adapter": {
+          "counts": {
+            "all_admet_goals_passed": 21,
+            "all_admet_holds_passed": 165,
+            "eligible_admet_goals": 189,
+            "pending_boltz": 10,
+            "valid_smiles": 206
+          },
+          "full_success_known_false": 262,
+          "full_success_pending_boltz": 10,
+          "per_admet_goal": {
+            "ames": {
+              "measured": 30,
+              "passed": 5
+            },
+            "bbb": {
+              "measured": 94,
+              "passed": 14
+            },
+            "caco2": {
+              "measured": 9,
+              "passed": 0
+            },
+            "clearance": {
+              "measured": 92,
+              "passed": 23
+            },
+            "cyp3a4": {
+              "measured": 57,
+              "passed": 8
+            },
+            "herg": {
+              "measured": 25,
+              "passed": 4
+            },
+            "ppb": {
+              "measured": 17,
+              "passed": 0
+            },
+            "solubility": {
+              "measured": 20,
+              "passed": 3
+            }
+          },
+          "rows": 272
+        },
+        "base": {
+          "counts": {
+            "all_admet_goals_passed": 32,
+            "all_admet_holds_passed": 26,
+            "eligible_admet_goals": 112,
+            "valid_smiles": 122
+          },
+          "full_success_known_false": 272,
+          "full_success_pending_boltz": 0,
+          "per_admet_goal": {
+            "ames": {
+              "measured": 17,
+              "passed": 10
+            },
+            "bbb": {
+              "measured": 61,
+              "passed": 27
+            },
+            "caco2": {
+              "measured": 9,
+              "passed": 1
+            },
+            "clearance": {
+              "measured": 53,
+              "passed": 34
+            },
+            "cyp3a4": {
+              "measured": 29,
+              "passed": 11
+            },
+            "herg": {
+              "measured": 14,
+              "passed": 4
+            },
+            "ppb": {
+              "measured": 12,
+              "passed": 3
+            },
+            "solubility": {
+              "measured": 7,
+              "passed": 2
+            }
+          },
+          "rows": 272
+        },
+        "last_adapter": {
+          "counts": {
+            "all_admet_goals_passed": 83,
+            "all_admet_holds_passed": 213,
+            "eligible_admet_goals": 226,
+            "pending_boltz": 80,
+            "valid_smiles": 244
+          },
+          "full_success_known_false": 192,
+          "full_success_pending_boltz": 80,
+          "per_admet_goal": {
+            "ames": {
+              "measured": 41,
+              "passed": 16
+            },
+            "bbb": {
+              "measured": 111,
+              "passed": 33
+            },
+            "caco2": {
+              "measured": 11,
+              "passed": 5
+            },
+            "clearance": {
+              "measured": 104,
+              "passed": 47
+            },
+            "cyp3a4": {
+              "measured": 66,
+              "passed": 27
+            },
+            "herg": {
+              "measured": 28,
+              "passed": 12
+            },
+            "ppb": {
+              "measured": 24,
+              "passed": 10
+            },
+            "solubility": {
+              "measured": 24,
+              "passed": 13
+            }
+          },
+          "rows": 272
+        }
+      },
+      "validation": {
+        "adapter": {
+          "counts": {
+            "all_admet_goals_passed": 5,
+            "all_admet_holds_passed": 14,
+            "eligible_admet_goals": 21,
+            "pending_boltz": 1,
+            "valid_smiles": 24
+          },
+          "full_success_known_false": 33,
+          "full_success_pending_boltz": 1,
+          "per_admet_goal": {
+            "ames": {
+              "measured": 2,
+              "passed": 1
+            },
+            "bbb": {
+              "measured": 6,
+              "passed": 2
+            },
+            "clearance": {
+              "measured": 7,
+              "passed": 3
+            },
+            "cyp3a4": {
+              "measured": 7,
+              "passed": 4
+            },
+            "herg": {
+              "measured": 4,
+              "passed": 1
+            },
+            "ppb": {
+              "measured": 3,
+              "passed": 2
+            },
+            "solubility": {
+              "measured": 4,
+              "passed": 0
+            }
+          },
+          "rows": 34
+        },
+        "base": {
+          "counts": {
+            "all_admet_goals_passed": 6,
+            "all_admet_holds_passed": 9,
+            "eligible_admet_goals": 12,
+            "valid_smiles": 13
+          },
+          "full_success_known_false": 34,
+          "full_success_pending_boltz": 0,
+          "per_admet_goal": {
+            "ames": {
+              "measured": 1,
+              "passed": 1
+            },
+            "bbb": {
+              "measured": 4,
+              "passed": 3
+            },
+            "caco2": {
+              "measured": 1,
+              "passed": 0
+            },
+            "clearance": {
+              "measured": 3,
+              "passed": 2
+            },
+            "cyp3a4": {
+              "measured": 5,
+              "passed": 5
+            },
+            "herg": {
+              "measured": 2,
+              "passed": 0
+            },
+            "ppb": {
+              "measured": 2,
+              "passed": 1
+            },
+            "solubility": {
+              "measured": 3,
+              "passed": 1
+            }
+          },
+          "rows": 34
+        },
+        "last_adapter": {
+          "counts": {
+            "all_admet_goals_passed": 3,
+            "all_admet_holds_passed": 13,
+            "eligible_admet_goals": 25,
+            "pending_boltz": 1,
+            "valid_smiles": 28
+          },
+          "full_success_known_false": 33,
+          "full_success_pending_boltz": 1,
+          "per_admet_goal": {
+            "ames": {
+              "measured": 2,
+              "passed": 1
+            },
+            "bbb": {
+              "measured": 8,
+              "passed": 1
+            },
+            "clearance": {
+              "measured": 9,
+              "passed": 3
+            },
+            "cyp3a4": {
+              "measured": 6,
+              "passed": 1
+            },
+            "herg": {
+              "measured": 4,
+              "passed": 0
+            },
+            "ppb": {
+              "measured": 3,
+              "passed": 2
+            },
+            "solubility": {
+              "measured": 5,
+              "passed": 0
+            }
+          },
+          "rows": 34
+        }
+      }
+    },
+    "status": "complete"
+  },
+  "oracle_audit": {
+    "rows": 340,
+    "witness_admet_failure_rows": 9,
+    "witness_admet_failure_task_ids": [
+      "smdd_004_BAZ2B_5",
+      "smdd_004_BCL6_22",
+      "smdd_004_BRD2_15",
+      "smdd_004_BRD2_20",
+      "smdd_004_DHODH_1",
+      "smdd_004_DHODH_16",
+      "smdd_004_DHODH_22",
+      "smdd_004_DHODH_4",
+      "smdd_004_BRD4_9"
+    ],
+    "reference_values_different_gt_1e-3": 1278,
+    "reference_max_abs_delta": 6.531134533220651
+  },
+  "boltz_heldout": {
+    "limitations": [
+      "These are predicted oracle properties, not experimental binding measurements.",
+      "Train survivors are outside this held-out validation/test binding evaluation.",
+      "No optional CUDA extension kernels; same sample count, seed and diffusion steps as SMDD."
+    ],
+    "memory_fraction": 0.6,
+    "packages": {
+      "boltz": "2.2.1",
+      "numpy": "1.26.4",
+      "rdkit": "2025.9.4",
+      "torch": "2.6.0+cu124"
+    },
+    "physical_gpu": "4",
+    "results": [
+      {
+        "affinity_json": "runs/smdd_full_01/boltz_heldout/last_adapter_smdd_004_BRD4_7/boltz_results_last_adapter_smdd_004_BRD4_7/predictions/last_adapter_smdd_004_BRD4_7/affinity_last_adapter_smdd_004_BRD4_7.json",
+        "binding_conditions": {
+          "affinity_goal_passed": true,
+          "affinity_hold_passed": true,
+          "affinity_improvement": 0.42455267906188965,
+          "affinity_pred_value": -1.195334553718567,
+          "all_passed": true,
+          "baseline_affinity": -0.7707818746566772,
+          "binding_passed": true,
+          "binding_probability": 0.982663482427597
+        },
+        "changed": true,
+        "command": [
+          "/home/uslee/code/DIRMO-3D/.venv-boltz/bin/python",
+          "-c",
+          "import torch; torch.cuda.set_per_process_memory_fraction(0.6, 0); from boltz.main import cli; cli()",
+          "predict",
+          "/home/uslee/code/DIRMO-3D/runs/smdd_full_01/boltz_heldout/last_adapter_smdd_004_BRD4_7/last_adapter_smdd_004_BRD4_7.yaml",
+          "--out_dir",
+          "/home/uslee/code/DIRMO-3D/runs/smdd_full_01/boltz_heldout/last_adapter_smdd_004_BRD4_7",
+          "--cache",
+          "/home/uslee/.cache/dirmo-boltz2",
+          "--use_msa_server",
+          "--use_potentials",
+          "--no_kernels",
+          "--seed",
+          "42",
+          "--diffusion_samples",
+          "10",
+          "--diffusion_samples_affinity",
+          "10",
+          "--sampling_steps",
+          "200",
+          "--max_parallel_samples",
+          "2",
+          "--num_workers",
+          "0"
+        ],
+        "config": {
+          "affinity_hold_constant": null,
+          "affinity_objective": {
+            "direction": "minimize",
+            "threshold": 0.3
+          },
+          "baseline_affinity": -0.7707818746566772,
+          "co_ligands": null,
+          "diffusion_samples": 10,
+          "pocket_contacts": [
+            [
+              "A",
+              26
+            ],
+            [
+              "A",
+              27
+            ],
+            [
+              "A",
+              28
+            ],
+            [
+              "A",
+              29
+            ],
+            [
+              "A",
+              30
+            ],
+            [
+              "A",
+              31
+            ],
+            [
+              "A",
+              32
+            ],
+            [
+              "A",
+              33
+            ],
+            [
+              "A",
+              34
+            ],
+            [
+              "A",
+              36
+            ],
+            [
+              "A",
+              37
+            ],
+            [
+              "A",
+              39
+            ],
+            [
+              "A",
+              42
+            ],
+            [
+              "A",
+              50
+            ],
+            [
+              "A",
+              77
+            ],
+            [
+              "A",
+              80
+            ],
+            [
+              "A",
+              81
+            ],
+            [
+              "A",
+              84
+            ],
+            [
+              "A",
+              85
+            ],
+            [
+              "A",
+              89
+            ],
+            [
+              "A",
+              90
+            ],
+            [
+              "A",
+              91
+            ],
+            [
+              "A",
+              92
+            ],
+            [
+              "A",
+              94
+            ]
+          ]
+        },
+        "full_benchmark_success": true,
+        "model": "last_adapter",
+        "product_smiles": "CNS(=O)(=O)c1cc(-c2c(C)noc2C)ccc1C",
+        "source": "/LocalData1/uslee/datasets/smdd-bench/tasks/smdd_004_BRD4_7",
+        "split": "validation",
+        "status": "measured",
+        "task_id": "smdd_004_BRD4_7"
+      },
+      {
+        "affinity_json": "runs/smdd_full_01/boltz_heldout/adapter_smdd_004_BRAF_1/boltz_results_adapter_smdd_004_BRAF_1/predictions/adapter_smdd_004_BRAF_1/affinity_adapter_smdd_004_BRAF_1.json",
+        "binding_conditions": {
+          "affinity_goal_passed": false,
+          "affinity_hold_passed": true,
+          "affinity_improvement": -0.8219502791762352,
+          "affinity_pred_value": 0.5821890756487846,
+          "all_passed": false,
+          "baseline_affinity": -0.23976120352745056,
+          "binding_passed": false,
+          "binding_probability": 0.34745947271585464
+        },
+        "changed": true,
+        "command": [
+          "/home/uslee/code/DIRMO-3D/.venv-boltz/bin/python",
+          "-c",
+          "import torch; torch.cuda.set_per_process_memory_fraction(0.6, 0); from boltz.main import cli; cli()",
+          "predict",
+          "/home/uslee/code/DIRMO-3D/runs/smdd_full_01/boltz_heldout/adapter_smdd_004_BRAF_1/adapter_smdd_004_BRAF_1.yaml",
+          "--out_dir",
+          "/home/uslee/code/DIRMO-3D/runs/smdd_full_01/boltz_heldout/adapter_smdd_004_BRAF_1",
+          "--cache",
+          "/home/uslee/.cache/dirmo-boltz2",
+          "--use_msa_server",
+          "--use_potentials",
+          "--no_kernels",
+          "--seed",
+          "42",
+          "--diffusion_samples",
+          "10",
+          "--diffusion_samples_affinity",
+          "10",
+          "--sampling_steps",
+          "200",
+          "--max_parallel_samples",
+          "2",
+          "--num_workers",
+          "0"
+        ],
+        "config": {
+          "affinity_hold_constant": null,
+          "affinity_objective": {
+            "direction": "minimize",
+            "threshold": 0.3
+          },
+          "baseline_affinity": -0.23976120352745056,
+          "co_ligands": null,
+          "diffusion_samples": 10,
+          "pocket_contacts": [
+            [
+              "A",
+              16
+            ],
+            [
+              "A",
+              24
+            ],
+            [
+              "A",
+              34
+            ],
+            [
+              "A",
+              35
+            ],
+            [
+              "A",
+              36
+            ],
+            [
+              "A",
+              54
+            ],
+            [
+              "A",
+              57
+            ],
+            [
+              "A",
+              58
+            ],
+            [
+              "A",
+              61
+            ],
+            [
+              "A",
+              66
+            ],
+            [
+              "A",
+              67
+            ],
+            [
+              "A",
+              80
+            ],
+            [
+              "A",
+              82
+            ],
+            [
+              "A",
+              83
+            ],
+            [
+              "A",
+              84
+            ],
+            [
+              "A",
+              85
+            ],
+            [
+              "A",
+              86
+            ],
+            [
+              "A",
+              87
+            ],
+            [
+              "A",
+              120
+            ],
+            [
+              "A",
+              125
+            ],
+            [
+              "A",
+              126
+            ],
+            [
+              "A",
+              127
+            ],
+            [
+              "A",
+              136
+            ],
+            [
+              "A",
+              145
+            ],
+            [
+              "A",
+              146
+            ],
+            [
+              "A",
+              147
+            ],
+            [
+              "A",
+              148
+            ],
+            [
+              "A",
+              149
+            ],
+            [
+              "A",
+              154
+            ],
+            [
+              "A",
+              167
+            ]
+          ]
+        },
+        "full_benchmark_success": false,
+        "model": "adapter",
+        "product_smiles": "CNCc1nc(Nc2ccccc2C(=O)Nc2ccc3c(c2)OC(F)(F)O3)ncc1",
+        "source": "/LocalData1/uslee/datasets/smdd-bench/tasks/smdd_004_BRAF_1",
+        "split": "validation",
+        "status": "measured",
+        "task_id": "smdd_004_BRAF_1"
+      }
+    ],
+    "seconds": 1503.5936797680333,
+    "splits": {
+      "test": {
+        "adapter": {
+          "full_failure": 34,
+          "full_success": 0,
+          "known_failure_before_boltz": 34,
+          "rows": 34,
+          "unmeasured": 0
+        },
+        "base": {
+          "full_failure": 34,
+          "full_success": 0,
+          "known_failure_before_boltz": 34,
+          "rows": 34,
+          "unmeasured": 0
+        },
+        "last_adapter": {
+          "full_failure": 34,
+          "full_success": 0,
+          "known_failure_before_boltz": 34,
+          "rows": 34,
+          "unmeasured": 0
+        }
+      },
+      "validation": {
+        "adapter": {
+          "full_failure": 34,
+          "full_success": 0,
+          "known_failure_before_boltz": 33,
+          "rows": 34,
+          "unmeasured": 0
+        },
+        "base": {
+          "full_failure": 34,
+          "full_success": 0,
+          "known_failure_before_boltz": 34,
+          "rows": 34,
+          "unmeasured": 0
+        },
+        "last_adapter": {
+          "full_failure": 33,
+          "full_success": 1,
+          "known_failure_before_boltz": 33,
+          "rows": 34,
+          "unmeasured": 0
+        }
+      }
+    },
+    "status": "complete",
+    "used_for_checkpoint_selection": false
+  }
+}

@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "exit_code": 0,
-  "elapsed_seconds": 7.027379638981074,
-  "python": "/home/uslee/miniconda3/envs/flowr/bin/python",
+  "elapsed_seconds": 11.200889557832852,
+  "python": "/home/uslee/miniconda3/envs/dirmo/bin/python",
   "cuda_visible_devices": "",
   "scope": "CPU unit tests; injected model fixtures are not real-model integration evidence"
 }

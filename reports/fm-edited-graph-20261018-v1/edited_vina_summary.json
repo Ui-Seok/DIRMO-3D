@@ -1,0 +1,68 @@
+[
+  {
+    "kind": "fm_core",
+    "variant": "C_to_F",
+    "pockets": 16,
+    "median_delta": 0.015482142857142556,
+    "improved_pockets": 5,
+    "median_ci": [
+      -0.06371428571428606,
+      0.07808333333333284
+    ]
+  },
+  {
+    "kind": "fm_core",
+    "variant": "C_to_N",
+    "pockets": 16,
+    "median_delta": 0.012854166666666611,
+    "improved_pockets": 7,
+    "median_ci": [
+      -0.11786666666666701,
+      0.3041303571428564
+    ]
+  },
+  {
+    "kind": "fm_core",
+    "variant": "C_to_O",
+    "pockets": 15,
+    "median_delta": 0.10200000000000031,
+    "improved_pockets": 5,
+    "median_ci": [
+      -0.15642857142857203,
+      0.2101500000000005
+    ]
+  },
+  {
+    "kind": "fm_whole",
+    "variant": "C_to_F",
+    "pockets": 17,
+    "median_delta": 0.05862857142857081,
+    "improved_pockets": 7,
+    "median_ci": [
+      -0.08383333333333365,
+      0.21866071428571487
+    ]
+  },
+  {
+    "kind": "fm_whole",
+    "variant": "C_to_N",
+    "pockets": 17,
+    "median_delta": 0.12906666666666666,
+    "improved_pockets": 6,
+    "median_ci": [
+      -0.11850000000000005,
+      0.30862499999999926
+    ]
+  },
+  {
+    "kind": "fm_whole",
+    "variant": "C_to_O",
+    "pockets": 15,
+    "median_delta": 0.22571428571428598,
+    "improved_pockets": 5,
+    "median_ci": [
+      -0.0887500000000001,
+      0.3175892857142859
+    ]
+  }
+]

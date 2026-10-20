@@ -38,6 +38,12 @@ class FMConfig(WorkerConfig):
     repo_revision: str = "739a33c2aab74d074dd24605b9a2e34dc809ae9c"
     checkpoint_path: str | None = None
     checkpoint_sha256: str | None = None
+    # Which upstream conditioning mode the adapter runs the model in. "graph" fixes the
+    # whole ligand graph -- a mode no released checkpoint was trained for. "fragment" holds
+    # a subset and lets the model redesign the rest, which the checkpoints ARE trained for;
+    # upstream only enforces a partial mask when inpainting_mode is on, so this flag has to
+    # change the model's own configuration, not just the prior.
+    inpaint_mode: Literal["graph", "fragment"] = "graph"
     max_atoms: int = Field(default=64, ge=1)
     max_pocket_atoms: int = Field(default=1000, ge=10)
     parameters: GenerationParameters = Field(default_factory=GenerationParameters)

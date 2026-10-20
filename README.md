@@ -4,7 +4,9 @@
 
 DIRMO-3D는 단백질 pocket 안의 분자를 평가하고, 측정 결과를 근거로 화학 구조 편집과 3D pose 재생성 중 다음 행동을 선택하는 연구용 코드입니다. 동결된 LLM이 편집 후보를 제안하고, router가 행동을 선택하며, 동결된 FLOWR.root가 3D 좌표를 생성합니다. 생성된 결과는 실제 평가 도구로 다시 측정합니다.
 
-현재 LLM 서버는 **Hugging Face Transformers를 사용하는 자체 HTTP worker**입니다. vLLM 또는 SGLang 연결은 구현되어 있지 않습니다. CPU 실행 관리, LLM 서버, FLOWR.root 서버는 별도 프로세스이고, 학습된 router의 추론은 NumPy로 CPU에서 수행합니다. 학습 대상은 router이며 LLM이나 FLOWR.root의 가중치를 학습하지 않습니다.
+현재 LLM 서버는 **Hugging Face Transformers를 사용하는 자체 HTTP worker**입니다. vLLM 또는 SGLang 연결은 구현되어 있지 않습니다. CPU 실행 관리, LLM 서버, FLOWR.root 서버는 별도 프로세스이고, 학습된 router의 추론은 NumPy로 CPU에서 수행합니다. 기본 파이프라인의 학습 대상은 router입니다. 별도 실험으로 추가한 [SMDD-Bench instruction tuning](docs/smdd_instruction_tuning.md)은 Qwen3.5의 LoRA adapter를 학습하고 검증합니다. 해당 문서에 prompt와 학습 코드가 있고, [전체 학습·평가 안내](docs/smdd_full_training.md)에 LR 비교, 5-epoch 추가 학습, 전체 split 평가와 로그 위치를 정리했습니다. [학습 없는 편집·도구 피드백 실험](docs/smdd_feedback.md)은 base LLM의 짧은 편집 가설을 RDKit·ADMET으로 검사하고 실패 조건을 반영해 수정하며, 같은 제안 예산의 비교와 생존 후보의 Boltz 검증을 지원합니다.
+
+2026-10-19에 추가한 [CrossDocked2020 SBDD benchmark](docs/crossdocked_sbdd_benchmark.md)는 FLOWR.root base의 test 100개 × 100회 생성을 평가합니다. 기존 ligand를 개선하는 SBMO 실험과 구분하며, 설정·성능 지표·진행 상태·결과 위치는 해당 문서를 참고하세요.
 
 이 문서는 2026-10-08에 로컬 디렉터리의 소스, 설정, 문서, 저장된 보고서와 생성 파일을 읽어 정리했습니다. README 작성 과정에서는 테스트, 서버 요청, 모델 로드 또는 추론을 실행하지 않았습니다. `reports/`의 과거 결과와 `worker-runtime/`의 사용자 실행 기록을 현재 환경의 검증 결과로 취급하지 않습니다.
 

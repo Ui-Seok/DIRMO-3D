@@ -1,0 +1,10 @@
+split,model,rows,completion_loss,strict_json,valid_smiles_after_fence_removal,local_passed_after_fence_removal,changed_and_local_passed,witness_exact_match,hit_token_cap
+train,base,272,0.9660945124067829,64,122,4,2,0,10
+train,adapter,272,0.32177643016332946,272,206,126,76,3,0
+train,last_adapter,272,0.13129908341108595,272,244,213,144,58,0
+validation,base,34,1.095541295842579,13,13,0,0,0,4
+validation,adapter,34,0.5431915212507333,34,24,7,5,0,0
+validation,last_adapter,34,0.6290751715145138,34,28,4,2,0,0
+test,base,34,0.9021153429157711,5,18,0,0,0,5
+test,adapter,34,0.469886352784896,34,17,3,3,0,0
+test,last_adapter,34,0.5465894139073254,34,19,9,5,0,0

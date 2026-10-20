@@ -1,0 +1,1394 @@
+{
+  "full_protein_files_expected": 1945,
+  "full_protein_files_present": 1945,
+  "generated_attempts": 2000,
+  "groups": [
+    {
+      "attempts": 200,
+      "build_valid": 179,
+      "changed_valid_fragment": 48,
+      "checkpoint": "base",
+      "condition": "fragment_large",
+      "coordinate_changed_valid_fragment": 41,
+      "coordinate_contract": 176,
+      "coordinate_full_success": 30,
+      "coordinate_pose_success": 0,
+      "energy_unavailable": 0,
+      "full_evaluated": 179,
+      "geometry_failed_checks": {
+        "aromatic_ring_flatness": 1,
+        "bond_angles": 63,
+        "bond_lengths": 100,
+        "double_bond_flatness": 4,
+        "internal_energy": 16,
+        "internal_steric_clash": 10,
+        "minimum_distance_to_protein": 9
+      },
+      "geometry_missing_checks": {},
+      "legacy_contract": 176,
+      "legacy_pose_success": 0,
+      "median_raw_prior_rmsd": 1.2965541421252897,
+      "mismatch_examples": [],
+      "mismatches_coordinate_recovered": 0,
+      "pocket_pb": 72,
+      "serialization_only_changed_valid_fragments": 7,
+      "unique_raw_coordinate_counts": {
+        "1e6s": 10,
+        "1fki": 9,
+        "1jaq": 9,
+        "1ocq": 9,
+        "1pot": 10,
+        "1yet": 8,
+        "2j7h": 10,
+        "2vjx": 9,
+        "2vk2": 10,
+        "2wbg": 8,
+        "2ydt": 10,
+        "2zxd": 10,
+        "3f5l": 9,
+        "4azc": 10,
+        "4ea2": 10,
+        "4xoe": 10,
+        "5efj": 7,
+        "5m77": 8,
+        "5n6s": 3,
+        "6csp": 10
+      },
+      "valid_constitutional_changes": 40,
+      "worker_vs_saved_mismatch": 0
+    },
+    {
+      "attempts": 200,
+      "build_valid": 185,
+      "changed_valid_fragment": 41,
+      "checkpoint": "base",
+      "condition": "fragment_small",
+      "coordinate_changed_valid_fragment": 41,
+      "coordinate_contract": 182,
+      "coordinate_full_success": 30,
+      "coordinate_pose_success": 0,
+      "energy_unavailable": 1,
+      "full_evaluated": 185,
+      "geometry_failed_checks": {
+        "bond_angles": 54,
+        "bond_lengths": 97,
+        "double_bond_flatness": 1,
+        "internal_energy": 20,
+        "internal_steric_clash": 5,
+        "minimum_distance_to_protein": 10
+      },
+      "geometry_missing_checks": {},
+      "legacy_contract": 182,
+      "legacy_pose_success": 0,
+      "median_raw_prior_rmsd": 1.0542143709078198,
+      "mismatch_examples": [],
+      "mismatches_coordinate_recovered": 0,
+      "pocket_pb": 77,
+      "serialization_only_changed_valid_fragments": 0,
+      "unique_raw_coordinate_counts": {
+        "1e6s": 10,
+        "1fki": 10,
+        "1jaq": 9,
+        "1ocq": 10,
+        "1pot": 10,
+        "1yet": 9,
+        "2j7h": 10,
+        "2vjx": 10,
+        "2vk2": 10,
+        "2wbg": 7,
+        "2ydt": 10,
+        "2zxd": 10,
+        "3f5l": 10,
+        "4azc": 10,
+        "4ea2": 10,
+        "4xoe": 10,
+        "5efj": 4,
+        "5m77": 10,
+        "5n6s": 7,
+        "6csp": 9
+      },
+      "valid_constitutional_changes": 41,
+      "worker_vs_saved_mismatch": 0
+    },
+    {
+      "attempts": 200,
+      "build_valid": 200,
+      "changed_valid_fragment": 0,
+      "checkpoint": "base",
+      "condition": "random",
+      "coordinate_changed_valid_fragment": 0,
+      "coordinate_contract": 29,
+      "coordinate_full_success": 0,
+      "coordinate_pose_success": 0,
+      "energy_unavailable": 8,
+      "full_evaluated": 200,
+      "geometry_failed_checks": {
+        "bond_angles": 200,
+        "bond_lengths": 200,
+        "double_bond_flatness": 20,
+        "internal_energy": 200,
+        "internal_steric_clash": 198,
+        "minimum_distance_to_protein": 37,
+        "volume_overlap_with_protein": 11
+      },
+      "geometry_missing_checks": {},
+      "legacy_contract": 28,
+      "legacy_pose_success": 0,
+      "median_raw_prior_rmsd": 2.4253241497602915,
+      "mismatch_examples": [
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 1
+        }
+      ],
+      "mismatches_coordinate_recovered": 1,
+      "pocket_pb": 0,
+      "serialization_only_changed_valid_fragments": 0,
+      "unique_raw_coordinate_counts": {
+        "1e6s": 10,
+        "1fki": 10,
+        "1jaq": 10,
+        "1ocq": 10,
+        "1pot": 10,
+        "1yet": 10,
+        "2j7h": 10,
+        "2vjx": 10,
+        "2vk2": 10,
+        "2wbg": 10,
+        "2ydt": 10,
+        "2zxd": 10,
+        "3f5l": 10,
+        "4azc": 10,
+        "4ea2": 10,
+        "4xoe": 10,
+        "5efj": 10,
+        "5m77": 10,
+        "5n6s": 10,
+        "6csp": 10
+      },
+      "valid_constitutional_changes": null,
+      "worker_vs_saved_mismatch": 1
+    },
+    {
+      "attempts": 200,
+      "build_valid": 200,
+      "changed_valid_fragment": 0,
+      "checkpoint": "base",
+      "condition": "reference0",
+      "coordinate_changed_valid_fragment": 0,
+      "coordinate_contract": 110,
+      "coordinate_full_success": 0,
+      "coordinate_pose_success": 0,
+      "energy_unavailable": 0,
+      "full_evaluated": 200,
+      "geometry_failed_checks": {
+        "bond_angles": 100,
+        "bond_lengths": 90,
+        "double_bond_flatness": 10,
+        "internal_energy": 140,
+        "internal_steric_clash": 120,
+        "minimum_distance_to_protein": 70,
+        "volume_overlap_with_protein": 40
+      },
+      "geometry_missing_checks": {},
+      "legacy_contract": 70,
+      "legacy_pose_success": 0,
+      "median_raw_prior_rmsd": 2.3046154953625138,
+      "mismatch_examples": [
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 2
+        }
+      ],
+      "mismatches_coordinate_recovered": 40,
+      "pocket_pb": 40,
+      "serialization_only_changed_valid_fragments": 0,
+      "unique_raw_coordinate_counts": {
+        "1e6s": 1,
+        "1fki": 1,
+        "1jaq": 1,
+        "1ocq": 1,
+        "1pot": 1,
+        "1yet": 1,
+        "2j7h": 1,
+        "2vjx": 1,
+        "2vk2": 1,
+        "2wbg": 1,
+        "2ydt": 1,
+        "2zxd": 1,
+        "3f5l": 1,
+        "4azc": 1,
+        "4ea2": 1,
+        "4xoe": 1,
+        "5efj": 1,
+        "5m77": 1,
+        "5n6s": 1,
+        "6csp": 1
+      },
+      "valid_constitutional_changes": null,
+      "worker_vs_saved_mismatch": 40
+    },
+    {
+      "attempts": 200,
+      "build_valid": 200,
+      "changed_valid_fragment": 0,
+      "checkpoint": "base",
+      "condition": "reference03",
+      "coordinate_changed_valid_fragment": 0,
+      "coordinate_contract": 96,
+      "coordinate_full_success": 6,
+      "coordinate_pose_success": 6,
+      "energy_unavailable": 0,
+      "full_evaluated": 200,
+      "geometry_failed_checks": {
+        "bond_angles": 125,
+        "bond_lengths": 118,
+        "double_bond_flatness": 16,
+        "internal_energy": 147,
+        "internal_steric_clash": 124,
+        "minimum_distance_to_protein": 56,
+        "volume_overlap_with_protein": 33
+      },
+      "geometry_missing_checks": {},
+      "legacy_contract": 70,
+      "legacy_pose_success": 6,
+      "median_raw_prior_rmsd": 2.2849902052868463,
+      "mismatch_examples": [
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 2
+        }
+      ],
+      "mismatches_coordinate_recovered": 26,
+      "pocket_pb": 39,
+      "serialization_only_changed_valid_fragments": 0,
+      "unique_raw_coordinate_counts": {
+        "1e6s": 10,
+        "1fki": 10,
+        "1jaq": 10,
+        "1ocq": 10,
+        "1pot": 10,
+        "1yet": 10,
+        "2j7h": 10,
+        "2vjx": 10,
+        "2vk2": 10,
+        "2wbg": 10,
+        "2ydt": 10,
+        "2zxd": 10,
+        "3f5l": 10,
+        "4azc": 10,
+        "4ea2": 10,
+        "4xoe": 10,
+        "5efj": 10,
+        "5m77": 10,
+        "5n6s": 10,
+        "6csp": 10
+      },
+      "valid_constitutional_changes": null,
+      "worker_vs_saved_mismatch": 26
+    },
+    {
+      "attempts": 200,
+      "build_valid": 184,
+      "changed_valid_fragment": 74,
+      "checkpoint": "v2",
+      "condition": "fragment_large",
+      "coordinate_changed_valid_fragment": 62,
+      "coordinate_contract": 184,
+      "coordinate_full_success": 44,
+      "coordinate_pose_success": 0,
+      "energy_unavailable": 4,
+      "full_evaluated": 184,
+      "geometry_failed_checks": {
+        "bond_angles": 32,
+        "bond_lengths": 48,
+        "internal_energy": 19,
+        "internal_steric_clash": 9,
+        "minimum_distance_to_protein": 9
+      },
+      "geometry_missing_checks": {},
+      "legacy_contract": 184,
+      "legacy_pose_success": 0,
+      "median_raw_prior_rmsd": 1.3263207303831366,
+      "mismatch_examples": [],
+      "mismatches_coordinate_recovered": 0,
+      "pocket_pb": 116,
+      "serialization_only_changed_valid_fragments": 12,
+      "unique_raw_coordinate_counts": {
+        "1e6s": 10,
+        "1fki": 8,
+        "1jaq": 10,
+        "1ocq": 10,
+        "1pot": 10,
+        "1yet": 9,
+        "2j7h": 10,
+        "2vjx": 10,
+        "2vk2": 9,
+        "2wbg": 9,
+        "2ydt": 10,
+        "2zxd": 10,
+        "3f5l": 5,
+        "4azc": 10,
+        "4ea2": 10,
+        "4xoe": 10,
+        "5efj": 8,
+        "5m77": 9,
+        "5n6s": 7,
+        "6csp": 10
+      },
+      "valid_constitutional_changes": 62,
+      "worker_vs_saved_mismatch": 0
+    },
+    {
+      "attempts": 200,
+      "build_valid": 197,
+      "changed_valid_fragment": 81,
+      "checkpoint": "v2",
+      "condition": "fragment_small",
+      "coordinate_changed_valid_fragment": 70,
+      "coordinate_contract": 196,
+      "coordinate_full_success": 49,
+      "coordinate_pose_success": 0,
+      "energy_unavailable": 2,
+      "full_evaluated": 197,
+      "geometry_failed_checks": {
+        "bond_angles": 15,
+        "bond_lengths": 39,
+        "internal_energy": 12,
+        "internal_steric_clash": 10,
+        "minimum_distance_to_protein": 16
+      },
+      "geometry_missing_checks": {},
+      "legacy_contract": 196,
+      "legacy_pose_success": 0,
+      "median_raw_prior_rmsd": 1.1230603166148696,
+      "mismatch_examples": [],
+      "mismatches_coordinate_recovered": 0,
+      "pocket_pb": 137,
+      "serialization_only_changed_valid_fragments": 11,
+      "unique_raw_coordinate_counts": {
+        "1e6s": 10,
+        "1fki": 10,
+        "1jaq": 10,
+        "1ocq": 10,
+        "1pot": 10,
+        "1yet": 10,
+        "2j7h": 10,
+        "2vjx": 10,
+        "2vk2": 10,
+        "2wbg": 8,
+        "2ydt": 10,
+        "2zxd": 10,
+        "3f5l": 9,
+        "4azc": 10,
+        "4ea2": 10,
+        "4xoe": 10,
+        "5efj": 10,
+        "5m77": 10,
+        "5n6s": 10,
+        "6csp": 10
+      },
+      "valid_constitutional_changes": 70,
+      "worker_vs_saved_mismatch": 0
+    },
+    {
+      "attempts": 200,
+      "build_valid": 200,
+      "changed_valid_fragment": 0,
+      "checkpoint": "v2",
+      "condition": "random",
+      "coordinate_changed_valid_fragment": 0,
+      "coordinate_contract": 35,
+      "coordinate_full_success": 0,
+      "coordinate_pose_success": 0,
+      "energy_unavailable": 7,
+      "full_evaluated": 200,
+      "geometry_failed_checks": {
+        "bond_angles": 200,
+        "bond_lengths": 200,
+        "double_bond_flatness": 20,
+        "internal_energy": 200,
+        "internal_steric_clash": 199,
+        "minimum_distance_to_protein": 200,
+        "volume_overlap_with_protein": 198
+      },
+      "geometry_missing_checks": {},
+      "legacy_contract": 34,
+      "legacy_pose_success": 0,
+      "median_raw_prior_rmsd": 1.229999855669208,
+      "mismatch_examples": [
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 1
+        }
+      ],
+      "mismatches_coordinate_recovered": 1,
+      "pocket_pb": 0,
+      "serialization_only_changed_valid_fragments": 0,
+      "unique_raw_coordinate_counts": {
+        "1e6s": 10,
+        "1fki": 10,
+        "1jaq": 10,
+        "1ocq": 10,
+        "1pot": 10,
+        "1yet": 10,
+        "2j7h": 10,
+        "2vjx": 10,
+        "2vk2": 10,
+        "2wbg": 10,
+        "2ydt": 10,
+        "2zxd": 10,
+        "3f5l": 10,
+        "4azc": 10,
+        "4ea2": 10,
+        "4xoe": 10,
+        "5efj": 10,
+        "5m77": 10,
+        "5n6s": 10,
+        "6csp": 10
+      },
+      "valid_constitutional_changes": null,
+      "worker_vs_saved_mismatch": 1
+    },
+    {
+      "attempts": 200,
+      "build_valid": 200,
+      "changed_valid_fragment": 0,
+      "checkpoint": "v2",
+      "condition": "reference0",
+      "coordinate_changed_valid_fragment": 0,
+      "coordinate_contract": 190,
+      "coordinate_full_success": 0,
+      "coordinate_pose_success": 0,
+      "energy_unavailable": 0,
+      "full_evaluated": 200,
+      "geometry_failed_checks": {
+        "bond_angles": 90,
+        "bond_lengths": 100,
+        "double_bond_flatness": 10,
+        "internal_energy": 100,
+        "internal_steric_clash": 40,
+        "minimum_distance_to_protein": 200,
+        "volume_overlap_with_protein": 200
+      },
+      "geometry_missing_checks": {},
+      "legacy_contract": 150,
+      "legacy_pose_success": 0,
+      "median_raw_prior_rmsd": 0.5453088417411276,
+      "mismatch_examples": [
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 2
+        }
+      ],
+      "mismatches_coordinate_recovered": 40,
+      "pocket_pb": 0,
+      "serialization_only_changed_valid_fragments": 0,
+      "unique_raw_coordinate_counts": {
+        "1e6s": 1,
+        "1fki": 1,
+        "1jaq": 1,
+        "1ocq": 1,
+        "1pot": 1,
+        "1yet": 1,
+        "2j7h": 1,
+        "2vjx": 1,
+        "2vk2": 1,
+        "2wbg": 1,
+        "2ydt": 1,
+        "2zxd": 1,
+        "3f5l": 1,
+        "4azc": 1,
+        "4ea2": 1,
+        "4xoe": 1,
+        "5efj": 1,
+        "5m77": 1,
+        "5n6s": 1,
+        "6csp": 1
+      },
+      "valid_constitutional_changes": null,
+      "worker_vs_saved_mismatch": 40
+    },
+    {
+      "attempts": 200,
+      "build_valid": 200,
+      "changed_valid_fragment": 0,
+      "checkpoint": "v2",
+      "condition": "reference03",
+      "coordinate_changed_valid_fragment": 0,
+      "coordinate_contract": 100,
+      "coordinate_full_success": 0,
+      "coordinate_pose_success": 0,
+      "energy_unavailable": 1,
+      "full_evaluated": 200,
+      "geometry_failed_checks": {
+        "bond_angles": 165,
+        "bond_lengths": 152,
+        "double_bond_flatness": 13,
+        "internal_energy": 167,
+        "internal_steric_clash": 76,
+        "minimum_distance_to_protein": 200,
+        "volume_overlap_with_protein": 195
+      },
+      "geometry_missing_checks": {},
+      "legacy_contract": 74,
+      "legacy_pose_success": 0,
+      "median_raw_prior_rmsd": 0.7123408904661463,
+      "mismatch_examples": [
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1e6s",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "1yet",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 3
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 50,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2vk2",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "2wbg",
+          "coordinate_recovers_contract": true,
+          "seed": 42,
+          "stereoany_bonds": 1
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 43,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 44,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 45,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 46,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 47,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 48,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 49,
+          "stereoany_bonds": 2
+        },
+        {
+          "case_id": "4ea2",
+          "coordinate_recovers_contract": true,
+          "seed": 51,
+          "stereoany_bonds": 2
+        }
+      ],
+      "mismatches_coordinate_recovered": 26,
+      "pocket_pb": 0,
+      "serialization_only_changed_valid_fragments": 0,
+      "unique_raw_coordinate_counts": {
+        "1e6s": 10,
+        "1fki": 10,
+        "1jaq": 10,
+        "1ocq": 10,
+        "1pot": 10,
+        "1yet": 10,
+        "2j7h": 10,
+        "2vjx": 10,
+        "2vk2": 10,
+        "2wbg": 10,
+        "2ydt": 10,
+        "2zxd": 10,
+        "3f5l": 10,
+        "4azc": 10,
+        "4ea2": 10,
+        "4xoe": 10,
+        "5efj": 10,
+        "5m77": 10,
+        "5n6s": 10,
+        "6csp": 10
+      },
+      "valid_constitutional_changes": null,
+      "worker_vs_saved_mismatch": 26
+    }
+  ],
+  "method": "Original metrics retained. On a copy clear MDL bond stereo annotations and derive atom/bond stereo exclusively from XYZ; compare exact canonical identity, then compute unaligned symmetry RMSD.",
+  "nfe": 130000,
+  "original_dataset_sha256": "781cb607207aae6834b00d25e2ad78f682d12454e63591f3e5ee96a69fd2d9c1",
+  "paired_fragment": [
+    {
+      "condition": "fragment_small",
+      "coordinate_v2_minus_base": {
+        "95ci": [
+          0.045,
+          0.25000000000000006
+        ],
+        "mean": 0.145
+      },
+      "targets": 20,
+      "v2_minus_base": {
+        "95ci": [
+          0.075,
+          0.335
+        ],
+        "mean": 0.2
+      }
+    },
+    {
+      "condition": "fragment_large",
+      "coordinate_v2_minus_base": {
+        "95ci": [
+          0.004999999999999996,
+          0.225
+        ],
+        "mean": 0.10500000000000001
+      },
+      "targets": 20,
+      "v2_minus_base": {
+        "95ci": [
+          0.025,
+          0.25
+        ],
+        "mean": 0.13
+      }
+    }
+  ],
+  "raw_draws": 2000
+}

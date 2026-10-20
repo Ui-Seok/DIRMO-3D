@@ -1,0 +1,1793 @@
+/home/uslee/code/DIRMO-3D/.venv-admet/lib/python3.11/site-packages/chemprop/utils.py:473: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  vars(torch.load(path, map_location=lambda storage, loc: storage)["args"]),
+/home/uslee/code/DIRMO-3D/.venv-admet/lib/python3.11/site-packages/chemprop/utils.py:112: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=lambda storage, loc: storage)
+Loading pretrained parameter "encoder.encoder.0.cached_zero_vector".
+Loading pretrained parameter "encoder.encoder.0.W_i.weight".
+Loading pretrained parameter "encoder.encoder.0.W_h.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.bias".
+Loading pretrained parameter "readout.1.weight".
+Loading pretrained parameter "readout.1.bias".
+Loading pretrained parameter "readout.4.weight".
+Loading pretrained parameter "readout.4.bias".
+Loading pretrained parameter "encoder.encoder.0.cached_zero_vector".
+Loading pretrained parameter "encoder.encoder.0.W_i.weight".
+Loading pretrained parameter "encoder.encoder.0.W_h.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.bias".
+Loading pretrained parameter "readout.1.weight".
+Loading pretrained parameter "readout.1.bias".
+Loading pretrained parameter "readout.4.weight".
+Loading pretrained parameter "readout.4.bias".
+Loading pretrained parameter "encoder.encoder.0.cached_zero_vector".
+Loading pretrained parameter "encoder.encoder.0.W_i.weight".
+Loading pretrained parameter "encoder.encoder.0.W_h.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.bias".
+Loading pretrained parameter "readout.1.weight".
+Loading pretrained parameter "readout.1.bias".
+Loading pretrained parameter "readout.4.weight".
+Loading pretrained parameter "readout.4.bias".
+Loading pretrained parameter "encoder.encoder.0.cached_zero_vector".
+Loading pretrained parameter "encoder.encoder.0.W_i.weight".
+Loading pretrained parameter "encoder.encoder.0.W_h.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.bias".
+Loading pretrained parameter "readout.1.weight".
+Loading pretrained parameter "readout.1.bias".
+Loading pretrained parameter "readout.4.weight".
+Loading pretrained parameter "readout.4.bias".
+Loading pretrained parameter "encoder.encoder.0.cached_zero_vector".
+Loading pretrained parameter "encoder.encoder.0.W_i.weight".
+Loading pretrained parameter "encoder.encoder.0.W_h.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.bias".
+Loading pretrained parameter "readout.1.weight".
+Loading pretrained parameter "readout.1.bias".
+Loading pretrained parameter "readout.4.weight".
+Loading pretrained parameter "readout.4.bias".
+/home/uslee/code/DIRMO-3D/.venv-admet/lib/python3.11/site-packages/chemprop/utils.py:418: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(path, map_location=lambda storage, loc: storage)
+Loading pretrained parameter "encoder.encoder.0.cached_zero_vector".
+Loading pretrained parameter "encoder.encoder.0.W_i.weight".
+Loading pretrained parameter "encoder.encoder.0.W_h.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.bias".
+Loading pretrained parameter "readout.1.weight".
+Loading pretrained parameter "readout.1.bias".
+Loading pretrained parameter "readout.4.weight".
+Loading pretrained parameter "readout.4.bias".
+Loading pretrained parameter "encoder.encoder.0.cached_zero_vector".
+Loading pretrained parameter "encoder.encoder.0.W_i.weight".
+Loading pretrained parameter "encoder.encoder.0.W_h.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.bias".
+Loading pretrained parameter "readout.1.weight".
+Loading pretrained parameter "readout.1.bias".
+Loading pretrained parameter "readout.4.weight".
+Loading pretrained parameter "readout.4.bias".
+Loading pretrained parameter "encoder.encoder.0.cached_zero_vector".
+Loading pretrained parameter "encoder.encoder.0.W_i.weight".
+Loading pretrained parameter "encoder.encoder.0.W_h.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.bias".
+Loading pretrained parameter "readout.1.weight".
+Loading pretrained parameter "readout.1.bias".
+Loading pretrained parameter "readout.4.weight".
+Loading pretrained parameter "readout.4.bias".
+Loading pretrained parameter "encoder.encoder.0.cached_zero_vector".
+Loading pretrained parameter "encoder.encoder.0.W_i.weight".
+Loading pretrained parameter "encoder.encoder.0.W_h.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.bias".
+Loading pretrained parameter "readout.1.weight".
+Loading pretrained parameter "readout.1.bias".
+Loading pretrained parameter "readout.4.weight".
+Loading pretrained parameter "readout.4.bias".
+Loading pretrained parameter "encoder.encoder.0.cached_zero_vector".
+Loading pretrained parameter "encoder.encoder.0.W_i.weight".
+Loading pretrained parameter "encoder.encoder.0.W_h.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.weight".
+Loading pretrained parameter "encoder.encoder.0.W_o.bias".
+Loading pretrained parameter "readout.1.weight".
+Loading pretrained parameter "readout.1.bias".
+Loading pretrained parameter "readout.4.weight".
+Loading pretrained parameter "readout.4.bias".
+SMILES to Mol:   0%|          | 0/29 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 29/29 [00:00<00:00, 1386.42it/s]
+Computing physchem properties:   0%|          | 0/29 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 29/29 [00:00<00:00, 389.17it/s]
+RDKit fingerprints:   0%|          | 0/29 [00:00<?, ?it/s]RDKit fingerprints:   7%|▋         | 2/29 [00:00<00:01, 19.69it/s]RDKit fingerprints:  14%|█▍        | 4/29 [00:00<00:01, 19.66it/s]RDKit fingerprints:  21%|██        | 6/29 [00:00<00:01, 19.32it/s]RDKit fingerprints:  28%|██▊       | 8/29 [00:00<00:01, 19.20it/s]RDKit fingerprints:  34%|███▍      | 10/29 [00:00<00:00, 19.02it/s]RDKit fingerprints:  41%|████▏     | 12/29 [00:00<00:00, 19.19it/s]RDKit fingerprints:  48%|████▊     | 14/29 [00:00<00:00, 19.33it/s]RDKit fingerprints:  55%|█████▌    | 16/29 [00:00<00:00, 19.38it/s]RDKit fingerprints:  62%|██████▏   | 18/29 [00:00<00:00, 18.84it/s]RDKit fingerprints:  69%|██████▉   | 20/29 [00:01<00:00, 18.71it/s]RDKit fingerprints:  76%|███████▌  | 22/29 [00:01<00:00, 16.52it/s]RDKit fingerprints:  83%|████████▎ | 24/29 [00:01<00:00, 17.16it/s]RDKit fingerprints:  93%|█████████▎| 27/29 [00:01<00:00, 18.11it/s]RDKit fingerprints: 100%|██████████| 29/29 [00:01<00:00, 18.26it/s]RDKit fingerprints: 100%|██████████| 29/29 [00:01<00:00, 18.50it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+100%|██████████| 1/1 [00:00<00:00,  7.24it/s][A[A
+
+                                             [A[A
+individual models:  20%|██        | 1/5 [00:00<00:00,  7.20it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+individual models:  60%|██████    | 3/5 [00:00<00:00, 12.20it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+individual models: 100%|██████████| 5/5 [00:00<00:00, 13.96it/s][Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 12.92it/s]
+model ensembles:  50%|█████     | 1/2 [00:00<00:00,  2.58it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+individual models:  40%|████      | 2/5 [00:00<00:00, 15.65it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+individual models:  80%|████████  | 4/5 [00:00<00:00, 15.83it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 15.60it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00,  2.87it/s]model ensembles: 100%|██████████| 2/2 [00:00<00:00,  2.82it/s]
+{"event":"attempt","task_id":"smdd_004_BChE_0","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BChE_0","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BChE_0","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BChE_0","mode":"feedback","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BChE_0","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BChE_0","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1754.94it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 244.11it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 13.00it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 216.62it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 233.37it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 43.90it/s]
+{"event":"attempt","task_id":"smdd_004_BRAF_0","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.8906,"value":0.6803637742996216,"passed":false,"delta":-0.21023622570037837}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_0","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.8906,"value":0.6803637742996216,"passed":false,"delta":-0.21023622570037837}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_0","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.8906,"value":0.6803637742996216,"passed":false,"delta":-0.21023622570037837}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_0","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_0","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.8906,"value":0.6803637742996216,"passed":false,"delta":-0.21023622570037837}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_0","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.8906,"value":0.6803637742996216,"passed":false,"delta":-0.21023622570037837}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 2147.62it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 327.14it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 21.39it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 217.55it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 275.41it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 47.53it/s]
+{"event":"attempt","task_id":"smdd_004_BRAF_1","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRAF_1","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRAF_1","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRAF_1","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_1","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1784.81it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 291.84it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 18.90it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 193.83it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 238.51it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 41.83it/s]
+{"event":"attempt","task_id":"smdd_004_BRAF_1","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.9076,"value":0.7101961970329285,"passed":false,"delta":-0.1974038029670715}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_2","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_2","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_2","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_2","mode":"feedback","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_2","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1961.79it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 316.43it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 20.36it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 200.17it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 235.99it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 42.48it/s]
+{"event":"attempt","task_id":"smdd_004_BRAF_2","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.5964,"value":0.8269824504852294,"passed":false,"delta":0.2305824504852294}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1804.78it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 250.15it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 13.10it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 147.38it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 197.43it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 33.19it/s]
+{"event":"attempt","task_id":"smdd_004_BRAF_3","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRAF_3","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRAF_3","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_3","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_3","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1842.84it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 289.34it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 20.14it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 206.90it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 251.80it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 44.56it/s]
+{"event":"attempt","task_id":"smdd_004_BRAF_3","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"cyp3a4","direction":"minimize","threshold":0.1,"baseline":0.8932,"value":0.9196776986122132,"passed":false,"improvement":-0.026477698612213163}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1548.86it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 225.69it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 12.36it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 147.31it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 130.16it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 27.23it/s]
+{"event":"attempt","task_id":"smdd_004_BRAF_4","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.7122,"value":0.564058494567871,"passed":false,"delta":-0.148141505432129}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_4","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.7122,"value":0.564058494567871,"passed":false,"delta":-0.148141505432129}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_4","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.7122,"value":0.564058494567871,"passed":false,"delta":-0.148141505432129}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_4","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_4","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.7122,"value":0.564058494567871,"passed":false,"delta":-0.148141505432129}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_4","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.7122,"value":0.564058494567871,"passed":false,"delta":-0.148141505432129}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_5","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_5","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_5","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_5","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_5","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_5","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_8","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_8","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_8","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_8","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_8","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRAF_8","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"cyp3a4","direction":"minimize","threshold":0.1,"baseline":0.8932,"value":0.9196776986122132,"passed":false,"improvement":-0.026477698612213163}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_9","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.7122,"value":0.564058494567871,"passed":false,"delta":-0.148141505432129}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_9","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.7122,"value":0.564058494567871,"passed":false,"delta":-0.148141505432129}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_9","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.7122,"value":0.564058494567871,"passed":false,"delta":-0.148141505432129}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_9","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.7122,"value":0.564058494567871,"passed":false,"delta":-0.148141505432129}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_9","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.7122,"value":0.564058494567871,"passed":false,"delta":-0.148141505432129}]}
+{"event":"attempt","task_id":"smdd_004_BRAF_9","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 2006.84it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 307.70it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 18.24it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 172.07it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 214.78it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 37.34it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_0","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":34.4122,"value":72.60297253711994,"passed":false,"improvement":-38.19077253711994},{"stage":"admet","kind":"goals","property":"caco2","direction":"maximize","threshold":0.3,"baseline":-4.8158,"value":-4.797684352104565,"passed":false,"improvement":0.01811564789543496},{"stage":"admet","kind":"holds","property":"ppb","tolerance":5.0,"direction":"increase","baseline":102.0481,"value":107.27087499883967,"passed":false,"delta":5.222774998839668}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_0","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":34.4122,"value":72.60297253711994,"passed":false,"improvement":-38.19077253711994},{"stage":"admet","kind":"goals","property":"caco2","direction":"maximize","threshold":0.3,"baseline":-4.8158,"value":-4.797684352104565,"passed":false,"improvement":0.01811564789543496},{"stage":"admet","kind":"holds","property":"ppb","tolerance":5.0,"direction":"increase","baseline":102.0481,"value":107.27087499883967,"passed":false,"delta":5.222774998839668}]}
+[01:48:05] SMILES Parse Error: unclosed ring for input: 'Cn1cc(-c2cc(S(C)(=O)=O)ccc2OCC(F)CCCCC2)c2cc[nH]c2c1=O'
+{"event":"attempt","task_id":"smdd_004_BRD4_0","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1539.76it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 216.75it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 20.24it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 218.51it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 246.82it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 45.41it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_0","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":34.4122,"value":66.19909306450516,"passed":false,"improvement":-31.786893064505165}]}
+[01:48:27] SMILES Parse Error: unclosed ring for input: 'Cn1cc(-c2cc(S(C)(=O)=O)ccc2OCC(F)(CCCCC)2)c2cc[nH]c2c1=O'
+{"event":"attempt","task_id":"smdd_004_BRD4_0","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_0","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":34.4122,"value":72.60297253711994,"passed":false,"improvement":-38.19077253711994},{"stage":"admet","kind":"goals","property":"caco2","direction":"maximize","threshold":0.3,"baseline":-4.8158,"value":-4.797684352104565,"passed":false,"improvement":0.01811564789543496},{"stage":"admet","kind":"holds","property":"ppb","tolerance":5.0,"direction":"increase","baseline":102.0481,"value":107.27087499883967,"passed":false,"delta":5.222774998839668}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1920.47it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 303.74it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 19.95it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 202.51it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 274.71it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 45.48it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_1","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"solubility","direction":"maximize","threshold":0.5,"baseline":-5.6096,"value":-6.044689792379869,"passed":false,"improvement":-0.4350897923798689},{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.5827,"value":0.7532896399497986,"passed":false,"delta":0.1705896399497986}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_1","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"solubility","direction":"maximize","threshold":0.5,"baseline":-5.6096,"value":-6.044689792379869,"passed":false,"improvement":-0.4350897923798689},{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.5827,"value":0.7532896399497986,"passed":false,"delta":0.1705896399497986}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1874.13it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 250.24it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 13.16it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 220.92it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 258.22it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 46.65it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_1","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"solubility","direction":"maximize","threshold":0.5,"baseline":-5.6096,"value":-6.087364854625031,"passed":false,"improvement":-0.4777648546250308},{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.5827,"value":0.7229328870773315,"passed":false,"delta":0.1402328870773315}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_1","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_1","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"solubility","direction":"maximize","threshold":0.5,"baseline":-5.6096,"value":-6.044689792379869,"passed":false,"improvement":-0.4350897923798689},{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.5827,"value":0.7532896399497986,"passed":false,"delta":0.1705896399497986}]}
+[01:49:31] Explicit valence for atom # 2 O, 6, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_BRD4_1","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 2043.01it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 315.76it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 20.01it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 206.66it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 223.58it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 42.01it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_10","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.5397,"value":0.6679048895835876,"passed":false,"delta":0.12820488958358767}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_10","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.5397,"value":0.6679048895835876,"passed":false,"delta":0.12820488958358767}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1453.83it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 243.12it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 19.78it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 206.53it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 234.52it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 43.07it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_10","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":54.0616,"value":53.50074755108024,"passed":false,"improvement":0.5608524489197606}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_10","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_10","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_10","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":54.0616,"value":53.50074755108024,"passed":false,"improvement":0.5608524489197606}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1631.39it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 302.27it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 21.00it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 229.99it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 265.09it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 48.24it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_11","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRD4_11","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 2517.59it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 398.47it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 19.88it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 232.55it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 273.16it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 49.05it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_11","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 2005.88it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 294.81it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 21.02it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 253.01it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 272.34it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 51.33it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_11","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"solubility","direction":"maximize","threshold":0.5,"baseline":-3.9819,"value":-4.6463568910250475,"passed":false,"improvement":-0.6644568910250475},{"stage":"admet","kind":"goals","property":"cyp3a4","direction":"minimize","threshold":0.1,"baseline":0.715,"value":0.6922836303710938,"passed":false,"improvement":0.02271636962890622},{"stage":"admet","kind":"holds","property":"clearance","tolerance":5.0,"direction":"increase","baseline":42.8219,"value":51.077363525896274,"passed":false,"delta":8.255463525896275}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_11","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRD4_11","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_12","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_12","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_12","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_12","mode":"feedback","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_12","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_12","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"logp","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_13","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_13","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_13","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_13","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_13","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_13","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1891.03it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 275.20it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 20.92it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 204.29it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 254.19it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 44.19it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_14","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRD4_14","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRD4_14","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1954.48it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 275.83it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 21.87it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 220.29it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 271.54it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 47.71it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_14","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"ames","direction":"minimize","threshold":0.1,"baseline":0.4024,"value":0.43089873492717745,"passed":false,"improvement":-0.02849873492717747}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_14","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRD4_14","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"ames","direction":"minimize","threshold":0.1,"baseline":0.4024,"value":0.43089873492717745,"passed":false,"improvement":-0.02849873492717747}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_15","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_15","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_15","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_15","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_15","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_15","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 2120.48it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 347.64it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 12.39it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 119.79it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 144.41it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 25.51it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_17","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":54.0616,"value":52.32975956702417,"passed":false,"improvement":1.7318404329758295},{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.5397,"value":0.6956560969352722,"passed":false,"delta":0.15595609693527224}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_17","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":54.0616,"value":52.32975956702417,"passed":false,"improvement":1.7318404329758295},{"stage":"admet","kind":"holds","property":"bbb","tolerance":0.1,"direction":"change","baseline":0.5397,"value":0.6956560969352722,"passed":false,"delta":0.15595609693527224}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_17","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":54.0616,"value":53.50074755108024,"passed":false,"improvement":0.5608524489197606}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_17","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_17","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_17","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":54.0616,"value":53.50074755108024,"passed":false,"improvement":0.5608524489197606}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_2","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_2","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_2","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_2","mode":"feedback","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_2","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_2","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_3","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_3","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_3","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_3","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_3","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_3","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_4","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_4","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_4","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 2233.39it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 333.46it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 19.72it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 188.79it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 241.71it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 41.45it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_4","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":40.5561,"value":39.303531063400236,"passed":false,"improvement":1.252568936599765},{"stage":"admet","kind":"goals","property":"cyp3a4","direction":"minimize","threshold":0.1,"baseline":0.8196,"value":0.8438666939735413,"passed":false,"improvement":-0.02426669397354131}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_4","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_4","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_5","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_5","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_5","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_5","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"herg","direction":"minimize","threshold":0.1,"baseline":0.7874,"value":0.8030002236366272,"passed":false,"improvement":-0.015600223636627164},{"stage":"admet","kind":"goals","property":"bbb","direction":"minimize","threshold":0.1,"baseline":0.8487,"value":0.8301539063453675,"passed":false,"improvement":0.018546093654632556}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_5","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_5","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1368.01it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 230.80it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 15.25it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 172.26it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 259.64it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 40.56it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_6","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRD4_6","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_BRD4_6","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 2036.07it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 320.89it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 15.81it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 154.37it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 176.98it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 32.39it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_6","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"herg","tolerance":0.1,"direction":"increase","baseline":0.6141,"value":0.7209868431091309,"passed":false,"delta":0.10688684310913088}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_6","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_6","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 3669.56it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 473.50it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 22.79it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 195.11it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 253.36it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 43.29it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_7","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":38.0567,"value":40.25513681460517,"passed":false,"improvement":-2.1984368146051736},{"stage":"admet","kind":"holds","property":"herg","tolerance":0.1,"direction":"increase","baseline":0.1029,"value":0.2949490860104561,"passed":false,"delta":0.19204908601045612}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_7","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":38.0567,"value":40.25513681460517,"passed":false,"improvement":-2.1984368146051736},{"stage":"admet","kind":"holds","property":"herg","tolerance":0.1,"direction":"increase","baseline":0.1029,"value":0.2949490860104561,"passed":false,"delta":0.19204908601045612}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1970.08it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 313.66it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 15.34it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 230.83it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 310.09it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 51.62it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_7","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":38.0567,"value":40.25513681460517,"passed":false,"improvement":-2.1984368146051736},{"stage":"admet","kind":"holds","property":"herg","tolerance":0.1,"direction":"increase","baseline":0.1029,"value":0.2949490860104561,"passed":false,"delta":0.19204908601045612}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_7","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"clearance","direction":"minimize","threshold":5.0,"baseline":38.0567,"value":40.25513681460517,"passed":false,"improvement":-2.1984368146051736},{"stage":"admet","kind":"holds","property":"herg","tolerance":0.1,"direction":"increase","baseline":0.1029,"value":0.2949490860104561,"passed":false,"delta":0.19204908601045612}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_7","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_7","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 2483.31it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 390.86it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 19.96it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 179.50it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 228.22it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 39.39it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_8","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"solubility","direction":"maximize","threshold":0.5,"baseline":-4.2458,"value":-5.339199285520468,"passed":false,"improvement":-1.0933992855204684},{"stage":"admet","kind":"goals","property":"bbb","direction":"minimize","threshold":0.1,"baseline":0.8545,"value":0.9846227645874024,"passed":false,"improvement":-0.13012276458740235},{"stage":"admet","kind":"holds","property":"cyp3a4","tolerance":0.1,"direction":"increase","baseline":0.2452,"value":0.7257685184478759,"passed":false,"delta":0.48056851844787596},{"stage":"admet","kind":"holds","property":"clearance","tolerance":5.0,"direction":"increase","baseline":12.6918,"value":19.61611655327774,"passed":false,"delta":6.924316553277741}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_8","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"solubility","direction":"maximize","threshold":0.5,"baseline":-4.2458,"value":-5.339199285520468,"passed":false,"improvement":-1.0933992855204684},{"stage":"admet","kind":"goals","property":"bbb","direction":"minimize","threshold":0.1,"baseline":0.8545,"value":0.9846227645874024,"passed":false,"improvement":-0.13012276458740235},{"stage":"admet","kind":"holds","property":"cyp3a4","tolerance":0.1,"direction":"increase","baseline":0.2452,"value":0.7257685184478759,"passed":false,"delta":0.48056851844787596},{"stage":"admet","kind":"holds","property":"clearance","tolerance":5.0,"direction":"increase","baseline":12.6918,"value":19.61611655327774,"passed":false,"delta":6.924316553277741}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_8","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"solubility","direction":"maximize","threshold":0.5,"baseline":-4.2458,"value":-5.339199285520468,"passed":false,"improvement":-1.0933992855204684},{"stage":"admet","kind":"goals","property":"bbb","direction":"minimize","threshold":0.1,"baseline":0.8545,"value":0.9846227645874024,"passed":false,"improvement":-0.13012276458740235},{"stage":"admet","kind":"holds","property":"cyp3a4","tolerance":0.1,"direction":"increase","baseline":0.2452,"value":0.7257685184478759,"passed":false,"delta":0.48056851844787596},{"stage":"admet","kind":"holds","property":"clearance","tolerance":5.0,"direction":"increase","baseline":12.6918,"value":19.61611655327774,"passed":false,"delta":6.924316553277741}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_8","mode":"feedback","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_BRD4_8","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"solubility","direction":"maximize","threshold":0.5,"baseline":-4.2458,"value":-5.339199285520468,"passed":false,"improvement":-1.0933992855204684},{"stage":"admet","kind":"goals","property":"bbb","direction":"minimize","threshold":0.1,"baseline":0.8545,"value":0.9846227645874024,"passed":false,"improvement":-0.13012276458740235},{"stage":"admet","kind":"holds","property":"cyp3a4","tolerance":0.1,"direction":"increase","baseline":0.2452,"value":0.7257685184478759,"passed":false,"delta":0.48056851844787596},{"stage":"admet","kind":"holds","property":"clearance","tolerance":5.0,"direction":"increase","baseline":12.6918,"value":19.61611655327774,"passed":false,"delta":6.924316553277741}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1665.07it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 269.12it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 17.26it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 226.42it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 257.91it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 47.10it/s]
+{"event":"attempt","task_id":"smdd_004_BRD4_8","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"solubility","direction":"maximize","threshold":0.5,"baseline":-4.2458,"value":-5.325940866762939,"passed":false,"improvement":-1.0801408667629389},{"stage":"admet","kind":"goals","property":"bbb","direction":"minimize","threshold":0.1,"baseline":0.8545,"value":0.9699822306632996,"passed":false,"improvement":-0.11548223066329955},{"stage":"admet","kind":"holds","property":"cyp3a4","tolerance":0.1,"direction":"increase","baseline":0.2452,"value":0.7894486308097839,"passed":false,"delta":0.5442486308097839},{"stage":"admet","kind":"holds","property":"clearance","tolerance":5.0,"direction":"increase","baseline":12.6918,"value":19.99899818748598,"passed":false,"delta":7.30719818748598}]}
+[02:02:22] SMILES Parse Error: syntax error while parsing: C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12
+[02:02:22] SMILES Parse Error: check for mistakes around position 4:
+[02:02:22] C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc
+[02:02:22] ~~~^
+[02:02:22] SMILES Parse Error: Failed parsing SMILES 'C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12' for input: 'C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12'
+{"event":"attempt","task_id":"smdd_004_BRD4_9","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:02:22] SMILES Parse Error: syntax error while parsing: C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12
+[02:02:22] SMILES Parse Error: check for mistakes around position 4:
+[02:02:22] C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc
+[02:02:22] ~~~^
+[02:02:22] SMILES Parse Error: Failed parsing SMILES 'C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12' for input: 'C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12'
+{"event":"attempt","task_id":"smdd_004_BRD4_9","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:02:33] SMILES Parse Error: syntax error while parsing: C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12
+[02:02:33] SMILES Parse Error: check for mistakes around position 4:
+[02:02:33] C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc
+[02:02:33] ~~~^
+[02:02:33] SMILES Parse Error: Failed parsing SMILES 'C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12' for input: 'C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12'
+{"event":"attempt","task_id":"smdd_004_BRD4_9","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:02:43] SMILES Parse Error: syntax error while parsing: C[Nc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12]
+[02:02:43] SMILES Parse Error: check for mistakes around position 4:
+[02:02:43] C[Nc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12
+[02:02:43] ~~~^
+[02:02:43] SMILES Parse Error: Failed parsing SMILES 'C[Nc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12]' for input: 'C[Nc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(C)nnc12]'
+{"event":"attempt","task_id":"smdd_004_BRD4_9","mode":"feedback","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:02:54] SMILES Parse Error: syntax error while parsing: C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12
+[02:02:54] SMILES Parse Error: check for mistakes around position 4:
+[02:02:54] C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc
+[02:02:54] ~~~^
+[02:02:54] SMILES Parse Error: Failed parsing SMILES 'C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12' for input: 'C[Nc1cc(-c2cn(C(F)nc2Cc2ccccc2)nn2c(C)nnc12'
+{"event":"attempt","task_id":"smdd_004_BRD4_9","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:03:04] SMILES Parse Error: syntax error while parsing: C[Nc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(F)nnc12]
+[02:03:04] SMILES Parse Error: check for mistakes around position 4:
+[02:03:04] C[Nc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(F)nnc12
+[02:03:04] ~~~^
+[02:03:04] SMILES Parse Error: Failed parsing SMILES 'C[Nc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(F)nnc12]' for input: 'C[Nc1cc(-c2cn(C)nc2Cc2ccccc2)nn2c(F)nnc12]'
+{"event":"attempt","task_id":"smdd_004_BRD4_9","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_0","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_0","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_0","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_0","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_0","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_0","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+[02:04:01] Explicit valence for atom # 23 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_1","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:04:01] Explicit valence for atom # 23 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_1","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:04:14] Explicit valence for atom # 23 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_1","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:04:26] Explicit valence for atom # 23 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_1","mode":"feedback","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:04:40] Explicit valence for atom # 21 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_1","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:04:51] Explicit valence for atom # 23 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_1","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_14","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_14","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_14","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_14","mode":"feedback","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_14","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_14","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false},{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_2","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_2","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_2","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1749.81it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 288.53it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 19.63it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 175.00it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 220.98it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 38.20it/s]
+{"event":"attempt","task_id":"smdd_004_CYP19A1_2","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"bbb","direction":"minimize","threshold":0.1,"baseline":0.7002,"value":0.7371485233306885,"passed":false,"improvement":-0.03694852333068843},{"stage":"admet","kind":"holds","property":"solubility","tolerance":0.5,"direction":"decrease","baseline":-5.1684,"value":-6.222643716247964,"passed":false,"delta":-1.0542437162479636}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_2","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_2","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_5","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_5","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_5","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_5","mode":"feedback","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false},{"stage":"rdkit","condition":"brenk","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_5","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_5","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false},{"stage":"rdkit","condition":"brenk","passed":false}]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 2218.03it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 332.83it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 21.26it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 193.39it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 245.17it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 42.17it/s]
+{"event":"attempt","task_id":"smdd_004_CYP19A1_6","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"clearance","tolerance":5.0,"direction":"increase","baseline":93.5611,"value":100.13249524464182,"passed":false,"delta":6.5713952446418205}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_6","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"clearance","tolerance":5.0,"direction":"increase","baseline":93.5611,"value":100.13249524464182,"passed":false,"delta":6.5713952446418205}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_6","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_6","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"edit","condition":"Must change the original ligand"}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_6","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit","condition":"tanimoto","passed":false}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_6","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"holds","property":"clearance","tolerance":5.0,"direction":"increase","baseline":93.5611,"value":100.13249524464182,"passed":false,"delta":6.5713952446418205}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_7","mode":"independent","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_7","mode":"feedback","round":1,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_7","mode":"independent","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+SMILES to Mol:   0%|          | 0/1 [00:00<?, ?it/s]SMILES to Mol: 100%|██████████| 1/1 [00:00<00:00, 1484.18it/s]
+Computing physchem properties:   0%|          | 0/1 [00:00<?, ?it/s]Computing physchem properties: 100%|██████████| 1/1 [00:00<00:00, 290.69it/s]
+RDKit fingerprints:   0%|          | 0/1 [00:00<?, ?it/s]RDKit fingerprints: 100%|██████████| 1/1 [00:00<00:00, 18.85it/s]
+model ensembles:   0%|          | 0/2 [00:00<?, ?it/s]
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 197.47it/s]
+
+individual models:   0%|          | 0/5 [00:00<?, ?it/s][A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[A
+
+  0%|          | 0/1 [00:00<?, ?it/s][A[A
+
+                                     [A[Aindividual models: 100%|██████████| 5/5 [00:00<00:00, 180.97it/s]
+model ensembles: 100%|██████████| 2/2 [00:00<00:00, 37.02it/s]
+{"event":"attempt","task_id":"smdd_004_CYP19A1_7","mode":"feedback","round":2,"plan_valid":true,"local_pass":true,"pre_boltz_pass":false,"failed":[{"stage":"admet","kind":"goals","property":"bbb","direction":"maximize","threshold":0.1,"baseline":0.5567,"value":0.6324521899223328,"passed":false,"improvement":0.07575218992233279}]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_7","mode":"independent","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+{"event":"attempt","task_id":"smdd_004_CYP19A1_7","mode":"feedback","round":3,"plan_valid":true,"local_pass":true,"pre_boltz_pass":true,"failed":[]}
+[02:09:09] Explicit valence for atom # 22 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_8","mode":"independent","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:09:09] Explicit valence for atom # 22 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_8","mode":"feedback","round":1,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:09:22] Explicit valence for atom # 22 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_8","mode":"independent","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:09:34] Explicit valence for atom # 22 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_8","mode":"feedback","round":2,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:09:47] Explicit valence for atom # 22 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_8","mode":"independent","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+[02:10:00] Explicit valence for atom # 22 C, 5, is greater than permitted
+{"event":"attempt","task_id":"smdd_004_CYP19A1_8","mode":"feedback","round":3,"plan_valid":true,"local_pass":false,"pre_boltz_pass":false,"failed":[{"stage":"rdkit_parse","reason":"Invalid molecular graph or SMILES"}]}
+{"status":"rdkit_admet_complete","split":"validation","cases":34,"actual_llm_requests":170,"tokens":{"input_tokens":453978,"output_tokens":17186,"total_tokens":471164},"generation_seconds":1832.8175531686284,"invocation_seconds":1854.61119633005,"comparison":{"independent":{"cases":34,"budgeted_proposals":102,"any_valid_graph":31,"any_changed_local_pass":18,"selected_pre_boltz_pass":8,"first_proposal_pre_boltz_pass":7,"plan_valid_attempts":102,"valid_graph_attempts":91,"changed_local_pass_attempts":43,"admet_evaluated_attempts":43,"full_success_confirmed":0,"full_failure_confirmed":26,"unmeasured_binding":8},"feedback":{"cases":34,"budgeted_proposals":102,"any_valid_graph":31,"any_changed_local_pass":22,"selected_pre_boltz_pass":7,"first_proposal_pre_boltz_pass":7,"plan_valid_attempts":102,"valid_graph_attempts":92,"changed_local_pass_attempts":41,"admet_evaluated_attempts":41,"full_success_confirmed":0,"full_failure_confirmed":27,"unmeasured_binding":7}},"limitations":["No weight updates, adapters, encoder, or witness-derived prompt information.","Each arm has the same proposal budget; round 1 is shared, not two model requests.","Independent proposals change only proposal_number to vary deterministic-seed prompts.","Feedback arm changes both current substrate and actual tool feedback; this is a bundled intervention.","Edit hypotheses and declared atom locations are not independently verified causal explanations.","RDKit/ADMET pass is only a pre-Boltz gate, not full optimization success.","ADMET and Boltz are predictions, not experimental measurements."],"unique_boltz_jobs":8}

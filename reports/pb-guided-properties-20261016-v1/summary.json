@@ -1,0 +1,206 @@
+{
+  "arms": {
+    "UFF_targeted": {
+      "candidates": 41,
+      "graph_preserved": 40,
+      "held_candidates": 41,
+      "held_max_drift_angstrom": 0.0,
+      "new_failures_in_selected": {
+        "minimum_distance_to_protein": 2
+      },
+      "paired_delta_vina_mean": 0.7912083333333332,
+      "paired_delta_vina_median": 0.09149999999999947,
+      "pb_recovered": 9,
+      "pb_valid_and_vina_improved": 0,
+      "pb_valid_delta_vina_median": 0.27700000000000014,
+      "pb_valid_vina_pairs": 6,
+      "remaining_failures_in_selected": {
+        "aromatic_ring_flatness": 1,
+        "bond_angles": 4,
+        "double_bond_flatness": 21,
+        "internal_energy": 1,
+        "internal_steric_clash": 5,
+        "minimum_distance_to_protein": 3
+      },
+      "selected_graph_preserved": 40,
+      "selected_max_descriptor_delta": {
+        "hba": 0.0,
+        "hbd": 0.0,
+        "logp": 0.0,
+        "mw": 0.0,
+        "qed": 0.0,
+        "ro5_violations": 0.0,
+        "rotatable_bonds": 0.0,
+        "sa": 0.0,
+        "tpsa": 0.0
+      },
+      "vina_after_median": -9.2745,
+      "vina_before_median": -9.4545,
+      "vina_improved": 4,
+      "vina_pairs": 24,
+      "vina_unchanged": 0,
+      "vina_worsened": 20
+    },
+    "random": {
+      "candidates": 328,
+      "graph_preserved": 328,
+      "held_candidates": 328,
+      "held_max_drift_angstrom": 0.0,
+      "new_failures_in_selected": {
+        "bond_lengths": 1
+      },
+      "paired_delta_vina_mean": 0.013249999999999984,
+      "paired_delta_vina_median": 0.015500000000000291,
+      "pb_recovered": 8,
+      "pb_valid_and_vina_improved": 2,
+      "pb_valid_delta_vina_median": 0.03700000000000081,
+      "pb_valid_vina_pairs": 5,
+      "remaining_failures_in_selected": {
+        "aromatic_ring_flatness": 1,
+        "bond_angles": 5,
+        "bond_lengths": 1,
+        "double_bond_flatness": 21,
+        "internal_energy": 2,
+        "internal_steric_clash": 6,
+        "minimum_distance_to_protein": 1
+      },
+      "selected_graph_preserved": 41,
+      "selected_max_descriptor_delta": {
+        "hba": 0.0,
+        "hbd": 0.0,
+        "logp": 0.0,
+        "mw": 0.0,
+        "qed": 0.0,
+        "ro5_violations": 0.0,
+        "rotatable_bonds": 0.0,
+        "sa": 0.0,
+        "tpsa": 0.0
+      },
+      "vina_after_median": -9.434999999999999,
+      "vina_before_median": -9.4545,
+      "vina_improved": 9,
+      "vina_pairs": 24,
+      "vina_unchanged": 0,
+      "vina_worsened": 15
+    },
+    "targeted": {
+      "candidates": 328,
+      "graph_preserved": 327,
+      "held_candidates": 328,
+      "held_max_drift_angstrom": 0.0,
+      "new_failures_in_selected": {
+        "bond_lengths": 1
+      },
+      "paired_delta_vina_mean": 0.028916666666666552,
+      "paired_delta_vina_median": 0.02300000000000013,
+      "pb_recovered": 9,
+      "pb_valid_and_vina_improved": 2,
+      "pb_valid_delta_vina_median": 0.03700000000000081,
+      "pb_valid_vina_pairs": 5,
+      "remaining_failures_in_selected": {
+        "aromatic_ring_flatness": 1,
+        "bond_angles": 5,
+        "bond_lengths": 1,
+        "double_bond_flatness": 21,
+        "internal_energy": 2,
+        "internal_steric_clash": 5,
+        "minimum_distance_to_protein": 1
+      },
+      "selected_graph_preserved": 41,
+      "selected_max_descriptor_delta": {
+        "hba": 0.0,
+        "hbd": 0.0,
+        "logp": 0.0,
+        "mw": 0.0,
+        "qed": 0.0,
+        "ro5_violations": 0.0,
+        "rotatable_bonds": 0.0,
+        "sa": 0.0,
+        "tpsa": 0.0
+      },
+      "vina_after_median": -9.286,
+      "vina_before_median": -9.4545,
+      "vina_improved": 8,
+      "vina_pairs": 24,
+      "vina_unchanged": 0,
+      "vina_worsened": 16
+    },
+    "whole": {
+      "candidates": 328,
+      "graph_preserved": 325,
+      "held_candidates": 0,
+      "held_max_drift_angstrom": null,
+      "new_failures_in_selected": {},
+      "paired_delta_vina_mean": 0.30154166666666654,
+      "paired_delta_vina_median": 0.25,
+      "pb_recovered": 15,
+      "pb_valid_and_vina_improved": 1,
+      "pb_valid_delta_vina_median": 0.3089999999999993,
+      "pb_valid_vina_pairs": 9,
+      "remaining_failures_in_selected": {
+        "aromatic_ring_flatness": 1,
+        "bond_angles": 2,
+        "bond_lengths": 1,
+        "double_bond_flatness": 18,
+        "internal_energy": 1,
+        "internal_steric_clash": 4
+      },
+      "selected_graph_preserved": 41,
+      "selected_max_descriptor_delta": {
+        "hba": 0.0,
+        "hbd": 0.0,
+        "logp": 0.0,
+        "mw": 0.0,
+        "qed": 0.0,
+        "ro5_violations": 0.0,
+        "rotatable_bonds": 0.0,
+        "sa": 0.0,
+        "tpsa": 0.0
+      },
+      "vina_after_median": -9.128,
+      "vina_before_median": -9.4545,
+      "vina_improved": 3,
+      "vina_pairs": 24,
+      "vina_unchanged": 0,
+      "vina_worsened": 21
+    }
+  },
+  "candidate_count": 1025,
+  "cases": 100,
+  "failure_selection_reasons": {
+    "Missing measurement or no connected input graph for pose-only repair": 11,
+    "No candidate region contains a diagnosed failing atom": 10,
+    "No eligible connected ring-preserving local region": 1,
+    "No localized PB failure; global energy/overlap/loading failures are not assigned to a fragment": 16
+  },
+  "first_generated_failed_checks": {
+    "all_atoms_connected": 11,
+    "aromatic_ring_flatness": 5,
+    "bond_angles": 7,
+    "bond_lengths": 6,
+    "double_bond_flatness": 30,
+    "inchi_convertible": 1,
+    "internal_energy": 20,
+    "internal_steric_clash": 10,
+    "minimum_distance_to_protein": 1
+  },
+  "random_equals_targeted": 29,
+  "receptor_failed_cases": [
+    "5eqq",
+    "2std",
+    "6bl1",
+    "5efh",
+    "6cvw",
+    "6dh3",
+    "5vi6",
+    "4nga",
+    "4zpe",
+    "1m13",
+    "4im0",
+    "1zfk",
+    "5yve"
+  ],
+  "receptor_success": 18,
+  "repair_inputs": 41,
+  "repair_pockets": 31
+}

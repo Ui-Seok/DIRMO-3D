@@ -140,6 +140,9 @@ class Proposal(Schema):
 
 class ActionKind(str, Enum):
     CHEMICAL_EDIT = "CHEMICAL_EDIT"
+    # Free a region and let the generator decide what goes there. The product graph is an
+    # OUTPUT of this action, unlike CHEMICAL_EDIT where the caller specifies it exactly.
+    REDESIGN_REGION = "REDESIGN_REGION"
     POSE_RESAMPLE = "POSE_RESAMPLE"
     CHANGE_GENERATION_CONDITION = "CHANGE_GENERATION_CONDITION"
     STOP = "STOP"
@@ -147,16 +150,80 @@ class ActionKind(str, Enum):
 
 
 class GenerationParameters(Schema):
-    prior: Literal["random"] = "random"
+    # "reference" starts integration from the DIRMO reference conformer instead of a
+    # Gaussian draw. Upstream FLOWR's own "conformer" mode is a different mechanism
+    # (its own cached ETKDG generator) and is not implemented here.
+    prior: Literal["random", "reference", "fragment"] = "random"
+    # Seeded isotropic displacement of the reference prior, in angstrom. The reference
+    # conformer is deterministic and this checkpoint integrates coordinates with
+    # integration-coord-noise-std=0, so without this two seeds are the same draw.
+    # 0.3 matches the checkpoint's train-ligand-coord-noise-std.
+    prior_noise_std: float = Field(default=0.0, ge=0, le=2.0)
+    # Concentrate extra displacement on atoms a measurement flagged, instead of shaking the
+    # whole ligand: the atoms left alone anchor the molecule while the model re-places the
+    # few that clash or strain. Empty list means uniform prior_noise_std everywhere.
+    prior_noise_atom_maps: list[int] = Field(default_factory=list)
+    prior_noise_focus_std: float = Field(default=0.0, ge=0, le=4.0)
+    # "fragment": hold the listed atoms' measured coordinates AND graph, and let the model
+    # redesign the rest -- elements, charges and the bonds that touch them. Unlike the
+    # whole-graph priors this is a mode the checkpoint was actually trained on, but it
+    # means the product graph is an OUTPUT, not something the caller specifies.
+    prior_free_atom_maps: list[int] = Field(default_factory=list)
     solver: Literal["euler"] = "euler"
+
+    @model_validator(mode="after")
+    def focused_noise_is_consistent(self):
+        if self.prior_noise_atom_maps:
+            if any(v <= 0 for v in self.prior_noise_atom_maps):
+                raise ValueError("prior_noise_atom_maps must be positive atom map IDs")
+            if len(set(self.prior_noise_atom_maps)) != len(self.prior_noise_atom_maps):
+                raise ValueError("Repeated atom maps in prior_noise_atom_maps")
+            if not self.prior_noise_focus_std:
+                raise ValueError("prior_noise_atom_maps needs a nonzero prior_noise_focus_std")
+        elif self.prior_noise_focus_std:
+            raise ValueError("prior_noise_focus_std needs prior_noise_atom_maps")
+        if (self.prior == "fragment") != bool(self.prior_free_atom_maps):
+            raise ValueError("The fragment prior needs prior_free_atom_maps, and only it may carry them")
+        if self.prior_free_atom_maps and (
+                any(v <= 0 for v in self.prior_free_atom_maps)
+                or len(set(self.prior_free_atom_maps)) != len(self.prior_free_atom_maps)):
+            raise ValueError("prior_free_atom_maps must be distinct positive atom map IDs")
+        return self
     integration_steps: int = Field(default=64, ge=1, le=256)
     # Unsupported fields (e.g. QED guidance) are rejected by extra='forbid'.
+
+
+def kernel_identity(kernel_base: dict, parameters: GenerationParameters, pocket_sha256: str) -> dict:
+    """The complete generation kernel.
+
+    The FM worker records this with every draw and the orchestrator recomputes it to
+    gate the learned router and to deduplicate requests. Both sides must agree, so the
+    composition lives here rather than in either of them. Anything that changes what a
+    draw means belongs in this dict: outcomes under different kernels are different
+    experiments and must never share reward labels.
+    """
+    return {**kernel_base, "integration_steps": parameters.integration_steps,
+            "prior": parameters.prior, "prior_noise_std": parameters.prior_noise_std,
+            "pocket_sha256": pocket_sha256}
+
+
+def generation_kernel(kernel: dict) -> dict:
+    """The kernel without the pocket: how a draw is made, not which task it was made for.
+
+    Reward labels from different generation conditions must never mix, but labels from
+    different pockets must mix, because generalising across pockets is the point of
+    grouped cross-validation. ``kernel_identity`` keeps the pocket so a repeated
+    graph/kernel/seed request is still recognised as a repeat; this view drops it so one
+    dataset can span many targets under one generation condition.
+    """
+    return {key: value for key, value in kernel.items() if key != "pocket_sha256"}
 
 
 class Action(Schema):
     action_id: str
     kind: ActionKind
     candidate: EditCandidate | None = None
+    region: list[int] = Field(default_factory=list)
     generation: GenerationParameters = Field(default_factory=GenerationParameters)
     seeds: list[int] = Field(default_factory=lambda: [42], min_length=1, max_length=16)
     evidence_ids: list[str] = Field(default_factory=list)
@@ -166,6 +233,10 @@ class Action(Schema):
     def action_fields(self):
         if (self.kind == ActionKind.CHEMICAL_EDIT) != (self.candidate is not None):
             raise ValueError("CHEMICAL_EDIT requires a candidate; other actions cannot carry one")
+        if (self.kind == ActionKind.REDESIGN_REGION) != bool(self.region):
+            raise ValueError("REDESIGN_REGION requires a region; other actions cannot carry one")
+        if self.region and sorted(self.region) != sorted(self.generation.prior_free_atom_maps):
+            raise ValueError("The action's region must be the generation's free atom maps")
         if len(set(self.seeds)) != len(self.seeds):
             raise ValueError("Repeated seeds are not independent draws")
         return self

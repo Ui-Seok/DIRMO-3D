@@ -1,0 +1,104 @@
+{
+  "ineligible_reasons": {
+    "Missing measurement or no connected input graph for pose-only repair": 11,
+    "No localized PB failure; global energy/overlap/loading failures are not assigned to a fragment": 16,
+    "No candidate region contains a diagnosed failing atom": 10,
+    "No eligible connected ring-preserving local region": 1
+  },
+  "all_events_touched": 39,
+  "all_events_fully_free": 5,
+  "sources_with_held_violation_events": 2,
+  "remaining_pb_failures": {
+    "targeted": {
+      "remaining": {
+        "double_bond_flatness": 21,
+        "bond_angles": 5,
+        "aromatic_ring_flatness": 1,
+        "minimum_distance_to_protein": 1,
+        "internal_steric_clash": 5,
+        "internal_energy": 2,
+        "bond_lengths": 1
+      },
+      "new_failed": {
+        "bond_lengths": 1
+      }
+    },
+    "random": {
+      "remaining": {
+        "double_bond_flatness": 21,
+        "bond_angles": 5,
+        "aromatic_ring_flatness": 1,
+        "minimum_distance_to_protein": 1,
+        "internal_steric_clash": 6,
+        "internal_energy": 2,
+        "bond_lengths": 1
+      },
+      "new_failed": {
+        "bond_lengths": 1
+      }
+    },
+    "whole": {
+      "remaining": {
+        "double_bond_flatness": 18,
+        "bond_angles": 2,
+        "aromatic_ring_flatness": 1,
+        "bond_lengths": 1,
+        "internal_steric_clash": 4,
+        "internal_energy": 1
+      },
+      "new_failed": {}
+    },
+    "UFF_targeted": {
+      "remaining": {
+        "double_bond_flatness": 21,
+        "minimum_distance_to_protein": 3,
+        "bond_angles": 4,
+        "aromatic_ring_flatness": 1,
+        "internal_steric_clash": 5,
+        "internal_energy": 1
+      },
+      "new_failed": {
+        "minimum_distance_to_protein": 2
+      }
+    }
+  },
+  "whole_only_success": [
+    [
+      "1m13",
+      "015"
+    ],
+    [
+      "1nkm",
+      "004"
+    ],
+    [
+      "1vru",
+      "013"
+    ],
+    [
+      "3fty",
+      "000"
+    ],
+    [
+      "4rsp",
+      "000"
+    ],
+    [
+      "5efh",
+      "001"
+    ],
+    [
+      "5jg1",
+      "005"
+    ]
+  ],
+  "targeted_only_success": [
+    [
+      "3d1y",
+      "005"
+    ]
+  ],
+  "native_failed_complexes": 11,
+  "native_contact_failed": 10,
+  "native_energy_failed": 2
+}

@@ -1,0 +1,3 @@
+{"status": "checkpoint_probe_complete", "checkpoint": "base", "batch_size": 16}
+{"status": "checkpoint_probe_complete", "checkpoint": "v2", "batch_size": 16}
+{"status": "gpu_probes_complete", "output": "/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_batch16_probe_v1"}

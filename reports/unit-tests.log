@@ -5,6 +5,8 @@ test_wilson_small_sample_uncertainty (test_core.BudgetAndGPUTests.test_wilson_sm
 test_ambiguous_maps_are_rejected (test_core.ChemistryTests.test_ambiguous_maps_are_rejected) ... ok
 test_charge_stereo_and_connectivity_mismatches (test_core.ChemistryTests.test_charge_stereo_and_connectivity_mismatches) ... ok
 test_invalid_edit_and_protection (test_core.ChemistryTests.test_invalid_edit_and_protection) ... ok
+test_mapped_sdf_round_trip_preserves_physical_stereochemistry (test_core.ChemistryTests.test_mapped_sdf_round_trip_preserves_physical_stereochemistry) ... [17:18:46] UFFTYPER: Unrecognized atom type: S_5+4 (1)
+ok
 test_permuted_atom_order_and_aromatic_normalization (test_core.ChemistryTests.test_permuted_atom_order_and_aromatic_normalization) ... ok
 test_real_edit_and_mapping (test_core.ChemistryTests.test_real_edit_and_mapping) ... ok
 test_schema_rejects_code_and_unsupported_guidance (test_core.ChemistryTests.test_schema_rejects_code_and_unsupported_guidance) ... ok
@@ -23,27 +25,235 @@ test_mlp_artifact_roundtrip_and_kernel_separation (test_core.TrainingTests.test_
 test_single_target_has_no_generalization_claim (test_core.TrainingTests.test_single_target_has_no_generalization_claim) ... ok
 test_standardization_uses_only_train_rows (test_core.TrainingTests.test_standardization_uses_only_train_rows) ... ok
 test_target_and_state_branches_never_cross_folds (test_core.TrainingTests.test_target_and_state_branches_never_cross_folds) ... ok
-test_failed_edited_graph_is_recovered_with_next_draw (test_executor.ExecutorTests.test_failed_edited_graph_is_recovered_with_next_draw) ... ok
-test_llm_parse_retries_are_bounded_and_charged (test_executor.ExecutorTests.test_llm_parse_retries_are_bounded_and_charged) ... ok
-test_posebusters_renamed_columns_are_used (test_executor.ExecutorTests.test_posebusters_renamed_columns_are_used) ... /home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/__init__.py:20: DeprecationWarning: The module rdkit.Chem.MolStandardize.standardize is deprecated and will be removed in the next release.
-  from .standardize import (Standardizer, canonicalize_tautomer_smiles,
-/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/standardize.py:23: DeprecationWarning: The module rdkit.Chem.MolStandardize.charge is deprecated and will be removed in the next release.
-  from .charge import ACID_BASE_PAIRS, CHARGE_CORRECTIONS, Reionizer, Uncharger
-/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/standardize.py:24: DeprecationWarning: The module rdkit.Chem.MolStandardize.fragment is deprecated and will be removed in the next release.
-  from .fragment import PREFER_ORGANIC, FragmentRemover, LargestFragmentChooser
-/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/standardize.py:25: DeprecationWarning: The module rdkit.Chem.MolStandardize.metal is deprecated and will be removed in the next release.
-  from .metal import MetalDisconnector
-/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/standardize.py:26: DeprecationWarning: The module rdkit.Chem.MolStandardize.normalize is deprecated and will be removed in the next release.
-  from .normalize import MAX_RESTARTS, NORMALIZATIONS, Normalizer
-/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/standardize.py:27: DeprecationWarning: The module rdkit.Chem.MolStandardize.tautomer is deprecated and will be removed in the next release.
-  from .tautomer import (MAX_TAUTOMERS, TAUTOMER_SCORES, TAUTOMER_TRANSFORMS, TautomerCanonicalizer,
-/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/__init__.py:22: DeprecationWarning: The module rdkit.Chem.MolStandardize.validate is deprecated and will be removed in the next release.
-  from .validate import Validator, validate_smiles
-/home/uslee/miniconda3/envs/flowr/lib/python3.11/site-packages/rdkit/Chem/MolStandardize/validate.py:24: DeprecationWarning: The module rdkit.Chem.MolStandardize.validations is deprecated and will be removed in the next release.
-  from .validations import VALIDATIONS
+test_chemical_rejection_retries_without_accepting_unmapped_smiles (test_executor.ExecutorTests.test_chemical_rejection_retries_without_accepting_unmapped_smiles) ... [17:18:52] Explicit valence for atom # 3 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 F, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 F, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Cl, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Cl, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Br, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Br, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 F, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 Cl, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 Br, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 F, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Cl, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Br, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
 ok
+test_collection_offsets_add_independent_draws_and_skip_existing_requests (test_executor.ExecutorTests.test_collection_offsets_add_independent_draws_and_skip_existing_requests) ... [17:18:52] Explicit valence for atom # 3 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 F, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 F, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Cl, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Cl, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Br, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Br, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 F, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 Cl, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 Br, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 F, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Cl, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 3 Br, 2, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:52] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 F, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 F, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Cl, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Cl, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Br, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Br, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 F, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 Cl, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 Br, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 F, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Cl, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Br, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 F, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 F, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Cl, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Cl, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Br, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Br, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 F, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 Cl, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 Br, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 F, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Cl, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Br, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+ok
+test_failed_edited_graph_is_recovered_with_next_draw (test_executor.ExecutorTests.test_failed_edited_graph_is_recovered_with_next_draw) ... ok
+test_llm_parse_retries_are_bounded_and_charged (test_executor.ExecutorTests.test_llm_parse_retries_are_bounded_and_charged) ... [17:18:53] Explicit valence for atom # 3 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 F, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 F, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Cl, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Cl, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Br, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Br, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 F, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 Cl, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 Br, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 F, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Cl, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 3 Br, 2, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 1 C, 5, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 3, is greater than permitted
+[17:18:53] Explicit valence for atom # 2 O, 4, is greater than permitted
+ok
+test_posebusters_renamed_columns_are_used (test_executor.ExecutorTests.test_posebusters_renamed_columns_are_used) ... ok
+test_prior_noise_is_rejected_for_the_random_prior (test_executor.FlowrPriorTests.test_prior_noise_is_rejected_for_the_random_prior) ... ok
+test_random_prior_without_optional_features_preserves_native_sampling (test_executor.FlowrPriorTests.test_random_prior_without_optional_features_preserves_native_sampling) ... /home/uslee/miniconda3/envs/dirmo/lib/python3.12/site-packages/MDAnalysis/topology/tables.py:52: DeprecationWarning: Deprecated in version 2.8.0
+MDAnalysis.topology.tables has been moved to MDAnalysis.guesser.tables. This import point will be removed in MDAnalysis version 3.0.0
+  warnings.warn(wmsg, category=DeprecationWarning)
+/home/uslee/miniconda3/envs/dirmo/lib/python3.12/site-packages/torch/jit/_script.py:1488: DeprecationWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+ok
+test_reference_prior_noise_is_seeded_and_bounded (test_executor.FlowrPriorTests.test_reference_prior_noise_is_seeded_and_bounded) ... ok
+test_reference_prior_starts_from_the_reference_coordinates (test_executor.FlowrPriorTests.test_reference_prior_starts_from_the_reference_coordinates) ... ok
+test_unknown_prior_is_a_capability_error (test_executor.FlowrPriorTests.test_unknown_prior_is_a_capability_error) ... ok
+test_collection_records_candidate_source (test_executor.OracleArmTests.test_collection_records_candidate_source) ... ok
+test_executor_revalidation_accepts_an_extra_candidate (test_executor.OracleArmTests.test_executor_revalidation_accepts_an_extra_candidate) ... ok
+test_extra_candidates_are_offered_past_the_planner_cap (test_executor.OracleArmTests.test_extra_candidates_are_offered_past_the_planner_cap) ... ok
+test_extra_candidates_work_without_any_proposal (test_executor.OracleArmTests.test_extra_candidates_work_without_any_proposal) ... ok
+test_generation_kernel_drops_the_pocket_but_the_request_kernel_keeps_it (test_executor.OracleArmTests.test_generation_kernel_drops_the_pocket_but_the_request_kernel_keeps_it) ... ok
+test_the_loaded_mode_masks_actions_it_cannot_execute (test_executor.OracleArmTests.test_the_loaded_mode_masks_actions_it_cannot_execute) ... ok
+test_two_sources_proposing_one_graph_yield_one_action (test_executor.OracleArmTests.test_two_sources_proposing_one_graph_yield_one_action) ... ok
 
 ----------------------------------------------------------------------
-Ran 28 tests in 5.490s
+Ran 43 tests in 9.206s
 
 OK

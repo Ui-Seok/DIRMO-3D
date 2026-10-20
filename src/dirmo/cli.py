@@ -25,14 +25,16 @@ def load_cases(path: str):
     return cases
 
 
-def policy(name, artifact=None):
+def policy(name, artifact=None, cost_weight=None):
     from .routing.learned import LearnedRouter
     from .routing.policies import FixedActionRouter, FixedSequenceRouter, LLMRouterBaseline, RuleRouter
     from .schemas import ActionKind
     if name == "learned":
         if not artifact:
             raise ValueError("--router-model is required for learned routing")
-        return LearnedRouter(artifact)
+        if cost_weight is None:
+            return LearnedRouter(artifact)
+        return LearnedRouter(artifact, cost_weight)
     return {"rule": RuleRouter(), "llm": LLMRouterBaseline(), "sequence": FixedSequenceRouter(),
             "edit": FixedActionRouter(ActionKind.CHEMICAL_EDIT),
             "pose": FixedActionRouter(ActionKind.POSE_RESAMPLE)}[name]
@@ -61,14 +63,25 @@ def main(argv=None):
         if command == "optimize":
             sub.add_argument("--router", choices=["rule", "learned", "llm", "sequence", "edit", "pose"], default="rule")
             sub.add_argument("--router-model")
+            sub.add_argument("--router-cost-weight", type=float,
+                             help="Learned routing only: utility charged per wall-clock second. "
+                                  "Must be set against the objective in use; see LearnedRouter.")
         if command == "collect":
             sub.add_argument("--dataset", required=True)
             sub.add_argument("--seed-offset", type=int, default=0,
                              help="Nonnegative offset from config.seed for a new collection; workers stay loaded")
+            sub.add_argument("--regions", type=int, default=0,
+                             help="Also offer N REDESIGN_REGION actions: free a substituent and let "
+                                  "the generator choose what goes there")
+            sub.add_argument("--oracle-edits", type=int, default=0,
+                             help="Also run the top-N enumerated QED-improving edits beside the planner's "
+                                  "candidates, so edit value and planner quality can be told apart")
         if command == "compare":
             sub.add_argument("--policies", nargs="+", choices=["rule", "learned", "llm", "sequence", "edit", "pose"],
                              default=["rule", "edit", "pose", "sequence"])
             sub.add_argument("--router-model")
+            sub.add_argument("--router-cost-weight", type=float,
+                             help="Learned routing only: utility charged per wall-clock second.")
     train = commands.add_parser("train-router")
     train.add_argument("--dataset", required=True)
     train.add_argument("--output", required=True)
@@ -79,6 +92,10 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if args.command == "collect" and args.seed_offset < 0:
         parser.error("--seed-offset must be nonnegative")
+    if args.command == "collect" and not 0 <= args.oracle_edits <= 16:
+        parser.error("--oracle-edits must be between 0 and 16")
+    if args.command == "collect" and not 0 <= args.regions <= 8:
+        parser.error("--regions must be between 0 and 8")
     from .config import load_config
     from .io import write_json
     config = load_config(args.config)
@@ -130,29 +147,61 @@ def main(argv=None):
                 if "llm" not in active or "fm" not in active:
                     raise ValueError("Both workers must be healthy before optimization/collection/comparison")
             results = []
+            # A sweep over many cases must not lose hours of measured work to one bad case,
+            # and a restart must not refuse the output directories it already filled.
+            marker = {"collect": "branch_coverage.json", "optimize": "result.json",
+                      "compare": "comparison.json", "evaluate-initial": "initial_evaluation.json"}[args.command]
+            consecutive = 0
             for case in cases:
                 output = Path(args.output) / case.case_id
-                if args.command == "compare":
-                    comparisons = []
-                    for name in args.policies:
-                        run = Run(case, config, output / name)
-                        result = optimize(run, active["fm"], active["llm"], policy(name, args.router_model))
-                        comparisons.append({"policy": name, "result": result})
-                    result = {"case_id": case.case_id, "policies": comparisons,
-                              "protocol": "same frozen executor/objective/seed/caps; measured actual costs reported",
-                              "limitation": "One case/seed is not evidence of policy superiority"}
-                    write_json(output / "comparison.json", result)
-                else:
-                    run = Run(case, config, output, resume=getattr(args, "resume", False))
-                    if args.command == "evaluate-initial":
-                        result = run.state.original_ligand.observation.model_dump(mode="json")
-                        write_json(output / "initial_evaluation.json", result)
-                    elif args.command == "collect":
-                        from .data.collect import collect
-                        result = collect(run, active["fm"], active["llm"], args.dataset, args.seed_offset)
+                finished = output / marker
+                if finished.is_file():
+                    results.append({"case_id": case.case_id, "output": str(output.resolve()),
+                                    "status": "already_complete",
+                                    "result": json.loads(finished.read_text())})
+                    continue
+                try:
+                    if args.command == "compare":
+                        comparisons = []
+                        for name in args.policies:
+                            run = Run(case, config, output / name)
+                            result = optimize(run, active["fm"], active["llm"],
+                                              policy(name, args.router_model, args.router_cost_weight))
+                            comparisons.append({"policy": name, "result": result,
+                                                "router_cost_weight": args.router_cost_weight
+                                                if name == "learned" else None})
+                        result = {"case_id": case.case_id, "policies": comparisons,
+                                  "protocol": "same frozen executor/objective/seed/caps; measured actual costs reported",
+                                  "limitation": "One case/seed is not evidence of policy superiority"}
+                        write_json(output / "comparison.json", result)
                     else:
-                        result = optimize(run, active["fm"], active["llm"], policy(args.router, args.router_model))
-                results.append({"case_id": case.case_id, "output": str(output.resolve()), "result": result})
+                        run = Run(case, config, output, resume=getattr(args, "resume", False))
+                        if args.command == "evaluate-initial":
+                            result = run.state.original_ligand.observation.model_dump(mode="json")
+                            write_json(output / "initial_evaluation.json", result)
+                        elif args.command == "collect":
+                            from .data.collect import collect
+                            result = collect(run, active["fm"], active["llm"], args.dataset,
+                                                 args.seed_offset, args.oracle_edits, args.regions)
+                        else:
+                            router = policy(args.router, args.router_model, args.router_cost_weight)
+                            result = optimize(run, active["fm"], active["llm"], router)
+                            result["routing"] = {"policy": args.router, "router_model": args.router_model,
+                                                 "cost_weight": getattr(router, "cost_weight", None)}
+                            write_json(output / "result.json", result)
+                    results.append({"case_id": case.case_id, "output": str(output.resolve()),
+                                    "status": "ok", "result": result})
+                    consecutive = 0
+                except Exception as exc:
+                    # Recorded, never retried silently. A systematic failure (a dead worker,
+                    # say) shows up as a run of these, so stop rather than burn the budget.
+                    results.append({"case_id": case.case_id, "output": str(output.resolve()),
+                                    "status": "failed", "reason": f"{type(exc).__name__}: {exc}"})
+                    consecutive += 1
+                    if consecutive >= 5:
+                        results.append({"status": "aborted", "reason": "5 consecutive case failures; "
+                                        "inspect the worker logs before resuming"})
+                        break
             result = results
         print(json.dumps(result, indent=2, allow_nan=False))
     except (ValueError, RuntimeError, OSError) as exc:

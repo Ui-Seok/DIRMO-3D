@@ -1,0 +1,47 @@
+{
+  "llm": {
+    "python": "/home/uslee/miniconda3/envs/dirmo-llm/bin/python",
+    "gpu": "1",
+    "port": 8765,
+    "minimum_free_mib": 24000,
+    "backend": "qwen3.5",
+    "model_path": "/LocalData1/uslee/checkpoints/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "dtype": "bfloat16",
+    "quantization": "none",
+    "thinking": false,
+    "context_cap": 12288,
+    "output_cap": 2048,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "parsing_retries": 2
+  },
+  "fm": {
+    "python": "/home/uslee/miniconda3/envs/dirmo/bin/python",
+    "gpu": "4",
+    "port": 8766,
+    "minimum_free_mib": 40000,
+    "repo_path": "/home/uslee/code/flowr_root",
+    "repo_revision": "739a33c2aab74d074dd24605b9a2e34dc809ae9c",
+    "checkpoint_path": "/LocalData1/uslee/checkpoints/FLOWR_root/flowr_root_base_spindr.ckpt",
+    "checkpoint_sha256": null,
+    "max_atoms": 64,
+    "max_pocket_atoms": 1000,
+    "parameters": {
+      "prior": "reference",
+      "solver": "euler",
+      "integration_steps": 64,
+      "prior_noise_std": 0.3
+    },
+    "inpaint_mode": "fragment"
+  },
+  "evaluation": {
+    "posebusters": true,
+    "vina": true,
+    "interactions": false
+  },
+  "runtime_dir": "worker-runtime",
+  "run_root": "runs",
+  "seed": 42
+}

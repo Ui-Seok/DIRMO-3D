@@ -1,0 +1,217 @@
+{
+  "run": "runs/smdd_lora_02",
+  "report": {
+    "status": "trained",
+    "base_validation_loss": 1.0930028238598846,
+    "best_validation_loss": 0.5998240723476831,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.6016834402347312,
+        "validation_loss": 0.5998240723476831
+      }
+    ],
+    "base": {
+      "rows": 8,
+      "counts": {
+        "json_valid": 1,
+        "smiles_valid": 0,
+        "local_hard_constraints_passed": 0,
+        "changed": 0,
+        "witness_exact_match": 0
+      },
+      "rates": {
+        "json_valid": 0.125,
+        "smiles_valid": 0.0,
+        "local_hard_constraints_passed": 0.0,
+        "changed": 0.0,
+        "witness_exact_match": 0.0
+      },
+      "oracle_goal_success": null,
+      "oracle_hold_success": null,
+      "boltz_binding_success": null
+    },
+    "adapter": {
+      "rows": 8,
+      "counts": {
+        "json_valid": 8,
+        "smiles_valid": 2,
+        "local_hard_constraints_passed": 0,
+        "changed": 2,
+        "witness_exact_match": 0
+      },
+      "rates": {
+        "json_valid": 1.0,
+        "smiles_valid": 0.25,
+        "local_hard_constraints_passed": 0.0,
+        "changed": 0.25,
+        "witness_exact_match": 0.0
+      },
+      "oracle_goal_success": null,
+      "oracle_hold_success": null,
+      "boltz_binding_success": null
+    },
+    "trainable_parameters": 9056256,
+    "peak_memory_gib": 18.950812816619873,
+    "seconds": 1372.0499418559484,
+    "settings": {
+      "args": {
+        "model": "/LocalData1/uslee/checkpoints/Qwen3.5-9B",
+        "data": "runs/smdd_lora_02/data",
+        "output": "runs/smdd_lora_02/training",
+        "epochs": 1,
+        "rank": 8,
+        "learning_rate": 0.0001,
+        "accumulation": 8,
+        "max_length": 2048,
+        "max_new_tokens": 384,
+        "eval_generations": 8,
+        "min_free_gib": 28,
+        "memory_fraction": 0.6,
+        "seed": 42
+      },
+      "pid": 3056044,
+      "physical_gpu": "4",
+      "gpu": "NVIDIA RTX A6000",
+      "uuid": "a9f4e995-14aa-3b83-ffaf-0f5e0172f422",
+      "packages": {
+        "torch": "2.6.0+cu124",
+        "transformers": "5.15.0",
+        "peft": "0.21.2",
+        "rdkit": "2026.3.6"
+      },
+      "data_sha256": {
+        "train": "43ec982323001607c991df5fd6d0849e004f652ebb0a38646ed535cf42f4f7b5",
+        "validation": "cd001fb41ff5f752364b9652aaecb5698ade5c0e23243e04c4a67f8fff28f60a"
+      },
+      "model_config_sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05",
+      "model_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "dataset_revision": "77a71c968917c5dbd4c70b143e96b2753dde35c4",
+      "training_source_sha256": "30fc9ec2b19d06ead3e90860870ac96a5cba431d985b4eb934eba8370dcc95e4",
+      "token_lengths": {
+        "train": {
+          "min": 729,
+          "max": 1221
+        },
+        "validation": {
+          "min": 750,
+          "max": 1103
+        }
+      },
+      "validation_prediction_ids": [
+        "smdd_004_BRAF_8",
+        "smdd_004_BRAF_0",
+        "smdd_004_BRD4_17",
+        "smdd_004_CYP19A1_8",
+        "smdd_004_CYP19A1_5",
+        "smdd_004_BRAF_3",
+        "smdd_004_BRD4_7",
+        "smdd_004_BRAF_2"
+      ]
+    },
+    "limitations": [
+      "Small grouped validation pilot; test split remains untouched.",
+      "Witness match is imitation, not proof of molecular optimization.",
+      "ADMET-AI objectives/holds and Boltz binding probability have not been evaluated.",
+      "Adapter output is product_smiles; it is not the live DIRMO Proposal schema."
+    ]
+  },
+  "base_diagnostic": {
+    "source": "runs/smdd_lora_02/training/base_predictions.jsonl",
+    "strict": {
+      "rows": 8,
+      "counts": {
+        "json_valid": 1,
+        "smiles_valid": 0,
+        "local_hard_constraints_passed": 0,
+        "changed": 0,
+        "witness_exact_match": 0
+      },
+      "rates": {
+        "json_valid": 0.125,
+        "smiles_valid": 0.0,
+        "local_hard_constraints_passed": 0.0,
+        "changed": 0.0,
+        "witness_exact_match": 0.0
+      },
+      "oracle_goal_success": null,
+      "oracle_hold_success": null,
+      "boltz_binding_success": null
+    },
+    "fence_removed_diagnostic": {
+      "rows": 8,
+      "counts": {
+        "json_valid": 7,
+        "smiles_valid": 5,
+        "local_hard_constraints_passed": 0,
+        "changed": 5,
+        "witness_exact_match": 0
+      },
+      "rates": {
+        "json_valid": 0.875,
+        "smiles_valid": 0.625,
+        "local_hard_constraints_passed": 0.0,
+        "changed": 0.625,
+        "witness_exact_match": 0.0
+      },
+      "oracle_goal_success": null,
+      "oracle_hold_success": null,
+      "boltz_binding_success": null
+    },
+    "failed_local_constraints_after_fence_removal": {
+      "mw": 1,
+      "logp": 2,
+      "tanimoto": 5,
+      "sa": 1
+    },
+    "note": "Fence removal is diagnostic only. No molecular repair or oracle goal evaluation was performed."
+  },
+  "adapter_diagnostic": {
+    "source": "runs/smdd_lora_02/training/adapter_predictions.jsonl",
+    "strict": {
+      "rows": 8,
+      "counts": {
+        "json_valid": 8,
+        "smiles_valid": 2,
+        "local_hard_constraints_passed": 0,
+        "changed": 2,
+        "witness_exact_match": 0
+      },
+      "rates": {
+        "json_valid": 1.0,
+        "smiles_valid": 0.25,
+        "local_hard_constraints_passed": 0.0,
+        "changed": 0.25,
+        "witness_exact_match": 0.0
+      },
+      "oracle_goal_success": null,
+      "oracle_hold_success": null,
+      "boltz_binding_success": null
+    },
+    "fence_removed_diagnostic": {
+      "rows": 8,
+      "counts": {
+        "json_valid": 8,
+        "smiles_valid": 2,
+        "local_hard_constraints_passed": 0,
+        "changed": 2,
+        "witness_exact_match": 0
+      },
+      "rates": {
+        "json_valid": 1.0,
+        "smiles_valid": 0.25,
+        "local_hard_constraints_passed": 0.0,
+        "changed": 0.25,
+        "witness_exact_match": 0.0
+      },
+      "oracle_goal_success": null,
+      "oracle_hold_success": null,
+      "boltz_binding_success": null
+    },
+    "failed_local_constraints_after_fence_removal": {
+      "tanimoto": 1,
+      "sa": 1
+    },
+    "note": "Fence removal is diagnostic only. No molecular repair or oracle goal evaluation was performed."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/uslee/miniconda3/envs/dirmo/bin/mk_prepare_receptor.py",
+    "--read_pdb",
+    "/home/uslee/code/DIRMO-3D/reports/pb-guided-properties-20261016-v1/scoring/5yve/score-protein.pdb",
+    "--write_pdbqt",
+    "/home/uslee/code/DIRMO-3D/reports/pb-guided-properties-20261016-v1/scoring/5yve/receptor.pdbqt",
+    "--default_altloc",
+    "A",
+    "--set_template",
+    "A:45,A:206,B:45,B:206=HIE"
+  ],
+  "coordinates": "original heavy coordinates; no relaxation; FM pocket unchanged",
+  "omitted_nonstandard_residues": [
+    " :1:MG",
+    " :2:NA"
+  ],
+  "protonation": "Meeko residue templates; explicitly neutral HIE for every HIS; not pH optimized",
+  "status": 1
+}

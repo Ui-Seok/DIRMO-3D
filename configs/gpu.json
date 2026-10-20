@@ -1,7 +1,7 @@
 {
   "llm": {
     "python": "/home/uslee/miniconda3/envs/dirmo-llm/bin/python",
-    "gpu": "3",
+    "gpu": "1",
     "port": 8765,
     "minimum_free_mib": 24000,
     "backend": "qwen3.5",

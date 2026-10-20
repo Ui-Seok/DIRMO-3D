@@ -100,6 +100,15 @@ def train_router(dataset: str, output: str, kernel_id: str | None = None, unit: 
         raise ValueError("Need at least two genuinely executed, measured action outcomes in this kernel")
     if any(row["feature_names"] != FEATURE_NAMES for row in rows):
         raise ValueError("Dataset feature schema mismatch")
+    # utility_change is only defined relative to one objective. Rows measured under a
+    # different objective are a different experiment, exactly as for the kernel.
+    objectives = {row.get("objective_sha256") for row in rows}
+    if None in objectives:
+        raise ValueError("Dataset rows lack objective_sha256; recollect so the reward "
+                         "labels carry the objective they were measured under")
+    if len(objectives) != 1:
+        raise ValueError(f"Rows span {len(objectives)} objectives; utility changes are not "
+                         f"comparable across them: {sorted(objectives)}")
     x = np.asarray([row["pre_action_features"] for row in rows], dtype=np.float64)
     y = np.asarray([[row["utility_change"], row["compute_cost"]["wall_seconds"]] for row in rows], dtype=np.float64)
     if not np.isfinite(x).all() or not np.isfinite(y).all() or x.shape[1] != len(FEATURE_NAMES):
@@ -123,11 +132,13 @@ def train_router(dataset: str, output: str, kernel_id: str | None = None, unit: 
         error_clusters.extend(groups[i] for i in test)
     _, artifact, train_loss = fit_model(x, y, np.arange(len(rows)), epochs, seed, device)
     artifact.update(feature_names=FEATURE_NAMES, kernel_id=kernel_id, training_rows=len(rows),
+                    objective_sha256=objectives.pop(),
                     integration_steps=rows[0]["integration_steps"], dataset_hash=digest(raw),
                     prediction_targets=["utility_change", "wall_seconds"], seed=seed,
                     supported_action_kinds=sorted({row["action"]["kind"] for row in rows}))
     write_json(output, artifact)
     report = {"status": "trained", "device": device, "router": output, "rows": len(rows),
+              "objective_sha256": artifact["objective_sha256"],
               "excluded_unmeasured_or_other_kernel": len(raw) - len(rows), "kernel_id": kernel_id,
               "observed_feasible_rows": sum(row.get("feasible") is True for row in rows),
               "coverage": dict(Counter(row["action"]["kind"] for row in rows)),

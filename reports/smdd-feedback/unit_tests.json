@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "tests": 7,
+  "command": "CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 .venv-admet/bin/python -m unittest discover -s tests -p test_smdd_feedback.py -v",
+  "checks": [
+    "prompt excludes witness, future metrics, answer, task ID and source path",
+    "goals remain relative to the original baseline across revision",
+    "atom IDs are valid distinct integers in the current molecule",
+    "raw SMILES is preserved for ADMET while canonical graph is used for structure checks",
+    "measured failed conditions enter feedback and unmeasured binding remains unknown",
+    "disconnected or mapped products cannot become the next substrate",
+    "Crippen attribution includes hydrogen contributions and gate-based selection is consistent"
+  ]
+}

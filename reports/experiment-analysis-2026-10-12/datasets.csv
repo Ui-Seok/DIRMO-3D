@@ -1,0 +1,13 @@
+dataset,targets,records,known_raw_draws,measured,feasible,improved_feasible,success_eligible,targets_with_eligible_candidate
+gate_check,2,4,4,3,2,1,0,0
+gpu_01,1,2,0,0,0,0,0,0
+gpu_02,1,2,0,0,0,0,0,0
+gpu_03,1,5,5,5,0,0,0,0
+gpu_05,1,5,5,5,4,4,0,0
+gpu_06,1,6,6,6,4,3,0,0
+hard_region,5,27,27,9,7,1,0,0
+region_smoke,5,29,29,19,16,2,1,1
+regions,97,278,278,211,121,39,8,6
+smoke,3,17,17,17,10,3,1,1
+sweep,99,1748,1617,1297,728,226,30,7
+v2,1,6,6,6,6,3,0,0

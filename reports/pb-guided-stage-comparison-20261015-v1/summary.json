@@ -1,0 +1,153 @@
+{
+  "arms": {
+    "UFF_targeted": {
+      "all_candidates": {
+        "measured": 41,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_failed_measured": 32,
+        "pb_valid": 9,
+        "pb_valid_pct_measured": 21.951219512195124,
+        "pb_valid_pct_scheduled": 21.951219512195124,
+        "scheduled": 41
+      },
+      "final_pb_valid": 1468,
+      "final_pb_valid_pct": 91.75,
+      "final_scheduled": 1600,
+      "improvement_pp": 0.5625,
+      "selected_outputs": {
+        "measured": 41,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_failed_measured": 32,
+        "pb_valid": 9,
+        "pb_valid_pct_measured": 21.951219512195124,
+        "pb_valid_pct_scheduled": 21.951219512195124,
+        "scheduled": 41
+      }
+    },
+    "random": {
+      "all_candidates": {
+        "measured": 328,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_failed_measured": 284,
+        "pb_valid": 44,
+        "pb_valid_pct_measured": 13.414634146341463,
+        "pb_valid_pct_scheduled": 13.414634146341463,
+        "scheduled": 328
+      },
+      "final_pb_valid": 1467,
+      "final_pb_valid_pct": 91.6875,
+      "final_scheduled": 1600,
+      "improvement_pp": 0.5,
+      "selected_outputs": {
+        "measured": 41,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_failed_measured": 33,
+        "pb_valid": 8,
+        "pb_valid_pct_measured": 19.51219512195122,
+        "pb_valid_pct_scheduled": 19.51219512195122,
+        "scheduled": 41
+      }
+    },
+    "targeted": {
+      "all_candidates": {
+        "measured": 328,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_failed_measured": 276,
+        "pb_valid": 52,
+        "pb_valid_pct_measured": 15.853658536585366,
+        "pb_valid_pct_scheduled": 15.853658536585366,
+        "scheduled": 328
+      },
+      "final_pb_valid": 1468,
+      "final_pb_valid_pct": 91.75,
+      "final_scheduled": 1600,
+      "improvement_pp": 0.5625,
+      "selected_outputs": {
+        "measured": 41,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_failed_measured": 32,
+        "pb_valid": 9,
+        "pb_valid_pct_measured": 21.951219512195124,
+        "pb_valid_pct_scheduled": 21.951219512195124,
+        "scheduled": 41
+      }
+    },
+    "whole": {
+      "all_candidates": {
+        "measured": 328,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_failed_measured": 256,
+        "pb_valid": 72,
+        "pb_valid_pct_measured": 21.951219512195124,
+        "pb_valid_pct_scheduled": 21.951219512195124,
+        "scheduled": 328
+      },
+      "final_pb_valid": 1474,
+      "final_pb_valid_pct": 92.125,
+      "final_scheduled": 1600,
+      "improvement_pp": 0.9375,
+      "selected_outputs": {
+        "measured": 41,
+        "missing": 0,
+        "partially_available_but_definitely_failed": 0,
+        "pb_failed_measured": 26,
+        "pb_valid": 15,
+        "pb_valid_pct_measured": 36.58536585365854,
+        "pb_valid_pct_scheduled": 36.58536585365854,
+        "scheduled": 41
+      }
+    }
+  },
+  "created_utc": "2026-10-15T08:39:13.081087+00:00",
+  "first_generated": {
+    "measured": 1538,
+    "missing": 62,
+    "partially_available_but_definitely_failed": 1,
+    "pb_failed_measured": 79,
+    "pb_valid": 1459,
+    "pb_valid_pct_measured": 94.86345903771131,
+    "pb_valid_pct_scheduled": 91.1875,
+    "scheduled": 1600
+  },
+  "native": {
+    "measured": 100,
+    "missing": 0,
+    "partially_available_but_definitely_failed": 0,
+    "pb_failed_measured": 11,
+    "pb_valid": 89,
+    "pb_valid_pct_measured": 89.0,
+    "pb_valid_pct_scheduled": 89.0,
+    "scheduled": 100
+  },
+  "native_provenance": {
+    "additional_cpu_measurement": 12,
+    "existing_same_native_and_pocket": 88
+  },
+  "protocol": {
+    "initial_draws": 16,
+    "initial_generation": "Pocket-conditioned de novo, graph/coordinates generated; reference atom count retained",
+    "missing_retained_in_scheduled_denominator": true,
+    "pb": "dock; all 20 binary checks; identical fixed protein-only pocket",
+    "repair": "Pose-only; original generated graph/stereo and held XYZ preserved; free initial coordinate noise sigma=0.3 A",
+    "repair_draws": 8,
+    "steps": 64
+  },
+  "repair_inputs": {
+    "measured": 41,
+    "missing": 0,
+    "partially_available_but_definitely_failed": 0,
+    "pb_failed_measured": 41,
+    "pb_valid": 0,
+    "pb_valid_pct_measured": 0.0,
+    "pb_valid_pct_scheduled": 0.0,
+    "scheduled": 41
+  },
+  "run": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1"
+}

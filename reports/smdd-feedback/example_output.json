@@ -1,0 +1,9 @@
+{
+  "input_tokens": 3383,
+  "latency_seconds": 10.450948235811666,
+  "output_tokens": 88,
+  "peak_memory_bytes": 19746083840,
+  "raw": "{\n \"focus_atom_maps\": [8],\n \"edit_hypothesis\": \"Replace the methyl group at atom 8 with a fluorine atom to reduce lipophilicity and metabolic clearance while maintaining steric bulk.\",\n \"product_smiles\": \"Cn1cc(-c2cc(F)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O\"\n}\n",
+  "status": "ok",
+  "total_tokens": 3471
+}

@@ -1,0 +1,71 @@
+{
+  "case_id": "3gww",
+  "identity": {
+    "pocket_sha256": "f84a3a9ef57cbcf2aaea56d43a784fb2b60f8383a7e33dc5f2726494c98dc945",
+    "sdf_sha256": "88607ecc67b2ee5d401682a4bba7557e2155a8b1ab3555dc87c6456b3e085035"
+  },
+  "pb": {
+    "checks": {
+      "all_atoms_connected": true,
+      "aromatic_ring_flatness": true,
+      "bond_angles": true,
+      "bond_lengths": true,
+      "double_bond_flatness": true,
+      "inchi_convertible": true,
+      "internal_energy": true,
+      "internal_steric_clash": true,
+      "minimum_distance_to_inorganic_cofactors": true,
+      "minimum_distance_to_organic_cofactors": true,
+      "minimum_distance_to_protein": true,
+      "minimum_distance_to_waters": true,
+      "mol_cond_loaded": true,
+      "mol_pred_loaded": true,
+      "protein-ligand_maximum_distance": true,
+      "sanitization": true,
+      "volume_overlap_with_inorganic_cofactors": true,
+      "volume_overlap_with_organic_cofactors": true,
+      "volume_overlap_with_protein": true,
+      "volume_overlap_with_waters": true
+    },
+    "continuous": {
+      "aromatic_ring_maximum_distance_from_plane": 0.0020925577463969305,
+      "double_bond_maximum_distance_from_plane": null,
+      "energy_ratio": 1.7466595631584454,
+      "ensemble_avg_energy": 38.65546884959179,
+      "longest_bond_relative_length": 1.00832289898687,
+      "mol_pred_energy": 67.51794433451289,
+      "most_extreme_distance_protein": 2.8547626871598277,
+      "most_extreme_ligand_vdw_protein": 1.6,
+      "most_extreme_protein_vdw_protein": 1.55,
+      "most_extreme_relative_angle": 1.0463410011437053,
+      "most_extreme_relative_distance_protein": 0.9062738689396278,
+      "most_extreme_sum_radii_protein": 3.1500000000000004,
+      "most_extreme_sum_radii_scaled_protein": 3.1500000000000004,
+      "shortest_bond_relative_length": 0.9608014216249707,
+      "shortest_noncovalent_relative_distance": 1.0096875374940233,
+      "smallest_distance_inorganic_cofactors": null,
+      "smallest_distance_organic_cofactors": null,
+      "smallest_distance_protein": 2.8547626871598277,
+      "smallest_distance_waters": null,
+      "volume_overlap_inorganic_cofactors": null,
+      "volume_overlap_organic_cofactors": null,
+      "volume_overlap_protein": 0.0035916824196597355,
+      "volume_overlap_waters": null
+    },
+    "missing_reasons": {},
+    "omitted_checks": {
+      "identity": "edited ligand is not a reference identity task",
+      "rmsd": "generated pose is evaluated in the fixed protein frame"
+    },
+    "passes": true,
+    "preset": "dock",
+    "reference_ligand": null,
+    "reference_protein": "/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/3gww/pocket.pdb",
+    "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/3gww/native.sdf"
+  },
+  "provenance": {
+    "mode": "existing_same_native_and_pocket",
+    "source": "/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/evaluations/3gww.json",
+    "source_sha256": "262356159b38a4e7c9e5699b0cec0ad2cec39225703f488ba62ced14f7d1e78c"
+  }
+}

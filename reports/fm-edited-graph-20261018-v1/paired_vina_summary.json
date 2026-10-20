@@ -1,0 +1,158 @@
+[
+  {
+    "kind": "uff_whole",
+    "subset": "all_scored",
+    "pairs": 567,
+    "pockets": 19,
+    "median_delta": 2.5060000000000002,
+    "improved": 69,
+    "pocket_median_delta": 2.553,
+    "pocket_median_ci": [
+      0.9379999999999994,
+      6.035
+    ]
+  },
+  {
+    "kind": "uff_whole",
+    "subset": "both_graph_preserved",
+    "pairs": 514,
+    "pockets": 19,
+    "median_delta": 2.3019999999999996,
+    "improved": 66,
+    "pocket_median_delta": 2.553,
+    "pocket_median_ci": [
+      0.9379999999999994,
+      6.035
+    ]
+  },
+  {
+    "kind": "uff_whole",
+    "subset": "both_strict_success",
+    "pairs": 126,
+    "pockets": 13,
+    "median_delta": 0.7789999999999999,
+    "improved": 20,
+    "pocket_median_delta": 0.5460000000000003,
+    "pocket_median_ci": [
+      0.3115000000000001,
+      1.3779999999999997
+    ]
+  },
+  {
+    "kind": "uff_core",
+    "subset": "all_scored",
+    "pairs": 567,
+    "pockets": 19,
+    "median_delta": -0.05900000000000016,
+    "improved": 324,
+    "pocket_median_delta": -0.014000000000000234,
+    "pocket_median_ci": [
+      -1.1475,
+      0.05550000000000033
+    ]
+  },
+  {
+    "kind": "uff_core",
+    "subset": "both_graph_preserved",
+    "pairs": 549,
+    "pockets": 19,
+    "median_delta": -0.054999999999999716,
+    "improved": 311,
+    "pocket_median_delta": -0.014000000000000234,
+    "pocket_median_ci": [
+      -0.13700000000000045,
+      0.05699999999999994
+    ]
+  },
+  {
+    "kind": "uff_core",
+    "subset": "both_strict_success",
+    "pairs": 222,
+    "pockets": 14,
+    "median_delta": -0.016000000000000014,
+    "improved": 121,
+    "pocket_median_delta": -0.002500000000000391,
+    "pocket_median_ci": [
+      -0.08499999999999996,
+      0.04250000000000087
+    ]
+  },
+  {
+    "kind": "fm_whole",
+    "subset": "all_scored",
+    "pairs": 567,
+    "pockets": 19,
+    "median_delta": -1.7249999999999996,
+    "improved": 526,
+    "pocket_median_delta": -2.5850000000000004,
+    "pocket_median_ci": [
+      -3.6130000000000004,
+      -0.8130000000000002
+    ]
+  },
+  {
+    "kind": "fm_whole",
+    "subset": "both_graph_preserved",
+    "pairs": 498,
+    "pockets": 18,
+    "median_delta": -1.9339999999999997,
+    "improved": 458,
+    "pocket_median_delta": -2.1252500000000003,
+    "pocket_median_ci": [
+      -4.65925,
+      -0.8820000000000006
+    ]
+  },
+  {
+    "kind": "fm_whole",
+    "subset": "both_strict_success",
+    "pairs": 203,
+    "pockets": 15,
+    "median_delta": -0.7670000000000003,
+    "improved": 175,
+    "pocket_median_delta": -0.7905,
+    "pocket_median_ci": [
+      -1.2395000000000005,
+      -0.4479999999999995
+    ]
+  },
+  {
+    "kind": "fm_core",
+    "subset": "all_scored",
+    "pairs": 567,
+    "pockets": 19,
+    "median_delta": -1.3260000000000005,
+    "improved": 498,
+    "pocket_median_delta": -2.2359999999999993,
+    "pocket_median_ci": [
+      -4.211499999999999,
+      -0.42050000000000054
+    ]
+  },
+  {
+    "kind": "fm_core",
+    "subset": "both_graph_preserved",
+    "pairs": 510,
+    "pockets": 19,
+    "median_delta": -1.2635,
+    "improved": 450,
+    "pocket_median_delta": -1.2580000000000005,
+    "pocket_median_ci": [
+      -4.211499999999999,
+      -0.41000000000000014
+    ]
+  },
+  {
+    "kind": "fm_core",
+    "subset": "both_strict_success",
+    "pairs": 199,
+    "pockets": 15,
+    "median_delta": -0.15399999999999991,
+    "improved": 159,
+    "pocket_median_delta": -0.42050000000000054,
+    "pocket_median_ci": [
+      -1.25,
+      -0.0365000000000002
+    ]
+  }
+]

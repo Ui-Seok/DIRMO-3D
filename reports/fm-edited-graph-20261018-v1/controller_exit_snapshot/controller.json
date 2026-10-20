@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "pid": 2327874,
+  "physical_gpu": "3",
+  "started_utc": "2026-10-16T12:43:59.527414+00:00",
+  "gpu_pid": 2327877,
+  "reason": "RuntimeError: GPU worker exited 1; see gpu.log"
+}

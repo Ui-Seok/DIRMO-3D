@@ -1,0 +1,590 @@
+[
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_N",
+    "property": "qed",
+    "pockets": 30,
+    "mean_delta": -0.07218715576151223,
+    "median_delta": -0.08736764172280792,
+    "mean_ci": [
+      -0.09785599846877167,
+      -0.04573563185092316
+    ],
+    "increased": 4,
+    "decreased": 26
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_O",
+    "property": "qed",
+    "pockets": 30,
+    "mean_delta": -0.07273328707211422,
+    "median_delta": -0.08658133782271647,
+    "mean_ci": [
+      -0.09758335768256005,
+      -0.04712994893880342
+    ],
+    "increased": 4,
+    "decreased": 26
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_F",
+    "property": "qed",
+    "pockets": 30,
+    "mean_delta": -0.02951159787773035,
+    "median_delta": -0.006691514852734892,
+    "mean_ci": [
+      -0.047524070750887645,
+      -0.013822461749666427
+    ],
+    "increased": 7,
+    "decreased": 23
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_N",
+    "property": "sa",
+    "pockets": 30,
+    "mean_delta": 0.19297751930363954,
+    "median_delta": 0.1327654437869814,
+    "mean_ci": [
+      0.13716700282788363,
+      0.2544497614837183
+    ],
+    "increased": 30,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_O",
+    "property": "sa",
+    "pockets": 30,
+    "mean_delta": 0.16598032803879376,
+    "median_delta": 0.11073380388841914,
+    "mean_ci": [
+      0.10572831609763812,
+      0.2294738347083045
+    ],
+    "increased": 28,
+    "decreased": 2
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_F",
+    "property": "sa",
+    "pockets": 30,
+    "mean_delta": 0.24179879363856563,
+    "median_delta": 0.1984326795087279,
+    "mean_ci": [
+      0.18007815915159125,
+      0.3127566978570214
+    ],
+    "increased": 30,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_N",
+    "property": "logp",
+    "pockets": 30,
+    "mean_delta": -1.0865513333333332,
+    "median_delta": -1.1037,
+    "mean_ci": [
+      -1.1794790833333324,
+      -0.9861120499999994
+    ],
+    "increased": 0,
+    "decreased": 30
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_O",
+    "property": "logp",
+    "pockets": 30,
+    "mean_delta": -0.9903946666666668,
+    "median_delta": -1.0701000000000003,
+    "mean_ci": [
+      -1.130530316666667,
+      -0.8261879500000003
+    ],
+    "increased": 3,
+    "decreased": 27
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_F",
+    "property": "logp",
+    "pockets": 30,
+    "mean_delta": -0.10601133333333318,
+    "median_delta": -0.09290000000000029,
+    "mean_ci": [
+      -0.19475133333333325,
+      -0.007545466666666395
+    ],
+    "increased": 3,
+    "decreased": 27
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_N",
+    "property": "mw",
+    "pockets": 30,
+    "mean_delta": 0.9880000000000005,
+    "median_delta": 0.9879999999999995,
+    "mean_ci": [
+      0.9879999999999901,
+      0.9880000000000109
+    ],
+    "increased": 30,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_O",
+    "property": "mw",
+    "pockets": 30,
+    "mean_delta": 1.9720000000000142,
+    "median_delta": 1.9720000000000084,
+    "mean_ci": [
+      1.971999999999997,
+      1.972000000000031
+    ],
+    "increased": 30,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_F",
+    "property": "mw",
+    "pockets": 30,
+    "mean_delta": 3.963000000000008,
+    "median_delta": 3.9630000000000223,
+    "mean_ci": [
+      3.962999999999989,
+      3.963000000000025
+    ],
+    "increased": 30,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_N",
+    "property": "hbd",
+    "pockets": 30,
+    "mean_delta": 1.0,
+    "median_delta": 1.0,
+    "mean_ci": [
+      1.0,
+      1.0
+    ],
+    "increased": 30,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_O",
+    "property": "hbd",
+    "pockets": 30,
+    "mean_delta": 1.0,
+    "median_delta": 1.0,
+    "mean_ci": [
+      1.0,
+      1.0
+    ],
+    "increased": 30,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_F",
+    "property": "hbd",
+    "pockets": 30,
+    "mean_delta": 0.0,
+    "median_delta": 0.0,
+    "mean_ci": [
+      0.0,
+      0.0
+    ],
+    "increased": 0,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_N",
+    "property": "hba",
+    "pockets": 30,
+    "mean_delta": 0.9,
+    "median_delta": 1.0,
+    "mean_ci": [
+      0.7666666666666667,
+      1.0
+    ],
+    "increased": 27,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_O",
+    "property": "hba",
+    "pockets": 30,
+    "mean_delta": 0.9,
+    "median_delta": 1.0,
+    "mean_ci": [
+      0.7666666666666667,
+      1.0
+    ],
+    "increased": 27,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_F",
+    "property": "hba",
+    "pockets": 30,
+    "mean_delta": 0.0,
+    "median_delta": 0.0,
+    "mean_ci": [
+      0.0,
+      0.0
+    ],
+    "increased": 0,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_N",
+    "property": "tpsa",
+    "pockets": 30,
+    "mean_delta": 26.019999999999992,
+    "median_delta": 26.019999999999996,
+    "mean_ci": [
+      26.01999999999999,
+      26.020000000000003
+    ],
+    "increased": 30,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_O",
+    "property": "tpsa",
+    "pockets": 30,
+    "mean_delta": 20.230000000000004,
+    "median_delta": 20.230000000000004,
+    "mean_ci": [
+      20.229999999999997,
+      20.230000000000008
+    ],
+    "increased": 30,
+    "decreased": 0
+  },
+  {
+    "cohort": "evaluated_30",
+    "variant": "C_to_F",
+    "property": "tpsa",
+    "pockets": 30,
+    "mean_delta": -7.105427357601002e-16,
+    "median_delta": 0.0,
+    "mean_ci": [
+      -2.842170943040401e-15,
+      7.105427357601002e-16
+    ],
+    "increased": 0,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_N",
+    "property": "qed",
+    "pockets": 100,
+    "mean_delta": -0.06231426384462407,
+    "median_delta": -0.053480353284663634,
+    "mean_ci": [
+      -0.07568477990837208,
+      -0.049134651820996356
+    ],
+    "increased": 13,
+    "decreased": 87
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_O",
+    "property": "qed",
+    "pockets": 100,
+    "mean_delta": -0.06578804436639979,
+    "median_delta": -0.06341428404567451,
+    "mean_ci": [
+      -0.0773126073319587,
+      -0.05408874143826154
+    ],
+    "increased": 8,
+    "decreased": 92
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_F",
+    "property": "qed",
+    "pockets": 100,
+    "mean_delta": -0.021234205249812333,
+    "median_delta": -0.003863158365675884,
+    "mean_ci": [
+      -0.029923149453176277,
+      -0.013305723895754039
+    ],
+    "increased": 29,
+    "decreased": 71
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_N",
+    "property": "sa",
+    "pockets": 100,
+    "mean_delta": 0.2017351769962648,
+    "median_delta": 0.1556792242343148,
+    "mean_ci": [
+      0.1748172199042021,
+      0.2288514369765106
+    ],
+    "increased": 100,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_O",
+    "property": "sa",
+    "pockets": 100,
+    "mean_delta": 0.1722966265949575,
+    "median_delta": 0.13517307692307767,
+    "mean_ci": [
+      0.14760506019524314,
+      0.19893840748338332
+    ],
+    "increased": 97,
+    "decreased": 3
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_F",
+    "property": "sa",
+    "pockets": 100,
+    "mean_delta": 0.2491497923241557,
+    "median_delta": 0.214521688948893,
+    "mean_ci": [
+      0.21879471816925666,
+      0.2823773179957786
+    ],
+    "increased": 100,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_N",
+    "property": "logp",
+    "pockets": 100,
+    "mean_delta": -1.0838420000000002,
+    "median_delta": -1.1037000000000012,
+    "mean_ci": [
+      -1.1360761450000005,
+      -1.0292274900000005
+    ],
+    "increased": 0,
+    "decreased": 100
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_O",
+    "property": "logp",
+    "pockets": 100,
+    "mean_delta": -0.952605,
+    "median_delta": -1.070100000000001,
+    "mean_ci": [
+      -1.0349553549999997,
+      -0.8661584950000005
+    ],
+    "increased": 10,
+    "decreased": 90
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_F",
+    "property": "logp",
+    "pockets": 100,
+    "mean_delta": -0.118432,
+    "median_delta": -0.09290000000000051,
+    "mean_ci": [
+      -0.16586558000000004,
+      -0.06866166000000004
+    ],
+    "increased": 10,
+    "decreased": 90
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_N",
+    "property": "mw",
+    "pockets": 100,
+    "mean_delta": 0.9879999999999953,
+    "median_delta": 0.9879999999999995,
+    "mean_ci": [
+      0.9879999999999844,
+      0.9880000000000067
+    ],
+    "increased": 100,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_O",
+    "property": "mw",
+    "pockets": 100,
+    "mean_delta": 1.9720000000000122,
+    "median_delta": 1.97199999999998,
+    "mean_ci": [
+      1.9719999999999986,
+      1.972000000000027
+    ],
+    "increased": 100,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_F",
+    "property": "mw",
+    "pockets": 100,
+    "mean_delta": 3.9630000000000027,
+    "median_delta": 3.962999999999994,
+    "mean_ci": [
+      3.9629999999999894,
+      3.963000000000018
+    ],
+    "increased": 100,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_N",
+    "property": "hbd",
+    "pockets": 100,
+    "mean_delta": 1.0,
+    "median_delta": 1.0,
+    "mean_ci": [
+      1.0,
+      1.0
+    ],
+    "increased": 100,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_O",
+    "property": "hbd",
+    "pockets": 100,
+    "mean_delta": 1.0,
+    "median_delta": 1.0,
+    "mean_ci": [
+      1.0,
+      1.0
+    ],
+    "increased": 100,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_F",
+    "property": "hbd",
+    "pockets": 100,
+    "mean_delta": 0.0,
+    "median_delta": 0.0,
+    "mean_ci": [
+      0.0,
+      0.0
+    ],
+    "increased": 0,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_N",
+    "property": "hba",
+    "pockets": 100,
+    "mean_delta": 0.9,
+    "median_delta": 1.0,
+    "mean_ci": [
+      0.84,
+      0.95
+    ],
+    "increased": 90,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_O",
+    "property": "hba",
+    "pockets": 100,
+    "mean_delta": 0.9,
+    "median_delta": 1.0,
+    "mean_ci": [
+      0.84,
+      0.95
+    ],
+    "increased": 90,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_F",
+    "property": "hba",
+    "pockets": 100,
+    "mean_delta": 0.0,
+    "median_delta": 0.0,
+    "mean_ci": [
+      0.0,
+      0.0
+    ],
+    "increased": 0,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_N",
+    "property": "tpsa",
+    "pockets": 100,
+    "mean_delta": 26.02,
+    "median_delta": 26.02,
+    "mean_ci": [
+      26.019999999999992,
+      26.02
+    ],
+    "increased": 100,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_O",
+    "property": "tpsa",
+    "pockets": 100,
+    "mean_delta": 20.23,
+    "median_delta": 20.230000000000004,
+    "mean_ci": [
+      20.229999999999997,
+      20.230000000000004
+    ],
+    "increased": 100,
+    "decreased": 0
+  },
+  {
+    "cohort": "selected_100",
+    "variant": "C_to_F",
+    "property": "tpsa",
+    "pockets": 100,
+    "mean_delta": -7.105427357601002e-17,
+    "median_delta": 0.0,
+    "mean_ci": [
+      -1.1368683772161603e-15,
+      9.237055564881303e-16
+    ],
+    "increased": 0,
+    "decreased": 0
+  }
+]

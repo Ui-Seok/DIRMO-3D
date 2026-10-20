@@ -1,0 +1,1426 @@
+[
+  {
+    "admet_failure_counts": [
+      3,
+      1
+    ],
+    "first": {
+      "assessment": {
+        "admet_conditions": {
+          "admet_goal_count": 2,
+          "all_admet_goals_passed": false,
+          "all_admet_holds_passed": false,
+          "binding_affinity_measured": false,
+          "boltz_binding_probability": null,
+          "goals": [
+            {
+              "baseline": 34.4122,
+              "direction": "minimize",
+              "improvement": -38.19077253711994,
+              "passed": false,
+              "property": "clearance",
+              "threshold": 5.0,
+              "value": 72.60297253711994
+            },
+            {
+              "baseline": -1.6392,
+              "direction": "minimize",
+              "passed": null,
+              "property": "binding_affinity",
+              "threshold": 0.3,
+              "value": null
+            },
+            {
+              "baseline": -4.8158,
+              "direction": "maximize",
+              "improvement": 0.01811564789543496,
+              "passed": false,
+              "property": "caco2",
+              "threshold": 0.3,
+              "value": -4.797684352104565
+            }
+          ],
+          "holds": [
+            {
+              "baseline": 0.8647,
+              "delta": 0.02391973285675042,
+              "direction": "change",
+              "passed": true,
+              "property": "bbb",
+              "tolerance": 0.1,
+              "value": 0.8886197328567504
+            },
+            {
+              "baseline": 0.8838,
+              "delta": -0.13762854938507085,
+              "direction": "increase",
+              "passed": true,
+              "property": "cyp3a4",
+              "tolerance": 0.1,
+              "value": 0.7461714506149292
+            },
+            {
+              "baseline": 102.0481,
+              "delta": 5.222774998839668,
+              "direction": "increase",
+              "passed": false,
+              "property": "ppb",
+              "tolerance": 5.0,
+              "value": 107.27087499883967
+            }
+          ]
+        },
+        "admet_properties": {
+          "ames": 0.3225698798894882,
+          "bbb": 0.8886197328567504,
+          "caco2": -4.797684352104565,
+          "clearance": 72.60297253711994,
+          "cyp3a4": 0.7461714506149292,
+          "herg": 0.782442319393158,
+          "ppb": 107.27087499883967,
+          "solubility": -6.025598697321307
+        },
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": true,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": true,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 3,
+          "hbd": 1,
+          "logp": 4.8011200000000045,
+          "mw": 350.462,
+          "qed": 0.7344513303230149,
+          "rotatable_bonds": 4,
+          "sa": 2.5509956433098147,
+          "tpsa": 47.019999999999996
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "Cn1cc(-c2cc(C)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O",
+        "plan": {
+          "edit_hypothesis": "Replace the sulfone group at atom 8 with a methyl group to significantly reduce molecular weight and lipophilicity, addressing the high clearance and poor caco2 goals while maintaining scaffold similarity.",
+          "focus_atom_maps": [
+            8
+          ],
+          "product_smiles": "Cn1cc(-c2cc(C)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "Cc1ccc(OCC2CCCCC2)c(-c2cn(C)c(=O)c3[nH]ccc23)c1",
+        "smiles_valid": true,
+        "tanimoto": 0.7666666666666667
+      },
+      "current_smiles": "Cn1cc(-c2cc(S(C)(=O)=O)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O",
+      "first_round_shared": true,
+      "mode": "feedback",
+      "request_id": "smdd_004_BRD4_0:shared:1",
+      "round": 1,
+      "server_status": "ok",
+      "task_id": "smdd_004_BRD4_0"
+    },
+    "pre_boltz_rescue": false,
+    "selected": {
+      "assessment": {
+        "admet_conditions": {
+          "admet_goal_count": 2,
+          "all_admet_goals_passed": false,
+          "all_admet_holds_passed": true,
+          "binding_affinity_measured": false,
+          "boltz_binding_probability": null,
+          "goals": [
+            {
+              "baseline": 34.4122,
+              "direction": "minimize",
+              "improvement": -31.786893064505165,
+              "passed": false,
+              "property": "clearance",
+              "threshold": 5.0,
+              "value": 66.19909306450516
+            },
+            {
+              "baseline": -1.6392,
+              "direction": "minimize",
+              "passed": null,
+              "property": "binding_affinity",
+              "threshold": 0.3,
+              "value": null
+            },
+            {
+              "baseline": -4.8158,
+              "direction": "maximize",
+              "improvement": 0.3041922891860951,
+              "passed": true,
+              "property": "caco2",
+              "threshold": 0.3,
+              "value": -4.511607710813905
+            }
+          ],
+          "holds": [
+            {
+              "baseline": 0.8647,
+              "delta": 0.0823348715782165,
+              "direction": "change",
+              "passed": true,
+              "property": "bbb",
+              "tolerance": 0.1,
+              "value": 0.9470348715782165
+            },
+            {
+              "baseline": 0.8838,
+              "delta": -0.2453422427654267,
+              "direction": "increase",
+              "passed": true,
+              "property": "cyp3a4",
+              "tolerance": 0.1,
+              "value": 0.6384577572345733
+            },
+            {
+              "baseline": 102.0481,
+              "delta": 3.5269662039134744,
+              "direction": "increase",
+              "passed": true,
+              "property": "ppb",
+              "tolerance": 5.0,
+              "value": 105.57506620391348
+            }
+          ]
+        },
+        "admet_properties": {
+          "ames": 0.46056737303733825,
+          "bbb": 0.9470348715782165,
+          "caco2": -4.511607710813905,
+          "clearance": 66.19909306450516,
+          "cyp3a4": 0.6384577572345733,
+          "herg": 0.8347829461097718,
+          "ppb": 105.57506620391348,
+          "solubility": -5.666044150878764
+        },
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": true,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": true,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 3,
+          "hbd": 1,
+          "logp": 4.631800000000004,
+          "mw": 354.42500000000007,
+          "qed": 0.7423214181873314,
+          "rotatable_bonds": 4,
+          "sa": 2.572119335617508,
+          "tpsa": 47.019999999999996
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "Cn1cc(-c2cc(F)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O",
+        "plan": {
+          "edit_hypothesis": "Replace the methyl group at atom 8 with a fluorine atom to reduce lipophilicity and metabolic clearance while maintaining steric bulk.",
+          "focus_atom_maps": [
+            8
+          ],
+          "product_smiles": "Cn1cc(-c2cc(F)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "Cn1cc(-c2cc(F)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O",
+        "smiles_valid": true,
+        "tanimoto": 0.7540983606557377
+      },
+      "current_smiles": "Cn1cc(-c2cc(C)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O",
+      "first_round_shared": false,
+      "mode": "feedback",
+      "request_id": "smdd_004_BRD4_0:feedback:2",
+      "round": 2,
+      "server_status": "ok",
+      "task_id": "smdd_004_BRD4_0"
+    },
+    "selected_call": {
+      "messages": [
+        {
+          "content": "You are a medicinal chemistry editor. Propose one small, chemically valid\nedit of the current ligand while preserving similarity to the ORIGINAL ligand.\nGoals and hold tolerances are always relative to the published ORIGINAL baseline,\nnever to a preceding candidate. Input contains actual RDKit calculations and ADMET\nmodel predictions; these are not experiments. Atom IDs are local to each displayed\nmapped SMILES. Crippen atom contributions describe a logP calculation, not physical\ncausality or binding evidence. Pocket distances belong to the reference structure;\nthey do not locate candidate atoms or prove candidate interactions.\nUse a brief edit hypothesis (one sentence), not a long reasoning narrative. Choose\neditable atom IDs from current_molecule. Change the molecule to address failed\nconditions if feedback is present, keeping already passing conditions. Avoid\nrepeating failed products. Do not invent measured ADMET or binding values. No fixed\ncandidate menu is supplied. Binding affinity and probability require Boltz and may\nbe unmeasured; do not assert they pass.\nReturn ONLY strict JSON with exactly these keys:\n{\"focus_atom_maps\":[1],\"edit_hypothesis\":\"replace group at atom 1 ...\",\n \"product_smiles\":\"complete single-component isomeric SMILES WITHOUT atom maps\"}.\nfocus_atom_maps must contain 1-8 distinct integer IDs in current_molecule. Keep\nedit_hypothesis under 400 characters. product_smiles must be a single SMILES token,\nwith no names, coordinates, Markdown, atom maps, or other text. Preserve specified\nstereochemistry unless it is part of your explicit edit hypothesis.",
+          "role": "system"
+        },
+        {
+          "content": "{\"proposal_number\":2,\"original_molecule\":{\"smiles\":\"Cn1cc(-c2cc(S(C)(=O)=O)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O\",\"rdkit_properties\":{\"qed\":0.686603448835752,\"sa\":2.6730816194574345,\"mw\":414.52700000000027,\"logp\":3.896200000000002,\"tpsa\":81.16,\"hbd\":1,\"hba\":5,\"rotatable_bonds\":5,\"formal_charge\":0},\"admet_reprediction\":{\"herg\":0.679913341999054,\"bbb\":0.865811002254486,\"solubility\":-4.778153664113427,\"cyp3a4\":0.8873197317123414,\"clearance\":35.3589992071515,\"caco2\":-4.823489982439597,\"ppb\":101.94911210941102,\"ames\":0.11713316068053245}},\"current_molecule\":{\"mapped_smiles\":\"[CH3:1][n:2]1[cH:3][c:4](-[c:5]2[cH:6][c:7]([CH3:8])[cH:9][cH:10][c:11]2[O:12][CH2:13][CH:14]2[CH2:15][CH2:16][CH2:17][CH2:18][CH2:19]2)[c:20]2[cH:21][cH:22][nH:23][c:24]2[c:25]1=[O:26]\",\"rdkit_properties\":{\"qed\":0.7344513303230149,\"sa\":2.967806406536864,\"mw\":350.462,\"logp\":4.8011200000000045,\"tpsa\":47.019999999999996,\"hbd\":1,\"hba\":3,\"rotatable_bonds\":4,\"formal_charge\":0},\"atom_fields\":[\"map\",\"element\",\"aromatic\",\"charge\",\"neighbors\",\"crippen_logp_with_H\"],\"atoms\":[[1,\"C\",0,0,[2],0.2246],[2,\"N\",1,0,[1,3,25],-0.3239],[3,\"C\",1,0,[2,4],0.2811],[4,\"C\",1,0,[3,5,20],0.2713],[5,\"C\",1,0,[4,6,11],0.2713],[6,\"C\",1,0,[5,7],0.2811],[7,\"C\",1,0,[6,8,9],0.136],[8,\"C\",0,0,[7],0.4535],[9,\"C\",1,0,[7,10],0.2811],[10,\"C\",1,0,[9,11],0.2811],[11,\"C\",1,0,[10,12,5],0.5437],[12,\"O\",0,0,[11,13],-0.4195],[13,\"C\",0,0,[12,14],0.0425],[14,\"C\",0,0,[13,15,19],0.123],[15,\"C\",0,0,[14,16],0.3901],[16,\"C\",0,0,[15,17],0.3901],[17,\"C\",0,0,[16,18],0.3901],[18,\"C\",0,0,[17,19],0.3901],[19,\"C\",0,0,[18,14],0.3901],[20,\"C\",1,0,[4,21,24],0.2955],[21,\"C\",1,0,[20,22],0.2811],[22,\"C\",1,0,[21,23],0.2811],[23,\"N\",1,0,[22,24],-0.1097],[24,\"C\",1,0,[23,25,20],0.2955],[25,\"C\",1,0,[24,26,2],-0.8186],[26,\"O\",0,0,[25],0.1788]],\"functional_groups\":{\"amide\":[],\"ester\":[],\"hydroxyl\":[],\"amine\":[],\"sulfonamide\":[],\"halogen\":[],\"nitrile\":[]},\"admet_prediction\":{\"herg\":0.782442319393158,\"bbb\":0.8886197328567504,\"solubility\":-6.025598697321307,\"cyp3a4\":0.7461714506149292,\"clearance\":72.60297253711994,\"caco2\":-4.797684352104565,\"ppb\":107.27087499883967,\"ames\":0.3225698798894882}},\"goals\":[{\"property\":\"clearance\",\"direction\":\"minimize\",\"threshold\":5.0,\"baseline\":34.4122},{\"property\":\"binding_affinity\",\"direction\":\"minimize\",\"threshold\":0.3,\"baseline\":-1.6392},{\"property\":\"caco2\",\"direction\":\"maximize\",\"threshold\":0.3,\"baseline\":-4.8158}],\"hold\":[{\"property\":\"bbb\",\"tolerance\":0.1,\"direction\":\"change\",\"baseline\":0.8647},{\"property\":\"cyp3a4\",\"tolerance\":0.1,\"direction\":\"increase\",\"baseline\":0.8838},{\"property\":\"ppb\",\"tolerance\":5.0,\"direction\":\"increase\",\"baseline\":102.0481}],\"hard_constraints\":{\"mw_lt\":600,\"logp_range\":[-1,5],\"tpsa_lt\":140,\"hbd_le\":5,\"hba_le\":10,\"rotatable_bonds_le\":10,\"formal_charge_range\":[-2,2],\"sa_lt\":4.5,\"no_radicals\":true,\"single_component\":true,\"filters\":[\"PAINS\",\"BRENK\"],\"morgan_r2_2048_tanimoto_ge\":0.7,\"boltz_binding_probability_gt\":0.7},\"reference_pocket\":{\"residue_fields\":[\"chain\",\"seqres_position\",\"aa\",\"reference_min_heavy_distance_A\"],\"residues\":[[\"A\",26,\"W\",3.6],[\"A\",27,\"P\",3.5],[\"A\",28,\"F\",3.4],[\"A\",29,\"Y\",5.5],[\"A\",30,\"K\",3.7],[\"A\",31,\"P\",3.4],[\"A\",32,\"V\",3.5],[\"A\",33,\"D\",2.6],[\"A\",34,\"V\",5.4],[\"A\",36,\"A\",6.3],[\"A\",37,\"L\",3.5],[\"A\",39,\"L\",4.1],[\"A\",42,\"Y\",4.8],[\"A\",50,\"M\",6.3],[\"A\",77,\"M\",5.6],[\"A\",80,\"N\",5.3],[\"A\",81,\"C\",3.6],[\"A\",84,\"Y\",4.3],[\"A\",85,\"N\",2.8],[\"A\",89,\"H\",4.1],[\"A\",90,\"E\",3.3],[\"A\",91,\"V\",3.9],[\"A\",92,\"V\",6.6],[\"A\",94,\"M\",3.4]],\"source\":\"reference complex.pdb\",\"unavailable_distances\":0},\"notes\":\"Published goal/hold baselines stay authoritative even if reference re-prediction differs.\",\"tool_feedback\":{\"failed_conditions\":[{\"stage\":\"admet\",\"kind\":\"goals\",\"property\":\"clearance\",\"direction\":\"minimize\",\"threshold\":5.0,\"baseline\":34.4122,\"value\":72.60297253711994,\"passed\":false,\"improvement\":-38.19077253711994},{\"stage\":\"admet\",\"kind\":\"goals\",\"property\":\"caco2\",\"direction\":\"maximize\",\"threshold\":0.3,\"baseline\":-4.8158,\"value\":-4.797684352104565,\"passed\":false,\"improvement\":0.01811564789543496},{\"stage\":\"admet\",\"kind\":\"holds\",\"property\":\"ppb\",\"tolerance\":5.0,\"direction\":\"increase\",\"baseline\":102.0481,\"value\":107.27087499883967,\"passed\":false,\"delta\":5.222774998839668}],\"last_product_smiles\":\"Cn1cc(-c2cc(C)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O\",\"last_rdkit_properties\":{\"qed\":0.7344513303230149,\"sa\":2.5509956433098147,\"mw\":350.462,\"logp\":4.8011200000000045,\"tpsa\":47.019999999999996,\"hbd\":1,\"hba\":3,\"rotatable_bonds\":4,\"formal_charge\":0},\"last_tanimoto_to_original\":0.7666666666666667,\"admet_checks\":{\"goals\":[{\"property\":\"clearance\",\"direction\":\"minimize\",\"threshold\":5.0,\"baseline\":34.4122,\"value\":72.60297253711994,\"passed\":false,\"improvement\":-38.19077253711994},{\"property\":\"binding_affinity\",\"direction\":\"minimize\",\"threshold\":0.3,\"baseline\":-1.6392,\"value\":null,\"passed\":null},{\"property\":\"caco2\",\"direction\":\"maximize\",\"threshold\":0.3,\"baseline\":-4.8158,\"value\":-4.797684352104565,\"passed\":false,\"improvement\":0.01811564789543496}],\"holds\":[{\"property\":\"bbb\",\"tolerance\":0.1,\"direction\":\"change\",\"baseline\":0.8647,\"value\":0.8886197328567504,\"passed\":true,\"delta\":0.02391973285675042},{\"property\":\"cyp3a4\",\"tolerance\":0.1,\"direction\":\"increase\",\"baseline\":0.8838,\"value\":0.7461714506149292,\"passed\":true,\"delta\":-0.13762854938507085},{\"property\":\"ppb\",\"tolerance\":5.0,\"direction\":\"increase\",\"baseline\":102.0481,\"value\":107.27087499883967,\"passed\":false,\"delta\":5.222774998839668}],\"admet_goal_count\":2,\"all_admet_goals_passed\":false,\"all_admet_holds_passed\":false,\"binding_affinity_measured\":false,\"boltz_binding_probability\":null},\"pre_boltz_passed\":false,\"binding_status\":\"unmeasured; passing RDKit/ADMET is not full success\",\"previous_products\":[\"Cn1cc(-c2cc(C)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O\"],\"instruction\":\"Repair failed conditions with a small edit; if none failed, propose another plausible candidate.\"}}",
+          "role": "user"
+        }
+      ],
+      "prompt_sha256": "a2dbea00851beec19ccef38ce90accee0ff8e26c1f7b91cb699c67206bd05e12",
+      "request_id": "smdd_004_BRD4_0:feedback:2",
+      "response": {
+        "input_tokens": 3383,
+        "latency_seconds": 10.450948235811666,
+        "output_tokens": 88,
+        "peak_memory_bytes": 19746083840,
+        "raw": "{\n \"focus_atom_maps\": [8],\n \"edit_hypothesis\": \"Replace the methyl group at atom 8 with a fluorine atom to reduce lipophilicity and metabolic clearance while maintaining steric bulk.\",\n \"product_smiles\": \"Cn1cc(-c2cc(F)ccc2OCC2CCCCC2)c2cc[nH]c2c1=O\"\n}\n",
+        "status": "ok",
+        "total_tokens": 3471
+      }
+    },
+    "task_id": "smdd_004_BRD4_0"
+  },
+  {
+    "admet_failure_counts": [
+      2,
+      1
+    ],
+    "first": {
+      "assessment": {
+        "admet_conditions": {
+          "admet_goal_count": 1,
+          "all_admet_goals_passed": false,
+          "all_admet_holds_passed": false,
+          "binding_affinity_measured": false,
+          "boltz_binding_probability": null,
+          "goals": [
+            {
+              "baseline": 54.0616,
+              "direction": "minimize",
+              "improvement": 1.7318404329758295,
+              "passed": false,
+              "property": "clearance",
+              "threshold": 5.0,
+              "value": 52.32975956702417
+            }
+          ],
+          "holds": [
+            {
+              "baseline": -2.116,
+              "direction": "increase",
+              "passed": null,
+              "property": "binding_affinity",
+              "tolerance": 0.3,
+              "value": null
+            },
+            {
+              "baseline": 0.8599,
+              "delta": 0.021976897811889606,
+              "direction": "increase",
+              "passed": true,
+              "property": "herg",
+              "tolerance": 0.1,
+              "value": 0.8818768978118896
+            },
+            {
+              "baseline": 0.5397,
+              "delta": 0.15595609693527224,
+              "direction": "change",
+              "passed": false,
+              "property": "bbb",
+              "tolerance": 0.1,
+              "value": 0.6956560969352722
+            }
+          ]
+        },
+        "admet_properties": {
+          "ames": 0.13520494475960732,
+          "bbb": 0.6956560969352722,
+          "caco2": -4.733789089307097,
+          "clearance": 52.32975956702417,
+          "cyp3a4": 0.9309085011482239,
+          "herg": 0.8818768978118896,
+          "ppb": 92.92678883620354,
+          "solubility": -5.257177279099123
+        },
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": true,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": true,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 6,
+          "hbd": 1,
+          "logp": 4.1902000000000035,
+          "mw": 468.4530000000002,
+          "qed": 0.5358695295321456,
+          "rotatable_bonds": 8,
+          "sa": 2.7235057983399944,
+          "tpsa": 86.63000000000001
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)C(F))ccc1Oc1ccc(F)cc1F",
+        "plan": {
+          "edit_hypothesis": "Replace the terminal methyl group of the sulfonamide ethyl chain with a fluorine atom to reduce molecular weight and lipophilicity, aiming to lower clearance while maintaining binding interactions.",
+          "focus_atom_maps": [
+            20
+          ],
+          "product_smiles": "CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)C(F))ccc1Oc1ccc(F)cc1F"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)CF)ccc1Oc1ccc(F)cc1F",
+        "smiles_valid": true,
+        "tanimoto": 0.8947368421052632
+      },
+      "current_smiles": "CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)CC)ccc1Oc1ccc(F)cc1F",
+      "first_round_shared": true,
+      "mode": "feedback",
+      "request_id": "smdd_004_BRD4_17:shared:1",
+      "round": 1,
+      "server_status": "ok",
+      "task_id": "smdd_004_BRD4_17"
+    },
+    "pre_boltz_rescue": false,
+    "selected": {
+      "assessment": {
+        "admet_conditions": {
+          "admet_goal_count": 1,
+          "all_admet_goals_passed": false,
+          "all_admet_holds_passed": true,
+          "binding_affinity_measured": false,
+          "boltz_binding_probability": null,
+          "goals": [
+            {
+              "baseline": 54.0616,
+              "direction": "minimize",
+              "improvement": 0.5608524489197606,
+              "passed": false,
+              "property": "clearance",
+              "threshold": 5.0,
+              "value": 53.50074755108024
+            }
+          ],
+          "holds": [
+            {
+              "baseline": -2.116,
+              "direction": "increase",
+              "passed": null,
+              "property": "binding_affinity",
+              "tolerance": 0.3,
+              "value": null
+            },
+            {
+              "baseline": 0.8599,
+              "delta": -0.010421636009216306,
+              "direction": "increase",
+              "passed": true,
+              "property": "herg",
+              "tolerance": 0.1,
+              "value": 0.8494783639907837
+            },
+            {
+              "baseline": 0.5397,
+              "delta": 0.09841212778091435,
+              "direction": "change",
+              "passed": true,
+              "property": "bbb",
+              "tolerance": 0.1,
+              "value": 0.6381121277809143
+            }
+          ]
+        },
+        "admet_properties": {
+          "ames": 0.07704505547881127,
+          "bbb": 0.6381121277809143,
+          "caco2": -4.6774680822681995,
+          "clearance": 53.50074755108024,
+          "cyp3a4": 0.9011837124824524,
+          "herg": 0.8494783639907837,
+          "ppb": 91.6292093712385,
+          "solubility": -4.7306617753607725
+        },
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": true,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": true,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 6,
+          "hbd": 1,
+          "logp": 3.8930000000000025,
+          "mw": 450.4630000000002,
+          "qed": 0.5902299959728414,
+          "rotatable_bonds": 7,
+          "sa": 2.5153623461363335,
+          "tpsa": 86.63000000000001
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)C)ccc1Oc1ccc(F)cc1F",
+        "plan": {
+          "edit_hypothesis": "Replace the terminal methyl group of the sulfonamide ethyl chain with a hydrogen atom to reduce molecular weight and clearance while preserving the core scaffold.",
+          "focus_atom_maps": [
+            19
+          ],
+          "product_smiles": "CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)C)ccc1Oc1ccc(F)cc1F"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "CCOc1cc(=O)n(C)cc1-c1cc(NS(C)(=O)=O)ccc1Oc1ccc(F)cc1F",
+        "smiles_valid": true,
+        "tanimoto": 0.8596491228070176
+      },
+      "current_smiles": "CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)CC)ccc1Oc1ccc(F)cc1F",
+      "first_round_shared": false,
+      "mode": "feedback",
+      "request_id": "smdd_004_BRD4_17:feedback:3",
+      "round": 3,
+      "server_status": "ok",
+      "task_id": "smdd_004_BRD4_17"
+    },
+    "selected_call": {
+      "messages": [
+        {
+          "content": "You are a medicinal chemistry editor. Propose one small, chemically valid\nedit of the current ligand while preserving similarity to the ORIGINAL ligand.\nGoals and hold tolerances are always relative to the published ORIGINAL baseline,\nnever to a preceding candidate. Input contains actual RDKit calculations and ADMET\nmodel predictions; these are not experiments. Atom IDs are local to each displayed\nmapped SMILES. Crippen atom contributions describe a logP calculation, not physical\ncausality or binding evidence. Pocket distances belong to the reference structure;\nthey do not locate candidate atoms or prove candidate interactions.\nUse a brief edit hypothesis (one sentence), not a long reasoning narrative. Choose\neditable atom IDs from current_molecule. Change the molecule to address failed\nconditions if feedback is present, keeping already passing conditions. Avoid\nrepeating failed products. Do not invent measured ADMET or binding values. No fixed\ncandidate menu is supplied. Binding affinity and probability require Boltz and may\nbe unmeasured; do not assert they pass.\nReturn ONLY strict JSON with exactly these keys:\n{\"focus_atom_maps\":[1],\"edit_hypothesis\":\"replace group at atom 1 ...\",\n \"product_smiles\":\"complete single-component isomeric SMILES WITHOUT atom maps\"}.\nfocus_atom_maps must contain 1-8 distinct integer IDs in current_molecule. Keep\nedit_hypothesis under 400 characters. product_smiles must be a single SMILES token,\nwith no names, coordinates, Markdown, atom maps, or other text. Preserve specified\nstereochemistry unless it is part of your explicit edit hypothesis.",
+          "role": "system"
+        },
+        {
+          "content": "{\"proposal_number\":3,\"original_molecule\":{\"smiles\":\"CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)CC)ccc1Oc1ccc(F)cc1F\",\"rdkit_properties\":{\"qed\":0.5377429656758712,\"sa\":2.586668036102232,\"mw\":464.49000000000024,\"logp\":4.283100000000004,\"tpsa\":86.63000000000001,\"hbd\":1,\"hba\":6,\"rotatable_bonds\":8,\"formal_charge\":0},\"admet_reprediction\":{\"herg\":0.8568424582481384,\"bbb\":0.5416071474552154,\"solubility\":-5.1029711696315,\"cyp3a4\":0.8978241324424744,\"clearance\":54.80887300420344,\"caco2\":-4.608804763524406,\"ppb\":93.67645698055378,\"ames\":0.08439167216420174}},\"current_molecule\":{\"mapped_smiles\":\"[CH3:1][CH2:2][O:3][c:4]1[cH:5][c:6](=[O:7])[n:8]([CH3:9])[cH:10][c:11]1-[c:12]1[cH:13][c:14]([NH:15][S:16](=[O:17])(=[O:18])[CH2:19][CH3:20])[cH:21][cH:22][c:23]1[O:24][c:25]1[cH:26][cH:27][c:28]([F:29])[cH:30][c:31]1[F:32]\",\"rdkit_properties\":{\"qed\":0.5377429656758712,\"sa\":3.003478799329282,\"mw\":464.49000000000024,\"logp\":4.283100000000004,\"tpsa\":86.63000000000001,\"hbd\":1,\"hba\":6,\"rotatable_bonds\":8,\"formal_charge\":0},\"atom_fields\":[\"map\",\"element\",\"aromatic\",\"charge\",\"neighbors\",\"crippen_logp_with_H\"],\"atoms\":[[1,\"C\",0,0,[2],0.5131],[2,\"C\",0,0,[1,3],0.0425],[3,\"O\",0,0,[2,4],-0.4195],[4,\"C\",1,0,[3,5,11],0.5437],[5,\"C\",1,0,[4,6],0.2811],[6,\"C\",1,0,[5,7,8],-0.8186],[7,\"O\",0,0,[6],0.1788],[8,\"N\",1,0,[6,9,10],-0.3239],[9,\"C\",0,0,[8],0.2246],[10,\"C\",1,0,[8,11],0.2811],[11,\"C\",1,0,[10,12,4],0.2713],[12,\"C\",1,0,[11,13,23],0.2713],[13,\"C\",1,0,[12,14],0.2811],[14,\"C\",1,0,[13,15,21],0.4619],[15,\"N\",0,0,[14,16],-0.3046],[16,\"S\",0,0,[15,17,18,19],-0.0024],[17,\"O\",0,0,[16],-0.3339],[18,\"O\",0,0,[16],-0.3339],[19,\"C\",0,0,[16,20],0.0425],[20,\"C\",0,0,[19],0.5131],[21,\"C\",1,0,[14,22],0.2811],[22,\"C\",1,0,[21,23],0.2811],[23,\"C\",1,0,[22,24,12],0.5437],[24,\"O\",0,0,[23,25],-0.4195],[25,\"C\",1,0,[24,26,31],0.5437],[26,\"C\",1,0,[25,27],0.2811],[27,\"C\",1,0,[26,28],0.2811],[28,\"C\",1,0,[27,29,30],0.0],[29,\"F\",0,0,[28],0.4202],[30,\"C\",1,0,[28,31],0.2811],[31,\"C\",1,0,[30,32,25],0.0],[32,\"F\",0,0,[31],0.4202]],\"functional_groups\":{\"amide\":[],\"ester\":[],\"hydroxyl\":[],\"amine\":[],\"sulfonamide\":[[16,17,18,15]],\"halogen\":[[29],[32]],\"nitrile\":[]},\"admet_prediction\":{\"herg\":0.8568424582481384,\"bbb\":0.5416071474552154,\"solubility\":-5.1029711696315,\"cyp3a4\":0.8978241324424744,\"clearance\":54.80887300420344,\"caco2\":-4.608804763524406,\"ppb\":93.67645698055378,\"ames\":0.08439167216420174}},\"goals\":[{\"property\":\"clearance\",\"direction\":\"minimize\",\"threshold\":5.0,\"baseline\":54.0616}],\"hold\":[{\"property\":\"binding_affinity\",\"tolerance\":0.3,\"direction\":\"increase\",\"baseline\":-2.116},{\"property\":\"herg\",\"tolerance\":0.1,\"direction\":\"increase\",\"baseline\":0.8599},{\"property\":\"bbb\",\"tolerance\":0.1,\"direction\":\"change\",\"baseline\":0.5397}],\"hard_constraints\":{\"mw_lt\":600,\"logp_range\":[-1,5],\"tpsa_lt\":140,\"hbd_le\":5,\"hba_le\":10,\"rotatable_bonds_le\":10,\"formal_charge_range\":[-2,2],\"sa_lt\":4.5,\"no_radicals\":true,\"single_component\":true,\"filters\":[\"PAINS\",\"BRENK\"],\"morgan_r2_2048_tanimoto_ge\":0.7,\"boltz_binding_probability_gt\":0.7},\"reference_pocket\":{\"residue_fields\":[\"chain\",\"seqres_position\",\"aa\",\"reference_min_heavy_distance_A\"],\"residues\":[[\"A\",26,\"W\",3.4],[\"A\",27,\"P\",3.0],[\"A\",28,\"F\",3.5],[\"A\",29,\"Y\",4.8],[\"A\",30,\"K\",3.5],[\"A\",31,\"P\",3.7],[\"A\",32,\"V\",3.3],[\"A\",33,\"D\",2.6],[\"A\",34,\"V\",5.4],[\"A\",36,\"A\",6.4],[\"A\",37,\"L\",3.3],[\"A\",39,\"L\",4.1],[\"A\",42,\"Y\",4.5],[\"A\",50,\"M\",6.2],[\"A\",77,\"M\",5.6],[\"A\",80,\"N\",5.2],[\"A\",81,\"C\",3.7],[\"A\",84,\"Y\",5.0],[\"A\",85,\"N\",2.9],[\"A\",89,\"H\",3.5],[\"A\",90,\"E\",2.9],[\"A\",91,\"V\",3.5],[\"A\",92,\"V\",6.7],[\"A\",94,\"M\",3.6]],\"source\":\"reference complex.pdb\",\"unavailable_distances\":0},\"notes\":\"Published goal/hold baselines stay authoritative even if reference re-prediction differs.\",\"tool_feedback\":{\"failed_conditions\":[{\"stage\":\"edit\",\"condition\":\"Must change the original ligand\"}],\"last_product_smiles\":\"CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)CC)ccc1Oc1ccc(F)cc1F\",\"last_rdkit_properties\":{\"qed\":0.5377429656758712,\"sa\":2.586668036102232,\"mw\":464.49000000000024,\"logp\":4.283100000000004,\"tpsa\":86.63000000000001,\"hbd\":1,\"hba\":6,\"rotatable_bonds\":8,\"formal_charge\":0},\"last_tanimoto_to_original\":1.0,\"admet_checks\":null,\"pre_boltz_passed\":false,\"binding_status\":\"unmeasured; passing RDKit/ADMET is not full success\",\"previous_products\":[\"CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)C(F))ccc1Oc1ccc(F)cc1F\",\"CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)CC)ccc1Oc1ccc(F)cc1F\"],\"instruction\":\"Repair failed conditions with a small edit; if none failed, propose another plausible candidate.\"}}",
+          "role": "user"
+        }
+      ],
+      "prompt_sha256": "cb2825ceba1f664de7896f4799cd57096aad76142e3b3232d69bde0b6b32aff9",
+      "request_id": "smdd_004_BRD4_17:feedback:3",
+      "response": {
+        "input_tokens": 2883,
+        "latency_seconds": 10.0865135518834,
+        "output_tokens": 96,
+        "peak_memory_bytes": 19629539840,
+        "raw": "{\n \"focus_atom_maps\": [19],\n \"edit_hypothesis\": \"Replace the terminal methyl group of the sulfonamide ethyl chain with a hydrogen atom to reduce molecular weight and clearance while preserving the core scaffold.\",\n \"product_smiles\": \"CCOc1cc(=O)n(C)cc1-c1cc(NS(=O)(=O)C)ccc1Oc1ccc(F)cc1F\"\n}\n",
+        "status": "ok",
+        "total_tokens": 2979
+      }
+    },
+    "task_id": "smdd_004_BRD4_17"
+  },
+  {
+    "admet_failure_counts": [
+      null,
+      1
+    ],
+    "first": {
+      "assessment": {
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": true,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": false,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": false,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 5,
+          "hbd": 2,
+          "logp": 5.1502200000000045,
+          "mw": 497.52100000000013,
+          "qed": 0.49195779953009294,
+          "rotatable_bonds": 6,
+          "sa": 2.8857310105425995,
+          "tpsa": 87.22000000000001
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "Cc1ccc(C(=O)Nc2ccc(CN3CC(C)CC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1",
+        "plan": {
+          "edit_hypothesis": "Replace the tertiary amine nitrogen at atom 17 with a methyl group to reduce CYP3A4 inhibition risk while maintaining scaffold rigidity.",
+          "focus_atom_maps": [
+            17
+          ],
+          "product_smiles": "Cc1ccc(C(=O)Nc2ccc(CN3CC(C)CC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "Cc1ccc(C(=O)Nc2ccc(CN3CCC(C)C3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1",
+        "smiles_valid": true,
+        "tanimoto": 0.7681159420289855
+      },
+      "current_smiles": "Cc1ccc(C(=O)Nc2ccc(CN3CCN(C)CC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1",
+      "first_round_shared": true,
+      "mode": "feedback",
+      "request_id": "smdd_004_BRAF_8:shared:1",
+      "round": 1,
+      "server_status": "ok",
+      "task_id": "smdd_004_BRAF_8"
+    },
+    "pre_boltz_rescue": false,
+    "selected": {
+      "assessment": {
+        "admet_conditions": {
+          "admet_goal_count": 1,
+          "all_admet_goals_passed": false,
+          "all_admet_holds_passed": true,
+          "binding_affinity_measured": false,
+          "boltz_binding_probability": null,
+          "goals": [
+            {
+              "baseline": 0.8932,
+              "direction": "minimize",
+              "improvement": -0.026477698612213163,
+              "passed": false,
+              "property": "cyp3a4",
+              "threshold": 0.1,
+              "value": 0.9196776986122132
+            }
+          ],
+          "holds": [
+            {
+              "baseline": 0.9597,
+              "delta": -0.00033609838485715304,
+              "direction": "increase",
+              "passed": true,
+              "property": "herg",
+              "tolerance": 0.1,
+              "value": 0.9593639016151428
+            },
+            {
+              "baseline": 0.7103,
+              "delta": -0.07253766207695012,
+              "direction": "change",
+              "passed": true,
+              "property": "bbb",
+              "tolerance": 0.1,
+              "value": 0.6377623379230499
+            },
+            {
+              "baseline": -5.2065,
+              "delta": -0.2699689385663584,
+              "direction": "decrease",
+              "passed": true,
+              "property": "caco2",
+              "tolerance": 0.3,
+              "value": -5.4764689385663585
+            }
+          ]
+        },
+        "admet_properties": {
+          "ames": 0.29256999790668486,
+          "bbb": 0.6377623379230499,
+          "caco2": -5.4764689385663585,
+          "clearance": -6.116984036748084,
+          "cyp3a4": 0.9196776986122132,
+          "herg": 0.9593639016151428,
+          "ppb": 81.27680963621059,
+          "solubility": -4.232908534744913
+        },
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": true,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": true,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 6,
+          "hbd": 3,
+          "logp": 3.7136200000000024,
+          "mw": 498.5090000000001,
+          "qed": 0.47936680835654266,
+          "rotatable_bonds": 6,
+          "sa": 2.5115050732642086,
+          "tpsa": 99.25
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "Cc1ccc(C(=O)Nc2ccc(CN3CCNCC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1",
+        "plan": {
+          "edit_hypothesis": "Replace the methyl group on the piperazine nitrogen (atom 18) with a hydrogen to reduce lipophilicity and CYP3A4 inhibition risk.",
+          "focus_atom_maps": [
+            18
+          ],
+          "product_smiles": "Cc1ccc(C(=O)Nc2ccc(CN3CCNCC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "Cc1ccc(C(=O)Nc2ccc(CN3CCNCC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1",
+        "smiles_valid": true,
+        "tanimoto": 0.8307692307692308
+      },
+      "current_smiles": "Cc1ccc(C(=O)Nc2ccc(CN3CCN(C)CC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1",
+      "first_round_shared": false,
+      "mode": "feedback",
+      "request_id": "smdd_004_BRAF_8:feedback:3",
+      "round": 3,
+      "server_status": "ok",
+      "task_id": "smdd_004_BRAF_8"
+    },
+    "selected_call": {
+      "messages": [
+        {
+          "content": "You are a medicinal chemistry editor. Propose one small, chemically valid\nedit of the current ligand while preserving similarity to the ORIGINAL ligand.\nGoals and hold tolerances are always relative to the published ORIGINAL baseline,\nnever to a preceding candidate. Input contains actual RDKit calculations and ADMET\nmodel predictions; these are not experiments. Atom IDs are local to each displayed\nmapped SMILES. Crippen atom contributions describe a logP calculation, not physical\ncausality or binding evidence. Pocket distances belong to the reference structure;\nthey do not locate candidate atoms or prove candidate interactions.\nUse a brief edit hypothesis (one sentence), not a long reasoning narrative. Choose\neditable atom IDs from current_molecule. Change the molecule to address failed\nconditions if feedback is present, keeping already passing conditions. Avoid\nrepeating failed products. Do not invent measured ADMET or binding values. No fixed\ncandidate menu is supplied. Binding affinity and probability require Boltz and may\nbe unmeasured; do not assert they pass.\nReturn ONLY strict JSON with exactly these keys:\n{\"focus_atom_maps\":[1],\"edit_hypothesis\":\"replace group at atom 1 ...\",\n \"product_smiles\":\"complete single-component isomeric SMILES WITHOUT atom maps\"}.\nfocus_atom_maps must contain 1-8 distinct integer IDs in current_molecule. Keep\nedit_hypothesis under 400 characters. product_smiles must be a single SMILES token,\nwith no names, coordinates, Markdown, atom maps, or other text. Preserve specified\nstereochemistry unless it is part of your explicit edit hypothesis.",
+          "role": "system"
+        },
+        {
+          "content": "{\"proposal_number\":3,\"original_molecule\":{\"smiles\":\"Cc1ccc(C(=O)Nc2ccc(CN3CCN(C)CC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1\",\"rdkit_properties\":{\"qed\":0.5180068610163234,\"sa\":2.459556707933306,\"mw\":512.5360000000002,\"logp\":4.055820000000003,\"tpsa\":90.46000000000001,\"hbd\":2,\"hba\":6,\"rotatable_bonds\":6,\"formal_charge\":0},\"admet_reprediction\":{\"herg\":0.9596988201141358,\"bbb\":0.7103133201599121,\"solubility\":-4.0357845963685675,\"cyp3a4\":0.8931947946548462,\"clearance\":-3.5299303460045564,\"caco2\":-5.206524318361238,\"ppb\":82.68862450945925,\"ames\":0.3105303317308426}},\"current_molecule\":{\"mapped_smiles\":\"[CH3:1][c:2]1[cH:3][cH:4][c:5]([C:6](=[O:7])[NH:8][c:9]2[cH:10][cH:11][c:12]([CH2:13][N:14]3[CH2:15][CH2:16][N:17]([CH3:18])[CH2:19][CH2:20]3)[c:21]([C:22]([F:23])([F:24])[F:25])[cH:26]2)[cH:27][c:28]1[NH:29][C:30](=[O:31])[c:32]1[cH:33][n:34][cH:35][n:36][cH:37]1\",\"rdkit_properties\":{\"qed\":0.5180068610163234,\"sa\":2.876367471160357,\"mw\":512.5360000000002,\"logp\":4.055820000000003,\"tpsa\":90.46000000000001,\"hbd\":2,\"hba\":6,\"rotatable_bonds\":6,\"formal_charge\":0},\"atom_fields\":[\"map\",\"element\",\"aromatic\",\"charge\",\"neighbors\",\"crippen_logp_with_H\"],\"atoms\":[[1,\"C\",0,0,[2],0.4535],[2,\"C\",1,0,[1,3,28],0.136],[3,\"C\",1,0,[2,4],0.2811],[4,\"C\",1,0,[3,5],0.2811],[5,\"C\",1,0,[4,6,27],0.136],[6,\"C\",0,0,[5,7,8],-0.2783],[7,\"O\",0,0,[6],0.1129],[8,\"N\",0,0,[6,9],-0.3046],[9,\"C\",1,0,[8,10,26],0.4619],[10,\"C\",1,0,[9,11],0.2811],[11,\"C\",1,0,[10,12],0.2811],[12,\"C\",1,0,[11,13,21],0.136],[13,\"C\",0,0,[12,14],0.1944],[14,\"N\",0,0,[13,15,20],-0.3187],[15,\"C\",0,0,[14,16],0.0425],[16,\"C\",0,0,[15,17],0.0425],[17,\"N\",0,0,[16,18,19],-0.3187],[18,\"C\",0,0,[17],0.1655],[19,\"C\",0,0,[17,20],0.0425],[20,\"C\",0,0,[19,14],0.0425],[21,\"C\",1,0,[12,22,26],0.136],[22,\"C\",0,0,[21,23,24,25],-0.0967],[23,\"F\",0,0,[22],0.4202],[24,\"F\",0,0,[22],0.4202],[25,\"F\",0,0,[22],0.4202],[26,\"C\",1,0,[21,9],0.2811],[27,\"C\",1,0,[5,28],0.2811],[28,\"C\",1,0,[27,29,2],0.4619],[29,\"N\",0,0,[28,30],-0.3046],[30,\"C\",0,0,[29,31,32],-0.2783],[31,\"O\",0,0,[30],0.1129],[32,\"C\",1,0,[30,33,37],0.136],[33,\"C\",1,0,[32,34],0.2811],[34,\"N\",1,0,[33,35],-0.3239],[35,\"C\",1,0,[34,36],0.2811],[36,\"N\",1,0,[35,37],-0.3239],[37,\"C\",1,0,[36,32],0.2811]],\"functional_groups\":{\"amide\":[[8,6,7],[29,30,31]],\"ester\":[],\"hydroxyl\":[],\"amine\":[[14],[17]],\"sulfonamide\":[],\"halogen\":[[23],[24],[25]],\"nitrile\":[]},\"admet_prediction\":{\"herg\":0.9596988201141358,\"bbb\":0.7103133201599121,\"solubility\":-4.0357845963685675,\"cyp3a4\":0.8931947946548462,\"clearance\":-3.5299303460045564,\"caco2\":-5.206524318361238,\"ppb\":82.68862450945925,\"ames\":0.3105303317308426}},\"goals\":[{\"property\":\"cyp3a4\",\"direction\":\"minimize\",\"threshold\":0.1,\"baseline\":0.8932}],\"hold\":[{\"property\":\"herg\",\"tolerance\":0.1,\"direction\":\"increase\",\"baseline\":0.9597},{\"property\":\"bbb\",\"tolerance\":0.1,\"direction\":\"change\",\"baseline\":0.7103},{\"property\":\"caco2\",\"tolerance\":0.3,\"direction\":\"decrease\",\"baseline\":-5.2065}],\"hard_constraints\":{\"mw_lt\":600,\"logp_range\":[-1,5],\"tpsa_lt\":140,\"hbd_le\":5,\"hba_le\":10,\"rotatable_bonds_le\":10,\"formal_charge_range\":[-2,2],\"sa_lt\":4.5,\"no_radicals\":true,\"single_component\":true,\"filters\":[\"PAINS\",\"BRENK\"],\"morgan_r2_2048_tanimoto_ge\":0.7,\"boltz_binding_probability_gt\":0.7},\"reference_pocket\":{\"residue_fields\":[\"chain\",\"seqres_position\",\"aa\",\"reference_min_heavy_distance_A\"],\"residues\":[[\"A\",16,\"I\",3.7],[\"A\",24,\"V\",3.8],[\"A\",34,\"A\",3.4],[\"A\",35,\"V\",3.9],[\"A\",36,\"K\",3.4],[\"A\",54,\"E\",2.8],[\"A\",57,\"V\",3.9],[\"A\",58,\"L\",3.5],[\"A\",61,\"T\",4.7],[\"A\",66,\"I\",3.8],[\"A\",67,\"L\",3.2],[\"A\",80,\"I\",3.7],[\"A\",82,\"T\",3.0],[\"A\",83,\"Q\",3.6],[\"A\",84,\"W\",3.5],[\"A\",85,\"C\",3.2],[\"A\",86,\"E\",5.9],[\"A\",87,\"G\",6.9],[\"A\",120,\"L\",3.9],[\"A\",125,\"I\",3.7],[\"A\",126,\"I\",3.2],[\"A\",127,\"H\",2.9],[\"A\",136,\"F\",4.6],[\"A\",145,\"I\",4.0],[\"A\",146,\"G\",3.4],[\"A\",147,\"D\",2.8],[\"A\",148,\"F\",3.2],[\"A\",149,\"G\",5.9],[\"A\",154,\"K\",5.0],[\"A\",167,\"S\",14.3]],\"source\":\"reference complex.pdb\",\"unavailable_distances\":0},\"notes\":\"Published goal/hold baselines stay authoritative even if reference re-prediction differs.\",\"tool_feedback\":{\"failed_conditions\":[{\"stage\":\"edit\",\"condition\":\"Must change the original ligand\"}],\"last_product_smiles\":\"Cc1ccc(C(=O)Nc2ccc(CN3CCN(C)CC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1\",\"last_rdkit_properties\":{\"qed\":0.5180068610163234,\"sa\":2.459556707933306,\"mw\":512.5360000000002,\"logp\":4.055820000000003,\"tpsa\":90.46000000000001,\"hbd\":2,\"hba\":6,\"rotatable_bonds\":6,\"formal_charge\":0},\"last_tanimoto_to_original\":1.0,\"admet_checks\":null,\"pre_boltz_passed\":false,\"binding_status\":\"unmeasured; passing RDKit/ADMET is not full success\",\"previous_products\":[\"Cc1ccc(C(=O)Nc2ccc(CN3CC(C)CC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1\",\"Cc1ccc(C(=O)Nc2ccc(CN3CCN(C)CC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1\"],\"instruction\":\"Repair failed conditions with a small edit; if none failed, propose another plausible candidate.\"}}",
+          "role": "user"
+        }
+      ],
+      "prompt_sha256": "383c02a40f1f257c171e5e69a285ff85f1b029bbac4c767afcbc609af0a650ee",
+      "request_id": "smdd_004_BRAF_8:feedback:3",
+      "response": {
+        "input_tokens": 3168,
+        "latency_seconds": 11.459866293007508,
+        "output_tokens": 106,
+        "peak_memory_bytes": 19695517696,
+        "raw": "{\n \"focus_atom_maps\": [18],\n \"edit_hypothesis\": \"Replace the methyl group on the piperazine nitrogen (atom 18) with a hydrogen to reduce lipophilicity and CYP3A4 inhibition risk.\",\n \"product_smiles\": \"Cc1ccc(C(=O)Nc2ccc(CN3CCNCC3)c(C(F)(F)F)c2)cc1NC(=O)c1cncnc1\"\n}\n",
+        "status": "ok",
+        "total_tokens": 3274
+      }
+    },
+    "task_id": "smdd_004_BRAF_8"
+  },
+  {
+    "admet_failure_counts": [
+      null,
+      2
+    ],
+    "first": {
+      "assessment": {
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": false,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": false,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 4,
+          "hbd": 1,
+          "logp": 3.5364000000000013,
+          "mw": 386.4040000000001,
+          "qed": 0.680839775718607,
+          "rotatable_bonds": 5,
+          "sa": 2.414084666291462,
+          "tpsa": 75.71
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(F)",
+        "plan": {
+          "edit_hypothesis": "Replace the terminal methyl group with a fluorine atom to reduce molecular weight and lipophilicity, potentially lowering clearance and CYP3A4 inhibition while maintaining binding affinity.",
+          "focus_atom_maps": [
+            26
+          ],
+          "product_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(F)"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2CF",
+        "smiles_valid": true,
+        "tanimoto": 0.7407407407407407
+      },
+      "current_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C",
+      "first_round_shared": true,
+      "mode": "feedback",
+      "request_id": "smdd_004_BRD4_4:shared:1",
+      "round": 1,
+      "server_status": "ok",
+      "task_id": "smdd_004_BRD4_4"
+    },
+    "pre_boltz_rescue": false,
+    "selected": {
+      "assessment": {
+        "admet_conditions": {
+          "admet_goal_count": 2,
+          "all_admet_goals_passed": false,
+          "all_admet_holds_passed": true,
+          "binding_affinity_measured": false,
+          "boltz_binding_probability": null,
+          "goals": [
+            {
+              "baseline": 40.5561,
+              "direction": "minimize",
+              "improvement": 1.252568936599765,
+              "passed": false,
+              "property": "clearance",
+              "threshold": 5.0,
+              "value": 39.303531063400236
+            },
+            {
+              "baseline": 0.8196,
+              "direction": "minimize",
+              "improvement": -0.02426669397354131,
+              "passed": false,
+              "property": "cyp3a4",
+              "threshold": 0.1,
+              "value": 0.8438666939735413
+            }
+          ],
+          "holds": [
+            {
+              "baseline": -2.072,
+              "direction": "increase",
+              "passed": null,
+              "property": "binding_affinity",
+              "tolerance": 0.3,
+              "value": null
+            },
+            {
+              "baseline": 0.7874,
+              "delta": 0.015600223636627164,
+              "direction": "increase",
+              "passed": true,
+              "property": "herg",
+              "tolerance": 0.1,
+              "value": 0.8030002236366272
+            },
+            {
+              "baseline": 0.8487,
+              "delta": -0.018546093654632556,
+              "direction": "change",
+              "passed": true,
+              "property": "bbb",
+              "tolerance": 0.1,
+              "value": 0.8301539063453675
+            },
+            {
+              "baseline": -4.6401,
+              "delta": 0.0023028950078289867,
+              "direction": "decrease",
+              "passed": true,
+              "property": "solubility",
+              "tolerance": 0.5,
+              "value": -4.637797104992171
+            }
+          ]
+        },
+        "admet_properties": {
+          "ames": 0.2628221929073334,
+          "bbb": 0.8301539063453675,
+          "caco2": -4.728752946270179,
+          "clearance": 39.303531063400236,
+          "cyp3a4": 0.8438666939735413,
+          "herg": 0.8030002236366272,
+          "ppb": 98.79061759612009,
+          "solubility": -4.637797104992171
+        },
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": true,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": true,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 4,
+          "hbd": 1,
+          "logp": 3.6293000000000015,
+          "mw": 382.44100000000014,
+          "qed": 0.7311193727583968,
+          "rotatable_bonds": 5,
+          "sa": 2.172108552931139,
+          "tpsa": 75.71
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(C)",
+        "plan": {
+          "edit_hypothesis": "Replace the fluorine atom at ID 27 with a methyl group to reduce molecular complexity and potentially lower BRENK flagging while maintaining lipophilicity.",
+          "focus_atom_maps": [
+            27
+          ],
+          "product_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(C)"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "CCN1C(=O)c2cccc3c(NS(=O)(=O)c4ccccc4OC)ccc1c23",
+        "smiles_valid": true,
+        "tanimoto": 0.7547169811320755
+      },
+      "current_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(F)",
+      "first_round_shared": false,
+      "mode": "feedback",
+      "request_id": "smdd_004_BRD4_4:feedback:2",
+      "round": 2,
+      "server_status": "ok",
+      "task_id": "smdd_004_BRD4_4"
+    },
+    "selected_call": {
+      "messages": [
+        {
+          "content": "You are a medicinal chemistry editor. Propose one small, chemically valid\nedit of the current ligand while preserving similarity to the ORIGINAL ligand.\nGoals and hold tolerances are always relative to the published ORIGINAL baseline,\nnever to a preceding candidate. Input contains actual RDKit calculations and ADMET\nmodel predictions; these are not experiments. Atom IDs are local to each displayed\nmapped SMILES. Crippen atom contributions describe a logP calculation, not physical\ncausality or binding evidence. Pocket distances belong to the reference structure;\nthey do not locate candidate atoms or prove candidate interactions.\nUse a brief edit hypothesis (one sentence), not a long reasoning narrative. Choose\neditable atom IDs from current_molecule. Change the molecule to address failed\nconditions if feedback is present, keeping already passing conditions. Avoid\nrepeating failed products. Do not invent measured ADMET or binding values. No fixed\ncandidate menu is supplied. Binding affinity and probability require Boltz and may\nbe unmeasured; do not assert they pass.\nReturn ONLY strict JSON with exactly these keys:\n{\"focus_atom_maps\":[1],\"edit_hypothesis\":\"replace group at atom 1 ...\",\n \"product_smiles\":\"complete single-component isomeric SMILES WITHOUT atom maps\"}.\nfocus_atom_maps must contain 1-8 distinct integer IDs in current_molecule. Keep\nedit_hypothesis under 400 characters. product_smiles must be a single SMILES token,\nwith no names, coordinates, Markdown, atom maps, or other text. Preserve specified\nstereochemistry unless it is part of your explicit edit hypothesis.",
+          "role": "system"
+        },
+        {
+          "content": "{\"proposal_number\":2,\"original_molecule\":{\"smiles\":\"COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C\",\"rdkit_properties\":{\"qed\":0.7670426800950411,\"sa\":2.168110416755546,\"mw\":368.4140000000001,\"logp\":3.239200000000001,\"tpsa\":75.71,\"hbd\":1,\"hba\":4,\"rotatable_bonds\":4,\"formal_charge\":0},\"admet_reprediction\":{\"herg\":0.7874186992645263,\"bbb\":0.8486647725105285,\"solubility\":-4.640058621205062,\"cyp3a4\":0.8195786237716675,\"clearance\":40.556085990814424,\"caco2\":-4.693047773399522,\"ppb\":96.7553342393674,\"ames\":0.29402434527873994}},\"current_molecule\":{\"mapped_smiles\":\"[CH3:1][O:2][c:3]1[cH:4][cH:5][cH:6][cH:7][c:8]1[S:9](=[O:10])(=[O:11])[NH:12][c:13]1[cH:14][cH:15][c:16]2[c:17]3[c:18]([cH:19][cH:20][cH:21][c:22]13)[C:23](=[O:24])[N:25]2[CH2:26][F:27]\",\"rdkit_properties\":{\"qed\":0.680839775718607,\"sa\":2.830895429518513,\"mw\":386.4040000000001,\"logp\":3.5364000000000013,\"tpsa\":75.71,\"hbd\":1,\"hba\":4,\"rotatable_bonds\":5,\"formal_charge\":0},\"atom_fields\":[\"map\",\"element\",\"aromatic\",\"charge\",\"neighbors\",\"crippen_logp_with_H\"],\"atoms\":[[1,\"C\",0,0,[2],0.1655],[2,\"O\",0,0,[1,3],-0.4195],[3,\"C\",1,0,[2,4,8],0.5437],[4,\"C\",1,0,[3,5],0.2811],[5,\"C\",1,0,[4,6],0.2811],[6,\"C\",1,0,[5,7],0.2811],[7,\"C\",1,0,[6,8],0.2811],[8,\"C\",1,0,[7,9,3],0.1893],[9,\"S\",0,0,[8,10,11,12],-0.0024],[10,\"O\",0,0,[9],-0.3339],[11,\"O\",0,0,[9],-0.3339],[12,\"N\",0,0,[9,13],-0.3046],[13,\"C\",1,0,[12,14,22],0.4619],[14,\"C\",1,0,[13,15],0.2811],[15,\"C\",1,0,[14,16],0.2811],[16,\"C\",1,0,[15,17,25],0.4619],[17,\"C\",1,0,[16,18,22],0.2955],[18,\"C\",1,0,[17,19,23],0.136],[19,\"C\",1,0,[18,20],0.2811],[20,\"C\",1,0,[19,21],0.2811],[21,\"C\",1,0,[20,22],0.2811],[22,\"C\",1,0,[21,13,17],0.2955],[23,\"C\",0,0,[18,24,25],-0.2783],[24,\"O\",0,0,[23],0.1129],[25,\"N\",0,0,[23,26,16],-0.4458],[26,\"C\",0,0,[25,27],0.0425],[27,\"F\",0,0,[26],0.4202]],\"functional_groups\":{\"amide\":[[25,23,24]],\"ester\":[],\"hydroxyl\":[],\"amine\":[],\"sulfonamide\":[[9,10,11,12]],\"halogen\":[[27]],\"nitrile\":[]},\"admet_prediction\":null},\"goals\":[{\"property\":\"clearance\",\"direction\":\"minimize\",\"threshold\":5.0,\"baseline\":40.5561},{\"property\":\"cyp3a4\",\"direction\":\"minimize\",\"threshold\":0.1,\"baseline\":0.8196}],\"hold\":[{\"property\":\"binding_affinity\",\"tolerance\":0.3,\"direction\":\"increase\",\"baseline\":-2.072},{\"property\":\"herg\",\"tolerance\":0.1,\"direction\":\"increase\",\"baseline\":0.7874},{\"property\":\"bbb\",\"tolerance\":0.1,\"direction\":\"change\",\"baseline\":0.8487},{\"property\":\"solubility\",\"tolerance\":0.5,\"direction\":\"decrease\",\"baseline\":-4.6401}],\"hard_constraints\":{\"mw_lt\":600,\"logp_range\":[-1,5],\"tpsa_lt\":140,\"hbd_le\":5,\"hba_le\":10,\"rotatable_bonds_le\":10,\"formal_charge_range\":[-2,2],\"sa_lt\":4.5,\"no_radicals\":true,\"single_component\":true,\"filters\":[\"PAINS\",\"BRENK\"],\"morgan_r2_2048_tanimoto_ge\":0.7,\"boltz_binding_probability_gt\":0.7},\"reference_pocket\":{\"residue_fields\":[\"chain\",\"seqres_position\",\"aa\",\"reference_min_heavy_distance_A\"],\"residues\":[[\"A\",26,\"W\",3.2],[\"A\",27,\"P\",3.5],[\"A\",28,\"F\",3.7],[\"A\",29,\"Y\",7.3],[\"A\",30,\"K\",6.2],[\"A\",31,\"P\",6.7],[\"A\",32,\"V\",3.6],[\"A\",33,\"D\",6.5],[\"A\",34,\"V\",8.5],[\"A\",36,\"A\",7.7],[\"A\",37,\"L\",3.5],[\"A\",39,\"L\",4.1],[\"A\",42,\"Y\",4.4],[\"A\",50,\"M\",6.4],[\"A\",77,\"M\",6.0],[\"A\",80,\"N\",5.2],[\"A\",81,\"C\",3.9],[\"A\",84,\"Y\",4.3],[\"A\",85,\"N\",3.0],[\"A\",89,\"H\",3.6],[\"A\",90,\"E\",3.8],[\"A\",91,\"V\",3.9],[\"A\",92,\"V\",6.4],[\"A\",94,\"M\",3.7]],\"source\":\"reference complex.pdb\",\"unavailable_distances\":0},\"notes\":\"Published goal/hold baselines stay authoritative even if reference re-prediction differs.\",\"tool_feedback\":{\"failed_conditions\":[{\"stage\":\"rdkit\",\"condition\":\"brenk\",\"passed\":false}],\"last_product_smiles\":\"COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(F)\",\"last_rdkit_properties\":{\"qed\":0.680839775718607,\"sa\":2.414084666291462,\"mw\":386.4040000000001,\"logp\":3.5364000000000013,\"tpsa\":75.71,\"hbd\":1,\"hba\":4,\"rotatable_bonds\":5,\"formal_charge\":0},\"last_tanimoto_to_original\":0.7407407407407407,\"admet_checks\":null,\"pre_boltz_passed\":false,\"binding_status\":\"unmeasured; passing RDKit/ADMET is not full success\",\"previous_products\":[\"COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(F)\"],\"instruction\":\"Repair failed conditions with a small edit; if none failed, propose another plausible candidate.\"}}",
+          "role": "user"
+        }
+      ],
+      "prompt_sha256": "ec437a8408c0eb1963ac903d5cf560c1c1c95a9c9453d41212db4a26ae09058d",
+      "request_id": "smdd_004_BRD4_4:feedback:2",
+      "response": {
+        "input_tokens": 2588,
+        "latency_seconds": 10.741454472998157,
+        "output_tokens": 100,
+        "peak_memory_bytes": 19552201728,
+        "raw": "{\n\"focus_atom_maps\": [27],\n\"edit_hypothesis\": \"Replace the fluorine atom at ID 27 with a methyl group to reduce molecular complexity and potentially lower BRENK flagging while maintaining lipophilicity.\",\n\"product_smiles\": \"COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(C)\"\n}\n",
+        "status": "ok",
+        "total_tokens": 2688
+      }
+    },
+    "task_id": "smdd_004_BRD4_4"
+  },
+  {
+    "admet_failure_counts": [
+      null,
+      2
+    ],
+    "first": {
+      "assessment": {
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": false,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": false,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 4,
+          "hbd": 1,
+          "logp": 3.5364000000000013,
+          "mw": 386.4040000000001,
+          "qed": 0.680839775718607,
+          "rotatable_bonds": 5,
+          "sa": 2.414084666291462,
+          "tpsa": 75.71
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(F)",
+        "plan": {
+          "edit_hypothesis": "Replace the terminal methyl group with a fluorine atom to reduce lipophilicity and molecular weight, potentially improving HERG and BBB profiles while maintaining binding interactions.",
+          "focus_atom_maps": [
+            26
+          ],
+          "product_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(F)"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2CF",
+        "smiles_valid": true,
+        "tanimoto": 0.7407407407407407
+      },
+      "current_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C",
+      "first_round_shared": true,
+      "mode": "feedback",
+      "request_id": "smdd_004_BRD4_5:shared:1",
+      "round": 1,
+      "server_status": "ok",
+      "task_id": "smdd_004_BRD4_5"
+    },
+    "pre_boltz_rescue": false,
+    "selected": {
+      "assessment": {
+        "admet_conditions": {
+          "admet_goal_count": 2,
+          "all_admet_goals_passed": false,
+          "all_admet_holds_passed": true,
+          "binding_affinity_measured": false,
+          "boltz_binding_probability": null,
+          "goals": [
+            {
+              "baseline": 0.7874,
+              "direction": "minimize",
+              "improvement": -0.015600223636627164,
+              "passed": false,
+              "property": "herg",
+              "threshold": 0.1,
+              "value": 0.8030002236366272
+            },
+            {
+              "baseline": 0.8487,
+              "direction": "minimize",
+              "improvement": 0.018546093654632556,
+              "passed": false,
+              "property": "bbb",
+              "threshold": 0.1,
+              "value": 0.8301539063453675
+            }
+          ],
+          "holds": [
+            {
+              "baseline": -2.072,
+              "direction": "increase",
+              "passed": null,
+              "property": "binding_affinity",
+              "tolerance": 0.3,
+              "value": null
+            },
+            {
+              "baseline": -4.6401,
+              "delta": 0.0023028950078289867,
+              "direction": "decrease",
+              "passed": true,
+              "property": "solubility",
+              "tolerance": 0.5,
+              "value": -4.637797104992171
+            },
+            {
+              "baseline": 0.8196,
+              "delta": 0.02426669397354131,
+              "direction": "increase",
+              "passed": true,
+              "property": "cyp3a4",
+              "tolerance": 0.1,
+              "value": 0.8438666939735413
+            },
+            {
+              "baseline": 40.5561,
+              "delta": -1.252568936599765,
+              "direction": "increase",
+              "passed": true,
+              "property": "clearance",
+              "tolerance": 5.0,
+              "value": 39.303531063400236
+            }
+          ]
+        },
+        "admet_properties": {
+          "ames": 0.2628221929073334,
+          "bbb": 0.8301539063453675,
+          "caco2": -4.728752946270179,
+          "clearance": 39.303531063400236,
+          "cyp3a4": 0.8438666939735413,
+          "herg": 0.8030002236366272,
+          "ppb": 98.79061759612009,
+          "solubility": -4.637797104992171
+        },
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": true,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": true,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 4,
+          "hbd": 1,
+          "logp": 3.6293000000000015,
+          "mw": 382.44100000000014,
+          "qed": 0.7311193727583968,
+          "rotatable_bonds": 5,
+          "sa": 2.172108552931139,
+          "tpsa": 75.71
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(C)",
+        "plan": {
+          "edit_hypothesis": "Replace the fluorine atom at ID 27 with a methyl group to reduce molecular complexity and potentially lower BRENK flagging while maintaining lipophilicity.",
+          "focus_atom_maps": [
+            27
+          ],
+          "product_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(C)"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "CCN1C(=O)c2cccc3c(NS(=O)(=O)c4ccccc4OC)ccc1c23",
+        "smiles_valid": true,
+        "tanimoto": 0.7547169811320755
+      },
+      "current_smiles": "COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(F)",
+      "first_round_shared": false,
+      "mode": "feedback",
+      "request_id": "smdd_004_BRD4_5:feedback:2",
+      "round": 2,
+      "server_status": "ok",
+      "task_id": "smdd_004_BRD4_5"
+    },
+    "selected_call": {
+      "messages": [
+        {
+          "content": "You are a medicinal chemistry editor. Propose one small, chemically valid\nedit of the current ligand while preserving similarity to the ORIGINAL ligand.\nGoals and hold tolerances are always relative to the published ORIGINAL baseline,\nnever to a preceding candidate. Input contains actual RDKit calculations and ADMET\nmodel predictions; these are not experiments. Atom IDs are local to each displayed\nmapped SMILES. Crippen atom contributions describe a logP calculation, not physical\ncausality or binding evidence. Pocket distances belong to the reference structure;\nthey do not locate candidate atoms or prove candidate interactions.\nUse a brief edit hypothesis (one sentence), not a long reasoning narrative. Choose\neditable atom IDs from current_molecule. Change the molecule to address failed\nconditions if feedback is present, keeping already passing conditions. Avoid\nrepeating failed products. Do not invent measured ADMET or binding values. No fixed\ncandidate menu is supplied. Binding affinity and probability require Boltz and may\nbe unmeasured; do not assert they pass.\nReturn ONLY strict JSON with exactly these keys:\n{\"focus_atom_maps\":[1],\"edit_hypothesis\":\"replace group at atom 1 ...\",\n \"product_smiles\":\"complete single-component isomeric SMILES WITHOUT atom maps\"}.\nfocus_atom_maps must contain 1-8 distinct integer IDs in current_molecule. Keep\nedit_hypothesis under 400 characters. product_smiles must be a single SMILES token,\nwith no names, coordinates, Markdown, atom maps, or other text. Preserve specified\nstereochemistry unless it is part of your explicit edit hypothesis.",
+          "role": "system"
+        },
+        {
+          "content": "{\"proposal_number\":2,\"original_molecule\":{\"smiles\":\"COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C\",\"rdkit_properties\":{\"qed\":0.7670426800950411,\"sa\":2.168110416755546,\"mw\":368.4140000000001,\"logp\":3.239200000000001,\"tpsa\":75.71,\"hbd\":1,\"hba\":4,\"rotatable_bonds\":4,\"formal_charge\":0},\"admet_reprediction\":{\"herg\":0.7874186992645263,\"bbb\":0.8486647725105285,\"solubility\":-4.640058621205062,\"cyp3a4\":0.8195786237716675,\"clearance\":40.556085990814424,\"caco2\":-4.693047773399522,\"ppb\":96.7553342393674,\"ames\":0.29402434527873994}},\"current_molecule\":{\"mapped_smiles\":\"[CH3:1][O:2][c:3]1[cH:4][cH:5][cH:6][cH:7][c:8]1[S:9](=[O:10])(=[O:11])[NH:12][c:13]1[cH:14][cH:15][c:16]2[c:17]3[c:18]([cH:19][cH:20][cH:21][c:22]13)[C:23](=[O:24])[N:25]2[CH2:26][F:27]\",\"rdkit_properties\":{\"qed\":0.680839775718607,\"sa\":2.830895429518513,\"mw\":386.4040000000001,\"logp\":3.5364000000000013,\"tpsa\":75.71,\"hbd\":1,\"hba\":4,\"rotatable_bonds\":5,\"formal_charge\":0},\"atom_fields\":[\"map\",\"element\",\"aromatic\",\"charge\",\"neighbors\",\"crippen_logp_with_H\"],\"atoms\":[[1,\"C\",0,0,[2],0.1655],[2,\"O\",0,0,[1,3],-0.4195],[3,\"C\",1,0,[2,4,8],0.5437],[4,\"C\",1,0,[3,5],0.2811],[5,\"C\",1,0,[4,6],0.2811],[6,\"C\",1,0,[5,7],0.2811],[7,\"C\",1,0,[6,8],0.2811],[8,\"C\",1,0,[7,9,3],0.1893],[9,\"S\",0,0,[8,10,11,12],-0.0024],[10,\"O\",0,0,[9],-0.3339],[11,\"O\",0,0,[9],-0.3339],[12,\"N\",0,0,[9,13],-0.3046],[13,\"C\",1,0,[12,14,22],0.4619],[14,\"C\",1,0,[13,15],0.2811],[15,\"C\",1,0,[14,16],0.2811],[16,\"C\",1,0,[15,17,25],0.4619],[17,\"C\",1,0,[16,18,22],0.2955],[18,\"C\",1,0,[17,19,23],0.136],[19,\"C\",1,0,[18,20],0.2811],[20,\"C\",1,0,[19,21],0.2811],[21,\"C\",1,0,[20,22],0.2811],[22,\"C\",1,0,[21,13,17],0.2955],[23,\"C\",0,0,[18,24,25],-0.2783],[24,\"O\",0,0,[23],0.1129],[25,\"N\",0,0,[23,26,16],-0.4458],[26,\"C\",0,0,[25,27],0.0425],[27,\"F\",0,0,[26],0.4202]],\"functional_groups\":{\"amide\":[[25,23,24]],\"ester\":[],\"hydroxyl\":[],\"amine\":[],\"sulfonamide\":[[9,10,11,12]],\"halogen\":[[27]],\"nitrile\":[]},\"admet_prediction\":null},\"goals\":[{\"property\":\"herg\",\"direction\":\"minimize\",\"threshold\":0.1,\"baseline\":0.7874},{\"property\":\"bbb\",\"direction\":\"minimize\",\"threshold\":0.1,\"baseline\":0.8487}],\"hold\":[{\"property\":\"binding_affinity\",\"tolerance\":0.3,\"direction\":\"increase\",\"baseline\":-2.072},{\"property\":\"solubility\",\"tolerance\":0.5,\"direction\":\"decrease\",\"baseline\":-4.6401},{\"property\":\"cyp3a4\",\"tolerance\":0.1,\"direction\":\"increase\",\"baseline\":0.8196},{\"property\":\"clearance\",\"tolerance\":5.0,\"direction\":\"increase\",\"baseline\":40.5561}],\"hard_constraints\":{\"mw_lt\":600,\"logp_range\":[-1,5],\"tpsa_lt\":140,\"hbd_le\":5,\"hba_le\":10,\"rotatable_bonds_le\":10,\"formal_charge_range\":[-2,2],\"sa_lt\":4.5,\"no_radicals\":true,\"single_component\":true,\"filters\":[\"PAINS\",\"BRENK\"],\"morgan_r2_2048_tanimoto_ge\":0.7,\"boltz_binding_probability_gt\":0.7},\"reference_pocket\":{\"residue_fields\":[\"chain\",\"seqres_position\",\"aa\",\"reference_min_heavy_distance_A\"],\"residues\":[[\"A\",26,\"W\",3.2],[\"A\",27,\"P\",3.5],[\"A\",28,\"F\",3.7],[\"A\",29,\"Y\",7.3],[\"A\",30,\"K\",6.2],[\"A\",31,\"P\",6.7],[\"A\",32,\"V\",3.6],[\"A\",33,\"D\",6.5],[\"A\",34,\"V\",8.5],[\"A\",36,\"A\",7.7],[\"A\",37,\"L\",3.5],[\"A\",39,\"L\",4.1],[\"A\",42,\"Y\",4.4],[\"A\",50,\"M\",6.4],[\"A\",77,\"M\",6.0],[\"A\",80,\"N\",5.2],[\"A\",81,\"C\",3.9],[\"A\",84,\"Y\",4.3],[\"A\",85,\"N\",3.0],[\"A\",89,\"H\",3.6],[\"A\",90,\"E\",3.8],[\"A\",91,\"V\",3.9],[\"A\",92,\"V\",6.4],[\"A\",94,\"M\",3.7]],\"source\":\"reference complex.pdb\",\"unavailable_distances\":0},\"notes\":\"Published goal/hold baselines stay authoritative even if reference re-prediction differs.\",\"tool_feedback\":{\"failed_conditions\":[{\"stage\":\"rdkit\",\"condition\":\"brenk\",\"passed\":false}],\"last_product_smiles\":\"COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(F)\",\"last_rdkit_properties\":{\"qed\":0.680839775718607,\"sa\":2.414084666291462,\"mw\":386.4040000000001,\"logp\":3.5364000000000013,\"tpsa\":75.71,\"hbd\":1,\"hba\":4,\"rotatable_bonds\":5,\"formal_charge\":0},\"last_tanimoto_to_original\":0.7407407407407407,\"admet_checks\":null,\"pre_boltz_passed\":false,\"binding_status\":\"unmeasured; passing RDKit/ADMET is not full success\",\"previous_products\":[\"COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(F)\"],\"instruction\":\"Repair failed conditions with a small edit; if none failed, propose another plausible candidate.\"}}",
+          "role": "user"
+        }
+      ],
+      "prompt_sha256": "9ed6a5a82c33c9d324a7db6dfe488eebc5e5793dedea05bda0d4698a71ba18b6",
+      "request_id": "smdd_004_BRD4_5:feedback:2",
+      "response": {
+        "input_tokens": 2588,
+        "latency_seconds": 10.701906390953809,
+        "output_tokens": 100,
+        "peak_memory_bytes": 19552201728,
+        "raw": "{\n\"focus_atom_maps\": [27],\n\"edit_hypothesis\": \"Replace the fluorine atom at ID 27 with a methyl group to reduce molecular complexity and potentially lower BRENK flagging while maintaining lipophilicity.\",\n\"product_smiles\": \"COc1ccccc1S(=O)(=O)Nc1ccc2c3c(cccc13)C(=O)N2C(C)\"\n}\n",
+        "status": "ok",
+        "total_tokens": 2688
+      }
+    },
+    "task_id": "smdd_004_BRD4_5"
+  },
+  {
+    "admet_failure_counts": [
+      null,
+      2
+    ],
+    "first": {
+      "assessment": {
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": false,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": false,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 8,
+          "hbd": 0,
+          "logp": 3.764180000000003,
+          "mw": 463.4940000000001,
+          "qed": 0.38467923459532816,
+          "rotatable_bonds": 7,
+          "sa": 2.8953520110282334,
+          "tpsa": 101.11000000000001
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "N#Cc1ccc(N(Cc2ccc(OS(C)(=O)=O)c(F)c2)n2cnnc2)cc1-c1ccccc1",
+        "plan": {
+          "edit_hypothesis": "Replace the primary amine nitrogen of the sulfonamide group with a methyl group to reduce basicity and potentially lower BBB permeability while maintaining H-bond acceptor count.",
+          "focus_atom_maps": [
+            15
+          ],
+          "product_smiles": "N#Cc1ccc(N(Cc2ccc(OS(C)(=O)=O)c(F)c2)n2cnnc2)cc1-c1ccccc1"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "CS(=O)(=O)Oc1ccc(CN(c2ccc(C#N)c(-c3ccccc3)c2)n2cnnc2)cc1F",
+        "smiles_valid": true,
+        "tanimoto": 0.84375
+      },
+      "current_smiles": "N#Cc1ccc(N(Cc2ccc(OS(N)(=O)=O)c(F)c2)n2cnnc2)cc1-c1ccccc1",
+      "first_round_shared": true,
+      "mode": "feedback",
+      "request_id": "smdd_004_CYP19A1_2:shared:1",
+      "round": 1,
+      "server_status": "ok",
+      "task_id": "smdd_004_CYP19A1_2"
+    },
+    "pre_boltz_rescue": false,
+    "selected": {
+      "assessment": {
+        "admet_conditions": {
+          "admet_goal_count": 1,
+          "all_admet_goals_passed": false,
+          "all_admet_holds_passed": false,
+          "binding_affinity_measured": false,
+          "boltz_binding_probability": null,
+          "goals": [
+            {
+              "baseline": -2.9338,
+              "direction": "minimize",
+              "passed": null,
+              "property": "binding_affinity",
+              "threshold": 0.3,
+              "value": null
+            },
+            {
+              "baseline": 0.7002,
+              "direction": "minimize",
+              "improvement": -0.03694852333068843,
+              "passed": false,
+              "property": "bbb",
+              "threshold": 0.1,
+              "value": 0.7371485233306885
+            }
+          ],
+          "holds": [
+            {
+              "baseline": 0.8785,
+              "delta": 0.001529857158660941,
+              "direction": "increase",
+              "passed": true,
+              "property": "herg",
+              "tolerance": 0.1,
+              "value": 0.8800298571586609
+            },
+            {
+              "baseline": -5.1684,
+              "delta": -1.0542437162479636,
+              "direction": "decrease",
+              "passed": false,
+              "property": "solubility",
+              "tolerance": 0.5,
+              "value": -6.222643716247964
+            },
+            {
+              "baseline": 0.9659,
+              "delta": -0.025026400947570804,
+              "direction": "increase",
+              "passed": true,
+              "property": "cyp3a4",
+              "tolerance": 0.1,
+              "value": 0.9408735990524292
+            }
+          ]
+        },
+        "admet_properties": {
+          "ames": 0.35835963785648345,
+          "bbb": 0.7371485233306885,
+          "caco2": -4.9188659052704695,
+          "clearance": 37.733722892887194,
+          "cyp3a4": 0.9408735990524292,
+          "herg": 0.8800298571586609,
+          "ppb": 97.02138518495671,
+          "solubility": -6.222643716247964
+        },
+        "boltz_binding_probability": null,
+        "changed": true,
+        "checks": {
+          "brenk": true,
+          "formal_charge": true,
+          "hba": true,
+          "hbd": true,
+          "logp": true,
+          "mw": true,
+          "no_atom_maps": true,
+          "no_radicals": true,
+          "pains": true,
+          "rotatable_bonds": true,
+          "sa": true,
+          "single_component": true,
+          "tanimoto": true,
+          "tpsa": true
+        },
+        "edit_location_tool_verified": false,
+        "full_benchmark_success": false,
+        "json_valid": true,
+        "local_hard_constraints_passed": true,
+        "metrics": {
+          "formal_charge": 0,
+          "hba": 8,
+          "hbd": 0,
+          "logp": 4.018880000000003,
+          "mw": 467.4570000000001,
+          "qed": 0.3785012051877555,
+          "rotatable_bonds": 7,
+          "sa": 3.05788670824591,
+          "tpsa": 101.11000000000001
+        },
+        "oracle_goal_success": null,
+        "oracle_hold_success": null,
+        "oracle_smiles": "N#Cc1ccc(N(Cc2ccc(OS(=O)(=O)[F])c(F)c2)n2cnnc2)cc1-c1ccccc1",
+        "plan": {
+          "edit_hypothesis": "Replace the methyl group on the sulfonamide with a fluorine atom to reduce molecular weight and improve BRENK filter compliance.",
+          "focus_atom_maps": [
+            15
+          ],
+          "product_smiles": "N#Cc1ccc(N(Cc2ccc(OS(=O)(=O)[F])c(F)c2)n2cnnc2)cc1-c1ccccc1"
+        },
+        "plan_valid": true,
+        "pre_boltz_passed": false,
+        "product_smiles": "N#Cc1ccc(N(Cc2ccc(OS(=O)(=O)F)c(F)c2)n2cnnc2)cc1-c1ccccc1",
+        "smiles_valid": true,
+        "tanimoto": 0.8571428571428571
+      },
+      "current_smiles": "N#Cc1ccc(N(Cc2ccc(OS(C)(=O)=O)c(F)c2)n2cnnc2)cc1-c1ccccc1",
+      "first_round_shared": false,
+      "mode": "feedback",
+      "request_id": "smdd_004_CYP19A1_2:feedback:2",
+      "round": 2,
+      "server_status": "ok",
+      "task_id": "smdd_004_CYP19A1_2"
+    },
+    "selected_call": {
+      "messages": [
+        {
+          "content": "You are a medicinal chemistry editor. Propose one small, chemically valid\nedit of the current ligand while preserving similarity to the ORIGINAL ligand.\nGoals and hold tolerances are always relative to the published ORIGINAL baseline,\nnever to a preceding candidate. Input contains actual RDKit calculations and ADMET\nmodel predictions; these are not experiments. Atom IDs are local to each displayed\nmapped SMILES. Crippen atom contributions describe a logP calculation, not physical\ncausality or binding evidence. Pocket distances belong to the reference structure;\nthey do not locate candidate atoms or prove candidate interactions.\nUse a brief edit hypothesis (one sentence), not a long reasoning narrative. Choose\neditable atom IDs from current_molecule. Change the molecule to address failed\nconditions if feedback is present, keeping already passing conditions. Avoid\nrepeating failed products. Do not invent measured ADMET or binding values. No fixed\ncandidate menu is supplied. Binding affinity and probability require Boltz and may\nbe unmeasured; do not assert they pass.\nReturn ONLY strict JSON with exactly these keys:\n{\"focus_atom_maps\":[1],\"edit_hypothesis\":\"replace group at atom 1 ...\",\n \"product_smiles\":\"complete single-component isomeric SMILES WITHOUT atom maps\"}.\nfocus_atom_maps must contain 1-8 distinct integer IDs in current_molecule. Keep\nedit_hypothesis under 400 characters. product_smiles must be a single SMILES token,\nwith no names, coordinates, Markdown, atom maps, or other text. Preserve specified\nstereochemistry unless it is part of your explicit edit hypothesis.",
+          "role": "system"
+        },
+        {
+          "content": "{\"proposal_number\":2,\"original_molecule\":{\"smiles\":\"N#Cc1ccc(N(Cc2ccc(OS(N)(=O)=O)c(F)c2)n2cnnc2)cc1-c1ccccc1\",\"rdkit_properties\":{\"qed\":0.44530124898679174,\"sa\":2.9449168228121962,\"mw\":464.4820000000001,\"logp\":3.0080800000000014,\"tpsa\":127.13,\"hbd\":1,\"hba\":8,\"rotatable_bonds\":7,\"formal_charge\":0},\"admet_reprediction\":{\"herg\":0.8779633045196533,\"bbb\":0.7009671092033386,\"solubility\":-5.184245945149492,\"cyp3a4\":0.9662691354751587,\"clearance\":24.91438255747795,\"caco2\":-5.367461717839184,\"ppb\":90.84930526861515,\"ames\":0.5083338737487793}},\"current_molecule\":{\"mapped_smiles\":\"[N:1]#[C:2][c:3]1[cH:4][cH:5][c:6]([N:7]([CH2:8][c:9]2[cH:10][cH:11][c:12]([O:13][S:14]([CH3:15])(=[O:16])=[O:17])[c:18]([F:19])[cH:20]2)[n:21]2[cH:22][n:23][n:24][cH:25]2)[cH:26][c:27]1-[c:28]1[cH:29][cH:30][cH:31][cH:32][cH:33]1\",\"rdkit_properties\":{\"qed\":0.38467923459532816,\"sa\":3.3121627742552846,\"mw\":463.4940000000001,\"logp\":3.764180000000003,\"tpsa\":101.11000000000001,\"hbd\":0,\"hba\":8,\"rotatable_bonds\":7,\"formal_charge\":0},\"atom_fields\":[\"map\",\"element\",\"aromatic\",\"charge\",\"neighbors\",\"crippen_logp_with_H\"],\"atoms\":[[1,\"N\",0,0,[2],0.0151],[2,\"C\",0,0,[1,3],0.0017],[3,\"C\",1,0,[2,4,27],0.136],[4,\"C\",1,0,[3,5],0.2811],[5,\"C\",1,0,[4,6],0.2811],[6,\"C\",1,0,[5,7,26],0.4619],[7,\"N\",0,0,[6,8,21],-0.4458],[8,\"C\",0,0,[7,9],0.1944],[9,\"C\",1,0,[8,10,20],0.136],[10,\"C\",1,0,[9,11],0.2811],[11,\"C\",1,0,[10,12],0.2811],[12,\"C\",1,0,[11,13,18],0.5437],[13,\"O\",0,0,[12,14],-0.4195],[14,\"S\",0,0,[13,15,16,17],-0.0024],[15,\"C\",0,0,[14],0.1655],[16,\"O\",0,0,[14],-0.3339],[17,\"O\",0,0,[14],-0.3339],[18,\"C\",1,0,[12,19,20],0.0],[19,\"F\",0,0,[18],0.4202],[20,\"C\",1,0,[18,9],0.2811],[21,\"N\",1,0,[7,22,25],-0.3239],[22,\"C\",1,0,[21,23],0.2811],[23,\"N\",1,0,[22,24],-0.3239],[24,\"N\",1,0,[23,25],-0.3239],[25,\"C\",1,0,[24,21],0.2811],[26,\"C\",1,0,[6,27],0.2811],[27,\"C\",1,0,[26,28,3],0.2713],[28,\"C\",1,0,[27,29,33],0.2713],[29,\"C\",1,0,[28,30],0.2811],[30,\"C\",1,0,[29,31],0.2811],[31,\"C\",1,0,[30,32],0.2811],[32,\"C\",1,0,[31,33],0.2811],[33,\"C\",1,0,[32,28],0.2811]],\"functional_groups\":{\"amide\":[],\"ester\":[],\"hydroxyl\":[],\"amine\":[[7]],\"sulfonamide\":[],\"halogen\":[[19]],\"nitrile\":[[2,1]]},\"admet_prediction\":null},\"goals\":[{\"property\":\"binding_affinity\",\"direction\":\"minimize\",\"threshold\":0.3,\"baseline\":-2.9338},{\"property\":\"bbb\",\"direction\":\"minimize\",\"threshold\":0.1,\"baseline\":0.7002}],\"hold\":[{\"property\":\"herg\",\"tolerance\":0.1,\"direction\":\"increase\",\"baseline\":0.8785},{\"property\":\"solubility\",\"tolerance\":0.5,\"direction\":\"decrease\",\"baseline\":-5.1684},{\"property\":\"cyp3a4\",\"tolerance\":0.1,\"direction\":\"increase\",\"baseline\":0.9659}],\"hard_constraints\":{\"mw_lt\":600,\"logp_range\":[-1,5],\"tpsa_lt\":140,\"hbd_le\":5,\"hba_le\":10,\"rotatable_bonds_le\":10,\"formal_charge_range\":[-2,2],\"sa_lt\":4.5,\"no_radicals\":true,\"single_component\":true,\"filters\":[\"PAINS\",\"BRENK\"],\"morgan_r2_2048_tanimoto_ge\":0.7,\"boltz_binding_probability_gt\":0.7},\"reference_pocket\":{\"residue_fields\":[\"chain\",\"seqres_position\",\"aa\",\"reference_min_heavy_distance_A\"],\"residues\":[[\"A\",81,\"R\",2.5],[\"A\",99,\"I\",3.2],[\"A\",100,\"F\",3.4],[\"A\",187,\"F\",2.8],[\"A\",190,\"W\",3.5],[\"A\",268,\"E\",4.4],[\"A\",271,\"I\",2.7],[\"A\",272,\"A\",3.1],[\"A\",273,\"A\",5.8],[\"A\",275,\"D\",2.5],[\"A\",276,\"T\",3.3],[\"A\",336,\"V\",3.7],[\"A\",338,\"L\",2.6],[\"A\",339,\"V\",3.4],[\"A\",340,\"M\",2.5],[\"A\",341,\"R\",5.3],[\"A\",443,\"L\",3.5],[\"A\",444,\"S\",5.5]],\"source\":\"reference complex.pdb\",\"unavailable_distances\":0},\"notes\":\"Published goal/hold baselines stay authoritative even if reference re-prediction differs.\",\"tool_feedback\":{\"failed_conditions\":[{\"stage\":\"rdkit\",\"condition\":\"brenk\",\"passed\":false}],\"last_product_smiles\":\"N#Cc1ccc(N(Cc2ccc(OS(C)(=O)=O)c(F)c2)n2cnnc2)cc1-c1ccccc1\",\"last_rdkit_properties\":{\"qed\":0.38467923459532816,\"sa\":2.8953520110282334,\"mw\":463.4940000000001,\"logp\":3.764180000000003,\"tpsa\":101.11000000000001,\"hbd\":0,\"hba\":8,\"rotatable_bonds\":7,\"formal_charge\":0},\"last_tanimoto_to_original\":0.84375,\"admet_checks\":null,\"pre_boltz_passed\":false,\"binding_status\":\"unmeasured; passing RDKit/ADMET is not full success\",\"previous_products\":[\"N#Cc1ccc(N(Cc2ccc(OS(C)(=O)=O)c(F)c2)n2cnnc2)cc1-c1ccccc1\"],\"instruction\":\"Repair failed conditions with a small edit; if none failed, propose another plausible candidate.\"}}",
+          "role": "user"
+        }
+      ],
+      "prompt_sha256": "c756292c391d3ebd346fd9289c0ee6964a563698a9ac7df7e149d777196959f2",
+      "request_id": "smdd_004_CYP19A1_2:feedback:2",
+      "response": {
+        "input_tokens": 2675,
+        "latency_seconds": 10.428157703951001,
+        "output_tokens": 95,
+        "peak_memory_bytes": 19568739328,
+        "raw": "{\n \"focus_atom_maps\": [15],\n \"edit_hypothesis\": \"Replace the methyl group on the sulfonamide with a fluorine atom to reduce molecular weight and improve BRENK filter compliance.\",\n \"product_smiles\": \"N#Cc1ccc(N(Cc2ccc(OS(=O)(=O)[F])c(F)c2)n2cnnc2)cc1-c1ccccc1\"\n}\n",
+        "status": "ok",
+        "total_tokens": 2770
+      }
+    },
+    "task_id": "smdd_004_CYP19A1_2"
+  }
+]

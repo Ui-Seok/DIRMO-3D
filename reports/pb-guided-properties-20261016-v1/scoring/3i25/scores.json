@@ -1,0 +1,213 @@
+{
+  "box_center": [
+    -0.32442857142857123,
+    17.055444444444454,
+    33.96715873015872
+  ],
+  "box_size": [
+    40.0,
+    40.0,
+    40.0
+  ],
+  "case_id": "3i25",
+  "identity": {
+    "inputs": {
+      "UFF_targeted/013/00": "4fdb20de5df63ef472634d390e249d8ee427b01d1bce960db1796ec0f2a403ad",
+      "native": "77fd7304de2ede239714ef6d110d72a97ca634759e31d1c492e94d614d20fa23",
+      "random/013/00": "8472dff11d1575dc781b15c2ac1e27964a96f08b67c5a5593ce979b11865d907",
+      "random/013/01": "d1b8ec0dfa447e0e51b81953efea923a3c0c48418d97e55427827e1d4ddc9c31",
+      "random/013/02": "da7a35721dba443b4a512d3e4a9b99535fe948692ffc7963b436034ab4b2cfcd",
+      "random/013/03": "b8478e1ae44cc1ac38bc8deee8f80133866edde63b36b1639ded8e3524dfa943",
+      "random/013/04": "9d16b2e9aba80bb4434d7ca0b36d8b1224e9ffb18cda3f122457c03a01dfbe6e",
+      "random/013/05": "2118be768f30a41f1de8cc60a0f20ef7f218a7e9e8b16392b61a4e143109ce03",
+      "random/013/06": "20ffd562a43d517ef99ed7d59858f18156fd6495f84f0afb4ed3c5b6f71c6ec4",
+      "random/013/07": "93fb5997dc80e2dd8733883249495c9f168b1056e0e940942230de03400ec05a",
+      "source/013": "b6e28c167ac57adb73dd1479c0de0360ddb31fde4d29ba2137d789438f91950c",
+      "targeted/013/00": "8472dff11d1575dc781b15c2ac1e27964a96f08b67c5a5593ce979b11865d907",
+      "targeted/013/01": "d1b8ec0dfa447e0e51b81953efea923a3c0c48418d97e55427827e1d4ddc9c31",
+      "targeted/013/02": "da7a35721dba443b4a512d3e4a9b99535fe948692ffc7963b436034ab4b2cfcd",
+      "targeted/013/03": "b8478e1ae44cc1ac38bc8deee8f80133866edde63b36b1639ded8e3524dfa943",
+      "targeted/013/04": "9d16b2e9aba80bb4434d7ca0b36d8b1224e9ffb18cda3f122457c03a01dfbe6e",
+      "targeted/013/05": "2118be768f30a41f1de8cc60a0f20ef7f218a7e9e8b16392b61a4e143109ce03",
+      "targeted/013/06": "20ffd562a43d517ef99ed7d59858f18156fd6495f84f0afb4ed3c5b6f71c6ec4",
+      "targeted/013/07": "93fb5997dc80e2dd8733883249495c9f168b1056e0e940942230de03400ec05a",
+      "whole/013/00": "75ea28e3d0b456dcb46bf0a807d2fe009ed60899e54d7a966e54350f2238f798",
+      "whole/013/01": "58eb818a3e8988d15566de4d7f1bd32cc82795cc69403bf1bc0e6fa435148ecb",
+      "whole/013/02": "34e0f24835c333abec9a231ec17cee34ad1c245bff9c3b601cf65174a57881de",
+      "whole/013/03": "e32eb95060cfea276a4db655a65b162d02342d5099e882c4367b73eaaa542b44",
+      "whole/013/04": "5d2a0ea0094d1737714e37bcd1d408fb8d338f43011df4eac846304e78b05ace",
+      "whole/013/05": "7e8f1232808c50d579024fbe2c2dacb7e269c8b9118cddf3e26cac763249304f",
+      "whole/013/06": "ea534019a247c22a59b9c76ca3731b334c63687c123b36dd8942209c05302ecb",
+      "whole/013/07": "243c21948998831df798e2afddf3b84cbd078725ba9b6ad74fd1a59bea7874cb"
+    },
+    "native_sha256": "77fd7304de2ede239714ef6d110d72a97ca634759e31d1c492e94d614d20fa23",
+    "protein_sha256": "b73fe346a7544dacde62c901517ced8e54340a3fe226625f7c348456c3e29321",
+    "protocol": "Meeko standard amino acids; HIE histidines; raw heavy XYZ; Vina score only; 40 A native-centered box"
+  },
+  "receptor": "/home/uslee/code/DIRMO-3D/reports/pb-guided-properties-20261016-v1/scoring/3i25/receptor.pdbqt",
+  "receptor_status": 0,
+  "scores": {
+    "UFF_targeted/013/00": {
+      "mode": "score_only",
+      "score": -12.286,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/3i25/013/00/raw.sdf",
+      "status": "ok"
+    },
+    "native": {
+      "mode": "score_only",
+      "score": -11.543,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/3i25/native.sdf",
+      "status": "ok"
+    },
+    "random/013/00": {
+      "mode": "score_only",
+      "score": -12.466,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/00/raw.sdf",
+      "status": "ok"
+    },
+    "random/013/01": {
+      "mode": "score_only",
+      "score": -12.406,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/01/raw.sdf",
+      "status": "ok"
+    },
+    "random/013/02": {
+      "mode": "score_only",
+      "score": -12.464,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/02/raw.sdf",
+      "status": "ok"
+    },
+    "random/013/03": {
+      "mode": "score_only",
+      "score": -12.402,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/03/raw.sdf",
+      "status": "ok"
+    },
+    "random/013/04": {
+      "mode": "score_only",
+      "score": -12.407,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/04/raw.sdf",
+      "status": "ok"
+    },
+    "random/013/05": {
+      "mode": "score_only",
+      "score": -12.423,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/05/raw.sdf",
+      "status": "ok"
+    },
+    "random/013/06": {
+      "mode": "score_only",
+      "score": -12.465,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/06/raw.sdf",
+      "status": "ok"
+    },
+    "random/013/07": {
+      "mode": "score_only",
+      "score": -12.431,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/3i25/013/07/raw.sdf",
+      "status": "ok"
+    },
+    "source/013": {
+      "mode": "score_only",
+      "score": -12.468,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/3i25/initial/013/repair_input.sdf",
+      "status": "ok"
+    },
+    "targeted/013/00": {
+      "mode": "score_only",
+      "score": -12.466,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/00/raw.sdf",
+      "status": "ok"
+    },
+    "targeted/013/01": {
+      "mode": "score_only",
+      "score": -12.406,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/01/raw.sdf",
+      "status": "ok"
+    },
+    "targeted/013/02": {
+      "mode": "score_only",
+      "score": -12.464,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/02/raw.sdf",
+      "status": "ok"
+    },
+    "targeted/013/03": {
+      "mode": "score_only",
+      "score": -12.402,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/03/raw.sdf",
+      "status": "ok"
+    },
+    "targeted/013/04": {
+      "mode": "score_only",
+      "score": -12.407,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/04/raw.sdf",
+      "status": "ok"
+    },
+    "targeted/013/05": {
+      "mode": "score_only",
+      "score": -12.423,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/05/raw.sdf",
+      "status": "ok"
+    },
+    "targeted/013/06": {
+      "mode": "score_only",
+      "score": -12.465,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/06/raw.sdf",
+      "status": "ok"
+    },
+    "targeted/013/07": {
+      "mode": "score_only",
+      "score": -12.431,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/3i25/013/07/raw.sdf",
+      "status": "ok"
+    },
+    "whole/013/00": {
+      "mode": "score_only",
+      "score": -12.171,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/00/raw.sdf",
+      "status": "ok"
+    },
+    "whole/013/01": {
+      "mode": "score_only",
+      "score": -12.097,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/01/raw.sdf",
+      "status": "ok"
+    },
+    "whole/013/02": {
+      "mode": "score_only",
+      "score": -12.098,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/02/raw.sdf",
+      "status": "ok"
+    },
+    "whole/013/03": {
+      "mode": "score_only",
+      "score": -12.186,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/03/raw.sdf",
+      "status": "ok"
+    },
+    "whole/013/04": {
+      "mode": "score_only",
+      "score": -12.159,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/04/raw.sdf",
+      "status": "ok"
+    },
+    "whole/013/05": {
+      "mode": "score_only",
+      "score": -12.09,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/05/raw.sdf",
+      "status": "ok"
+    },
+    "whole/013/06": {
+      "mode": "score_only",
+      "score": -12.088,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/06/raw.sdf",
+      "status": "ok"
+    },
+    "whole/013/07": {
+      "mode": "score_only",
+      "score": -12.142,
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/3i25/013/07/raw.sdf",
+      "status": "ok"
+    }
+  }
+}

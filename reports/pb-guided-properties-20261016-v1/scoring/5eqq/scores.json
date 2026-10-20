@@ -1,0 +1,654 @@
+{
+  "box_center": [
+    -13.763961538461537,
+    -10.178096153846155,
+    14.336096153846151
+  ],
+  "box_size": [
+    40.0,
+    40.0,
+    40.0
+  ],
+  "case_id": "5eqq",
+  "identity": {
+    "inputs": {
+      "UFF_targeted/003/00": "80b5a3504299fc4608b107bfaf7058aa74936dd6142fc519980b7c66c8f390e6",
+      "UFF_targeted/006/00": "1066bd1acbeb67d81b7d81336b5184546996165f67d337afd0a1281208b32851",
+      "UFF_targeted/008/00": "86f9ad662bf112f5dd10ed30655a3433640124979a2ffec4b3333869e9b8b04c",
+      "UFF_targeted/012/00": "27371490e570e20cbfce1617b2154509a92f484ddaeb4e1536e21d8a474cca14",
+      "native": "0d2955800b90dc48979cb8996c0923dd0eda48888f22b92b80e15b515511ad5c",
+      "random/003/00": "a78e947fe41f0add43b917867ef082fd1de45911834e1af0c0e60d66b8ff71d3",
+      "random/003/01": "405233050d7df7bb3174b9d5ecf0b4d5defd4b1421713857628b5c157e3f16b3",
+      "random/003/02": "999da9fdf1730532f0bf727d129179c37e6b7e6a1307f75bc7567f91fd23bd94",
+      "random/003/03": "0fbd619ac28f3a6607823a1295e57a46d859ef3a87640ee19eb1b953b16f213b",
+      "random/003/04": "2ce4a4d0931f691e6164b7070856cc10ee8b41df6ce7adec1cd0ea1544e22d4a",
+      "random/003/05": "71d22edf07c605adf70299164bc5de22ecd2437e92d132655096ac4fde06aac3",
+      "random/003/06": "8d91595f0102727f00f0a05cf240786135a1b3a5196a183a87b5de8debe27bce",
+      "random/003/07": "a6ac59ee36f482f5a9e26240a6df24e98dec5e498aa59dbd8111edb3c278b1fa",
+      "random/006/00": "bba117c48da00d8dcb262441ca5ec2b428aead8523091a14e620601ee546fe9a",
+      "random/006/01": "d89b9899cedd9741eafd7b6de1fff2332a8f150f172bc5fa98a8d1e0e605b9fb",
+      "random/006/02": "f77117fe603f53314bce1de20ae4006ee5ce43acfcc7fdb72d4da755e0ad1bed",
+      "random/006/03": "0e60e8def5bcf4998070c5a5e9b69cedbdd327296d1b7aafa78c1b47110101c3",
+      "random/006/04": "aa24aeec7ffb8231aeaf6aa5d7fded34e5568a6d4a435426ff5030310523d090",
+      "random/006/05": "a524679d20d517b3de7c2279654e4401b77b437ef4b2b8377cbeed00e2399e00",
+      "random/006/06": "8d6ab1f90bcd177006706ed54cacf7cee208dfed1023996a74df03a10f82bc3c",
+      "random/006/07": "f7923b0721e762b4f0c74bfa085430a81f6cf0e4ad7017ac7a9e3d198dbe9d9b",
+      "random/008/00": "c7fb6ad1baf92df040013b41f70fd0aada65fa773f37d3bb0de3c49674813a78",
+      "random/008/01": "4bd550ef2203bd55525e7065807aea28e9f1b9f1bf71e959be20420fc8094c38",
+      "random/008/02": "c7a937e083c2dda399b3a094db67ff2466000590c15d46ec37bc9022c29aba61",
+      "random/008/03": "f3126ba9d04ac90ad93d9e59cfcf45d43ecb1fd9cca8d3c4b46373389d642613",
+      "random/008/04": "1a4de9bd862632a544700280d480bd5bb7e2436cdec895c28e8b532929c231b1",
+      "random/008/05": "8b5f7ccd2b62c7f7b400c0203363ab93d0c6ad20b52bd47195e00c3e9afc2302",
+      "random/008/06": "2d5b42604a48908b380862e546fd3737bcaf8fbd483f5285626a7e79ad2abc6c",
+      "random/008/07": "717ffde37fb8b563a77ead7c44e04afcf0be6ae36cde83de9df70b7446c8653f",
+      "random/012/00": "d16fff05d96092f196be3b5a619c928c5d5b5e3419927ac866f1cb66b803e7e2",
+      "random/012/01": "f9c973de4e40d69ca7260356997442df7dd4e0b38a0a1b801c0af8c4a1956499",
+      "random/012/02": "c63398be6df3315e2f63b1eba3c4df86c150d850b4f812b62760d31b8d09c54b",
+      "random/012/03": "9096f688e62e3d12d64c14e9709e97ac597978b7ca91c7220b1bc5728722187e",
+      "random/012/04": "4de0b8b8f9a728284a6505c9b894de263f9e345b73e25218de97f313f034cb12",
+      "random/012/05": "6d9a588efc30da671b185c1c4f860b242127ed8ecce6d803bf25ff42d4006174",
+      "random/012/06": "9603282ccfb6c2305592ff4c0528859ce4a9e7ac8c0079dd607c709ebfa62ed5",
+      "random/012/07": "3a6834f55edd891a4a993e9b4edab2db02f92cca86f8fcc0714c9a7febaf650a",
+      "source/003": "5dc3729cefbfd0ff30fa687b21d70e44fd52f97aff0ab21b91bc0ff751d65348",
+      "source/006": "9d6abb51be74505e6de1039782edfabf1f032f00ce4d854435abda6ef4e234fa",
+      "source/008": "5f17adc741706d7dbd24264d231f583a9eb733fea663dc189273798f5b8e87d7",
+      "source/012": "979b1cb0063272b417934ec0616ef5fd695dcfe4fa15f1d28b75a7662634eb91",
+      "targeted/003/00": "a78e947fe41f0add43b917867ef082fd1de45911834e1af0c0e60d66b8ff71d3",
+      "targeted/003/01": "405233050d7df7bb3174b9d5ecf0b4d5defd4b1421713857628b5c157e3f16b3",
+      "targeted/003/02": "999da9fdf1730532f0bf727d129179c37e6b7e6a1307f75bc7567f91fd23bd94",
+      "targeted/003/03": "0fbd619ac28f3a6607823a1295e57a46d859ef3a87640ee19eb1b953b16f213b",
+      "targeted/003/04": "2ce4a4d0931f691e6164b7070856cc10ee8b41df6ce7adec1cd0ea1544e22d4a",
+      "targeted/003/05": "71d22edf07c605adf70299164bc5de22ecd2437e92d132655096ac4fde06aac3",
+      "targeted/003/06": "8d91595f0102727f00f0a05cf240786135a1b3a5196a183a87b5de8debe27bce",
+      "targeted/003/07": "a6ac59ee36f482f5a9e26240a6df24e98dec5e498aa59dbd8111edb3c278b1fa",
+      "targeted/006/00": "22a4ee480e6ce8c46c993aec06da73b16704eeb76807ec1917c38df058a7b9c8",
+      "targeted/006/01": "c2958a0feda1657a35f05e33a32b7f635c03f4c1aa370da1b24be61712fd59e9",
+      "targeted/006/02": "2cbb88ae2bedb8bf528ce830e691e4618ea8afba975f0509285a59d20022f63f",
+      "targeted/006/03": "012f6f2ecbfe2e994d7a8561aaa20270aee50e7d2854dd49f9ce00b4847cb0db",
+      "targeted/006/04": "a591fe98acb63cede053c6a3e32271bf89263a3a89b6f74015499f011879ffde",
+      "targeted/006/05": "65d656fc410d968db779b6f88f07922c917d94a0836ba8e3acb942ce67bb3031",
+      "targeted/006/06": "46c9926ad5b5f3b0958a4922ac4831f1f4955076b6eaddd4612485c66e1da903",
+      "targeted/006/07": "b58e6b1b983a613bd91b960c655267db20add62f009975a8f65a046936f187ba",
+      "targeted/008/00": "c7fb6ad1baf92df040013b41f70fd0aada65fa773f37d3bb0de3c49674813a78",
+      "targeted/008/01": "4bd550ef2203bd55525e7065807aea28e9f1b9f1bf71e959be20420fc8094c38",
+      "targeted/008/02": "c7a937e083c2dda399b3a094db67ff2466000590c15d46ec37bc9022c29aba61",
+      "targeted/008/03": "f3126ba9d04ac90ad93d9e59cfcf45d43ecb1fd9cca8d3c4b46373389d642613",
+      "targeted/008/04": "1a4de9bd862632a544700280d480bd5bb7e2436cdec895c28e8b532929c231b1",
+      "targeted/008/05": "8b5f7ccd2b62c7f7b400c0203363ab93d0c6ad20b52bd47195e00c3e9afc2302",
+      "targeted/008/06": "2d5b42604a48908b380862e546fd3737bcaf8fbd483f5285626a7e79ad2abc6c",
+      "targeted/008/07": "717ffde37fb8b563a77ead7c44e04afcf0be6ae36cde83de9df70b7446c8653f",
+      "targeted/012/00": "d16fff05d96092f196be3b5a619c928c5d5b5e3419927ac866f1cb66b803e7e2",
+      "targeted/012/01": "f9c973de4e40d69ca7260356997442df7dd4e0b38a0a1b801c0af8c4a1956499",
+      "targeted/012/02": "c63398be6df3315e2f63b1eba3c4df86c150d850b4f812b62760d31b8d09c54b",
+      "targeted/012/03": "9096f688e62e3d12d64c14e9709e97ac597978b7ca91c7220b1bc5728722187e",
+      "targeted/012/04": "4de0b8b8f9a728284a6505c9b894de263f9e345b73e25218de97f313f034cb12",
+      "targeted/012/05": "6d9a588efc30da671b185c1c4f860b242127ed8ecce6d803bf25ff42d4006174",
+      "targeted/012/06": "9603282ccfb6c2305592ff4c0528859ce4a9e7ac8c0079dd607c709ebfa62ed5",
+      "targeted/012/07": "3a6834f55edd891a4a993e9b4edab2db02f92cca86f8fcc0714c9a7febaf650a",
+      "whole/003/00": "a2a7b925b3d83786ce0a57f9b8bd61fe34e472ee64a3f209f77d9e9f15f299c4",
+      "whole/003/01": "37b6f14d13e7fc09924b740e9cc117541561112c16a3b42a344c33cf2d81855c",
+      "whole/003/02": "ec24ae47911b52cedba3d6e2b2d487d6dc226ced1d92e8391302ed80f5096ded",
+      "whole/003/03": "5743614d3e331063f4ea131332b5351bd6982a07a1e7032caf3e20f039f12e74",
+      "whole/003/04": "4418629f8e3f25c07e39e21d4c915c5f48575fca873ea184b2e383ba9fdae5b3",
+      "whole/003/05": "f7c040583481778e4b452de76f3d42d82ca522084fec5af37042b693f4d9b034",
+      "whole/003/06": "e0de69c7b166fc99733bcfcaff95a5046f1168b917e84daa74022ad4490ad3b0",
+      "whole/003/07": "68871498dcc4b672e6d58c07665279a03cd46c0708131d81b82556125870b97e",
+      "whole/006/00": "94e4d44bf9c1c787db0648bfda3f0d445ce4a6bc6c871d88ad454aeb86c3ec36",
+      "whole/006/01": "b6eeed7a6d076b72d7e119844a380f50f02e0c8e337310fff846cc3f63e3ebb9",
+      "whole/006/02": "ebd1a4d7f3a66aa385677c72e7cb0aa929aa61f2c428c5424a29618507b1e121",
+      "whole/006/03": "aa92770a24111cb8fcb1467e630a64400fd60880bf6672296e6175bdeaeb555c",
+      "whole/006/04": "20ba619ac0e587c0626ffe68970611f6016fba3fce037ad0adcac3139c0dc5d3",
+      "whole/006/05": "2cc8f2c7f32a129bc6d2661d672565baa5520b2b0fa334f30f1f153e6f80271b",
+      "whole/006/06": "24c10b04e11039a20222b75851c738634738ef2a2fdbe98c6ee8766881a6ec12",
+      "whole/006/07": "c9fd583f61b8638bf5abd13e87f722484112341ee84098ce606ced2f4abba49a",
+      "whole/008/00": "1a70c941089888162517a6f94d0ae0e7d248cea6f2c21b2b3c82faff21c5800a",
+      "whole/008/01": "48e07d8d975355ace0efd57e4491dace0c0a5570fb3774f505566df26523f9aa",
+      "whole/008/02": "7ccc4a66de9778e7675e8075ce3b5d970c68aebc775e089309945838e20bbbe9",
+      "whole/008/03": "11021ce9a394f31564a71460f7a026abe0a4446d008f1c220e54ae2b8f62b90f",
+      "whole/008/04": "834fbbe95eca0eb443720b3a6cd90aec602fb2d7d548e071ab1f418d8b5bb0f4",
+      "whole/008/05": "6df115d8b36d98fef343dfca27e8c22edc2d27f9f9fb5f006bd5e760dc6a2a98",
+      "whole/008/06": "4030b9da7dd9e45204964a5072d3992876fe3f9748944489c5762c0b8faa5349",
+      "whole/008/07": "baf0adbe26be93020a5845055bb21bb64495b3550f11655d81d48feeefd4c66c",
+      "whole/012/00": "36f68e8674074584fdba9813dcb4f9db6b548df365c41a076d8116794b6f24e3",
+      "whole/012/01": "5cb4cdafa5bf9947a8b2a3be0056d70ba676e122cda415c33b47ace93b01ee70",
+      "whole/012/02": "11fc980cb788254ad1197ab496496225a29995c0fb07da4903f9d7981f69cda4",
+      "whole/012/03": "e8982ba7f84c8afb1beef78b0f56423f4b3b1f0b4bf4da1b4edbf25ca0e23620",
+      "whole/012/04": "6bd490c5365f9a5c52b40e59a0826f155238934f9072d7e4fdba905f26260b38",
+      "whole/012/05": "0445e707dc48b11d941a9cb943a29d1738348234a32d7a38d004760704bbcef7",
+      "whole/012/06": "c4e8cbc30613552264e02873505cbe5f3683daf6a27a5c3c4d855cdfc1a334bf",
+      "whole/012/07": "4ed8a89fb064087c6d16b2ee8d820528f159ee3ee5273e3151b1986e2873adf2"
+    },
+    "native_sha256": "0d2955800b90dc48979cb8996c0923dd0eda48888f22b92b80e15b515511ad5c",
+    "protein_sha256": "acd5d6dd650760e07ed143e092758ef5e4ae1a394a4fca97e090c4a6ab19501b",
+    "protocol": "Meeko standard amino acids; HIE histidines; raw heavy XYZ; Vina score only; 40 A native-centered box"
+  },
+  "receptor": null,
+  "receptor_status": 1,
+  "scores": {
+    "UFF_targeted/003/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5eqq/003/00/raw.sdf",
+      "status": "missing"
+    },
+    "UFF_targeted/006/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5eqq/006/00/raw.sdf",
+      "status": "missing"
+    },
+    "UFF_targeted/008/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5eqq/008/00/raw.sdf",
+      "status": "missing"
+    },
+    "UFF_targeted/012/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/UFF_targeted/5eqq/012/00/raw.sdf",
+      "status": "missing"
+    },
+    "native": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pose_gpu4_2000_batch32_v1/steps_64/cases/5eqq/native.sdf",
+      "status": "missing"
+    },
+    "random/003/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/00/raw.sdf",
+      "status": "missing"
+    },
+    "random/003/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/01/raw.sdf",
+      "status": "missing"
+    },
+    "random/003/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/02/raw.sdf",
+      "status": "missing"
+    },
+    "random/003/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/03/raw.sdf",
+      "status": "missing"
+    },
+    "random/003/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/04/raw.sdf",
+      "status": "missing"
+    },
+    "random/003/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/05/raw.sdf",
+      "status": "missing"
+    },
+    "random/003/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/06/raw.sdf",
+      "status": "missing"
+    },
+    "random/003/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/003/07/raw.sdf",
+      "status": "missing"
+    },
+    "random/006/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/00/raw.sdf",
+      "status": "missing"
+    },
+    "random/006/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/01/raw.sdf",
+      "status": "missing"
+    },
+    "random/006/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/02/raw.sdf",
+      "status": "missing"
+    },
+    "random/006/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/03/raw.sdf",
+      "status": "missing"
+    },
+    "random/006/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/04/raw.sdf",
+      "status": "missing"
+    },
+    "random/006/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/05/raw.sdf",
+      "status": "missing"
+    },
+    "random/006/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/06/raw.sdf",
+      "status": "missing"
+    },
+    "random/006/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/006/07/raw.sdf",
+      "status": "missing"
+    },
+    "random/008/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/00/raw.sdf",
+      "status": "missing"
+    },
+    "random/008/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/01/raw.sdf",
+      "status": "missing"
+    },
+    "random/008/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/02/raw.sdf",
+      "status": "missing"
+    },
+    "random/008/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/03/raw.sdf",
+      "status": "missing"
+    },
+    "random/008/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/04/raw.sdf",
+      "status": "missing"
+    },
+    "random/008/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/05/raw.sdf",
+      "status": "missing"
+    },
+    "random/008/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/06/raw.sdf",
+      "status": "missing"
+    },
+    "random/008/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/008/07/raw.sdf",
+      "status": "missing"
+    },
+    "random/012/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/00/raw.sdf",
+      "status": "missing"
+    },
+    "random/012/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/01/raw.sdf",
+      "status": "missing"
+    },
+    "random/012/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/02/raw.sdf",
+      "status": "missing"
+    },
+    "random/012/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/03/raw.sdf",
+      "status": "missing"
+    },
+    "random/012/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/04/raw.sdf",
+      "status": "missing"
+    },
+    "random/012/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/05/raw.sdf",
+      "status": "missing"
+    },
+    "random/012/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/06/raw.sdf",
+      "status": "missing"
+    },
+    "random/012/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/random/5eqq/012/07/raw.sdf",
+      "status": "missing"
+    },
+    "source/003": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5eqq/initial/003/repair_input.sdf",
+      "status": "missing"
+    },
+    "source/006": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5eqq/initial/006/repair_input.sdf",
+      "status": "missing"
+    },
+    "source/008": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5eqq/initial/008/repair_input.sdf",
+      "status": "missing"
+    },
+    "source/012": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/cases/5eqq/initial/012/repair_input.sdf",
+      "status": "missing"
+    },
+    "targeted/003/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/00/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/003/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/01/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/003/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/02/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/003/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/03/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/003/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/04/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/003/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/05/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/003/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/06/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/003/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/003/07/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/006/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/00/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/006/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/01/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/006/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/02/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/006/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/03/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/006/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/04/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/006/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/05/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/006/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/06/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/006/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/006/07/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/008/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/00/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/008/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/01/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/008/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/02/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/008/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/03/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/008/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/04/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/008/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/05/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/008/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/06/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/008/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/008/07/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/012/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/00/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/012/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/01/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/012/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/02/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/012/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/03/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/012/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/04/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/012/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/05/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/012/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/06/raw.sdf",
+      "status": "missing"
+    },
+    "targeted/012/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/targeted/5eqq/012/07/raw.sdf",
+      "status": "missing"
+    },
+    "whole/003/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/00/raw.sdf",
+      "status": "missing"
+    },
+    "whole/003/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/01/raw.sdf",
+      "status": "missing"
+    },
+    "whole/003/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/02/raw.sdf",
+      "status": "missing"
+    },
+    "whole/003/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/03/raw.sdf",
+      "status": "missing"
+    },
+    "whole/003/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/04/raw.sdf",
+      "status": "missing"
+    },
+    "whole/003/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/05/raw.sdf",
+      "status": "missing"
+    },
+    "whole/003/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/06/raw.sdf",
+      "status": "missing"
+    },
+    "whole/003/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/003/07/raw.sdf",
+      "status": "missing"
+    },
+    "whole/006/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/00/raw.sdf",
+      "status": "missing"
+    },
+    "whole/006/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/01/raw.sdf",
+      "status": "missing"
+    },
+    "whole/006/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/02/raw.sdf",
+      "status": "missing"
+    },
+    "whole/006/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/03/raw.sdf",
+      "status": "missing"
+    },
+    "whole/006/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/04/raw.sdf",
+      "status": "missing"
+    },
+    "whole/006/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/05/raw.sdf",
+      "status": "missing"
+    },
+    "whole/006/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/06/raw.sdf",
+      "status": "missing"
+    },
+    "whole/006/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/006/07/raw.sdf",
+      "status": "missing"
+    },
+    "whole/008/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/00/raw.sdf",
+      "status": "missing"
+    },
+    "whole/008/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/01/raw.sdf",
+      "status": "missing"
+    },
+    "whole/008/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/02/raw.sdf",
+      "status": "missing"
+    },
+    "whole/008/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/03/raw.sdf",
+      "status": "missing"
+    },
+    "whole/008/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/04/raw.sdf",
+      "status": "missing"
+    },
+    "whole/008/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/05/raw.sdf",
+      "status": "missing"
+    },
+    "whole/008/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/06/raw.sdf",
+      "status": "missing"
+    },
+    "whole/008/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/008/07/raw.sdf",
+      "status": "missing"
+    },
+    "whole/012/00": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/00/raw.sdf",
+      "status": "missing"
+    },
+    "whole/012/01": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/01/raw.sdf",
+      "status": "missing"
+    },
+    "whole/012/02": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/02/raw.sdf",
+      "status": "missing"
+    },
+    "whole/012/03": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/03/raw.sdf",
+      "status": "missing"
+    },
+    "whole/012/04": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/04/raw.sdf",
+      "status": "missing"
+    },
+    "whole/012/05": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/05/raw.sdf",
+      "status": "missing"
+    },
+    "whole/012/06": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/06/raw.sdf",
+      "status": "missing"
+    },
+    "whole/012/07": {
+      "reason": "Receptor preparation failed; see receptor-preparation.log",
+      "sdf": "/home/uslee/code/DIRMO-3D/runs/fm_pb_guided_gpu4_20261015_v1/repairs/whole/5eqq/012/07/raw.sdf",
+      "status": "missing"
+    }
+  }
+}

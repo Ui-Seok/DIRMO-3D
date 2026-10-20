@@ -1,0 +1,11 @@
+# Separate CPU oracle environment; do not install into dirmo-llm/.venv-sft.
+# SMDD-Bench uses ADMET-AI v1.4.0, whose predictions differ from v2.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.0+cpu
+admet_ai==1.4.0
+numpy==1.26.4
+rdkit==2025.9.4
+pandas==2.1.4
+scipy==1.13.1
+scikit-learn==1.6.1
+xarray==2024.10.0

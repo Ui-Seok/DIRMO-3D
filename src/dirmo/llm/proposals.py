@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from ..chemistry.graphs import ChemicalError, execute_edit, read_sdf, smiles
+from ..chemistry.graphs import ChemicalError, executable_edits, execute_edit, read_sdf, smiles
 from ..io import append_jsonl, digest, write_json
 from ..schemas import Proposal, State
 
@@ -34,6 +34,9 @@ def parse_proposal(raw: str, evidence_ids: set[str], parent_graph: str, candidat
 
 def messages(state: State, case, cap: int) -> list[dict]:
     mol = read_sdf(state.work_item.sdf_path)
+    # The action space, measured by the same validator that will execute the choice.
+    # Without it a planner guesses at the allowlist and most candidates are rejected.
+    space = executable_edits(mol, read_sdf(state.original_ligand.sdf_path), case.protected)
     prompt = {
         "task": "Propose small chemical edits and testable hypotheses from measured facts. Return only JSON.",
         "parent_graph_id": state.work_item.graph_id,
@@ -48,11 +51,14 @@ def messages(state: State, case, cap: int) -> list[dict]:
                         "failures": state.work_item.observation.failures,
                         "feasible": state.work_item.observation.feasible,
                         "graph_matches": state.work_item.observation.graph_matches},
+        "executable_edits": space,
         "objective": case.objective.model_dump(mode="json"),
         "protected": case.protected.model_dump(mode="json"),
         "remaining_budget": state.remaining_budget,
         "maximum_candidates": cap,
         "rules": ["Use only the provided evidence IDs. Hypotheses are untested, not causal proofs.",
+                  "executable_edits lists every operation that can run on this graph. Choose from it. "
+                  "It is not a ranking; decide from the measured evidence which edit serves the objective.",
                   "Return compact JSON without markdown or indentation; use only fields in the schema.",
                   "Use at most two hypotheses and two tradeoffs. Keep each explanation or test under 30 words.",
                   "Do not calculate numerical properties or claim efficacy/toxicity/success probabilities.",

@@ -15,8 +15,8 @@ from dirmo.llm.proposals import Planner
 from dirmo.pipeline.budget import Budget
 from dirmo.pipeline.run import Executor, Run
 from dirmo.routing.policies import available_actions
-from dirmo.schemas import (ActionKind, BudgetLimits, Case, GenerationParameters, MetricGoal, Objective,
-                           Proposal, State, WorkItem)
+from dirmo.schemas import (ActionKind, BudgetLimits, Case, EditOperation, GenerationParameters, MetricGoal, Objective,
+                           Proposal, State, WorkItem, kernel_identity)
 from test_core import candidate, molecule, observation
 
 
@@ -58,8 +58,9 @@ class ExecutorTests(unittest.TestCase):
                 path = Path(payload["output_dir"]) / "raw.sdf"
                 write_sdf(path, read_sdf(payload["reference_sdf"]))
                 steps = payload["parameters"]["integration_steps"]
-                kernel = digest({"unit_fixture": True, "integration_steps": steps,
-                                 "pocket_sha256": sha256_file(payload["pocket_path"])})
+                kernel = digest(kernel_identity({"unit_fixture": True},
+                                GenerationParameters.model_validate(payload["parameters"]),
+                                sha256_file(payload["pocket_path"])))
                 return {"status": "ok", "sdf_path": str(path), "raw_draws": 1,
                         "nfe": steps + 1, "kernel_id": kernel}
 
@@ -194,6 +195,120 @@ class ExecutorTests(unittest.TestCase):
         self.assertEqual(result["checks"], {"sanitization": True})
 
 
+class OracleArmTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        root, mol = Path(self.temp.name), molecule()
+        ligand, protein = root / "initial.sdf", root / "protein.pdb"
+        write_sdf(ligand, mol)
+        protein.write_text("ATOM      1  CA  ALA A   1       4.000   0.000   0.000  1.00 20.00           C  \nEND\n")
+        self.mol = mol
+        self.case = Case(case_id="unit", target_id="unit", initial_ligand_path=str(ligand),
+                         pocket_path=str(protein), budgets=BudgetLimits(candidate_cap=1),
+                         objective=Objective(metrics={"qed": MetricGoal(direction="maximize", target=0.5)},
+                                             required_evaluations=["properties"]))
+        with patch("dirmo.pipeline.run.Evaluator.evaluate", return_value=observation(graph_id(mol), 0.4)):
+            self.run = Run(self.case, Config(), root / "run")
+        self.fm = FakeFM()
+        self.executor = Executor(self.run, self.fm)
+
+    def tearDown(self):
+        self.temp.cleanup()
+
+    def ids(self, extra=()):
+        actions = available_actions(self.run.state, self.case, GenerationParameters(),
+                                    self.executor.capabilities, 1, 42, extra)
+        return [a.action_id for a in actions]
+
+    def test_extra_candidates_are_offered_past_the_planner_cap(self):
+        planned = candidate(self.mol, candidate_id="planned")
+        dropped = candidate(self.mol, candidate_id="dropped",
+                            operation=EditOperation(kind="replace_atom", atom_map=3, element="F"))
+        oracle = candidate(self.mol, candidate_id="oracle-1",
+                           operation=EditOperation(kind="replace_atom", atom_map=3, element="Cl"))
+        self.run.state.proposal = Proposal(hypotheses=[], evidence_ids=[],
+                                           edit_candidates=[planned, dropped], expected_tradeoffs=[])
+        ids = self.ids([oracle])
+        # candidate_cap=1 keeps the planner's condition identical whether or not an
+        # oracle arm is present, so the second planner candidate stays dropped.
+        self.assertIn("edit:planned", ids)
+        self.assertNotIn("edit:dropped", ids)
+        self.assertIn("edit:oracle-1", ids)
+
+    def test_extra_candidates_work_without_any_proposal(self):
+        self.assertIsNone(self.run.state.proposal)
+        self.assertIn("edit:oracle-1", self.ids([candidate(self.mol, candidate_id="oracle-1")]))
+
+    def test_two_sources_proposing_one_graph_yield_one_action(self):
+        planned = candidate(self.mol, candidate_id="planned")
+        same_graph = candidate(self.mol, candidate_id="oracle-1")
+        self.run.state.proposal = Proposal(hypotheses=[], evidence_ids=[],
+                                           edit_candidates=[planned], expected_tradeoffs=[])
+        ids = self.ids([same_graph])
+        self.assertEqual([i for i in ids if i.startswith("edit:")], ["edit:planned"])
+
+    def test_executor_revalidation_accepts_an_extra_candidate(self):
+        oracle = candidate(self.mol, candidate_id="oracle-1")
+        executor = Executor(self.run, self.fm, extra_candidates=[oracle])
+        action = next(a for a in available_actions(self.run.state, self.case, GenerationParameters(),
+                                                   executor.capabilities, 1, 42, [oracle])
+                      if a.action_id == "edit:oracle-1")
+        with patch("dirmo.pipeline.run.Evaluator.evaluate", return_value=observation(graph_id(self.mol), 0.9)):
+            records = executor.execute(action)
+        self.assertEqual(len(records), 1)
+        # Without the executor carrying the same list this raises "not in the current
+        # validated feasible action set".
+        plain = Executor(self.run, self.fm)
+        with self.assertRaisesRegex(ValueError, "validated feasible action set"):
+            plain.execute(action)
+
+    def test_the_loaded_mode_masks_actions_it_cannot_execute(self):
+        # Offering an action the mode cannot execute spends a draw on a certain failure:
+        # whole-graph actions need graph_inpainting, a redesign needs inpainting_mode.
+        graph = dict(self.executor.capabilities, graph_mode="graph",
+                     priors=["random", "reference", "fragment"])
+        fragment = dict(graph, graph_mode="fragment")
+
+        def kinds(caps, regions):
+            return {a.kind for a in available_actions(self.run.state, self.case,
+                        GenerationParameters(), caps, 1, 42, (), regions)}
+
+        self.assertIn(ActionKind.POSE_RESAMPLE, kinds(graph, 2))
+        self.assertNotIn(ActionKind.REDESIGN_REGION, kinds(graph, 2))
+        offered = kinds(fragment, 2)
+        self.assertIn(ActionKind.REDESIGN_REGION, offered)
+        self.assertNotIn(ActionKind.POSE_RESAMPLE, offered)
+        self.assertNotIn(ActionKind.CHANGE_GENERATION_CONDITION, offered)
+        # Asking for no regions in fragment mode leaves nothing but STOP.
+        self.assertEqual(kinds(fragment, 0), {ActionKind.STOP})
+
+    def test_generation_kernel_drops_the_pocket_but_the_request_kernel_keeps_it(self):
+        from dirmo.schemas import generation_kernel, kernel_identity
+        kernel = kernel_identity({"unit": True}, GenerationParameters(), "pocket-hash")
+        self.assertIn("pocket_sha256", kernel)
+        view = generation_kernel(kernel)
+        self.assertNotIn("pocket_sha256", view)
+        # Everything that describes how the draw is made survives the view.
+        self.assertEqual({k: v for k, v in kernel.items() if k != "pocket_sha256"}, view)
+        self.assertNotEqual(self.executor.kernel_id(GenerationParameters()),
+                            self.executor.generation_kernel_id(GenerationParameters()))
+
+    def test_collection_records_candidate_source(self):
+        oracle = candidate(self.mol, candidate_id="oracle-1")
+        dataset = Path(self.temp.name) / "branches.jsonl"
+        with patch("dirmo.data.collect.ranked_edits", return_value=[oracle]), \
+             patch("dirmo.pipeline.run.Evaluator.evaluate", return_value=observation(graph_id(self.mol), 0.8)):
+            summary = collect(self.run, self.fm, FakeLLM(), str(dataset), oracle_edits=1)
+        self.assertEqual(summary["oracle_edits_offered"], 1)
+        self.assertEqual(summary["oracle_candidate_ids"], ["oracle-1"])
+        rows = read_jsonl(dataset)
+        self.assertEqual(len({row["generation_kernel_sha256"] for row in rows
+                              if row["integration_steps"] == 64}), 1)
+        sources = {row["action"]["action_id"]: row["candidate_source"] for row in rows}
+        self.assertEqual(sources["edit:oracle-1"], "oracle")
+        self.assertIsNone(sources["pose_resample"])
+
+
 class FlowrPriorTests(unittest.TestCase):
     def test_random_prior_without_optional_features_preserves_native_sampling(self):
         try:
@@ -201,12 +316,12 @@ class FlowrPriorTests(unittest.TestCase):
             from flowr.data.interpolate import GeometricNoiseSampler
         except ModuleNotFoundError:
             self.skipTest("FLOWR native CPU dependencies are optional outside the FM environment")
-        from dirmo.generation.flowr import prepare_random_graph_prior
+        from dirmo.generation.flowr import prepare_graph_prior
         sampler = GeometricNoiseSampler(4, 3, 3)
         target = sampler.sample_molecule(4)
         initial = sampler.sample_molecule(4)
         interpolant = SimpleNamespace(prior_sampler=sampler)
-        prepare_random_graph_prior(interpolant)
+        prepare_graph_prior(interpolant, "random")
         mask = torch.ones(4, dtype=torch.bool)
         torch.manual_seed(19)
         actual = sampler.inpaint_graph(target, initial, mask, mode="random")
@@ -223,6 +338,67 @@ class FlowrPriorTests(unittest.TestCase):
         self.assertIsNone(actual.hybridization)
         self.assertEqual(actual.fragment_mode, "graph")
         self.assertTrue(actual.fragment_mask.all())
+
+    def test_reference_prior_starts_from_the_reference_coordinates(self):
+        try:
+            import torch
+            from flowr.data.interpolate import GeometricNoiseSampler
+        except ModuleNotFoundError:
+            self.skipTest("FLOWR native CPU dependencies are optional outside the FM environment")
+        from dirmo.generation.flowr import prepare_graph_prior
+        sampler = GeometricNoiseSampler(4, 3, 3)
+        target = sampler.sample_molecule(4)
+        initial = sampler.sample_molecule(4)
+        prepare_graph_prior(SimpleNamespace(prior_sampler=sampler), "reference")
+        mask = torch.ones(4, dtype=torch.bool)
+        actual = sampler.inpaint_graph(target, initial, mask, mode="random")
+
+        # The reference pose enters untouched: no draw, and no re-centring that would
+        # fight the upstream output transform.
+        self.assertTrue(torch.equal(actual.coords, target.coords))
+        for field in ("atomics", "charges", "bond_indices", "bond_types"):
+            self.assertTrue(torch.equal(getattr(actual, field), getattr(target, field)))
+        self.assertIsNone(actual.hybridization)
+        self.assertEqual(actual.fragment_mode, "graph")
+        self.assertTrue(actual.fragment_mask.all())
+
+    def test_reference_prior_noise_is_seeded_and_bounded(self):
+        try:
+            import torch
+            from flowr.data.interpolate import GeometricNoiseSampler
+        except ModuleNotFoundError:
+            self.skipTest("FLOWR native CPU dependencies are optional outside the FM environment")
+        from dirmo.generation.flowr import prepare_graph_prior
+        mask = torch.ones(4, dtype=torch.bool)
+
+        def draw(seed):
+            sampler = GeometricNoiseSampler(4, 3, 3)
+            torch.manual_seed(0)
+            target = sampler.sample_molecule(4)
+            initial = sampler.sample_molecule(4)
+            prepare_graph_prior(SimpleNamespace(prior_sampler=sampler), "reference", 0.3)
+            torch.manual_seed(seed)
+            return target, sampler.inpaint_graph(target, initial, mask, mode="random")
+
+        target, first = draw(11)
+        _, same = draw(11)
+        _, other = draw(12)
+        # Reproducible for one seed, genuinely different across seeds, and a small
+        # displacement rather than a fresh draw.
+        self.assertTrue(torch.equal(first.coords, same.coords))
+        self.assertFalse(torch.equal(first.coords, other.coords))
+        self.assertLess(float((first.coords - target.coords).norm(dim=1).mean()), 1.5)
+        self.assertGreater(float((first.coords - target.coords).norm(dim=1).mean()), 0.0)
+
+    def test_prior_noise_is_rejected_for_the_random_prior(self):
+        from dirmo.generation.flowr import CapabilityError, prepare_graph_prior
+        with self.assertRaises(CapabilityError):
+            prepare_graph_prior(SimpleNamespace(prior_sampler=object()), "random", 0.3)
+
+    def test_unknown_prior_is_a_capability_error(self):
+        from dirmo.generation.flowr import CapabilityError, prepare_graph_prior
+        with self.assertRaises(CapabilityError):
+            prepare_graph_prior(SimpleNamespace(prior_sampler=object()), "harmonic")
 
 
 if __name__ == "__main__":

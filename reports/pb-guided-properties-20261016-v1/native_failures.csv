@@ -1,0 +1,12 @@
+case_id,failed_checks,shortest_distance_protein_angstrom,most_extreme_relative_distance_protein,internal_energy_ratio,confirmed_covalent_from_rcsb,source_url
+1nkm,minimum_distance_to_protein,1.4429251539840866,0.44397697045664203,3.1436573542208857,False,
+1npz,minimum_distance_to_protein,1.7817320224994535,0.509066292142701,2.0606053569085607,True,https://www.rcsb.org/structure/1npz
+2zu4,minimum_distance_to_protein,1.867589087567179,0.5335968821620511,2.7000851002192623,False,
+2zxb,internal_energy;minimum_distance_to_protein,2.2138766903330462,0.7028179969311257,574.0135915516579,False,
+3fty,internal_energy,2.6667067705317735,0.8465735779465947,6495.807030000469,False,
+3so9,minimum_distance_to_protein,2.1433191549556967,0.6303879867516755,5.660124334812809,False,
+4qjw,minimum_distance_to_protein,2.335454131427119,0.741414009976863,5.362569155140158,False,
+4rsp,minimum_distance_to_protein,1.8342044597045333,0.524058417058438,2.2884948088302988,False,
+4yqu,minimum_distance_to_protein,1.7704634986353152,0.5058467138958044,2.1545274824254306,True,https://www.rcsb.org/structure/4yqu
+6bl1,minimum_distance_to_protein,2.3555044045809037,0.7137892135093648,2.8741431563214936,False,
+6dj7,minimum_distance_to_protein,2.2464645556963494,0.7365457559660162,1.7430478728574015,False,
