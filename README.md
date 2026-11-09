@@ -827,6 +827,8 @@ bash scripts/stop_workers.sh
 
 ## 구현 범위와 해석상 제한
 
+MolGenBench를 이용한 **완전한 초기 ligand 편집 외부 평가**와 학습 쌍 점검은 [별도 실험 안내](docs/molgenbench_sbmo.md)를 참고하세요. 이 실험은 기존 회귀 Router와 FM을 고정해서 사용하며, 공식 scaffold-only H2L leaderboard 설정과 구분합니다.
+
 - **고정 좌표계:** pocket과 Vina box는 초기 ligand에서 한 번 정합니다. 보호 feature·원자 변위는 protein 좌표계에서 직접 측정하며 ligand를 다시 정렬하지 않습니다. 보호 원자 번호는 complete atom map을 유지하거나 초기 heavy-atom 순서로 부여합니다.
 - **화학 편집:** 보호 원자·결합·SMARTS와 유효 graph를 확인한 편집만 실행합니다. 예제의 보호 조건은 비어 있으므로 연구 목적에 필요한 조건을 사용자가 입력해야 합니다.
 - **생성 범위:** FLOWR adapter는 whole-graph fixed-graph 생성, random prior와 Euler를 노출합니다. 조건 변경은 integration step 수입니다. 원소·전하·결합·동위원소·stereo가 upstream tensor round-trip 또는 생성 후 검사에서 보존되지 않으면 거부합니다.

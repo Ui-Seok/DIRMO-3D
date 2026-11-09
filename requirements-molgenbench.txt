@@ -1,0 +1,10 @@
+# Isolated Python 3.11 analysis environment; never install into dirmo.
+# FM and historical PB/Vina contract remain in the unchanged dirmo environment.
+numpy==1.26.4
+scipy==1.14.1
+pandas==2.2.3
+rdkit==2025.9.1
+MDAnalysis==2.7.0
+prolif==2.0.3
+posebusters==0.3.1
+matplotlib==3.9.4
