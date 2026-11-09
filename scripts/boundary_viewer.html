@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DIRMO-3D · 경계 손상과 pocket UFF 비교</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;color:#203249;background:#f4f7fa}
+*{box-sizing:border-box}body{margin:0}main{max-width:1660px;padding:30px;margin:auto}h1{font-size:28px;margin:0 0 12px}
+p{line-height:1.65}header p{margin:4px 0;color:#526174}.controls,.legend{display:flex;gap:15px;align-items:center;flex-wrap:wrap}
+.controls{background:white;border:1px solid #dde4eb;border-radius:12px;padding:14px;margin:20px 0 12px}
+select,button{font:inherit;border:1px solid #bac7d5;border-radius:7px;padding:8px 12px;background:white;color:#203249;cursor:pointer}
+button.active{background:#1c776f;color:white;border-color:#1c776f}label{font-size:14px;cursor:pointer}input{accent-color:#188d89}
+.legend{font-size:13px;margin:12px 0 18px}.dot{display:inline-block;width:13px;height:13px;border-radius:50%;vertical-align:middle;margin-right:5px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.panel{background:white;border:1px solid #dae3eb;border-radius:12px;overflow:hidden}
+.panel h2{font-size:18px;margin:0;padding:16px 18px 9px}.metric{display:flex;gap:10px;align-items:center;padding:0 18px 10px;font-size:14px}
+.badge{border-radius:5px;padding:4px 7px;font-weight:650;font-size:12px}.good{background:#e5f4ee;color:#146a51}.bad{background:#fbe6ec;color:#a62652}
+canvas{display:block;width:100%;height:480px;touch-action:none;cursor:grab;background:white}canvas:active{cursor:grabbing}
+.facts{border-top:1px solid #e6ebf0;min-height:90px;padding:11px 17px;line-height:1.6;font-size:13px;color:#526174}
+.facts b{color:#203249}.details{margin-top:20px;padding:18px 22px;background:white;border-radius:12px;border:1px solid #dae3eb}
+table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #e6ebf0}
+th{color:#526174;font-weight:600}.note{font-size:13px;color:#647387}a{color:#176eaa;text-underline-offset:3px}.files{display:flex;gap:15px;flex-wrap:wrap}
+#hover{height:24px;color:#526174;font-size:13px}#why{margin-top:4px}.footer{font-size:13px;line-height:1.7;color:#647387;margin-top:18px}
+@media(max-width:1000px){main{padding:15px}.grid{grid-template-columns:1fr}canvas{height:440px}h1{font-size:23px}}
+</style>
+</head>
+<body><main>
+<header><h1>경계 손상 → pocket-aware UFF 보정</h1>
+<p>동일 pocket 좌표계에서 원본 · FLOWR.root 생성물 · UFF 보정 결과를 비교합니다.</p>
+<p>드래그: 세 그림을 함께 회전 · 휠: 확대/축소 · Shift + 드래그: 이동 · 더블클릭: 초기화</p></header>
+<div class="controls">
+<label>사례 <select id="case"></select></label>
+<button id="whole" class="active">Pocket + ligand</button><button id="boundary">경계 확대</button><button id="reset">방향 초기화</button>
+<label><input type="checkbox" id="pocket" checked> Pocket 표시</label>
+<label><input type="checkbox" id="overlay"> 원본 겹치기</label>
+<label><input type="checkbox" id="labels"> 모든 원자 번호</label>
+</div>
+<div class="legend">
+<span><i class="dot" style="background:#168c8a"></i>고정 core 탄소</span>
+<span><i class="dot" style="background:#eb981b"></i>자유 영역 탄소</span>
+<span><i class="dot" style="background:#bd3186"></i>고정/자유 경계 결합</span>
+<span><i class="dot" style="background:#a9b4c0"></i>Pocket</span>
+<span>N: 파랑 · O: 빨강 · S: 노랑 · 번호: 1-based SDF 원자 순서</span>
+</div><p id="why"></p><div class="grid" id="panels"></div><div id="hover"></div>
+<section class="details"><table><thead><tr><th>직접 경계 결합</th><th>원본 (Å)</th><th>FM (Å)</th><th>+ UFF (Å)</th><th>PB 경계 결합 위반: 원본 → FM → UFF</th></tr></thead><tbody id="bonds"></tbody></table>
+<p class="note">경계 결합의 PB 판정은 실제 dock preset의 distance-geometry bound와 25% 허용치를 사용했습니다. 원본 대비 길이 오차 0.1 Å는 별도의 샘플 선정 기준입니다.</p>
+<div class="files" id="files"></div></section>
+<div class="footer">
+<b>해석:</b> PB는 전체 검사 통과/실패입니다. 검사 통과 개수는 연속 품질 점수나 확률이 아닙니다. Vina는 score-only이며 낮을수록 유리합니다. 물리적 수선이 결합력 개선을 보장하지 않습니다.<br>
+기존 PDBbind2019 / original graph / 64-step 실험에서 사후 선정한 설명용 __SAMPLE_COUNT__개 사례입니다. 전체 성능을 대표하는 무작위 표본은 아닙니다. UFF는 pocket과 core를 고정한 hard 보정입니다.<br>
+이 뷰어는 저장 좌표의 정사영 3D stick 모델입니다. 회전에 따라 가려진 구조를 확인할 수 있습니다. 구조 정렬·좌표 최적화·분자 재생성은 하지 않습니다. Pocket 선은 거리 기반 표시용이며 수소결합 또는 단백질 표면을 뜻하지 않습니다.
+</div></main>
+<script id="data" type="application/json">__CASES_JSON__</script>
+<script>
+'use strict';
+const cases=JSON.parse(document.getElementById('data').textContent), stages=['native','fm','uff'];
+const titles={native:'원본 ligand',fm:'FLOWR.root 생성물',uff:'Pocket-aware UFF 보정 후'};
+const reasons={stretched_boundary:'길게 늘어난 경계 결합',compressed_boundary:'너무 짧아진 경계 결합',largest_vina_recovery:'큰 Vina 회복',pb_recovery_without_vina_recovery:'PB는 회복했지만 Vina는 악화된 대조 사례',additional_vina_recovery:'추가 회복 사례',explicit_user_selection:'지정한 사례'};
+const colors={N:'#3467dc',O:'#e54848',S:'#c4a300',P:'#b16ce3',F:'#68ad40',Cl:'#3d9a3b',Br:'#ab4932',I:'#9049bd'};
+const $=id=>document.getElementById(id), esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const add=(a,b)=>a.map((v,i)=>v+b[i]), sub=(a,b)=>a.map((v,i)=>v-b[i]), mul=(a,s)=>a.map(v=>v*s);
+const dot=(a,b)=>a.reduce((s,v,i)=>s+v*b[i],0), norm=a=>Math.sqrt(dot(a,a)), unit=a=>mul(a,1/norm(a));
+const cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+let selected=0, state={yaw:0,pitch:0,zoom:1,panX:0,panY:0,focus:false}, camera, panels=[];
+for(let i=0;i<cases.length;i++){const option=document.createElement('option');option.value=i;option.textContent=`${cases[i].case_id} · draw ${cases[i].draw} · ${reasons[cases[i].selection_reason]}`;$('case').append(option)}
+function setupCamera(){
+ const c=cases[selected], b=[...c.boundary_bonds].sort((a,b)=>Math.abs(b.fm_minus_native_A)-Math.abs(a.fm_minus_native_A))[0];
+ const [i,j]=b.indices_0based, x=unit(sub(c.coordinates.fm[j],c.coordinates.fm[i]));
+ let up=[0,0,1];if(Math.abs(dot(x,up))>.9)up=[0,1,0];
+ const y=unit(sub(up,mul(x,dot(up,x)))), z=unit(cross(x,y));
+ const points=stages.flatMap(s=>c.coordinates[s]);
+ const endpoints=[...new Set(c.boundary_bonds.flatMap(b=>b.indices_0based))];
+ const focused=stages.flatMap(s=>endpoints.map(i=>c.coordinates[s][i]));
+ const use=state.focus?focused:points;
+ const low=[0,1,2].map(k=>Math.min(...use.map(p=>p[k]))),high=[0,1,2].map(k=>Math.max(...use.map(p=>p[k])));
+ const center=mul(add(low,high),.5);
+ const span=state.focus?8:Math.max(12,2*Math.max(...points.map(p=>norm(sub(p,center))))+5);
+ camera={x,y,z,center,span};
+}
+function rotated(point){
+ const p=sub(point,camera.center), q=[dot(p,camera.x),dot(p,camera.y),dot(p,camera.z)];
+ const cy=Math.cos(state.yaw),sy=Math.sin(state.yaw),cp=Math.cos(state.pitch),sp=Math.sin(state.pitch);
+ const x=cy*q[0]+sy*q[2],z=-sy*q[0]+cy*q[2];
+ return [x,cp*q[1]-sp*z,sp*q[1]+cp*z];
+}
+function render(panel){
+ const c=cases[selected], {canvas,stage}=panel,ctx=canvas.getContext('2d');
+ const dpr=Math.min(window.devicePixelRatio||1,2), w=canvas.clientWidth,h=canvas.clientHeight;
+ if(canvas.width!==Math.round(w*dpr)||canvas.height!==Math.round(h*dpr)){canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr)}
+ ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+ const scale=Math.min(w,h)/camera.span*state.zoom;
+ const project=p=>{const q=rotated(p);return [w/2+(q[0]+state.panX)*scale,h/2-(q[1]+state.panY)*scale,q[2]]};
+ const projected=c.coordinates[stage].map(project), protein=c.pocket.atoms.map(a=>project(a.xyz));
+ function line(a,b,color,width,dash=[]){ctx.beginPath();ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineCap='round';ctx.setLineDash(dash);ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke();ctx.setLineDash([])}
+ if($('pocket').checked){
+  for(const [i,j] of c.pocket.bonds)line(protein[i],protein[j],'#c7cfd8',1);
+  ctx.fillStyle='#bbc6d1';for(const p of protein){ctx.beginPath();ctx.arc(p[0],p[1],1.25,0,2*Math.PI);ctx.fill()}
+ }
+ if($('overlay').checked&&stage!=='native'){
+  const original=c.coordinates.native.map(project);
+  for(const [i,j] of c.bonds)line(original[i],original[j],'#78889c',1.4,[4,3]);
+ }
+ const primitives=[], atomColor=i=>colors[c.atoms_data[i].element]||(c.fixed_mask[i]?'#168c8a':'#eb981b');
+ const boundary=new Set(c.boundary_bonds.map(b=>[...b.indices_0based].sort((a,b)=>a-b).join('-')));
+ for(const [i,j] of c.bonds){const a=projected[i],b=projected[j],mid=mul(add(a,b),.5);const isBoundary=boundary.has([i,j].sort((a,b)=>a-b).join('-'));
+  primitives.push({z:mid[2],draw:()=>{if(isBoundary)line(a,b,'#bd3186',Math.max(4,Math.min(10,scale*.11)));else{line(a,mid,atomColor(i),Math.max(2.8,Math.min(8,scale*.085)));line(mid,b,atomColor(j),Math.max(2.8,Math.min(8,scale*.085)))}}});
+ }
+ panel.hits=[];
+ for(let i=0;i<projected.length;i++){
+  const p=projected[i],a=c.atoms_data[i],r=Math.max(3.5,Math.min(11,scale*.15));
+  panel.hits.push({p,index:i});
+  primitives.push({z:p[2]+.05,draw:()=>{const grad=ctx.createRadialGradient(p[0]-r*.3,p[1]-r*.35,r*.05,p[0],p[1],r);grad.addColorStop(0,'#ffffff');grad.addColorStop(.25,atomColor(i));grad.addColorStop(1,atomColor(i));ctx.fillStyle=grad;ctx.beginPath();ctx.arc(p[0],p[1],r,0,Math.PI*2);ctx.fill();ctx.strokeStyle='white';ctx.lineWidth=.7;ctx.stroke()}});
+ }
+ primitives.sort((a,b)=>a.z-b.z);for(const item of primitives)item.draw();
+ const endpoints=new Set(c.boundary_bonds.flatMap(b=>b.indices_0based));
+ ctx.font='12px system-ui';ctx.textAlign='center';
+ for(let i=0;i<projected.length;i++){if(!$('labels').checked&&!endpoints.has(i))continue;const p=projected[i],a=c.atoms_data[i],text=`${a.element}${i+1}`;ctx.lineWidth=4;ctx.strokeStyle='#ffffffee';ctx.strokeText(text,p[0],p[1]-12);ctx.fillStyle='#25394f';ctx.fillText(text,p[0],p[1]-12)}
+ for(const b of c.boundary_bonds){const [i,j]=b.indices_0based,m=mul(add(projected[i],projected[j]),.5),text=`${b.lengths_A[stage].toFixed(3)} Å`;ctx.font='bold 13px system-ui';ctx.lineWidth=5;ctx.strokeStyle='white';ctx.strokeText(text,m[0],m[1]+19);ctx.fillStyle='#a92170';ctx.fillText(text,m[0],m[1]+19)}
+ const bar=state.focus?1:2;line([20,h-27],[20+bar*scale,h-27],'#536779',2);ctx.font='11px system-ui';ctx.fillStyle='#536779';ctx.textAlign='left';ctx.fillText(`${bar} Å`,20,h-36);
+}
+function redraw(){for(const panel of panels)render(panel)}
+function reset(){state.yaw=0;state.pitch=0;state.zoom=1;state.panX=0;state.panY=0;setupCamera();redraw()}
+function update(){
+ const c=cases[selected];$('panels').replaceChildren();panels=[];
+ $('why').textContent=`${c.case_id} / draw ${c.draw} — ${reasons[c.selection_reason]} · original graph · 64-step · ${c.atoms} heavy atoms`;
+ for(const stage of stages){
+  const pb=c.pb[stage],cnt=c.pb_check_counts[stage],panel=document.createElement('article');panel.className='panel';
+  panel.innerHTML=`<h2>${titles[stage]}</h2><div class="metric"><span class="badge ${pb.passes?'good':'bad'}">PB ${pb.passes?'PASS':'FAIL'} · ${cnt.passed}/${cnt.total}</span><b>Vina ${c['vina_'+stage].toFixed(3)}</b></div><canvas aria-label="${titles[stage]} 3D 분자 구조"></canvas><div class="facts"><b>PB 실패:</b> ${esc(pb.failed_checks.join(', ')||'없음')}<br><b>고정 원자 최대 변위:</b> ${c.held_max_drift_A[stage].toFixed(4)} Å</div>`;
+  $('panels').append(panel);const canvas=panel.querySelector('canvas'),obj={canvas,stage,hits:[]};panels.push(obj);
+  let last=null;
+  canvas.addEventListener('pointerdown',e=>{last={x:e.clientX,y:e.clientY};canvas.setPointerCapture(e.pointerId)});
+  canvas.addEventListener('pointermove',e=>{
+   if(last){const dx=e.clientX-last.x,dy=e.clientY-last.y;if(e.shiftKey){const scale=Math.min(canvas.clientWidth,canvas.clientHeight)/camera.span*state.zoom;state.panX+=dx/scale;state.panY-=dy/scale}else{state.yaw+=dx*.012;state.pitch+=dy*.012}last={x:e.clientX,y:e.clientY};redraw();return}
+   const r=canvas.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+   const hit=obj.hits.filter(a=>Math.hypot(a.p[0]-x,a.p[1]-y)<14).sort((a,b)=>b.p[2]-a.p[2])[0];
+   if(hit){const a=c.atoms_data[hit.index],xyz=c.coordinates[stage][hit.index];$('hover').textContent=`${titles[stage]} · ${a.element}${hit.index+1} · atom map ${a.map} · ${a.fixed?'고정 core':'자유 영역'} · XYZ (${xyz.map(v=>v.toFixed(3)).join(', ')}) Å`}else $('hover').textContent='';
+  });
+  const release=()=>last=null;canvas.addEventListener('pointerup',release);canvas.addEventListener('pointercancel',release);
+  canvas.addEventListener('wheel',e=>{e.preventDefault();state.zoom=Math.max(.25,Math.min(8,state.zoom*Math.exp(-e.deltaY*.0015)));redraw()},{passive:false});
+  canvas.addEventListener('dblclick',reset);
+ }
+ $('bonds').innerHTML=c.boundary_bonds.map(b=>`<tr><td>${b.elements[0]}${b.labels_1based[0]}–${b.elements[1]}${b.labels_1based[1]}</td>${stages.map(s=>`<td>${b.lengths_A[s].toFixed(3)}</td>`).join('')}<td>${stages.map(s=>b.pb_bond_details[s].pb_bond_violation?'위반':'통과').join(' → ')}</td></tr>`).join('');
+ const folder=`cases/${c.case_id}_draw${String(c.draw).padStart(2,'0')}`;
+ $('files').innerHTML=[['comparison.png','사례별 정적 그림'],['region_map.png','2D 고정·자유 영역'],['native.sdf','원본 SDF'],['fm.sdf','FM SDF'],['uff.sdf','UFF SDF'],['pocket.pdb','Pocket PDB'],['view.pml','PyMOL 장면'],['measurements.json','전체 측정·출처']].map(([file,label])=>`<a href="${folder}/${file}">${label}</a>`).join('');
+ reset();
+}
+$('case').addEventListener('change',()=>{selected=Number($('case').value);update()});
+for(const id of ['pocket','overlay','labels'])$(id).addEventListener('change',redraw);
+function focus(flag){state.focus=flag;$('whole').classList.toggle('active',!flag);$('boundary').classList.toggle('active',flag);reset()}
+$('whole').onclick=()=>focus(false);$('boundary').onclick=()=>focus(true);$('reset').onclick=reset;
+new ResizeObserver(redraw).observe($('panels'));update();
+</script></body></html>
