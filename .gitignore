@@ -8,3 +8,4 @@ runs/
 worker-runtime/
 *.ckpt
 *.safetensors
+reports/
